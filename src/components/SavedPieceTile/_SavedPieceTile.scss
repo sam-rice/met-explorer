@@ -1,0 +1,90 @@
+@use "/src/utilities/variables";
+@use "/src/utilities/mixins";
+
+.piece {
+  @include mixins.userTile();
+
+  &:hover {
+    background-color: variables.$light-beige-hover;
+  }
+
+  &__left {
+    display: flex;  
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+  }
+}
+
+.img-container {
+  height: 160px;
+  width: 160px;
+  overflow: hidden;
+  
+  &__img {
+    width: 100%;
+  }
+}
+
+.piece__left__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+.details-top {
+  
+  &__title {
+    font-size: 2rem;
+    margin: 10px 0px 0px;
+  }
+
+  &__artist-link {
+    color: black;
+    margin-right: 10px;
+  }
+}
+
+.piece__right__notes-container {
+  display: flex;
+  flex-direction: column;
+
+  & label {
+    color: variables.$gray;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+
+  & textarea {
+    resize: none;
+    border: 1px solid #c1c1c1;
+  }
+}
+
+.piece__right__button {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #c1c1c1;
+  border: none;
+
+  &:after {
+    position: absolute;
+    top: -19px;
+    left: 6px;
+    content: "\2212";
+    font-size: 3rem;
+    color: white;
+  }
+}
+
+.detail-rows {
+  color: variables.$gray;
+  margin: 2px 0px 0px;
+}

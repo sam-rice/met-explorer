@@ -25,3 +25,7 @@ body {
 *:visited {
   color: black;
 }
+
+.gray--text {
+  color: variables.$gray;
+}

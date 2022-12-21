@@ -4,16 +4,24 @@
   width: 80%;
   
   &__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 
-    &__collection-name {
-      color: variables.$gray;
-      margin-bottom: 0px;
-    }
+    &__left {
+      display: flex;
+      align-items: baseline;
 
-    & p {
-      color: variables.$gray;
-      font-style: italic;
-      margin-left: 20px;
+      &__collection-name {
+        font-size: 1.8rem;
+        margin-bottom: 0px;
+      }
+
+      & p {
+        color: variables.$gray;
+        font-style: italic;
+        margin-left: 20px;
+      }
     }
   }
   

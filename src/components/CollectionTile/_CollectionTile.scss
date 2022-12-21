@@ -1,18 +1,8 @@
 @use "/src/utilities/variables";
+@use "/src/utilities/mixins";
 
 .collection {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: variables.$light-beige;
-  list-style: none;
-  text-decoration: none;
-  color: black;
-  margin: 15px 0px;
-  width: 100%;
-  height: 160px;
-  padding: 30px;
-  transition-duration: 400ms;
+  @include mixins.userTile();
 
   &:hover {
     background-color: variables.$light-beige-hover;
@@ -36,7 +26,6 @@
       margin: 10px 0px 0px 40px;
     }
   }
-
 
   &__details {
     display: flex;

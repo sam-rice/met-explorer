@@ -7,21 +7,29 @@ function Header() {
   return (
     <header className="header">
       <div className="header__left">
-        <h1 className="header__title-left">MET<br />EXPLORER</h1>
+        <Link className="header__title-container" to="/">
+          <h1 className="header__title-left">MET<br />EXPLORER</h1>
+        </Link>
         <nav className="nav">
-          <Link 
-            className="nav__link" 
-            to="/my-collections"
-          >MY COLLECTIONS
-          </Link>
-          <Link 
-            className="nav__link" 
-            to="/search"
-          >SEARCH
-          </Link>
+          <ul>
+            <li>
+              <Link
+                className="nav__link"
+                to="/collections"
+              >MY COLLECTIONS
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="nav__link"
+                to="/search"
+              >SEARCH
+              </Link>
+            </li>
+          </ul>
         </nav>
       </div>
-      <h2 className="header__title-right">MY COLLECTIONS</h2>
+      <h2 className="header__title-right"><br />MY COLLECTIONS</h2>
     </header>
   )
 }

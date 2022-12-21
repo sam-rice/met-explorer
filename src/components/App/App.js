@@ -4,14 +4,20 @@ import { Route, Routes } from "react-router-dom"
 
 import './_App.scss'
 import Header from "../Header/Header"
-import NavBar from "../NavBar/NavBar"
+import MainLayout from "../MainLayout/MainLayout"
+import Home from "../Home/Home"
+import Collections from "../Collections/Collections"
+import SearchForm from "../SearchForm/SearchForm"
 
 const App = () => {
   return (
     <>
-      <Header />
       <Routes>
-        <Route path="/" element={<NavBar />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<MainLayout />} > 
+          <Route path="/collections" element={<Collections />} />
+          <Route path="/search" element={<SearchForm />} />
+        </Route>
       </Routes>
     </>
   )

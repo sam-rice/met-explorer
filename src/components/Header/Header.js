@@ -29,7 +29,7 @@ function Header() {
           </ul>
         </nav>
       </div>
-      <h2 className="header__title-right"><br />MY COLLECTIONS</h2>
+      <h2 className="header__title-right">MY<br />COLLECTIONS</h2>
     </header>
   )
 }

@@ -1,0 +1,7 @@
+@use "/src/utilities/variables";
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

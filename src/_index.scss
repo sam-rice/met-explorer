@@ -15,10 +15,15 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  overflow: auto;
+  overflow-y: auto;
+  // overflow-x: hidden;
 }
 
 * {
   font-family: variables.$main-font;
   font-weight: 400;
+}
+
+*:visited {
+  color: black;
 }

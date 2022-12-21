@@ -1,1 +1,82 @@
 @use "/src/utilities/variables";
+
+@mixin bigTopText() {
+  font-family: variables.$accent-font;
+  font-size: 4rem;
+  color: red;
+  margin-top: 50px;
+  cursor: default;
+}
+
+@mixin bigBottomText() {
+  font-family: variables.$accent-font;
+  font-size: 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: 400ms;
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  overflow-y: hidden;
+  //remove remove remove remove hidden
+}
+
+.home__top {
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+    @include bigTopText();
+    margin-left: 85px;
+  }
+
+  &__right {
+    @include bigTopText();
+    margin-right: 85px;
+  }
+}
+
+.home__featured {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: gray;
+  width: 35vw;
+  height: 48vh;
+}
+
+.home__bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    list-style: none;
+    padding-left: 0px;
+    width: 100%;
+
+    .home__bottom__left {
+      @include bigBottomText();
+      margin-left: 85px;
+
+      &:hover {
+        color: gray;
+      }
+    }
+
+    .home__bottom__right {
+      @include bigBottomText();
+      margin-right: 85px;
+      
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+}

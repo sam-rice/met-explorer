@@ -6,7 +6,9 @@ import Header from "../Header/Header"
 function MainLayout() {
   return (<>
     <Header />
-    <Outlet />
+    <main>
+      <Outlet />
+    </main>
   </>
   )
 }

@@ -1,0 +1,19 @@
+@use "/src/utilities/variables";
+
+.collections {
+  width: 80%;
+  
+  &__header {
+    color: variables.$gray;
+    margin-bottom: 0px;
+  }
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+  }
+}

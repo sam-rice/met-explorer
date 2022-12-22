@@ -19,7 +19,9 @@ const App = () => {
             <Route index element={<CollectionsList />} />
             <Route path=":id" element={<CollectionView />} />
           </Route>
-          <Route path="/search" element={<SearchForm />} />
+          <Route path="/search" >
+            <Route index element={<SearchForm />} />
+          </Route>
         </Route>
       </Routes>
     </>

@@ -1,11 +1,37 @@
 @use "/src/utilities/variables";
+@use "/src/utilities/mixins";
 
 .collections {
   width: 80%;
   
   &__header {
-    color: variables.$gray;
-    margin-bottom: 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    &__count {
+      color: variables.$gray;
+      margin-bottom: 0px;
+    }
+
+    &__add {
+      display: flex;
+      align-items: center;
+
+      .add-button-label {
+        margin: 0px 10px;
+        color: variables.$gray;
+      }
+
+      .add-button {
+        @include mixins.addSubtractButton();
+  
+        &:after {
+          content: "\002B";
+          left: 5px;
+        }
+      }
+    }
   }
   
   &__list {
@@ -16,4 +42,56 @@
     margin-top: 0px;
     width: 100%;
   }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 35%;
+  height: 25%;
+  background-color: variables.$light-beige;
+  border: 1px solid variables.$border-gray;
+
+  & h3 {
+    font-size: 1.5rem;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+
+    &__input {
+      font-size: 1.4rem;
+      width: 200px;
+      margin: 0px 10px;
+    }
+
+    &__button {
+      height: 33px;
+      width: 87px;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
 }

@@ -15,6 +15,9 @@ function CollectionView() {
       </div>
       <ul className="pieces__list">
         <SavedPieceTile />
+        <SavedPieceTile />
+        <SavedPieceTile />
+        <SavedPieceTile />
       </ul>
     </section>
   )

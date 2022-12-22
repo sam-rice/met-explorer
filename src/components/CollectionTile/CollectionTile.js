@@ -7,7 +7,7 @@ import chair from "../../assets/flw-chair.png"
 
 function CollectionTile() {
   return (
-    <Link className="collection" to="/collections/collectionID" >
+    <Link className="collection-link-wrapper" to="/collections/collectionID" >
       <li className="collection">
         <div className="collection__left">
           <div className="collection__left__img-container">

@@ -4,10 +4,6 @@
 .piece {
   @include mixins.userTile();
 
-  &:hover {
-    background-color: variables.$light-beige-hover;
-  }
-
   &__left {
     display: flex;  
   }
@@ -21,13 +17,7 @@
 }
 
 .img-container {
-  height: 160px;
-  width: 160px;
-  overflow: hidden;
-  
-  &__img {
-    width: 100%;
-  }
+  @include mixins.tileThumbnail();
 }
 
 .piece__left__details {
@@ -62,25 +52,15 @@
 
   & textarea {
     resize: none;
-    border: 1px solid #c1c1c1;
+    border: 1px solid variables.$border-gray;
   }
 }
 
 .piece__right__button {
-  position: relative;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: #c1c1c1;
-  border: none;
+  @include mixins.addSubtractButton();
 
   &:after {
-    position: absolute;
-    top: -19px;
-    left: 6px;
     content: "\2212";
-    font-size: 3rem;
-    color: white;
   }
 }
 

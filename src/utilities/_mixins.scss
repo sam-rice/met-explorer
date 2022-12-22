@@ -8,10 +8,48 @@
   list-style: none;
   text-decoration: none;
   color: black;
-  margin: 15px 0px;
+  height: 224px;
   width: 100%;
-  height: 160px;
+  box-sizing: border-box;
   padding: 30px;
+  margin: 15px 0px;
   transition-duration: 400ms;
   cursor: pointer;
+
+  &:hover {
+    background-color: variables.$light-beige-hover;
+  }
+}
+
+@mixin tileThumbnail() {
+  height: 160px;
+  width: 160px;
+  overflow: hidden;
+  
+  &__img {
+    width: 100%;
+  }
+}
+
+@mixin addSubtractButton() {
+  position: relative;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background-color: variables.$button-gray;
+  border: none;
+  transition-duration: 400ms;
+
+  &:after {
+    position: absolute; 
+    top: -16px;
+    left: 6px;
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: variables.$button-gray-hover;
+  }
 }

@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom"
 
 import "./_SavedPieceTile.scss"
 import chair from "../../assets/flw-chair.png"
-import deleteSymbol from "../../assets/delete-symbol.png"
 
 function SavedPieceTile() {
   const [notes, setNotes] = useState("")

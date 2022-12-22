@@ -1,24 +1,19 @@
 @use "/src/utilities/variables";
 @use "/src/utilities/mixins";
 
+.collection-link-wrapper {
+  width: 100%;
+  text-decoration: none;
+}
+
 .collection {
   @include mixins.userTile();
-
-  &:hover {
-    background-color: variables.$light-beige-hover;
-  }
 
   &__left {
     display: flex;
     
     &__img-container {
-      height: 160px;
-      width: 160px;
-      overflow: hidden;
-      
-      &__img {
-        width: 100%;
-      }
+      @include mixins.tileThumbnail();
     }
 
     &__title {

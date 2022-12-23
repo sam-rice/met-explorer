@@ -55,7 +55,7 @@
   justify-content: space-around;
   width: 35%;
   height: 25%;
-  background-color: variables.$light-beige;
+  background-color: variables.$container-gray;
   border: 1px solid variables.$border-gray;
 
   & h3 {
@@ -76,7 +76,7 @@
     }
 
     &__button {
-      height: 33px;
+      height: 38px;
       width: 87px;
       font-size: 1.3rem;
     }

@@ -7,15 +7,17 @@ function SearchForm() {
   const [searchType, setSearchType] = useState("select")
   const [department, setDepartment] = useState("(optional)")
 
+  const handleClick = () => console.log("search")
+
   return (
     <section className="search">
       <div className="search__input-container">
         <label 
-          // className="search__input-container__label"
+          className="search__input-container__label"
           htmlFor="search-artwork"
         >search:</label>
         <input 
-          // className="search__input-container__input" 
+          className="search__input-container__input" 
           id="search-artwork"
           name="search-artwork"
           value={query} 
@@ -30,7 +32,7 @@ function SearchForm() {
           htmlFor="search-type-select"
         >search by:</label>
         <select 
-          // className="search__type-container__select" 
+          className="search__type-container__select" 
           id="search-type-select" 
           value={searchType} 
           onChange={e => setSearchType(e.target.value)}
@@ -41,17 +43,13 @@ function SearchForm() {
           <option>artist name</option>
         </select>
       </div>
-
-
-
-
       <div className="search__dept-container">
         <label 
           // className="search__dept-container__label"
           htmlFor="dept-select"
         >in department:</label>
         <select 
-          // className="search__dept-container__select" 
+          className="search__dept-container__select" 
           id="dept-select" 
           value={department} 
           onChange={e => setDepartment(e.target.value)}
@@ -78,11 +76,11 @@ function SearchForm() {
           <option>Modern Art</option>
         </select>
       </div>
-
-
-
-
-
+      <button
+        className="search__button"
+        onClick={handleClick}
+      >search
+      </button>
     </section>
   )
 }

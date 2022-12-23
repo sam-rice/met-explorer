@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: variables.$light-beige;
+  background-color: variables.$container-gray;
   list-style: none;
   text-decoration: none;
   color: black;
@@ -17,7 +17,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: variables.$light-beige-hover;
+    background-color: variables.$container-gray-hover;
   }
 }
 

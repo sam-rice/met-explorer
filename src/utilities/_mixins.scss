@@ -1,24 +1,27 @@
 @use "/src/utilities/variables";
 
+@mixin tile() {
+  background-color: variables.$container-gray;
+  transition-duration: 400ms;
+  cursor: pointer;
+  list-style: none;
+
+  &:hover {
+    background-color: variables.$container-gray-hover;
+  }
+}
+
 @mixin userTile() {
+  @include tile();
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: variables.$container-gray;
-  list-style: none;
-  text-decoration: none;
   color: black;
   height: 224px;
   width: 100%;
   box-sizing: border-box;
   padding: 30px;
   margin: 15px 0px;
-  transition-duration: 400ms;
-  cursor: pointer;
-
-  &:hover {
-    background-color: variables.$container-gray-hover;
-  }
 }
 
 @mixin tileThumbnail() {

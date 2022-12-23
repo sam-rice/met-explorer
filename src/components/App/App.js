@@ -18,11 +18,15 @@ const App = () => {
         <Route path="/" element={<MainLayout />} > 
           <Route path="/collections" >
             <Route index element={<CollectionsList />} />
-            <Route path=":id" element={<CollectionView />} />
+            <Route path=":collectionID" element={<CollectionView />} />
           </Route>
           <Route path="/search" >
             <Route index element={<SearchForm />} />
             <Route path=":query" element={<SearchResultsView />} />
+          </Route>
+          <Route path="/explore" >
+            {/* index redirect to homepage here */}
+            <Route path=":arworkID" element={<Home />} />
           </Route>
         </Route>
       </Routes>

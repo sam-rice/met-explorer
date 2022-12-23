@@ -1,0 +1,12 @@
+@use "/src/utilities/variables";
+@use "/src/utilities/mixins";
+
+.result-link-wrapper {
+  text-decoration: none;
+}
+
+.result {
+  @include mixins.tile();
+  height: 255px;
+  width: 380px;
+}

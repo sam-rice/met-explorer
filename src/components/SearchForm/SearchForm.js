@@ -11,7 +11,6 @@ function SearchForm() {
   const navigate = useNavigate()
 
   const submitSearch = () => {
-    console.log("working")
     navigate("/search/query", { replace: true })
   }
 

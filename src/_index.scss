@@ -25,6 +25,11 @@ body {
   color: black;
 }
 
+*:focus-visible {
+  outline: 1px solid variables.$gray;
+  outline-offset: 2px;
+}
+
 button {
   transition-duration: 400ms;
 

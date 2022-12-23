@@ -36,9 +36,8 @@
   height: 34px;
   width: 34px;
   border-radius: 50%;
-  background-color: variables.$button-gray;
+  background-color: variables.$button-small-gray;
   border: none;
-  transition-duration: 400ms;
 
   &:after {
     position: absolute; 
@@ -49,7 +48,17 @@
   }
 
   &:hover {
-    cursor: pointer;
-    background-color: variables.$button-gray-hover;
+    background-color: variables.$button-small-gray-hover;
+  }
+}
+
+@mixin themeButton() {
+  background-color: variables.$button-full-gray;
+  border: 1px solid variables.$border-gray;
+  color: white;
+  font-size: 1.1rem;
+
+  &:hover {
+    background-color: variables.$button-full-gray-hover;
   }
 }

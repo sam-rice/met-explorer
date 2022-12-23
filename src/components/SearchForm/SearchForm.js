@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 import "./_SearchForm.scss"
 
@@ -7,34 +8,38 @@ function SearchForm() {
   const [searchType, setSearchType] = useState("select")
   const [department, setDepartment] = useState("(optional)")
 
-  const handleClick = () => console.log("search")
+  const navigate = useNavigate()
+
+  const submitSearch = () => {
+    console.log("working")
+    navigate("/search/query", { replace: true })
+  }
 
   return (
     <section className="search">
       <div className="search__input-container">
-        <label 
+        <label
           className="search__input-container__label"
           htmlFor="search-artwork"
         >search:</label>
-        <input 
-          className="search__input-container__input" 
+        <input
+          className="search__input-container__input"
           id="search-artwork"
           name="search-artwork"
-          value={query} 
+          value={query}
           onChange={e => setQuery(e.target.value)}
           placeholder="search..."
           required={true}
         />
       </div>
       <div className="search__type-container">
-        <label 
-          // className="search__type-container__label"
+        <label
           htmlFor="search-type-select"
         >search by:</label>
-        <select 
-          className="search__type-container__select" 
-          id="search-type-select" 
-          value={searchType} 
+        <select
+          className="search__type-container__select"
+          id="search-type-select"
+          value={searchType}
           onChange={e => setSearchType(e.target.value)}
           required={true}
         >
@@ -44,14 +49,13 @@ function SearchForm() {
         </select>
       </div>
       <div className="search__dept-container">
-        <label 
-          // className="search__dept-container__label"
+        <label
           htmlFor="dept-select"
         >in department:</label>
-        <select 
-          className="search__dept-container__select" 
-          id="dept-select" 
-          value={department} 
+        <select
+          className="search__dept-container__select"
+          id="dept-select"
+          value={department}
           onChange={e => setDepartment(e.target.value)}
         >
           <option>{"(optional)"}</option>
@@ -78,7 +82,7 @@ function SearchForm() {
       </div>
       <button
         className="search__button"
-        onClick={handleClick}
+        onClick={submitSearch}
       >search
       </button>
     </section>

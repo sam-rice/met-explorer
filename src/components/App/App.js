@@ -8,6 +8,7 @@ import Home from "../Home/Home"
 import CollectionsList from "../CollectionsList/CollectionsList"
 import CollectionView from "../CollectionView/CollectionView"
 import SearchForm from "../SearchForm/SearchForm"
+import SearchResultsView from "../SearchResultsView/SearchResultsView"
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           </Route>
           <Route path="/search" >
             <Route index element={<SearchForm />} />
+            <Route path=":query" element={<SearchResultsView />} />
           </Route>
         </Route>
       </Routes>

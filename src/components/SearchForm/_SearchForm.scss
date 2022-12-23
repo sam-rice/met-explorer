@@ -1,4 +1,5 @@
 @use "/src/utilities/variables";
+@use "/src/utilities/mixins";
 
 @mixin formContainer() {
   display: flex;
@@ -10,7 +11,7 @@
 }
 
 @mixin searchSelect() {
-  height: 35px;
+  height: 40px;
   width: 270px;
   margin-left: 15px;
   text-indent: 10px;
@@ -65,7 +66,7 @@
 }
 
 .search__button {
+  @include mixins.themeButton();
   height: 38px;
   width: 87px;
-  font-size: 1.3rem;
 }

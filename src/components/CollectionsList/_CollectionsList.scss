@@ -65,7 +65,7 @@
   &__form {
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: flex-end;
     font-size: 1.4rem;
     margin-bottom: 20px;
 
@@ -73,12 +73,23 @@
       font-size: 1.4rem;
       width: 200px;
       margin: 0px 10px;
+      border: 1px solid variables.$border-gray;
     }
 
     &__button {
+      @include mixins.themeButton();
       height: 38px;
       width: 87px;
-      font-size: 1.3rem;
+    }
+  }
+
+  &__close-button {
+    border: 1px solid variables.$border-gray;
+    height: 26px;
+    width: 60px;
+
+    &:hover {
+      background-color: white;
     }
   }
 }

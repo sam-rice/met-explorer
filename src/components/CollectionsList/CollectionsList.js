@@ -48,6 +48,7 @@ function Collections() {
           </button>
         </div>
         <button 
+          className="modal__close-button"
           onClick={() => handleModal(false)}
         >cancel
         </button>

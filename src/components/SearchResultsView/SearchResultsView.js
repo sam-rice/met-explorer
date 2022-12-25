@@ -22,6 +22,11 @@ function SearchResultsView() {
       </div>
       <ul className="results__list">
         <SearchResultTile />
+        <SearchResultTile />
+        <SearchResultTile />
+        <SearchResultTile />
+        <SearchResultTile />
+        <SearchResultTile />
 
       </ul>
       <div className="results__results-controls">

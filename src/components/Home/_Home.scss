@@ -1,4 +1,5 @@
 @use "/src/utilities/variables";
+@use "/src/utilities/mixins";
 
 $home-x-margin: 70px;
 $home-y-margin: 105px;
@@ -44,14 +45,44 @@ $home-y-margin: 105px;
   }
 }
 
+$flw: url("../../assets/flw-room.png");
+
 .home__featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: gray;
   width: min(60vh, 54vw);
   height: min(43vh, 45vw);
+  background: $flw;
+  background-size: cover;
+  background-position: center;
+
+  &:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), $flw;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 80%;
+    background-color: variables.$button-full-gray;
+    color: white;
+    font-size: 1.3rem;
+  }
+
+  &__button {
+    @include mixins.themeButton();
+    width: 120px;
+  }
 }
 
 .home__bottom {

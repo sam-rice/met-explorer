@@ -11,7 +11,15 @@ function Home() {
         <span className="home__top__right">EXPLORER</span>
       </h1>
       <div className="home__featured">
-        featured
+        <div className="home__featured__title">
+          <h3>The Frank Lloyd Wright Collection</h3>
+        </div>
+        <br />
+        <Link to="/temp">
+          <button 
+            className="home__featured__button"
+          >view</button>
+        </Link>
       </div>
       <nav className="home__bottom">
         <ul>

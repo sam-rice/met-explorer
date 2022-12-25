@@ -9,6 +9,7 @@ import CollectionsList from "../CollectionsList/CollectionsList"
 import CollectionView from "../CollectionView/CollectionView"
 import SearchForm from "../SearchForm/SearchForm"
 import SearchResultsView from "../SearchResultsView/SearchResultsView"
+import ArtworkDetail from "../ArtworkDetail/ArtworkDetail"
 
 const App = () => {
   return (
@@ -26,7 +27,7 @@ const App = () => {
           </Route>
           <Route path="/explore" >
             {/* index redirect to homepage here */}
-            <Route path=":arworkID" element={<Home />} />
+            <Route path=":arworkID" element={<ArtworkDetail />} />
           </Route>
         </Route>
       </Routes>

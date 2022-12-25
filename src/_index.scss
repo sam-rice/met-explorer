@@ -21,6 +21,15 @@ body {
   font-weight: 400;
 }
 
+::-webkit-scrollbar {
+  width: .8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: variables.$container-gray-hover;
+  border-radius: 100vw; 
+}
+
 *:visited {
   color: black;
 }

@@ -1,24 +1,6 @@
 @use "/src/utilities/variables";
 @use "/src/utilities/mixins";
 
-@mixin formContainer() {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 37%;
-  height: 70px;
-  background-color: variables.$select-container-gray;
-}
-
-@mixin searchSelect() {
-  height: 40px;
-  width: 270px;
-  margin-left: 15px;
-  text-indent: 10px;
-  border: 1px solid variables.$border-gray;
-  font-size: 1rem;
-}
-
 .search {
   display: flex;
   flex-direction: column;
@@ -50,18 +32,22 @@
 }
 
 .search__type-container {
-  @include formContainer();
+  @include mixins.formContainer();
+  width: 37%;
 
   &__select {
-    @include searchSelect();
+    @include mixins.searchSelect();
+    width: 270px;
   }
 }
 
 .search__dept-container {
-  @include formContainer();
+  @include mixins.formContainer();
+  width: 37%;
 
     &__select {
-    @include searchSelect();
+    @include mixins.searchSelect();
+    width: 270px;
   }
 }
 

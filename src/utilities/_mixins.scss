@@ -65,3 +65,19 @@
     background-color: variables.$button-full-gray-hover;
   }
 }
+
+@mixin formContainer() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  background-color: variables.$select-container-gray;
+}
+
+@mixin searchSelect() {
+  height: 40px;
+  margin-left: 15px;
+  text-indent: 10px;
+  border: 1px solid variables.$border-gray;
+  font-size: 1rem;
+}

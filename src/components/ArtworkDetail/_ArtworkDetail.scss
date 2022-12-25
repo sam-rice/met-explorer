@@ -1,2 +1,94 @@
-// @use "/src/utilities/variables";
-// @use "/src/utilities/mixins";
+@use "/src/utilities/variables";
+@use "/src/utilities/mixins";
+
+.artwork-view-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding-top: 20px;
+}
+
+.artwork-directory {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.artwork-detail-link {
+  color: black;
+}
+
+.artwork {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+}
+
+.artwork__left {
+  width: 40%;
+
+  &__saved-msg {
+    width: 85%;
+    padding: 7px 7px 7px 10px;
+    background-color: variables.$container-gray;
+    color: variables.$gray;
+    font-style: italic;
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  &__date {
+    color: variables.$gray;
+    margin: 0px;
+  }
+
+  &__artist {
+    color: variables.$gray;
+    margin: 0px;
+
+    &__link {
+      color: black;
+      margin-right: 10px;
+    }
+  }
+  
+  &__article {
+    margin-top: 30px;
+  }
+
+  &__dept {
+    margin: 40px 0px;
+    color: variables.$gray;
+  }
+
+  &__collection {
+    @include mixins.formContainer();
+    width: 100%;
+    background-color: variables.$container-gray;
+
+    &__label {
+      display: none;
+    }
+  
+    &__select {
+      @include mixins.searchSelect();
+      width: 200px;
+      height: 35px;
+      margin-right: 20px;
+    }
+
+    &__button {
+      @include mixins.themeButton();
+      font-size: .9rem;
+      height: 25px;
+      width: 87px;
+    }
+  }
+}
+
+.artwork__right {
+  width: 50%;
+}

@@ -26,7 +26,7 @@ $margins-x: 75px;
   
   .header__title-left {
     @include header-text();
-    color: red;
+    color: #FF0000;
     margin-left: $margins-x;
   }
 

@@ -16,7 +16,7 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<MainLayout />} > 
+        <Route path="/" element={<MainLayout />} >
           <Route path="/collections" >
             <Route index element={<CollectionsList />} />
             <Route path=":collectionID" element={<CollectionView />} />

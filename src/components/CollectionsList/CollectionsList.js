@@ -47,7 +47,7 @@ function Collections() {
           >create
           </button>
         </div>
-        <button 
+        <button
           className="modal__close-button"
           onClick={() => handleModal(false)}
         >cancel

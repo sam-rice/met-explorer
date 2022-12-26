@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 import "./_Home.scss"
+import room from "../../assets/flw-room.png"
 
 function Home() {
   return (

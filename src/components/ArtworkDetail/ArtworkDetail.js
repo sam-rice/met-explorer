@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 
 import "./_ArtworkDetail.scss"
+import chair from "../../assets/flw-chair.png"
+
 
 function ArtworkDetail() {
   const [collection, setCollection] = useState("add to collection")
@@ -52,8 +54,9 @@ function ArtworkDetail() {
               required={true}
             >
               <option>select</option>
-              <option>artwork name</option>
-              <option>artist name</option>
+              <option>My Collection 1</option>
+              <option>My Collection 2</option>
+              <option>My Collection 3</option>
             </select>
             <button
               className="artwork__left__collection__button"
@@ -61,7 +64,26 @@ function ArtworkDetail() {
           </div>
         </div>
         <div className="artwork__right">
-
+          <div className="artwork__right__mat">
+            <img
+              className="artwork__right__mat__img"
+              src={chair}
+            />
+          </div>
+          <div className="artwork__right__img-controls">
+            <button className="artwork__right__img-controls__button">
+              <img className="artwork__right__img-controls__button__img" src={chair}
+              />
+            </button>
+            <button className="artwork__right__img-controls__button">
+              <img className="artwork__right__img-controls__button__img" src={chair}
+              />
+            </button>
+            <button className="artwork__right__img-controls__button">
+              <img className="artwork__right__img-controls__button__img" src={chair}
+              />
+            </button>
+          </div>
         </div>
       </section>
     </div>

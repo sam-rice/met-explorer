@@ -27,7 +27,6 @@ function SearchResultsView() {
         <SearchResultTile />
         <SearchResultTile />
         <SearchResultTile />
-
       </ul>
       <div className="results__results-controls">
         <p className="results__results-controls__details">

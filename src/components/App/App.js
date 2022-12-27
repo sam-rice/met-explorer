@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom"
 import './_App.scss'
 import MainLayout from "../MainLayout/MainLayout"
 import Home from "../Home/Home"
-import CollectionsList from "../CollectionsList/CollectionsList"
+import CollectionsListContainer from "../../containers/CollectionsListContainer"
 import CollectionView from "../CollectionView/CollectionView"
 import SearchForm from "../SearchForm/SearchForm"
 import SearchResultsView from "../SearchResultsView/SearchResultsView"
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/" element={<MainLayout />} >
           <Route path="/collections" >
-            <Route index element={<CollectionsList />} />
+            <Route index element={<CollectionsListContainer />} />
             <Route path=":collectionID" element={<CollectionView />} />
           </Route>
           <Route path="/search" >

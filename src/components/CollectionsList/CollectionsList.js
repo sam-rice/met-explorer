@@ -1,16 +1,30 @@
 import React, { useState } from "react"
+import { useDispatch, useSelector } from "react-redux"
+import { createCollection } from "../../actions"
+
 import ReactModal from "react-modal"
 import Modal from "react-modal"
 
 import "./_CollectionsList.scss"
 import CollectionTile from "../CollectionTile/CollectionTile"
 
-function Collections() {
+function CollectionsList() {
   const [modalOpen, setModalOpen] = useState(false)
+  const [name, setName] = useState("")
+  const collections = useSelector(({collections}) => collections)
 
+  const dispatch = useDispatch()
   ReactModal.setAppElement("#root")
 
   const handleModal = isOpen => setModalOpen(isOpen)
+
+  const handleSubmit = () => {
+    dispatch(createCollection(name, Date.now()))
+  }
+
+  const collectionTiles = collections.map(collection => <CollectionTile name={collection.name} id={collection.id}/>)
+
+  const collectionsList = collectionTiles.length ? collectionTiles : <h3>no collections yet</h3>
 
   return (
     <section className="collections">
@@ -41,9 +55,12 @@ function Collections() {
             className="modal__form__input"
             id="collection-name"
             name="collection name"
+            value={name}
+            onChange={e => setName(e.target.value)}
           />
           <button
             className="modal__form__button"
+            onClick={handleSubmit}
           >create
           </button>
         </div>
@@ -54,14 +71,10 @@ function Collections() {
         </button>
       </Modal>
       <ul className="collections__list">
-        <CollectionTile />
-        <CollectionTile />
-        <CollectionTile />
-        <CollectionTile />
-        <CollectionTile />
+        {collectionsList}
       </ul>
     </section>
   )
 }
 
-export default Collections
+export default CollectionsList

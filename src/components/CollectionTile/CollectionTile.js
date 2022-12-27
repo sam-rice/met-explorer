@@ -5,15 +5,18 @@ import "./_CollectionTile.scss"
 
 import chair from "../../assets/flw-chair.png"
 
-function CollectionTile() {
+function CollectionTile({ name, id }) {
   return (
     <Link className="collection-link-wrapper" to="/collections/collectionID" >
-      <li className="collection">
+      <li 
+        className="collection" 
+        key={id} 
+      >
         <div className="collection__left">
           <div className="collection__left__img-container">
             <img className="collection__left__img-container__img" src={chair} />
           </div>
-          <h4 className="collection__left__title">Early FLW</h4>
+          <h4 className="collection__left__title">{name}</h4>
         </div>
         <div className="collection__details">
           <p className="collection__details__row">23 pieces</p>

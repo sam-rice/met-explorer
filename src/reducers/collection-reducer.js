@@ -3,7 +3,8 @@ const collectionReducer = (state = [], action) => {
     case "ADD_COLLECTION":
       return [...state, { 
         name: action.payload.name,
-        id: action.payload.id
+        id: action.payload.id,
+        pieces: []
       }]
     case "DELETE_COLLECTION":
       const newState = [...state]

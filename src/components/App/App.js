@@ -6,7 +6,7 @@ import './_App.scss'
 import MainLayout from "../MainLayout/MainLayout"
 import Home from "../Home/Home"
 import CollectionsListContainer from "../../containers/CollectionsListContainer"
-import CollectionView from "../CollectionView/CollectionView"
+import CollectionViewContainer from "../../containers/CollectionViewContainer"
 import SearchForm from "../SearchForm/SearchForm"
 import SearchResultsView from "../SearchResultsView/SearchResultsView"
 import ArtworkDetail from "../ArtworkDetail/ArtworkDetail"
@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/" element={<MainLayout />} >
           <Route path="/collections" >
             <Route index element={<CollectionsListContainer />} />
-            <Route path=":collectionID" element={<CollectionView />} />
+            <Route path=":collectionID" element={<CollectionViewContainer />} />
           </Route>
           <Route path="/search" >
             <Route index element={<SearchForm />} />

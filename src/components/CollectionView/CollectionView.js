@@ -1,23 +1,27 @@
 import React from "react"
+import { useParams } from "react-router-dom"
+import { useDispatch, useSelector } from "react-redux"
 
 import "./_CollectionView.scss"
 import SavedPieceTile from "../SavedPieceTile/SavedPieceTile"
 
 function CollectionView() {
+  const { collectionID } = useParams()
+  const { name, pieces, id } = useSelector(({ collections }) => collections.find(collection => collection.id == collectionID))
+
+  const listContent = pieces.length ? <p>pieces will go here</p> : <p>no pieces in this collection yet</p>
+
   return (
     <section className="pieces">
       <div className="pieces__header">
         <div className="pieces__header__left">
-          <h3 className="pieces__header__left__collection-name">Early FLW</h3>
+          <h3 className="pieces__header__left__collection-name">{name}</h3>
           <p>My Collections</p>
         </div>
-        <p className="gray--text">12 pieces</p>
+        <p className="gray--text">{pieces.length} pieces</p>
       </div>
       <ul className="pieces__list">
-        <SavedPieceTile />
-        <SavedPieceTile />
-        <SavedPieceTile />
-        <SavedPieceTile />
+        {listContent}
       </ul>
     </section>
   )

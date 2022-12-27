@@ -15,7 +15,7 @@ function CollectionTile({ name, id }) {
     if (e.target.type === "submit") {
       removeCollection()
     } else {
-      navigate("/collections/collectionID")
+      navigate(`/collections/${id}`)
     }
   }
 
@@ -27,7 +27,6 @@ function CollectionTile({ name, id }) {
       <li 
         className="collection"
         onClick={e => goToCollection(e)}
-        key={id} 
       >
         <div className="collection__left">
           <div className="collection__left__img-container">

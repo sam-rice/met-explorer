@@ -23,7 +23,7 @@ function CollectionsList() {
     setModalOpen(false)
   }
 
-  const collectionTiles = collections.map(collection => <CollectionTile name={collection.name} id={collection.id}/>)
+  const collectionTiles = collections.map(collection => <CollectionTile name={collection.name} id={collection.id} key={collection.id} />)
 
   const collectionsList = collectionTiles.length ? collectionTiles : <h3>no collections yet</h3>
 

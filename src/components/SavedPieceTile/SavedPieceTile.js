@@ -11,6 +11,7 @@ function SavedPieceTile() {
   const goToArtwork = useCallback(e => {
     if (e.target.type !== "textarea" && e.target.type !== "submit") {
       navigate("/explore/artworkID", { replace: true })
+      //remove replace: true ??????????
     }
   }, [navigate])
 

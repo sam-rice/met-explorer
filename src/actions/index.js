@@ -23,3 +23,8 @@ export const createCollection = (name, id) => ({
     id
   }
 })
+
+export const deleteCollection = (id) => ({
+  type: "DELETE_COLLECTION",
+  payload: { id }
+})

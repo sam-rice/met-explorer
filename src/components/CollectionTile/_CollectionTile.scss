@@ -1,11 +1,6 @@
 @use "/src/utilities/variables";
 @use "/src/utilities/mixins";
 
-.collection-link-wrapper {
-  width: 100%;
-  text-decoration: none;
-}
-
 .collection {
   @include mixins.userTile();
 
@@ -26,8 +21,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: right;
+    align-items: flex-end;
     height: 100%;
+
+    &__remove-button {
+      @include mixins.addSubtractButton();
+  
+      &:after {
+        content: "\2212";
+        left: 5px;
+      }
+    }
 
     &__row {
       color: variables.$gray;

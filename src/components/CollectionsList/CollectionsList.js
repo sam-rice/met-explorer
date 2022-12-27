@@ -20,6 +20,7 @@ function CollectionsList() {
 
   const handleSubmit = () => {
     dispatch(createCollection(name, Date.now()))
+    setModalOpen(false)
   }
 
   const collectionTiles = collections.map(collection => <CollectionTile name={collection.name} id={collection.id}/>)

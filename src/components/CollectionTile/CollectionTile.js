@@ -1,15 +1,32 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
+import { useDispatch } from "react-redux"
+import { deleteCollection } from "../../actions"
 
 import "./_CollectionTile.scss"
 
 import chair from "../../assets/flw-chair.png"
 
 function CollectionTile({ name, id }) {
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+
+  const goToCollection = e => {
+    if (e.target.type === "submit") {
+      removeCollection()
+    } else {
+      navigate("/collections/collectionID")
+    }
+  }
+
+  const removeCollection = () => {
+    dispatch(deleteCollection(id))
+  }
+
   return (
-    <Link className="collection-link-wrapper" to="/collections/collectionID" >
       <li 
-        className="collection" 
+        className="collection"
+        onClick={e => goToCollection(e)}
         key={id} 
       >
         <div className="collection__left">
@@ -20,10 +37,12 @@ function CollectionTile({ name, id }) {
         </div>
         <div className="collection__details">
           <p className="collection__details__row">23 pieces</p>
+          <button
+            className="collection__details__remove-button"
+          />
           <p className="collection__details__row">departments: American Decorative Arts, Asian Art, Islamic Art</p>
         </div>
       </li>
-    </Link>
   )
 }
 

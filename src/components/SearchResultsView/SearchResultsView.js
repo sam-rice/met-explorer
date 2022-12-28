@@ -15,9 +15,10 @@ function SearchResultsView() {
   const pageNum = Number(searchParams.get("page"))
 
   useEffect(() => {
-    //next, format fetch URL and make action/reducer dynamic
-    console.log("INITIAL", query, type, dept, pageNum)
-    dispatch(fetchResults())
+    const departmentParam = dept !== "all" ? `departmentId=${dept}&` : ""
+    const typeParam = type === "artist" ? "artistOrCulture=true&" : ""
+    const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?${departmentParam}${typeParam}q=${query.replace(/ /g, "+")}`
+    dispatch(fetchResults(url))
   }, [])
 
   useEffect(() => {

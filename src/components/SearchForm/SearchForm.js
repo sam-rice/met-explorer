@@ -36,7 +36,7 @@ function SearchForm() {
       "Photographs": 19,
       "Modern Art": 21
     }
-    const submittedType = searchType === "artist name" ? "artist" : "artwork"
+    const submittedType = searchType === "artist name" ? "artist" : "keyword"
     const submittedQuery = query.replace(/ /g, "+")
     const submittedDept = selectedDepartment !== "(optional)" ? deptKey[selectedDepartment] : "all"
     navigate(`/search?query=${submittedQuery}&type=${submittedType}&dept=${submittedDept}&page=1`)
@@ -76,7 +76,7 @@ function SearchForm() {
           required={true}
         >
           <option>{`(required)`}</option>
-          <option>artwork name</option>
+          <option>keyword</option>
           <option>artist name</option>
         </select>
       </div>

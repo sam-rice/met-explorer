@@ -1,7 +1,7 @@
-export const fetchResults = () => {
+export const fetchResults = url => {
   return (dispatch) => {
     dispatch(fetchResultsRequest)
-    fetch("https://collectionapi.metmuseum.org/public/collection/v1/search?artistOrCulture=true&q=lautrec")
+    fetch(url)
       .then(response => {
         if (!response.ok) {
           throw Error(response.message)

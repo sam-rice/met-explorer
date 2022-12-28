@@ -2,18 +2,17 @@ import React from "react"
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom"
 import { Provider } from "react-redux"
-import { createStore } from "redux"
+import { createStore, applyMiddleware } from "redux"
+import { composeWithDevTools } from "redux-devtools-extension";
+import thunk from "redux-thunk"
 
 import App from './components/App/App'
 import './_index.scss'
 import rootReducer from "./reducers"
 
-
-const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__()
-
 const store = createStore(
   rootReducer,
-  devTools
+  composeWithDevTools(applyMiddleware(thunk))
 )
 
 const root = createRoot(document.getElementById('root'))

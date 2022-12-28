@@ -9,10 +9,27 @@ export const fetchResults = url => {
           return response.json()
         }
       })
-      .then(response => dispatch(fetchResultsSuccess(response)))
+      .then(response => {
+        dispatch(fetchResultsSuccess(response))
+        if (response.total) {
+          const firstPageObjects = response.objectIDs.slice(0, 25)
+          dispatch(fetchPage(firstPageObjects))
+        }
+      })
       .catch(error => {
         dispatch(fetchResultsFailure(error.message))
       })
+  }
+}
+
+export const fetchPage = objectIDs => {
+  return (dispatch) => {
+    dispatch(fetchResultsRequest)
+    objectIDs.forEach(object => {
+      
+    })
+    //forEach objectID in array, make fetch request
+    //Promise.all needed
   }
 }
 

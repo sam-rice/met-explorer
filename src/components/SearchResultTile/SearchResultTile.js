@@ -21,11 +21,7 @@ function SearchResultTile() {
         <div className="result__right">
           <h4>The Englishman (William Tom Warrener, 1861–1934) at the Moulin Rouge</h4>
           <p className="result__right__details">1892</p>
-          <Link
-            className="result__right__artist"
-            to="/search/artistSearch"
-          >Henri de Tolouse-Latrec
-          </Link>
+          <p className="result__right__artist">Henri de Tolouse-Latrec</p>
           <p className="result__right__details">French</p>
           <p className="result__right__dept">department: European Paintings</p>
         </div>

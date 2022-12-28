@@ -1,9 +1,16 @@
-import React from "react"
+import React, { useEffect } from "react"
+import { useDispatch } from "react-redux"
+import { fetchResults } from "../../actions"
 
 import "./_SearchResultsView.scss"
 import SearchResultTile from "../SearchResultTile/SearchResultTile"
 
 function SearchResultsView() {
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(fetchResults())
+  }, [])
 
   return (
     <section className="results">

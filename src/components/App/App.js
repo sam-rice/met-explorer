@@ -8,7 +8,7 @@ import Home from "../Home/Home"
 import CollectionsListContainer from "../../containers/CollectionsListContainer"
 import CollectionViewContainer from "../../containers/CollectionViewContainer"
 import SearchForm from "../SearchForm/SearchForm"
-import SearchResultsView from "../SearchResultsView/SearchResultsView"
+import SearchResultsViewContainer from "../../containers/SearchResultsViewContainer"
 import ArtworkDetail from "../ArtworkDetail/ArtworkDetail"
 
 const App = () => {
@@ -23,7 +23,7 @@ const App = () => {
           </Route>
           <Route path="/search" >
             <Route index element={<SearchForm />} />
-            <Route path=":query" element={<SearchResultsView />} />
+            <Route path=":query" element={<SearchResultsViewContainer />} />
           </Route>
           <Route path="/explore" >
             {/* index redirect to homepage here */}

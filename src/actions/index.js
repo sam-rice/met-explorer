@@ -2,14 +2,16 @@ export const fetchResults = () => {
   return (dispatch) => {
     dispatch(fetchResultsRequest)
     fetch("https://collectionapi.metmuseum.org/public/collection/v1/search?artistOrCulture=true&q=lautrec")
-      .then(response => response.json())
       .then(response => {
-        const results = response.data
-        dispatch(fetchResultsSuccess(results))
+        if (!response.ok) {
+          throw Error(response.message)
+        } else {
+          return response.json()
+        }
       })
+      .then(response => dispatch(fetchResultsSuccess(response)))
       .catch(error => {
-        const errorMsg = error.message
-        dispatch(fetchResultsFailure(errorMsg))
+        dispatch(fetchResultsFailure(error.message))
       })
   }
 }
@@ -20,12 +22,12 @@ const fetchResultsRequest = () => ({
 
 const fetchResultsSuccess = results => ({
   type: "FETCH_RESULTS_SUCCESS",
-  payload: results
+  payload: { results }
 })
 
 const fetchResultsFailure = errorMsg => ({
   type: "FETCH_RESULTS_FAILURE",
-  payload: errorMsg
+  payload: { errorMsg }
 })
 
 export const createCollection = name => ({

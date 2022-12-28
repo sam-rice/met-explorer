@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import { useParams } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { fetchResults } from "../../actions"
 
@@ -7,9 +8,14 @@ import SearchResultTile from "../SearchResultTile/SearchResultTile"
 
 function SearchResultsView() {
   const dispatch = useDispatch()
+  const { type, query, dept } = useParams()
 
   useEffect(() => {
+
+    //next, format fetch URL and make action/reducer dynamic
+
     dispatch(fetchResults())
+    console.log("type", type, "query", query, "dept", dept)
   }, [])
 
   return (

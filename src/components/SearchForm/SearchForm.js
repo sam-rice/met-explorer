@@ -6,12 +6,45 @@ import "./_SearchForm.scss"
 function SearchForm() {
   const [query, setQuery] = useState("")
   const [searchType, setSearchType] = useState("select")
-  const [department, setDepartment] = useState("(optional)")
+  const [selectedDepartment, setselectedDepartment] = useState("(optional)")
 
   const navigate = useNavigate()
 
   const submitSearch = () => {
-    navigate("/search/query", { replace: true })
+    if (query === "" || searchType === "(required)") {
+      displayError()
+      return
+    }
+    const deptKey = {
+      "American Decorative Arts": 1,
+      "Ancient Near Eastern Art": 3,
+      "Arms and Armor": 4,
+      "Arts of Africa, Oceania, and the Americas": 5,
+      "Asian Art": 6,
+      "The Cloisters": 7,
+      "The Costume Institute": 8,
+      "Drawings and Prints": 9,
+      "Egyptian Art": 10,
+      "European Paintings": 11,
+      "European Sculpture and Decorative Arts": 12,
+      "Greek and Roman Art": 13,
+      "Islamic Art": 14,
+      "The Robert Lehman Collection": 15,
+      "The Libraries": 16,
+      "Medieval Art": 17,
+      "Musical Instruments": 18,
+      "Photographs": 19,
+      "Modern Art": 21
+    }
+    const submittedType = searchType === "artist name" ? "artist" : "artwork"
+    const submittedQuery = query.replace(/ /g, "+")
+    const submittedDept = selectedDepartment !== "(optional)" ? deptKey[selectedDepartment] : "all"
+    navigate(`${submittedType}/${submittedQuery}/${submittedDept}`)
+  }
+
+  const displayError = () => {
+    console.log("form error")
+    //replace replace replace replace
   }
 
   return (
@@ -42,7 +75,7 @@ function SearchForm() {
           onChange={e => setSearchType(e.target.value)}
           required={true}
         >
-          <option>select</option>
+          <option>{`(required)`}</option>
           <option>artwork name</option>
           <option>artist name</option>
         </select>
@@ -54,8 +87,8 @@ function SearchForm() {
         <select
           className="search__dept-container__select"
           id="dept-select"
-          value={department}
-          onChange={e => setDepartment(e.target.value)}
+          value={selectedDepartment}
+          onChange={e => setselectedDepartment(e.target.value)}
         >
           <option>{"(optional)"}</option>
           <option>American Decorative Arts</option>

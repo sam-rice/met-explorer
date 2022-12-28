@@ -23,7 +23,7 @@ const App = () => {
           </Route>
           <Route path="/search" >
             <Route index element={<SearchForm />} />
-            <Route path=":query" element={<SearchResultsViewContainer />} />
+            <Route path=":type/:query/:dept" element={<SearchResultsViewContainer />} />
           </Route>
           <Route path="/explore" >
             {/* index redirect to homepage here */}

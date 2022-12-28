@@ -88,3 +88,11 @@
     }
   }
 }
+
+.back--disabled {
+  pointer-events: none;
+
+  &:before {
+    color: rgb(179, 179, 179);
+  }
+}

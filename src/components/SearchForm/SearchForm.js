@@ -39,7 +39,7 @@ function SearchForm() {
     const submittedType = searchType === "artist name" ? "artist" : "artwork"
     const submittedQuery = query.replace(/ /g, "+")
     const submittedDept = selectedDepartment !== "(optional)" ? deptKey[selectedDepartment] : "all"
-    navigate(`${submittedType}/${submittedQuery}/${submittedDept}`)
+    navigate(`/search?query=${submittedQuery}&type=${submittedType}&dept=${submittedDept}&page=1`)
   }
 
   const displayError = () => {

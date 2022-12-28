@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { useParams } from "react-router-dom"
+import { useSearchParams } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { fetchResults } from "../../actions"
 
@@ -8,15 +8,33 @@ import SearchResultTile from "../SearchResultTile/SearchResultTile"
 
 function SearchResultsView() {
   const dispatch = useDispatch()
-  const { type, query, dept } = useParams()
+  const [searchParams, setSearchParams] = useSearchParams()
+  const query = searchParams.get("query")
+  const type = searchParams.get("type")
+  const dept = searchParams.get("dept")
+  const pageNum = Number(searchParams.get("page"))
 
   useEffect(() => {
-
     //next, format fetch URL and make action/reducer dynamic
-
+    console.log("INITIAL", query, type, dept, pageNum)
     dispatch(fetchResults())
-    console.log("type", type, "query", query, "dept", dept)
   }, [])
+
+  useEffect(() => {
+    //increment/decrement search result page num
+    console.log("ON PAGE CHANGE", query, type, dept, pageNum)
+  }, [pageNum])
+
+  const handlePageNav = (bool) => {
+    setSearchParams({ 
+      query: query, 
+      type: type, 
+      dept: dept, 
+      page: bool ? pageNum + 1 : pageNum - 1
+    })
+  }
+
+  const backButtonClassList = pageNum !== 1 ? "results__results-controls__nav__back" : "results__results-controls__nav__back back--disabled"
 
   return (
     <section className="results">
@@ -46,9 +64,16 @@ function SearchResultsView() {
           {"page 1 (1-25 of 336 results)"}
         </p>
         <nav className="results__results-controls__nav">
-          <button className="results__results-controls__nav__back">back</button>
+          <button 
+            className={backButtonClassList}
+            onClick={() => handlePageNav(false)}
+            disabled={pageNum === 1}
+          >back</button>
           <p className="results__results-controls__nav__page-num">1</p>
-          <button className="results__results-controls__nav__next">next</button>
+          <button 
+            className="results__results-controls__nav__next"
+            onClick={() => handlePageNav(true)}
+          >next</button>
         </nav>
       </div>
     </section>

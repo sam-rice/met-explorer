@@ -22,7 +22,7 @@ function Header() {
             <li>
               <Link
                 className="nav__link"
-                to="/search"
+                to="/search-form"
               >SEARCH
               </Link>
             </li>

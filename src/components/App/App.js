@@ -21,10 +21,8 @@ const App = () => {
             <Route index element={<CollectionsListContainer />} />
             <Route path=":collectionID" element={<CollectionViewContainer />} />
           </Route>
-          <Route path="/search" >
-            <Route index element={<SearchForm />} />
-            <Route path=":type/:query/:dept" element={<SearchResultsViewContainer />} />
-          </Route>
+          <Route path="/search-form" element={<SearchForm />} />
+          <Route path="/search" element={<SearchResultsViewContainer />} />
           <Route path="/explore" >
             {/* index redirect to homepage here */}
             <Route path=":arworkID" element={<ArtworkDetail />} />

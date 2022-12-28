@@ -22,7 +22,7 @@ const collectionReducer = (state = [], action) => {
 
     case "DELETE_COLLECTION":
       return state.filter(collection => collection.id !== action.payload.id)
-      
+
     case "UPDATE_NOTE":
       return state.map(collection => {
         if (collection.id == action.payload.collectionID) {
@@ -38,6 +38,18 @@ const collectionReducer = (state = [], action) => {
                 return piece
               }
             })
+          }
+        } else {
+          return collection
+        }
+      })
+
+    case "DELETE_PIECE":
+      return state.map(collection => {
+        if (collection.id == action.payload.collectionID) {
+          return {
+            ...collection,
+            pieces: collection.pieces.filter(piece => piece.objectID != action.payload.objectID)
           }
         } else {
           return collection

@@ -37,3 +37,11 @@ export const updateNote = (text, collectionID, objectID) => ({
     objectID
   }
 })
+
+export const deletePiece = (collectionID, objectID) => ({
+  type: "DELETE_PIECE",
+  payload: {
+    collectionID,
+    objectID
+  }
+})

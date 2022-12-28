@@ -1,7 +1,7 @@
 import React, { useCallback } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
-import { updateNote } from "../../actions"
+import { updateNote, deletePiece } from "../../actions"
 
 import "./_SavedPieceTile.scss"
 import fallbackImg from "../../assets/fallback.png"
@@ -23,12 +23,9 @@ function SavedPieceTile({ collectionID, objectID }) {
     }
   }, [navigate])
 
-  const handleTextInput = (text) => {
-    console.log("here")
-    dispatch(updateNote(text, collectionID, objectID))
-  }
+  const handleTextInput = text => dispatch(updateNote(text, collectionID, objectID))
 
-  const removeFromCollection = () => console.log("yeah yeah")
+  const removeFromCollection = () => dispatch(deletePiece(collectionID, objectID))
 
   const artistSearchPath = `/search/${artistName.replace(/ /g, "+")}`
   // make link search for artist name or take to artist page via artistID variable?

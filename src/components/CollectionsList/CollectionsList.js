@@ -13,7 +13,7 @@ function CollectionsList() {
   const [name, setName] = useState("")
   const dispatch = useDispatch()
 
-  const collections = useSelector(({collections}) => collections)
+  const collections = useSelector(({ collections }) => collections)
 
   ReactModal.setAppElement("#root")
 
@@ -25,14 +25,19 @@ function CollectionsList() {
     setName("")
   }
 
-  const collectionTiles = collections.map(collection => <CollectionTile name={collection.name} id={collection.id} key={collection.id} />)
-
+  const collectionTiles = collections.map(collection => <CollectionTile
+    name={collection.name}
+    id={collection.id}
+    key={collection.id}
+    count={collection.pieces.length}
+  />)
   const collectionsList = collectionTiles.length ? collectionTiles : <h3>no collections yet</h3>
+  const collectionsCount = `${collections.length} collection${collections.length === 1 ? "" : "s"}`
 
   return (
     <section className="collections">
       <div className="collections__header">
-        <h3 className="collections__header__count">5 collections</h3>
+        <h3 className="collections__header__count">{collectionsCount}</h3>
         <div className="collections__header__add">
           <p className="add-button-label">new collection</p>
           <button

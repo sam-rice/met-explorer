@@ -7,7 +7,7 @@ import "./_CollectionTile.scss"
 
 import chair from "../../assets/flw-chair.png"
 
-function CollectionTile({ name, id }) {
+function CollectionTile({ name, id, count }) {
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
@@ -23,6 +23,8 @@ function CollectionTile({ name, id }) {
     dispatch(deleteCollection(id))
   }
 
+  const pieceCount = `${count} piece${count === 1 ? "" : "s"}`
+
   return (
       <li 
         className="collection"
@@ -35,7 +37,7 @@ function CollectionTile({ name, id }) {
           <h4 className="collection__left__title">{name}</h4>
         </div>
         <div className="collection__details">
-          <p className="collection__details__row">23 pieces</p>
+          <p className="collection__details__row">{pieceCount}</p>
           <button
             className="collection__details__remove-button"
           />

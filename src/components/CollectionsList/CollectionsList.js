@@ -11,9 +11,10 @@ import CollectionTile from "../CollectionTile/CollectionTile"
 function CollectionsList() {
   const [modalOpen, setModalOpen] = useState(false)
   const [name, setName] = useState("")
+  const dispatch = useDispatch()
+
   const collections = useSelector(({collections}) => collections)
 
-  const dispatch = useDispatch()
   ReactModal.setAppElement("#root")
 
   const handleModal = isOpen => setModalOpen(isOpen)
@@ -21,6 +22,7 @@ function CollectionsList() {
   const handleSubmit = () => {
     dispatch(createCollection(name))
     setModalOpen(false)
+    setName("")
   }
 
   const collectionTiles = collections.map(collection => <CollectionTile name={collection.name} id={collection.id} key={collection.id} />)

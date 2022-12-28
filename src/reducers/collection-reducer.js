@@ -1,5 +1,6 @@
 const collectionReducer = (state = [], action) => {
   switch (action.type) {
+
     case "ADD_COLLECTION":
       return [...state, {
         name: action.payload.name,
@@ -18,9 +19,31 @@ const collectionReducer = (state = [], action) => {
           }
         ]
       }]
+
     case "DELETE_COLLECTION":
       return state.filter(collection => collection.id !== action.payload.id)
-    // case "UPDATE_NOTE":
+      
+    case "UPDATE_NOTE":
+      return state.map(collection => {
+        if (collection.id == action.payload.collectionID) {
+          return {
+            ...collection,
+            pieces: collection.pieces.map(piece => {
+              if (piece.objectID == action.payload.objectID) {
+                return {
+                  ...piece,
+                  userNotes: action.payload.text
+                }
+              } else {
+                return piece
+              }
+            })
+          }
+        } else {
+          return collection
+        }
+      })
+
     default:
       return state
   }

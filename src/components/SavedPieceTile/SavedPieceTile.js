@@ -1,12 +1,14 @@
 import React, { useCallback } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
+import { updateNote } from "../../actions"
 
 import "./_SavedPieceTile.scss"
 import fallbackImg from "../../assets/fallback.png"
 
 function SavedPieceTile({ collectionID, objectID }) {
   const navigate = useNavigate()
+  const dispatch = useDispatch()
 
   const { artistName, artistID, department, title, culture, objectEndDate, imageSmall, userNotes } = useSelector(({ collections }) => {
     const targetCollection = collections.find(collection => collection.id == collectionID)
@@ -21,13 +23,15 @@ function SavedPieceTile({ collectionID, objectID }) {
     }
   }, [navigate])
 
-  const updateNote = (text) => {
-    
+  const handleTextInput = (text) => {
+    console.log("here")
+    dispatch(updateNote(text, collectionID, objectID))
   }
 
   const removeFromCollection = () => console.log("yeah yeah")
 
   const artistSearchPath = `/search/${artistName.replace(/ /g, "+")}`
+  // make link search for artist name or take to artist page via artistID variable?
 
   return (
     <li className="piece" onClick={e => goToArtwork(e)}>
@@ -54,7 +58,7 @@ function SavedPieceTile({ collectionID, objectID }) {
             id="notes" 
             name="notes"
             value={userNotes}
-            onChange={e => updateNote(e.target.value)}
+            onChange={e => handleTextInput(e.target.value)}
             maxLength={400}
             rows="6" 
             cols="40" 

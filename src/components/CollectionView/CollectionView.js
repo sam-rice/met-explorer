@@ -9,7 +9,13 @@ function CollectionView() {
   const { collectionID } = useParams()
   const { name, pieces, id } = useSelector(({ collections }) => collections.find(collection => collection.id == collectionID))
 
-  const listContent = pieces.length ? <p>pieces will go here</p> : <p>no pieces in this collection yet</p>
+  const savedPieceTiles = pieces.map(piece => <SavedPieceTile
+    collectionID={collectionID}
+    objectID={piece.objectID}
+    key={piece.objectID}
+  />)
+
+  const listContent = pieces.length ? savedPieceTiles : <p>no pieces in this collection yet</p>
 
   return (
     <section className="pieces">

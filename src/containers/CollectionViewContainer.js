@@ -1,15 +1,15 @@
 import { connect } from "react-redux"
-// import { createCollection } from "../actions"
+import { updateNote } from "../actions"
 import CollectionView from "../components/CollectionView/CollectionView"
 
 const mapStateToProps = state => ({
   collections: state.collections
 })
 
-// const mapDispatchToProps = dispatch => ({
-//   createCollection: (name, id) => {
-//     dispatch(createCollection(name, id))
-//   }
-// })
+const mapDispatchToProps = dispatch => ({
+  updateNote: (text, collectionID, objectID) => {
+    dispatch(updateNote(text, collectionID, objectID))
+  }
+})
 
-export default connect(mapStateToProps)(CollectionView)
+export default connect(mapStateToProps, mapDispatchToProps)(CollectionView)

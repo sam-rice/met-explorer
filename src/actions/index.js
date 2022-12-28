@@ -16,15 +16,24 @@
 //   filter
 // })
 
-export const createCollection = (name, id) => ({
+export const createCollection = name => ({
   type: "ADD_COLLECTION",
   payload: { 
     name,
-    id
+    id: Date.now()
   }
 })
 
-export const deleteCollection = (id) => ({
+export const deleteCollection = id => ({
   type: "DELETE_COLLECTION",
   payload: { id }
+})
+
+export const updateNote = (text, collectionID, objectID) => ({
+  type: "UPDATE_NOTE",
+  payload: {
+    text,
+    collectionID,
+    objectID
+  }
 })

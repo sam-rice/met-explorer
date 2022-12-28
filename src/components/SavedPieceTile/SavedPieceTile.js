@@ -1,38 +1,50 @@
-import React, { useState, useCallback } from "react"
+import React, { useCallback } from "react"
 import { Link, useNavigate } from "react-router-dom"
+import { useDispatch, useSelector } from "react-redux"
 
 import "./_SavedPieceTile.scss"
-import chair from "../../assets/flw-chair.png"
+import fallbackImg from "../../assets/fallback.png"
 
-function SavedPieceTile() {
-  const [notes, setNotes] = useState("")
+function SavedPieceTile({ collectionID, objectID }) {
   const navigate = useNavigate()
 
+  const { artistName, artistID, department, title, culture, objectEndDate, imageSmall, userNotes } = useSelector(({ collections }) => {
+    const targetCollection = collections.find(collection => collection.id == collectionID)
+    return targetCollection.pieces.find(piece => piece.objectID == objectID)
+  })
+
   const goToArtwork = useCallback(e => {
-    if (e.target.type !== "textarea" && e.target.type !== "submit") {
-      navigate("/explore/artworkID", { replace: true })
+    const targetIsTile = !["TEXTAREA", "BUTTON", "A"].includes(e.target.nodeName)
+    if (targetIsTile) {
+      navigate(`/explore/${objectID}`, { replace: true })
       //remove replace: true ??????????
     }
   }, [navigate])
 
-  const removeCollection = () => console.log("yeah yeah")
+  const updateNote = (text) => {
+    
+  }
+
+  const removeFromCollection = () => console.log("yeah yeah")
+
+  const artistSearchPath = `/search/${artistName.replace(/ /g, "+")}`
 
   return (
     <li className="piece" onClick={e => goToArtwork(e)}>
       <div className="piece__left">
         <div className="img-container">
-          <img className="img-container__img" src={chair} />
+          <img className="img-container__img" src={imageSmall ? imageSmall : fallbackImg} />
         </div>
         <div className="piece__left__details">
           <div className="details-top">
-            <h4 className="details-top__title">Armchair</h4>
-            <p className="detail-rows">ca. 1902-3</p>
+            <h4 className="details-top__title">{title}</h4>
+            <p className="detail-rows">ca. {objectEndDate}</p>
             <p className="detail-rows">
-              <Link className="details-top__artist-link" to="/search/franklloydwright">Frank Lloyd Wright</Link>
-              American
+              <Link className="details-top__artist-link" to={artistSearchPath}>{artistName}</Link>
+              {culture}
             </p>
           </div>
-          <p className="detail-rows">department: American Decorative Arts</p>
+          <p className="detail-rows">department: {department}</p>
         </div>
       </div>
       <div className="piece__right">
@@ -41,8 +53,8 @@ function SavedPieceTile() {
           <textarea
             id="notes" 
             name="notes"
-            value={notes}
-            onChange={e => setNotes(e.target.value)}
+            value={userNotes}
+            onChange={e => updateNote(e.target.value)}
             maxLength={400}
             rows="6" 
             cols="40" 
@@ -51,7 +63,7 @@ function SavedPieceTile() {
         </div>
         <button 
           className="piece__right__button"
-          onClick={removeCollection}
+          onClick={removeFromCollection}
         />
       </div>
     </li>

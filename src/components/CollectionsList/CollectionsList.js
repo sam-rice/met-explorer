@@ -19,7 +19,7 @@ function CollectionsList() {
   const handleModal = isOpen => setModalOpen(isOpen)
 
   const handleSubmit = () => {
-    dispatch(createCollection(name, Date.now()))
+    dispatch(createCollection(name))
     setModalOpen(false)
   }
 

@@ -7,8 +7,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  createCollection: (name, id) => {
-    dispatch(createCollection(name, id))
+  createCollection: (name) => {
+    dispatch(createCollection(name))
   }
 })
 

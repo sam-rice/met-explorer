@@ -1,5 +1,5 @@
 import { connect } from "react-redux"
-import { fetchResults, fetchPage } from "../actions"
+import { fetchPage, initSearch } from "../actions"
 import SearchResultsView from "../components/SearchResultsView/SearchResultsView"
 
 const mapStateToProps = state => ({
@@ -7,11 +7,11 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  fetchResults: () => {
-    dispatch(fetchResults())
-  },
   fetchPage: () => {
     dispatch(fetchPage())
+  },
+  initSearch: () => {
+    dispatch(initSearch())
   }
 })
 

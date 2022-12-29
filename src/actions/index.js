@@ -1,10 +1,19 @@
-export const fetchResults = url => {
-  return (dispatch) => {
+// import axios from "axios"
+
+export const initSearch = url => {
+  return async dispatch => {
+    const firstPageObjects = await dispatch(fetchResults(url))
+    dispatch(fetchPage(firstPageObjects))
+  }
+}
+
+const fetchResults = url => {
+  return dispatch => {
     dispatch(fetchResultsRequest)
-    fetch(url)
+    return fetch(url)
       .then(response => {
         if (!response.ok) {
-          throw Error(response.message)
+          throw Error(response.statusText)
         } else {
           return response.json()
         }
@@ -13,23 +22,32 @@ export const fetchResults = url => {
         dispatch(fetchResultsSuccess(response))
         if (response.total) {
           const firstPageObjects = response.objectIDs.slice(0, 25)
-          dispatch(fetchPage(firstPageObjects))
+          return firstPageObjects
         }
       })
       .catch(error => {
-        dispatch(fetchResultsFailure(error.message))
+        dispatch(fetchResultsFailure(error))
       })
   }
 }
 
 export const fetchPage = objectIDs => {
-  return (dispatch) => {
-    dispatch(fetchResultsRequest)
-    objectIDs.forEach(object => {
-      
+  return async dispatch => {
+    dispatch(fetchPageRequest)
+    const promises = objectIDs.map(async objectID => {
+      try {
+        const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`)
+        if (!response.ok) {
+          throw Error(response.statusText)
+        }
+        const data = await response.json()
+        return data
+      } catch (error) {
+        dispatch(fetchPageFailure(error))
+      }
     })
-    //forEach objectID in array, make fetch request
-    //Promise.all needed
+    const resolvedPromises = await Promise.all(promises)
+    dispatch(fetchPageSuccess(resolvedPromises))
   }
 }
 
@@ -46,6 +64,25 @@ const fetchResultsFailure = errorMsg => ({
   type: "FETCH_RESULTS_FAILURE",
   payload: { errorMsg }
 })
+
+const fetchPageRequest = () => ({
+  type: "FETCH_PAGE_REQUEST"
+})
+
+const fetchPageSuccess = objectsData => ({
+  type: "FETCH_PAGE_SUCCESS",
+  payload: { objectsData }
+})
+
+const fetchPageFailure = errorMsg => ({
+  type: "FETCH_PAGE_FAILURE",
+  payload: { errorMsg }
+})
+
+
+
+
+
 
 export const createCollection = name => ({
   type: "ADD_COLLECTION",

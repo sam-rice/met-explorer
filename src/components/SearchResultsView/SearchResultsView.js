@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { useSearchParams } from "react-router-dom"
 import { useDispatch } from "react-redux"
-import { fetchResults } from "../../actions"
+import { initSearch } from "../../actions"
 
 import "./_SearchResultsView.scss"
 import SearchResultTile from "../SearchResultTile/SearchResultTile"
@@ -18,7 +18,7 @@ function SearchResultsView() {
     const departmentParam = dept !== "all" ? `departmentId=${dept}&` : ""
     const typeParam = type === "artist" ? "artistOrCulture=true&" : ""
     const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?${departmentParam}${typeParam}q=${query.replace(/ /g, "+")}`
-    dispatch(fetchResults(url))
+    dispatch(initSearch(url))
   }, [])
 
   useEffect(() => {

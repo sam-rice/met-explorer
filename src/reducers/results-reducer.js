@@ -2,45 +2,45 @@ const resultsReducer = (state = {}, action) => {
   switch (action.type) {
     case "FETCH_RESULTS_REQUEST":
       return { ...state,
-        isLoading: true 
+        isLoadingResults: true 
       }
 
     case "FETCH_RESULTS_FAILURE":
       return {
         ...state,
-        isLoading: false,
+        isLoadingResults: false,
         errorMsg: action.payload.errorMsg
       }
 
     case "FETCH_RESULTS_SUCCESS":
       if (action.payload.results.objectIDs === null) {
         return {
-          isLoading: false,
-          allresults: null
+          isLoadingResults: false,
+          allResults: null
         }
       } else {
         return {
-          ...state,
+          isLoadingResults: false,
           allResults: action.payload.results
         }
       }
 
     case "FETCH_PAGE_REQUEST":
       return { ...state,
-        isLoading: true 
+        isLoadingPage: true 
       }
 
     case "FETCH_PAGE_FAILURE":
       return {
         ...state,
-        isLoading: false,
+        isLoadingPage: false,
         errorMsg: action.payload.errorMsg
       }
 
     case "FETCH_PAGE_SUCCESS":
       return {
         ...state,
-        isLoading: false,
+        isLoadingPage: false,
         currentPageResults: action.payload.objectsData
       }
 

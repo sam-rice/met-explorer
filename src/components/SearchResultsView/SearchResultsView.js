@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react"
 import { useSearchParams } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
-import { fetchNewSearch, fetchPage } from "../../actions"
+import { fetchNewSearch, fetchPage, fetchResults } from "../../actions"
 
 import "./_SearchResultsView.scss"
 import SearchResultTile from "../SearchResultTile/SearchResultTile"
@@ -10,7 +10,7 @@ import { deptKey } from "../../utilities/global-static-data"
 function SearchResultsView() {
 
   const dispatch = useDispatch()
-  const { isLoading = true, allResults, currentPageResults } = useSelector(({ results }) => results)
+  const { isLoadingResults = true, isLoadingPage, allResults, currentPageResults } = useSelector(({ results }) => results)
   const [searchParams, setSearchParams] = useSearchParams()
   const didMountRef = useRef(false)
 
@@ -23,18 +23,30 @@ function SearchResultsView() {
     initSearch()
   }, [])
 
-  useEffect(() => {
-    getNewPage()
-  }, [pageNum])
-
   const initSearch = () => {
     const departmentParam = dept !== "all" ? `departmentId=${dept}&` : ""
     const typeParam = type === "artist" ? "artistOrCulture=true&" : ""
     const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?${departmentParam}${typeParam}q=${query.replace(/ /g, "+")}`
-    dispatch(fetchNewSearch(url, pageNum))
-    console.log("initSearch", isLoading)
-
+    dispatch(fetchResults(url, pageNum))
   }
+  
+  useEffect(() => {
+    getFirstPage()
+  }, [isLoadingResults])
+
+  const getFirstPage = () => {
+    if (!isLoadingResults && allResults) {
+      const targetEndIndex = pageNum * 25
+      const targetObjectIDs = allResults.objectIDs.slice(targetEndIndex - 25, targetEndIndex)
+      dispatch(fetchPage(targetObjectIDs))
+    } else if (!isLoadingResults) {
+      console.log("handle no results")
+    }
+  }
+
+  useEffect(() => {
+    getNewPage()
+  }, [pageNum])
 
   const getNewPage = () => {
     if (didMountRef.current) {
@@ -55,30 +67,31 @@ function SearchResultsView() {
     })
   }
 
-  const resultsTiles = !isLoading && currentPageResults.map(result => {
+  //change below back to !isLoading
+  const resultsTiles = currentPageResults && currentPageResults.map(result => {
     if (result) {
       return <SearchResultTile key={result.objectID} data={result} />
     }
   })
 
-  const dispResultsRange = !isLoading && `${pageNum * 25}-${(pageNum * 25) + resultsTiles.length}`
-  const totalResultsCount = !isLoading && allResults.objectIDs.length.toLocaleString("en-US")
+  // const dispResultsRange = !isLoading && `${pageNum * 25}-${(pageNum * 25) + resultsTiles.length}`
+  // const totalResultsCount = !isLoading && allResults.objectIDs.length.toLocaleString("en-US")
 
-  const headerSearchParams = !isLoading &&
-    <>
-      <h3 className="results__header__left__search-params">
-        {totalResultsCount} results for "{query}"
-      </h3>
-      <p className="results__header__left__dept">
-        in {dept === "all" ? "all departments" : Object.keys(deptKey)[dept - 1]}
-      </p>
-    </>
+  // const headerSearchParams = !isLoading &&
+  //   <>
+  //     <h3 className="results__header__left__search-params">
+  //       {totalResultsCount} results for "{query}"
+  //     </h3>
+  //     <p className="results__header__left__dept">
+  //       in {dept === "all" ? "all departments" : Object.keys(deptKey)[dept - 1]}
+  //     </p>
+  //   </>
 
-  const headerResultsCount = !isLoading &&
-    `displaying ${dispResultsRange} of ${totalResultsCount} results`
+  // const headerResultsCount = !isLoading &&
+  //   `displaying ${dispResultsRange} of ${totalResultsCount} results`
 
-  const footerResultsCount = !isLoading &&
-    `page ${pageNum} (${dispResultsRange} of ${totalResultsCount} results)`
+  // const footerResultsCount = !isLoading &&
+  //   `page ${pageNum} (${dispResultsRange} of ${totalResultsCount} results)`
 
   const backButtonClassList = pageNum !== 1 ?
     "results__results-controls__nav__back" :
@@ -88,10 +101,10 @@ function SearchResultsView() {
     <section className="results">
       <div className="results__header">
         <div className="results__header__left">
-          {headerSearchParams}
+          {/* {headerSearchParams} */}
         </div>
         <p className="gray--text">
-          {headerResultsCount}
+          {/* {headerResultsCount} */}
         </p>
       </div>
       <ul className="results__list">
@@ -99,7 +112,7 @@ function SearchResultsView() {
       </ul>
       <div className="results__results-controls">
         <p className="results__results-controls__details">
-          {footerResultsCount}
+          {/* {footerResultsCount} */}
         </p>
         <nav className="results__results-controls__nav">
           <button

@@ -6,7 +6,7 @@ export const fetchNewSearch = (url, pageNum) => {
   }
 }
 
-const fetchResults = (url, pageNum) => {
+export const fetchResults = (url, pageNum) => {
   return async dispatch => {
     dispatch(fetchResultsRequest())
     try {
@@ -16,11 +16,11 @@ const fetchResults = (url, pageNum) => {
       }
       const data = await response.json()
       dispatch(fetchResultsSuccess(data))
-      if (data.total) {
-        const targetEndIndex = pageNum * 25
-        const firstPageObjects = data.objectIDs.slice(targetEndIndex - 25, targetEndIndex)
-        return firstPageObjects
-      } 
+      // if (data.total) {
+      //   const targetEndIndex = pageNum * 25
+      //   const firstPageObjects = data.objectIDs.slice(targetEndIndex - 25, targetEndIndex)
+      //   return firstPageObjects
+      // } 
     } catch (error) {
       dispatch(fetchResultsFailure(error))
     }

@@ -26,6 +26,7 @@ const resultsReducer = (state = {}, action) => {
 
     case "FETCH_PAGE_SUCCESS":
       return {
+        ...state,
         isLoading: false,
         currentPage: action.payload.objectsData
       }

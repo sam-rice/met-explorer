@@ -8,26 +8,22 @@ export const initSearch = url => {
 }
 
 const fetchResults = url => {
-  return dispatch => {
+  return async dispatch => {
     dispatch(fetchResultsRequest)
-    return fetch(url)
-      .then(response => {
-        if (!response.ok) {
-          throw Error(response.statusText)
-        } else {
-          return response.json()
-        }
-      })
-      .then(response => {
-        dispatch(fetchResultsSuccess(response))
-        if (response.total) {
-          const firstPageObjects = response.objectIDs.slice(0, 25)
-          return firstPageObjects
-        }
-      })
-      .catch(error => {
-        dispatch(fetchResultsFailure(error))
-      })
+    try {
+      const response = await fetch(url)
+      if (!response.ok) {
+        throw Error(response.statusText)
+      }
+      const data = await response.json()
+      dispatch(fetchResultsSuccess(data))
+      if (data.total) {
+        const firstPageObjects = data.objectIDs.slice(0, 25)
+        return firstPageObjects
+      }
+    } catch (error) {
+      dispatch(fetchResultsFailure(error))
+    }
   }
 }
 
@@ -86,7 +82,7 @@ const fetchPageFailure = errorMsg => ({
 
 export const createCollection = name => ({
   type: "ADD_COLLECTION",
-  payload: { 
+  payload: {
     name,
     id: Date.now()
   }

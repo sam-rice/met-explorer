@@ -1,17 +1,18 @@
 import { connect } from "react-redux"
-import { fetchPage, initSearch } from "../actions"
+import { fetchNewSearch, fetchPage } from "../actions"
 import SearchResultsView from "../components/SearchResultsView/SearchResultsView"
 
 const mapStateToProps = state => ({
-  results: state.results
+  allResults: state.results.allResults,
+  currentPageResults: state.results.currentPageResults
 })
 
 const mapDispatchToProps = dispatch => ({
   fetchPage: () => {
     dispatch(fetchPage())
   },
-  initSearch: () => {
-    dispatch(initSearch())
+  fetchNewSearch: () => {
+    dispatch(fetchNewSearch())
   }
 })
 

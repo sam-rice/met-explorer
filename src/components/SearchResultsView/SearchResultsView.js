@@ -1,25 +1,37 @@
 import React, { useEffect } from "react"
 import { useSearchParams } from "react-router-dom"
-import { useDispatch } from "react-redux"
-import { initSearch } from "../../actions"
+import { useDispatch, useSelector } from "react-redux"
+import { fetchNewSearch, fetchPage } from "../../actions"
 
 import "./_SearchResultsView.scss"
 import SearchResultTile from "../SearchResultTile/SearchResultTile"
 
 function SearchResultsView() {
   const dispatch = useDispatch()
+  const { isLoading, allResults, currentPageResults } = useSelector(({ results }) => results)
   const [searchParams, setSearchParams] = useSearchParams()
+
   const query = searchParams.get("query")
   const type = searchParams.get("type")
   const dept = searchParams.get("dept")
   const pageNum = Number(searchParams.get("page"))
 
   useEffect(() => {
+    initSearch()
+  }, [])
+
+  const initSearch = () => {
     const departmentParam = dept !== "all" ? `departmentId=${dept}&` : ""
     const typeParam = type === "artist" ? "artistOrCulture=true&" : ""
     const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?${departmentParam}${typeParam}q=${query.replace(/ /g, "+")}`
-    dispatch(initSearch(url))
-  }, [])
+    dispatch(fetchNewSearch(url, pageNum))
+  }
+
+  // useEffect(() => {
+  //   if (currentPageResults) {
+  //     console.log("working")
+  //   }
+  // }, [currentPageResults])
 
   useEffect(() => {
     //increment/decrement search result page num
@@ -27,13 +39,20 @@ function SearchResultsView() {
   }, [pageNum])
 
   const handlePageNav = (bool) => {
-    setSearchParams({ 
-      query: query, 
-      type: type, 
-      dept: dept, 
+    setSearchParams({
+      query: query,
+      type: type,
+      dept: dept,
       page: bool ? pageNum + 1 : pageNum - 1
     })
   }
+
+  const resultsTiles = currentPageResults && currentPageResults.map(result => {
+    if (result) {
+      return <SearchResultTile key={result.ObjectID} data={result} />
+    }
+  })
+
 
   const backButtonClassList = pageNum !== 1 ? "results__results-controls__nav__back" : "results__results-controls__nav__back back--disabled"
 
@@ -53,25 +72,20 @@ function SearchResultsView() {
         </p>
       </div>
       <ul className="results__list">
-        <SearchResultTile />
-        <SearchResultTile />
-        <SearchResultTile />
-        <SearchResultTile />
-        <SearchResultTile />
-        <SearchResultTile />
+        {resultsTiles}
       </ul>
       <div className="results__results-controls">
         <p className="results__results-controls__details">
           {"page 1 (1-25 of 336 results)"}
         </p>
         <nav className="results__results-controls__nav">
-          <button 
+          <button
             className={backButtonClassList}
             onClick={() => handlePageNav(false)}
             disabled={pageNum === 1}
           >back</button>
           <p className="results__results-controls__nav__page-num">1</p>
-          <button 
+          <button
             className="results__results-controls__nav__next"
             onClick={() => handlePageNav(true)}
           >next</button>

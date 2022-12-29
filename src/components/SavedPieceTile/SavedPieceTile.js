@@ -1,19 +1,16 @@
 import React, { useCallback } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 import { updateNote, deletePiece } from "../../actions"
 
 import "./_SavedPieceTile.scss"
 import fallbackImg from "../../assets/fallback.png"
 
-function SavedPieceTile({ collectionID, objectID }) {
+function SavedPieceTile({ collectionID, data }) {
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
-  const { artistName, artistID, department, title, culture, objectEndDate, imageSmall, userNotes } = useSelector(({ collections }) => {
-    const targetCollection = collections.find(collection => collection.id == collectionID)
-    return targetCollection.pieces.find(piece => piece.objectID == objectID)
-  })
+  const { artistName, artistID, department, title, culture, objectEndDate, imageSmall, userNotes, objectID } = data
 
   const goToArtwork = useCallback(e => {
     const targetIsTile = !["TEXTAREA", "BUTTON", "A"].includes(e.target.nodeName)

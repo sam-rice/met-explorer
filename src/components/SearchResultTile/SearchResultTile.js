@@ -2,9 +2,11 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 import "./_SearchResultTile.scss"
-import latrec from "../../assets/latrec.jpeg"
+import fallback from "../../assets/fallback.png"
 
-function SearchResultTile() {
+function SearchResultTile({ data }) {
+  const {artistDisplayName, title, objectEndDate, country, culture, department, primaryImageSmall} = data
+  console.log(data)
 
   return (
     <Link
@@ -15,15 +17,15 @@ function SearchResultTile() {
         <div className="result__left">
           <img
             className="result__left__thumbnail"
-            src={latrec}
+            src={primaryImageSmall ? primaryImageSmall : fallback}
           />
         </div>
         <div className="result__right">
-          <h4>The Englishman (William Tom Warrener, 1861–1934) at the Moulin Rouge</h4>
-          <p className="result__right__details">1892</p>
-          <p className="result__right__artist">Henri de Tolouse-Latrec</p>
-          <p className="result__right__details">French</p>
-          <p className="result__right__dept">department: European Paintings</p>
+          <h4>{title}</h4>
+          <p className="result__right__details">{objectEndDate}</p>
+          <p className="result__right__artist">{artistDisplayName}</p>
+          <p className="result__right__details">{culture ? culture : country}</p>
+          <p className="result__right__dept">department: {department}</p>
         </div>
       </li>
     </Link>

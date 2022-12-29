@@ -5,6 +5,7 @@ const resultsReducer = (state = {}, action) => {
 
     case "FETCH_RESULTS_FAILURE":
       return {
+        ...state,
         isLoading: false,
         errorMsg: action.payload.errorMsg
       }
@@ -20,6 +21,7 @@ const resultsReducer = (state = {}, action) => {
 
     case "FETCH_PAGE_FAILURE":
       return {
+        ...state,
         isLoading: false,
         errorMsg: action.payload.errorMsg
       }
@@ -28,7 +30,7 @@ const resultsReducer = (state = {}, action) => {
       return {
         ...state,
         isLoading: false,
-        currentPage: action.payload.objectsData
+        currentPageResults: action.payload.objectsData
       }
 
     default:

@@ -1,11 +1,11 @@
-export const initSearch = url => {
+export const fetchNewSearch = (url, pageNum) => {
   return async dispatch => {
-    const firstPageObjects = await dispatch(fetchResults(url))
+    const firstPageObjects = await dispatch(fetchResults(url, pageNum))
     dispatch(fetchPage(firstPageObjects))
   }
 }
 
-const fetchResults = url => {
+const fetchResults = (url, pageNum) => {
   return async dispatch => {
     dispatch(fetchResultsRequest)
     try {
@@ -16,7 +16,8 @@ const fetchResults = url => {
       const data = await response.json()
       dispatch(fetchResultsSuccess(data))
       if (data.total) {
-        const firstPageObjects = data.objectIDs.slice(0, 25)
+        const targetEndIndex = pageNum * 25
+        const firstPageObjects = data.objectIDs.slice(targetEndIndex - 25, targetEndIndex)
         return firstPageObjects
       }
     } catch (error) {
@@ -28,7 +29,7 @@ const fetchResults = url => {
 export const fetchPage = objectIDs => {
   return async dispatch => {
     dispatch(fetchPageRequest)
-    const promises = objectIDs.map(async objectID => {
+    const promises = await objectIDs.map(async objectID => {
       try {
         const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`)
         if (!response.ok) {
@@ -40,8 +41,9 @@ export const fetchPage = objectIDs => {
         dispatch(fetchPageFailure(error))
       }
     })
-    const resolvedPromises = await Promise.all(promises)
-    dispatch(fetchPageSuccess(resolvedPromises))
+    const settledPromises = await Promise.allSettled(promises)
+    const pageData = settledPromises.map(promise => promise.value)
+    dispatch(fetchPageSuccess(pageData))
   }
 }
 

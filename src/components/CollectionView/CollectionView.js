@@ -13,6 +13,7 @@ function CollectionView() {
     collectionID={collectionID}
     objectID={piece.objectID}
     key={piece.objectID}
+    data={piece}
   />)
 
   const listContent = pieces.length ? savedPieceTiles : <p>no pieces in this collection yet</p>

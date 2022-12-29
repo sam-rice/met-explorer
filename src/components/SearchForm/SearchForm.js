@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { useNavigate } from "react-router-dom"
 
 import "./_SearchForm.scss"
+import { deptKey } from "../../utilities/global-static-data"
 
 function SearchForm() {
   const [query, setQuery] = useState("")
@@ -15,27 +16,7 @@ function SearchForm() {
       displayError()
       return
     }
-    const deptKey = {
-      "American Decorative Arts": 1,
-      "Ancient Near Eastern Art": 3,
-      "Arms and Armor": 4,
-      "Arts of Africa, Oceania, and the Americas": 5,
-      "Asian Art": 6,
-      "The Cloisters": 7,
-      "The Costume Institute": 8,
-      "Drawings and Prints": 9,
-      "Egyptian Art": 10,
-      "European Paintings": 11,
-      "European Sculpture and Decorative Arts": 12,
-      "Greek and Roman Art": 13,
-      "Islamic Art": 14,
-      "The Robert Lehman Collection": 15,
-      "The Libraries": 16,
-      "Medieval Art": 17,
-      "Musical Instruments": 18,
-      "Photographs": 19,
-      "Modern Art": 21
-    }
+    
     const submittedType = searchType === "artist name" ? "artist" : "keyword"
     const submittedQuery = query.replace(/ /g, "+")
     const submittedDept = selectedDepartment !== "(optional)" ? deptKey[selectedDepartment] : "all"

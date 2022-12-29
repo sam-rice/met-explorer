@@ -7,7 +7,7 @@ export const fetchNewSearch = (url, pageNum) => {
 
 const fetchResults = (url, pageNum) => {
   return async dispatch => {
-    dispatch(fetchResultsRequest)
+    dispatch(fetchResultsRequest())
     try {
       const response = await fetch(url)
       if (!response.ok) {
@@ -28,7 +28,7 @@ const fetchResults = (url, pageNum) => {
 
 export const fetchPage = objectIDs => {
   return async dispatch => {
-    dispatch(fetchPageRequest)
+    dispatch(fetchPageRequest())
     const promises = await objectIDs.map(async objectID => {
       try {
         const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`)

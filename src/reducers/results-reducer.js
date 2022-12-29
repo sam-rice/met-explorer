@@ -1,7 +1,9 @@
 const resultsReducer = (state = {}, action) => {
   switch (action.type) {
     case "FETCH_RESULTS_REQUEST":
-      return { isLoading: true }
+      return { ...state,
+        isLoading: true 
+      }
 
     case "FETCH_RESULTS_FAILURE":
       return {
@@ -12,12 +14,14 @@ const resultsReducer = (state = {}, action) => {
 
     case "FETCH_RESULTS_SUCCESS":
       return {
-        isLoading: false,
+        ...state,
         allResults: action.payload.results
       }
 
     case "FETCH_PAGE_REQUEST":
-      return { isLoading: true }
+      return { ...state,
+        isLoading: true 
+      }
 
     case "FETCH_PAGE_FAILURE":
       return {

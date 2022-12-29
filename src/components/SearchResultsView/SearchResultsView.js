@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useRef } from "react"
 import { useSearchParams } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { fetchNewSearch, fetchPage } from "../../actions"
@@ -7,9 +7,11 @@ import "./_SearchResultsView.scss"
 import SearchResultTile from "../SearchResultTile/SearchResultTile"
 
 function SearchResultsView() {
+
   const dispatch = useDispatch()
   const { isLoading, allResults, currentPageResults } = useSelector(({ results }) => results)
   const [searchParams, setSearchParams] = useSearchParams()
+  const didMountRef = useRef(false)
 
   const query = searchParams.get("query")
   const type = searchParams.get("type")
@@ -27,22 +29,21 @@ function SearchResultsView() {
     dispatch(fetchNewSearch(url, pageNum))
   }
 
-  // useEffect(() => {
-  //   if (currentPageResults) {
-  //     console.log("working")
-  //   }
-  // }, [currentPageResults])
-
   useEffect(() => {
-    //increment/decrement search result page num
-    console.log("ON PAGE CHANGE", query, type, dept, pageNum)
+    if (didMountRef.current) {
+      const targetEndIndex = pageNum * 25
+      const targetObjectIDs = allResults.objectIDs.slice(targetEndIndex - 25, targetEndIndex)
+      dispatch(fetchPage(targetObjectIDs))
+      window.scrollTo({ top: 100 })
+    }
+    didMountRef.current = true
   }, [pageNum])
 
   const handlePageNav = (bool) => {
     setSearchParams({
-      query: query,
-      type: type,
-      dept: dept,
+      query,
+      type,
+      dept,
       page: bool ? pageNum + 1 : pageNum - 1
     })
   }
@@ -52,7 +53,6 @@ function SearchResultsView() {
       return <SearchResultTile key={result.ObjectID} data={result} />
     }
   })
-
 
   const backButtonClassList = pageNum !== 1 ? "results__results-controls__nav__back" : "results__results-controls__nav__back back--disabled"
 

@@ -1,6 +1,7 @@
 export const fetchNewSearch = (url, pageNum) => {
   return async dispatch => {
     const firstPageObjects = await dispatch(fetchResults(url, pageNum))
+    // put conditional to only fetchPage if firstPageObjects.length is not 0?
     dispatch(fetchPage(firstPageObjects))
   }
 }
@@ -19,7 +20,7 @@ const fetchResults = (url, pageNum) => {
         const targetEndIndex = pageNum * 25
         const firstPageObjects = data.objectIDs.slice(targetEndIndex - 25, targetEndIndex)
         return firstPageObjects
-      }
+      } 
     } catch (error) {
       dispatch(fetchResultsFailure(error))
     }

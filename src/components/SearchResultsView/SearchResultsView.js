@@ -62,9 +62,9 @@ function SearchResultsView() {
   })
 
   const dispResultsRange = !isLoading && `${pageNum * 25}-${(pageNum * 25) + resultsTiles.length}`
-  const totalResultsCount = allResults && allResults.objectIDs.length.toLocaleString("en-US")
+  const totalResultsCount = !isLoading && allResults.objectIDs.length.toLocaleString("en-US")
 
-  const headerSearchParams = allResults &&
+  const headerSearchParams = !isLoading &&
     <>
       <h3 className="results__header__left__search-params">
         {totalResultsCount} results for "{query}"

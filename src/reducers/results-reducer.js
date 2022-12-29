@@ -1,5 +1,5 @@
 const resultsReducer = (state = {}, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case "FETCH_RESULTS_REQUEST":
       return { isLoading: true }
 
@@ -8,7 +8,7 @@ const resultsReducer = (state = {}, action) => {
         isLoading: false,
         errorMsg: action.payload.errorMsg
       }
-    
+
     case "FETCH_RESULTS_SUCCESS":
       return {
         isLoading: false,

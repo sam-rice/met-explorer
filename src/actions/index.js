@@ -1,5 +1,3 @@
-// import axios from "axios"
-
 export const initSearch = url => {
   return async dispatch => {
     const firstPageObjects = await dispatch(fetchResults(url))

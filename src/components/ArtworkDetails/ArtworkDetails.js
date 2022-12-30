@@ -1,12 +1,52 @@
-import React, { useState } from "react"
-import { Link } from "react-router-dom"
+import React, { useState, useEffect } from "react"
+import { Link, useParams } from "react-router-dom"
 
-import "./_ArtworkDetail.scss"
+import "./_ArtworkDetails.scss"
 import chair from "../../assets/flw-chair.png"
 
 
 function ArtworkDetail() {
   const [collection, setCollection] = useState("add to collection")
+  const { objectID } = useParams()
+  const [artworkDetails, setArtworkDetails] = useState({})
+  const [error, setError] = useState("")
+
+  useEffect(() => {
+    getArtworkDetails()
+  }, [])
+
+  const getArtworkDetails = async () => {
+    const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`)
+    try {
+      if (!response.ok) {
+        throw Error(response.statusText)
+      } else {
+        const data = await response.json()
+        setArtworkDetails({
+          additionalImages: data.additionalImages,
+          artistName: data.artistDisplayName,
+          artistURL: data.artistWikidata_URL,
+          country: data.country,
+          culture: data.culture, 
+          creditLine: data.creditLine,
+          department: data.department, 
+          geographyType: data.geographyType,
+          imageLarge: data.primaryImage, 
+          imageSmall: data.primaryImageSmall, 
+          medium: data.medium,
+          objectDate: data.objectDate,
+          objectName: data.objectName,
+          metURL: data.objectURL,
+          period: data.period,
+          region: data.region,
+          title: data.title, 
+        })
+        console.log(artworkDetails)
+      }
+    } catch (error) {
+      setError(error)
+    }
+  }
 
   return (
     <div className="artwork-view-parent">
@@ -18,7 +58,7 @@ function ArtworkDetail() {
         {" / "}
         <Link
           className="artwork-detail-link"
-          to="/search/artistQuery"
+          to="artist url here !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
         >Frank Lloyd Wright</Link>
       </span>
       <section className="artwork">

@@ -9,7 +9,7 @@ import CollectionsListContainer from "../../containers/CollectionsListContainer"
 import CollectionViewContainer from "../../containers/CollectionViewContainer"
 import SearchForm from "../SearchForm/SearchForm"
 import SearchResultsViewContainer from "../../containers/SearchResultsViewContainer"
-import ArtworkDetail from "../ArtworkDetail/ArtworkDetail"
+import ArtworkDetailsContainer from "../../containers/ArtworkDetailsContainer"
 
 const App = () => {
   return (
@@ -25,7 +25,7 @@ const App = () => {
           <Route path="/search" element={<SearchResultsViewContainer />} />
           <Route path="/explore" >
             {/* index redirect to homepage here */}
-            <Route path=":arworkID" element={<ArtworkDetail />} />
+            <Route path=":objectID" element={<ArtworkDetailsContainer />} />
           </Route>
         </Route>
       </Routes>

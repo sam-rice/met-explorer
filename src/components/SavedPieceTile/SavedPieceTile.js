@@ -10,7 +10,7 @@ function SavedPieceTile({ collectionID, data }) {
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
-  const { artistName, artistID, department, title, culture, objectEndDate, imageSmall, userNotes, objectID } = data
+  const { artistName, department, objectName, culture, objectDate, imageSmall, userNotes, objectID } = data
 
   const goToArtwork = useCallback(e => {
     const targetIsTile = !["TEXTAREA", "BUTTON", "A"].includes(e.target.nodeName)
@@ -25,7 +25,6 @@ function SavedPieceTile({ collectionID, data }) {
   const removeFromCollection = () => dispatch(deletePiece(collectionID, objectID))
 
   const artistSearchPath = `/search/${artistName.replace(/ /g, "+")}`
-  // make link search for artist name or take to artist page via artistID variable?
 
   return (
     <li className="piece" onClick={e => goToArtwork(e)}>
@@ -35,8 +34,8 @@ function SavedPieceTile({ collectionID, data }) {
         </div>
         <div className="piece__left__details">
           <div className="details-top">
-            <h4 className="details-top__title">{title}</h4>
-            <p className="detail-rows">ca. {objectEndDate}</p>
+            <h4 className="details-top__title">{objectName}</h4>
+            <p className="detail-rows">ca. {objectDate}</p>
             <p className="detail-rows">
               <Link className="details-top__artist-link" to={artistSearchPath}>{artistName}</Link>
               {culture}

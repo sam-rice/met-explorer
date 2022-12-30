@@ -8,11 +8,10 @@ const collectionReducer = (state = [], action) => {
           {
             objectID: 275,
             artistName: "Frank Lloyd Wright",
-            artistID: 162765,
             department: "The American Wing",
-            title: "Armchair",
+            objectName: "Armchair",
             culture: "American",
-            objectEndDate: 1903,
+            objectDate: 1903,
             imageSmall: "https://images.metmuseum.org/CRDImages/dp/web-large/DP835929.jpg",
             userNotes: ""
           }
@@ -49,6 +48,30 @@ const collectionReducer = (state = [], action) => {
           return {
             ...collection,
             pieces: collection.pieces.filter(piece => piece.objectID != action.payload.objectID)
+          }
+        } else {
+          return collection
+        }
+      })
+
+    case "ADD_TO_COLLECTION":
+      return state.map(collection => {
+        if (collection.id == action.payload.collectionID) {
+          return {
+            ...collection,
+            pieces: [
+              ...collection.pieces,
+              {
+                artistName: action.payload.artistName,
+                culture: action.payload.culture,
+                department: action.payload.department,
+                objectDate: action.payload.objectDate,
+                objectID: action.payload.objectID,
+                objectName: action.payload.objectName,
+                imageSmall: action.payload.imageSmall,
+                userNotes: "",
+              }
+            ]
           }
         } else {
           return collection

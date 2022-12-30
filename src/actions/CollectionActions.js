@@ -27,3 +27,19 @@ export const deletePiece = (collectionID, objectID) => ({
     objectID
   }
 })
+
+export const addToCollection = (collectionID, artistName, culture,department, objectDate, objectID, objectName, imageSmall) => ({
+  type: "ADD_TO_COLLECTION",
+  payload: {
+    collectionID,
+    piece: {
+      artistName,
+      culture,
+      department,
+      objectDate,
+      objectID,
+      objectName,
+      imageSmall
+    }
+  }
+})

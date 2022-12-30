@@ -33,7 +33,6 @@ const resultsReducer = (state = {}, action) => {
     case "FETCH_PAGE_FAILURE":
       return {
         ...state,
-        isLoadingPage: false,
         errorMsg: action.payload.errorMsg
       }
 

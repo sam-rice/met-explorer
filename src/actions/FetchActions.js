@@ -1,12 +1,4 @@
-export const fetchNewSearch = (url, pageNum) => {
-  return async dispatch => {
-    const firstPageObjects = await dispatch(fetchResults(url, pageNum))
-    // put conditional to only fetchPage if firstPageObjects.length is not 0?
-    dispatch(fetchPage(firstPageObjects))
-  }
-}
-
-export const fetchResults = (url, pageNum) => {
+export const fetchResults = (url) => {
   return async dispatch => {
     dispatch(fetchResultsRequest())
     try {
@@ -16,11 +8,6 @@ export const fetchResults = (url, pageNum) => {
       }
       const data = await response.json()
       dispatch(fetchResultsSuccess(data))
-      // if (data.total) {
-      //   const targetEndIndex = pageNum * 25
-      //   const firstPageObjects = data.objectIDs.slice(targetEndIndex - 25, targetEndIndex)
-      //   return firstPageObjects
-      // } 
     } catch (error) {
       dispatch(fetchResultsFailure(error))
     }
@@ -34,12 +21,14 @@ export const fetchPage = objectIDs => {
       try {
         const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`)
         if (!response.ok) {
-          throw Error(response.statusText)
+          // new Error(response.statusText)
+          dispatch(fetchPageFailure(new Error(response.statusText)))
         }
         const data = await response.json()
         return data
       } catch (error) {
         dispatch(fetchPageFailure(error))
+        console.log(error)
       }
     })
     const settledPromises = await Promise.allSettled(promises)

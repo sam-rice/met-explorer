@@ -7,8 +7,6 @@ import fallback from "../../assets/fallback.png"
 function SearchResultTile({ data }) {
   const {artistDisplayName, objectName, objectDate, objectID, country, culture, department, primaryImageSmall} = data
 
-  console.log(data)
-
   return (
     <Link
       className="result-link-wrapper"

@@ -30,7 +30,7 @@ function Home() {
             </Link>
           </li>
           <li>
-            <Link className="home__bottom__right" to="/search">
+            <Link className="home__bottom__right" to="/search-form">
               EXPLORE
             </Link>
           </li>

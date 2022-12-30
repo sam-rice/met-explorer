@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom"
 import { addToCollection } from "../../actions"
 
 import "./_ArtworkDetails.scss"
-import fallback from "../../assets/fallback.png"
+import fallbackIMG from "../../assets/fallback.png"
 
 function ArtworkDetail() {
   const dispatch = useDispatch()
@@ -13,16 +13,14 @@ function ArtworkDetail() {
 
   const [error, setError] = useState("")
   const [isLoading, setIsLoading] = useState(true)
-  const [selectedCollection, setSelectedCollection] = useState(["add to collection", 0])
+  const [selectedCollection, setSelectedCollection] = useState("")
   const [currentImg, setCurrentImg] = useState("")
-  const [relatedCollections, setRelatedCollections] = useState([])
   const [artworkData, setArtworkData] = useState({})
 
   const { additionalImages, artistName, artistURL, classification, country, culture, creditLine, department, description, geographyType, imageSmall, medium, objectDate, objectName, metURL, period, region } = artworkData
 
   useEffect(() => {
     getArtworkData()
-    findRelatedCollections()
   }, [])
 
   const getArtworkData = async () => {
@@ -55,7 +53,7 @@ function ArtworkDetail() {
         if (data.primaryImage) {
           setCurrentImg(data.primaryImage)
         } else {
-          setCurrentImg(fallback)
+          setCurrentImg(fallbackIMG)
         }
         setIsLoading(false)
       }
@@ -64,17 +62,15 @@ function ArtworkDetail() {
     }
   }
 
-  const findRelatedCollections = () => {
-    setRelatedCollections(collections.reduce((acc, collection) => {
-      if (collection.pieces.some(piece => piece.objectID == objectID)) {
-        acc.push({
-          id: collection.id,
-          name: collection.name
-        })
-      }
-      return acc
-    }, []))
-  }
+  const relatedCollections = (collections.reduce((acc, collection) => {
+    if (collection.pieces.some(piece => piece.objectID == objectID)) {
+      acc.push({
+        id: collection.id,
+        name: collection.name
+      })
+    }
+    return acc
+  }, []))
 
   const togglePhoto = newURL => {
     const targetIndex = additionalImages.indexOf(newURL)
@@ -84,7 +80,7 @@ function ArtworkDetail() {
 
   const handleSubmit = () => {
     const targetCollection = collections.find(collection => collection.name === selectedCollection)
-  
+
     dispatch(addToCollection({
       collectionID: targetCollection.id,
       artistName,
@@ -95,25 +91,33 @@ function ArtworkDetail() {
       objectName,
       imageSmall
     }))
+    setSelectedCollection("")
+    removeOption(targetCollection.id)
   }
 
-  const getCollectionOptions = () => {
-    return collections.map(collection => (
+  const removeOption = targetCollectionID => {
+    const targetIndex = relatedCollections.findIndex(collection => collection.id == targetCollectionID)
+    relatedCollections.splice(targetIndex, 1)
+  }
+
+  const collectionOptions = collections.filter(collection => {
+    return relatedCollections.every(related => related.id != collection.id)
+  })
+    .map(collection => (
       <option
         value={collection.name}
         key={collection.id}
       >{collection.name}</option>
     ))
-  }
 
-  const getPrevSavedMessage = () => {
-    // console.log("here", collections)
-    return (
-      <p className="artwork__left__saved-msg">
-        this piece is saved in your collection "Early FLW"
-      </p>
-    )
-  }
+  const prevSavedString = relatedCollections.length > 1 ?
+    `"${relatedCollections[0]?.name}" & others` :
+    `"${relatedCollections[0]?.name}"`
+  const prevSavedMessage =
+    <p className="artwork__left__saved-msg">
+      this piece is saved in your collection: {prevSavedString}
+    </p>
+
 
   const addlPhotoButtons = !isLoading &&
     additionalImages.reduce((acc, url, i) => {
@@ -148,7 +152,7 @@ function ArtworkDetail() {
       </span>
       <section className="artwork">
         <div className="artwork__left">
-          {getPrevSavedMessage()}
+          {relatedCollections[0] && prevSavedMessage}
           <h3 className="artwork__left__title">{objectName}</h3>
           <p className="artwork__left__date">{objectDate}</p>
           <p className="artwork__left__artist">
@@ -207,7 +211,7 @@ function ArtworkDetail() {
               required={true}
             >
               <option value="add to collection">add to collection</option>
-              {getCollectionOptions()}
+              {collectionOptions}
             </select>
             <button
               className="artwork__left__collection__button"

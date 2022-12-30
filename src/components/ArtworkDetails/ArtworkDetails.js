@@ -8,8 +8,12 @@ import chair from "../../assets/flw-chair.png"
 function ArtworkDetail() {
   const [collection, setCollection] = useState("add to collection")
   const { objectID } = useParams()
-  const [artworkDetails, setArtworkDetails] = useState({})
   const [error, setError] = useState("")
+  const [isLoading, setIsLoading] = useState(true)
+  const [currentImg, setCurrentImg] = useState("")
+
+  const [artworkDetails, setArtworkDetails] = useState({})
+  const { additionalImages, artistName, artistURL, classification, country, culture, creditLine, department, geographyType, imageLarge, imageSmall, medium, objectDate, objectName, metURL, period, region } = artworkDetails
 
   useEffect(() => {
     getArtworkDetails()
@@ -26,21 +30,24 @@ function ArtworkDetail() {
           additionalImages: data.additionalImages,
           artistName: data.artistDisplayName,
           artistURL: data.artistWikidata_URL,
+          classification: data.classification,
           country: data.country,
-          culture: data.culture, 
+          culture: data.culture,
           creditLine: data.creditLine,
-          department: data.department, 
+          department: data.department,
           geographyType: data.geographyType,
-          imageLarge: data.primaryImage, 
-          imageSmall: data.primaryImageSmall, 
+          // imageLarge: data.primaryImage,
+          imageSmall: data.primaryImageSmall,
           medium: data.medium,
           objectDate: data.objectDate,
           objectName: data.objectName,
           metURL: data.objectURL,
           period: data.period,
-          region: data.region,
-          title: data.title, 
+          region: data.region
         })
+        setCurrentImg(data.primaryImage)
+        setIsLoading(false)
+
         console.log(artworkDetails)
       }
     } catch (error) {
@@ -48,44 +55,88 @@ function ArtworkDetail() {
     }
   }
 
+  const togglePhoto = newURL => {
+    const targetIndex = additionalImages.indexOf(newURL)
+    additionalImages.splice(targetIndex, 1, currentImg)
+    setCurrentImg(newURL)
+  }
+
+  const addlPhotoButtons = !isLoading &&
+    additionalImages.map(url => (
+      <button
+        className="artwork__right__img-controls__button"
+        onClick={() => togglePhoto(url)}
+      >
+        <img
+          className="artwork__right__img-controls__button__img"
+          src={url}
+        />
+      </button>
+    ))
+
   return (
     <div className="artwork-view-parent">
       <span className="artwork-directory">
-        <Link
+        <span
           className="artwork-detail-link"
-          to="/search/deptQuery"
-        >The American Wing</Link>
-        {" / "}
-        <Link
-          className="artwork-detail-link"
-          to="artist url here !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-        >Frank Lloyd Wright</Link>
+        >{department}</span>
+        {artistName &&
+          <span
+            className="artwork-detail-link"
+          > / {artistName}
+          </span>}
       </span>
       <section className="artwork">
         <div className="artwork__left">
           <p className="artwork__left__saved-msg">
             this piece is saved in your collection "Early FLW"
           </p>
-          <h3 className="artwork__left__title">Armchair</h3>
-          <p className="artwork__left__date">ca. 1902-3</p>
+          <h3 className="artwork__left__title">{objectName}</h3>
+          <p className="artwork__left__date">{objectDate}</p>
           <p className="artwork__left__artist">
-            <Link
-              className="artwork__left__artist__link"
-              to="/search/artistQuery"
-            >Frank Lloyd Wright</Link>
-            American
+            {artistName &&
+              <a
+                className="artwork__left__artist__link"
+                href={artistURL}
+              >{artistName}</a>}
+            {culture}
           </p>
-          <article className="artwork__left__article">
-            {"This set of four armchairs (1972.60.4-.7) in dark-stained oak was designed for the Littles’ first home in Peoria, Illinois, and moved with the family, eventually ending up in the living room of their new summer home. Unlike Wright's later (1912–14) furnishings in the room, these chairs include decorative applied banding, and, on each leg, stylized capitals and bases. The chairs’ cushions are covered with their original wool fabric."}
-          </article>
-          <p className="artwork__left__dept">
-            department: American Decorative Arts
+          <table>
+            <tbody>
+              <tr>
+                <td>department:</td>
+                <td>{department}</td>
+              </tr>
+              {region && <tr>
+                <td>geography:</td>
+                <td>{`${geographyType} ${region}, ${country}`}</td>
+              </tr>}
+              {period && <tr>
+                <td>period:</td>
+                <td>{period}</td>
+              </tr>}
+              {classification && <tr>
+                <td>classification:</td>
+                <td>{classification}</td>
+              </tr>}
+              <tr>
+                <td>medium:</td>
+                <td>{medium}</td>
+              </tr>
+              <tr>
+                <td>credit line:</td>
+                <td>{creditLine}</td>
+              </tr>
+            </tbody>
+          </table>
+          <p className="artwork__left__met-link">
+            view at <a href={metURL}>metmuseum.org</a>
           </p>
           <div className="artwork__left__collection">
             <label
               className="artwork__left__collection__label"
               htmlFor="selected-collection"
-            >search by:</label>
+            >add to collection:</label>
             <select
               className="artwork__left__collection__select"
               id="selected-collection"
@@ -107,22 +158,11 @@ function ArtworkDetail() {
           <div className="artwork__right__mat">
             <img
               className="artwork__right__mat__img"
-              src={chair}
+              src={currentImg}
             />
           </div>
           <div className="artwork__right__img-controls">
-            <button className="artwork__right__img-controls__button">
-              <img className="artwork__right__img-controls__button__img" src={chair}
-              />
-            </button>
-            <button className="artwork__right__img-controls__button">
-              <img className="artwork__right__img-controls__button__img" src={chair}
-              />
-            </button>
-            <button className="artwork__right__img-controls__button">
-              <img className="artwork__right__img-controls__button__img" src={chair}
-              />
-            </button>
+            {addlPhotoButtons}
           </div>
         </div>
       </section>

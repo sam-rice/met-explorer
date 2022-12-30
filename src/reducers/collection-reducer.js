@@ -62,13 +62,13 @@ const collectionReducer = (state = [], action) => {
             pieces: [
               ...collection.pieces,
               {
-                artistName: action.payload.artistName,
-                culture: action.payload.culture,
-                department: action.payload.department,
-                objectDate: action.payload.objectDate,
-                objectID: action.payload.objectID,
-                objectName: action.payload.objectName,
-                imageSmall: action.payload.imageSmall,
+                artistName: action.payload.piece.artistName,
+                culture: action.payload.piece.culture,
+                department: action.payload.piece.department,
+                objectDate: action.payload.piece.objectDate,
+                objectID: action.payload.piece.objectID,
+                objectName: action.payload.piece.objectName,
+                imageSmall: action.payload.piece.imageSmall,
                 userNotes: "",
               }
             ]

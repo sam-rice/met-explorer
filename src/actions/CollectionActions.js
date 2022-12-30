@@ -28,7 +28,7 @@ export const deletePiece = (collectionID, objectID) => ({
   }
 })
 
-export const addToCollection = (collectionID, artistName, culture,department, objectDate, objectID, objectName, imageSmall) => ({
+export const addToCollection = ({ collectionID, artistName, culture,department, objectDate, objectID, objectName, imageSmall }) => ({
   type: "ADD_TO_COLLECTION",
   payload: {
     collectionID,

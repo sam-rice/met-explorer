@@ -5,7 +5,9 @@ import "./_SearchResultTile.scss"
 import fallback from "../../assets/fallback.png"
 
 function SearchResultTile({ data }) {
-  const {artistDisplayName, title, objectDate, objectID, country, culture, department, primaryImageSmall} = data
+  const {artistDisplayName, objectName, objectDate, objectID, country, culture, department, primaryImageSmall} = data
+
+  console.log(data)
 
   return (
     <Link
@@ -20,7 +22,7 @@ function SearchResultTile({ data }) {
           />
         </div>
         <div className="result__right">
-          <h4>{title}</h4>
+          <h4>{objectName}</h4>
           <p className="result__right__details">{objectDate}</p>
           <p className="result__right__artist">{artistDisplayName}</p>
           <p className="result__right__details">{culture ? culture : country}</p>

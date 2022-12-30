@@ -55,10 +55,14 @@
     }
   }
   
-  & table {
+  &__table {
     table-layout: auto;
     width: 100%;
     margin-top: 35px;
+
+    &__key {
+      padding-right: 35px;
+    }
   }
 
   &__met-link {
@@ -71,7 +75,7 @@
     background-color: variables.$container-gray;
 
     &__label {
-      font-size: .9rem;
+      display: none;
     }
   
     &__select {
@@ -116,7 +120,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 55%;
     margin-top: 25px;
 
     &__button {
@@ -126,6 +129,7 @@
       width: 100px;
       height: 100px;
       padding: 0px;
+      margin: 0px 10px;
       border: none;
 
       &__img {

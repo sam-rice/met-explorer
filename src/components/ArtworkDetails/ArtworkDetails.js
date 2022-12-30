@@ -1,32 +1,38 @@
 import React, { useState, useEffect } from "react"
+import { useDispatch, useSelector } from "react-redux"
 import { Link, useParams } from "react-router-dom"
+import { addToCollection } from "../../actions"
 
 import "./_ArtworkDetails.scss"
-import chair from "../../assets/flw-chair.png"
-
+import fallback from "../../assets/fallback.png"
 
 function ArtworkDetail() {
-  const [collection, setCollection] = useState("add to collection")
+  const dispatch = useDispatch()
+  const collections = useSelector(({ collections }) => collections)
   const { objectID } = useParams()
+
   const [error, setError] = useState("")
   const [isLoading, setIsLoading] = useState(true)
+  const [selectedCollection, setSelectedCollection] = useState(["add to collection", 0])
   const [currentImg, setCurrentImg] = useState("")
+  const [relatedCollections, setRelatedCollections] = useState([])
+  const [artworkData, setArtworkData] = useState({})
 
-  const [artworkDetails, setArtworkDetails] = useState({})
-  const { additionalImages, artistName, artistURL, classification, country, culture, creditLine, department, geographyType, imageLarge, imageSmall, medium, objectDate, objectName, metURL, period, region } = artworkDetails
+  const { additionalImages, artistName, artistURL, classification, country, culture, creditLine, department, description, geographyType, imageSmall, medium, objectDate, objectName, metURL, period, region } = artworkData
 
   useEffect(() => {
-    getArtworkDetails()
+    getArtworkData()
+    findRelatedCollections()
   }, [])
 
-  const getArtworkDetails = async () => {
+  const getArtworkData = async () => {
     const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`)
     try {
       if (!response.ok) {
         throw Error(response.statusText)
       } else {
         const data = await response.json()
-        setArtworkDetails({
+        setArtworkData({
           additionalImages: data.additionalImages,
           artistName: data.artistDisplayName,
           artistURL: data.artistWikidata_URL,
@@ -35,6 +41,7 @@ function ArtworkDetail() {
           culture: data.culture,
           creditLine: data.creditLine,
           department: data.department,
+          description: data.title,
           geographyType: data.geographyType,
           // imageLarge: data.primaryImage,
           imageSmall: data.primaryImageSmall,
@@ -45,14 +52,28 @@ function ArtworkDetail() {
           period: data.period,
           region: data.region
         })
-        setCurrentImg(data.primaryImage)
+        if (data.primaryImage) {
+          setCurrentImg(data.primaryImage)
+        } else {
+          setCurrentImg(fallback)
+        }
         setIsLoading(false)
-
-        console.log(artworkDetails)
       }
     } catch (error) {
       setError(error)
     }
+  }
+
+  const findRelatedCollections = () => {
+    setRelatedCollections(collections.reduce((acc, collection) => {
+      if (collection.pieces.some(piece => piece.objectID == objectID)) {
+        acc.push({
+          id: collection.id,
+          name: collection.name
+        })
+      }
+      return acc
+    }, []))
   }
 
   const togglePhoto = newURL => {
@@ -61,18 +82,57 @@ function ArtworkDetail() {
     setCurrentImg(newURL)
   }
 
-  const addlPhotoButtons = !isLoading &&
-    additionalImages.map(url => (
-      <button
-        className="artwork__right__img-controls__button"
-        onClick={() => togglePhoto(url)}
-      >
-        <img
-          className="artwork__right__img-controls__button__img"
-          src={url}
-        />
-      </button>
+  const handleSubmit = () => {
+    const targetCollection = collections.find(collection => collection.name === selectedCollection)
+  
+    dispatch(addToCollection({
+      collectionID: targetCollection.id,
+      artistName,
+      culture,
+      department,
+      objectDate,
+      objectID,
+      objectName,
+      imageSmall
+    }))
+  }
+
+  const getCollectionOptions = () => {
+    return collections.map(collection => (
+      <option
+        value={collection.name}
+        key={collection.id}
+      >{collection.name}</option>
     ))
+  }
+
+  const getPrevSavedMessage = () => {
+    // console.log("here", collections)
+    return (
+      <p className="artwork__left__saved-msg">
+        this piece is saved in your collection "Early FLW"
+      </p>
+    )
+  }
+
+  const addlPhotoButtons = !isLoading &&
+    additionalImages.reduce((acc, url, i) => {
+      if (i < 5) {
+        acc.push(
+          <button
+            className="artwork__right__img-controls__button"
+            onClick={() => togglePhoto(url)}
+            key={i}
+          >
+            <img
+              className="artwork__right__img-controls__button__img"
+              src={url}
+            />
+          </button>
+        )
+      }
+      return acc
+    }, [])
 
   return (
     <div className="artwork-view-parent">
@@ -88,9 +148,7 @@ function ArtworkDetail() {
       </span>
       <section className="artwork">
         <div className="artwork__left">
-          <p className="artwork__left__saved-msg">
-            this piece is saved in your collection "Early FLW"
-          </p>
+          {getPrevSavedMessage()}
           <h3 className="artwork__left__title">{objectName}</h3>
           <p className="artwork__left__date">{objectDate}</p>
           <p className="artwork__left__artist">
@@ -101,8 +159,12 @@ function ArtworkDetail() {
               >{artistName}</a>}
             {culture}
           </p>
-          <table>
+          <table className="artwork__left__table">
             <tbody>
+              <tr>
+                <td className="artwork__left__table__key">description:</td>
+                <td>{description}</td>
+              </tr>
               <tr>
                 <td>department:</td>
                 <td>{department}</td>
@@ -140,17 +202,16 @@ function ArtworkDetail() {
             <select
               className="artwork__left__collection__select"
               id="selected-collection"
-              value={collection}
-              onChange={e => setCollection(e.target.value)}
+              value={selectedCollection}
+              onChange={e => setSelectedCollection(e.target.value)}
               required={true}
             >
-              <option>select</option>
-              <option>My Collection 1</option>
-              <option>My Collection 2</option>
-              <option>My Collection 3</option>
+              <option value="add to collection">add to collection</option>
+              {getCollectionOptions()}
             </select>
             <button
               className="artwork__left__collection__button"
+              onClick={handleSubmit}
             >add</button>
           </div>
         </div>

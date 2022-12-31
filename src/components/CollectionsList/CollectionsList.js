@@ -25,12 +25,27 @@ function CollectionsList() {
     setName("")
   }
 
-  const collectionTiles = collections.map(collection => <CollectionTile
-    name={collection.name}
-    id={collection.id}
-    key={collection.id}
-    count={collection.pieces.length}
-  />)
+  const collectionTiles = collections.map((collection) => {
+    const thumbnailURL = collection.pieces[0].imageSmall
+
+    const deptList = collection.pieces.reduce((acc, piece) => {
+      console.log(piece)
+      if (acc.length < 3 && !acc.includes(piece.department)) {
+        acc.push(piece.department)
+      }
+      return acc
+    }, [])
+
+    return <CollectionTile
+      name={collection.name}
+      id={collection.id}
+      key={collection.id}
+      count={collection.pieces.length}
+      deptList={deptList}
+      thumbnail={thumbnailURL}
+    />
+  })
+
   const collectionsList = collectionTiles.length ? collectionTiles : <h3>no collections yet</h3>
   const collectionsCount = `${collections.length} collection${collections.length === 1 ? "" : "s"}`
 

@@ -51,7 +51,18 @@
 
     &__link {
       color: black;
-      margin-right: 10px;
+      margin-right: 8px;
+      transition-duration: 400ms;
+
+      &:hover {
+        color: variables.$gray;
+      }
+    }
+
+    &__no-link {
+      color: black;
+      text-decoration: underline;
+      margin-right: 8px;
     }
   }
   
@@ -132,14 +143,14 @@
       margin: 0px 10px;
       border: none;
 
+      &:hover {
+        opacity: .5;
+      }
+      
       &__img {
         max-width: 100%;
         max-height: 100%;
         transition-duration: 400ms;
-
-        &:hover {
-          opacity: .5;
-        }
       }
     }
   }

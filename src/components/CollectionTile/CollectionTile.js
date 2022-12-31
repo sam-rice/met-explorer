@@ -7,7 +7,7 @@ import "./_CollectionTile.scss"
 
 import chair from "../../assets/flw-chair.png"
 
-function CollectionTile({ name, id, count }) {
+function CollectionTile({ name, id, count, deptList, thumbnail }) {
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
@@ -32,7 +32,7 @@ function CollectionTile({ name, id, count }) {
       >
         <div className="collection__left">
           <div className="collection__left__img-container">
-            <img className="collection__left__img-container__img" src={chair} />
+            <img className="collection__left__img-container__img" src={thumbnail} />
           </div>
           <h4 className="collection__left__title">{name}</h4>
         </div>
@@ -41,7 +41,7 @@ function CollectionTile({ name, id, count }) {
           <button
             className="collection__details__remove-button"
           />
-          <p className="collection__details__row">departments: American Decorative Arts, Asian Art, Islamic Art</p>
+          <p className="collection__details__row">{deptList[0] && `departments: ${deptList[0]}`}{deptList[1] && `, ${deptList[1]}`}{deptList[2] && `, ${deptList[2]}...`}</p>
         </div>
       </li>
   )

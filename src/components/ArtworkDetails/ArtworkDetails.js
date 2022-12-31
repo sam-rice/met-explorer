@@ -118,6 +118,13 @@ function ArtworkDetail() {
       this piece is saved in your collection: {prevSavedString}
     </p>
 
+  const formattedArtistName = artistURL ?
+    <a
+      className="artwork__left__artist__link"
+      href={artistURL}
+    >{artistName}
+    </a> :
+    <span className="artwork__left__artist__no-link">{artistName}</span>
 
   const addlPhotoButtons = !isLoading &&
     additionalImages.reduce((acc, url, i) => {
@@ -156,19 +163,16 @@ function ArtworkDetail() {
           <h3 className="artwork__left__title">{objectName}</h3>
           <p className="artwork__left__date">{objectDate}</p>
           <p className="artwork__left__artist">
-            {artistName &&
-              <a
-                className="artwork__left__artist__link"
-                href={artistURL}
-              >{artistName}</a>}
+            {artistName && formattedArtistName}
             {culture}
           </p>
           <table className="artwork__left__table">
             <tbody>
-              <tr>
-                <td className="artwork__left__table__key">description:</td>
-                <td>{description}</td>
-              </tr>
+              {description?.toLowerCase() !== objectName?.toLowerCase() &&
+                <tr>
+                  <td className="artwork__left__table__key">description:</td>
+                  <td>{description}</td>
+                </tr>}
               <tr>
                 <td>department:</td>
                 <td>{department}</td>

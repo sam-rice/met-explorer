@@ -15,8 +15,7 @@ function SavedPieceTile({ collectionID, data }) {
   const goToArtwork = useCallback(e => {
     const targetIsTile = !["TEXTAREA", "BUTTON", "A"].includes(e.target.nodeName)
     if (targetIsTile) {
-      navigate(`/explore/${objectID}`, { replace: true })
-      //remove replace: true ??????????
+      navigate(`/explore/${objectID}`)
     }
   }, [navigate])
 
@@ -24,7 +23,7 @@ function SavedPieceTile({ collectionID, data }) {
 
   const removeFromCollection = () => dispatch(deletePiece(collectionID, objectID))
 
-  const artistSearchPath = `/search/${artistName.replace(/ /g, "+")}`
+  const artistSearchPath = `/search?query=${artistName.replace(/ /g, "+")}&type=artist&dept=all&page=1`
 
   return (
     <li className="piece" onClick={e => goToArtwork(e)}>
@@ -37,7 +36,7 @@ function SavedPieceTile({ collectionID, data }) {
             <h4 className="details-top__title">{objectName}</h4>
             <p className="detail-rows">ca. {objectDate}</p>
             <p className="detail-rows">
-              <Link className="details-top__artist-link" to={artistSearchPath}>{artistName}</Link>
+              {artistName && <Link className="details-top__artist-link" to={artistSearchPath}>{artistName}</Link>}
               {culture}
             </p>
           </div>

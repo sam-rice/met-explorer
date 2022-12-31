@@ -82,8 +82,16 @@
 
   &__collection {
     @include mixins.formContainer();
+    position: relative;
     width: 100%;
     background-color: variables.$container-gray;
+
+    &__alert {
+      position: absolute;
+      left: 125px;
+      height: 25px;
+      animation: fadeOut 4s;
+    }
 
     &__label {
       display: none;
@@ -154,4 +162,10 @@
       }
     }
   }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
 }

@@ -4,18 +4,7 @@ const collectionReducer = (state = [], action) => {
       return [...state, {
         name: action.payload.name,
         id: action.payload.id,
-        pieces: [
-          {
-            objectID: 275,
-            artistName: "Frank Lloyd Wright",
-            department: "The American Wing",
-            objectName: "Armchair",
-            culture: "American",
-            objectDate: 1903,
-            imageSmall: "https://images.metmuseum.org/CRDImages/dp/web-large/DP835929.jpg",
-            userNotes: ""
-          }
-        ]
+        pieces: []
       }]
 
     case "DELETE_COLLECTION":

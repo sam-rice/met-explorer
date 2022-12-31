@@ -4,8 +4,7 @@ import { useDispatch } from "react-redux"
 import { deleteCollection } from "../../actions"
 
 import "./_CollectionTile.scss"
-
-import chair from "../../assets/flw-chair.png"
+import fallbackIMG from "../../assets/fallback.png"
 
 function CollectionTile({ name, id, count, deptList, thumbnail }) {
   const dispatch = useDispatch()
@@ -25,15 +24,18 @@ function CollectionTile({ name, id, count, deptList, thumbnail }) {
 
   const pieceCount = `${count} piece${count === 1 ? "" : "s"}`
 
+  const displayedThumbnail = thumbnail ? thumbnail : fallbackIMG
+
+
   return (
       <li 
         className="collection"
         onClick={e => goToCollection(e)}
       >
         <div className="collection__left">
-          <div className="collection__left__img-container">
-            <img className="collection__left__img-container__img" src={thumbnail} />
-          </div>
+          {count !== 0 && <div className="collection__left__img-container">
+            <img className="collection__left__img-container__img" src={displayedThumbnail} />
+          </div>}
           <h4 className="collection__left__title">{name}</h4>
         </div>
         <div className="collection__details">

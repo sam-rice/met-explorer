@@ -26,7 +26,7 @@ function CollectionsList() {
   }
 
   const collectionTiles = collections.map((collection) => {
-    const thumbnailURL = collection.pieces[0].imageSmall
+    const thumbnailURL = collection.pieces[0]?.imageSmall
 
     const deptList = collection.pieces.reduce((acc, piece) => {
       console.log(piece)

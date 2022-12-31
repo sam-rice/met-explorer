@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 
 import "./_SearchForm.scss"
@@ -6,21 +6,26 @@ import { deptKey } from "../../utilities/global-static-data"
 
 function SearchForm() {
   const [query, setQuery] = useState("")
-  const [searchType, setSearchType] = useState("select")
-  const [selectedDepartment, setselectedDepartment] = useState("(optional)")
-
+  const [searchType, setSearchType] = useState("keyword")
+  const [selectedDepartment, setselectedDepartment] = useState("optional")
+  const searchInput = useRef(null)
   const navigate = useNavigate()
 
+  useEffect(() => searchInput.current.focus(), [])
+
   const submitSearch = () => {
-    if (query === "" || searchType === "(required)") {
+    if (query === "") {
       displayError()
       return
     }
-    
     const submittedType = searchType === "artist name" ? "artist" : "keyword"
     const submittedQuery = query.replace(/ /g, "+")
-    const submittedDept = selectedDepartment !== "(optional)" ? deptKey[selectedDepartment] : "all"
+    const submittedDept = selectedDepartment !== "optional" ? deptKey[selectedDepartment] : "all"
     navigate(`/search?query=${submittedQuery}&type=${submittedType}&dept=${submittedDept}&page=1`)
+  }
+
+  const handleKeyDown = e => {
+    if (e.key === "Enter") submitSearch()
   }
 
   const displayError = () => {
@@ -41,8 +46,10 @@ function SearchForm() {
           name="search-artwork"
           value={query}
           onChange={e => setQuery(e.target.value)}
+          onKeyDown={e => handleKeyDown(e)}
           placeholder="search..."
           required={true}
+          ref={searchInput}
         />
       </div>
       <div className="search__type-container">
@@ -56,9 +63,8 @@ function SearchForm() {
           onChange={e => setSearchType(e.target.value)}
           required={true}
         >
-          <option>{`(required)`}</option>
-          <option>keyword</option>
-          <option>artist name</option>
+          <option value="keyword">keyword</option>
+          <option value="artist name">artist name</option>
         </select>
       </div>
       <div className="search__dept-container">
@@ -71,26 +77,26 @@ function SearchForm() {
           value={selectedDepartment}
           onChange={e => setselectedDepartment(e.target.value)}
         >
-          <option>{"(optional)"}</option>
-          <option>American Decorative Arts</option>
-          <option>Ancient Near Eastern Art</option>
-          <option>Arms and Armor</option>
-          <option>Arts of Africa, Oceania, and the Americas</option>
-          <option>Asian Art</option>
-          <option>The Cloisters</option>
-          <option>The Costume Institute</option>
-          <option>Drawings and Prints</option>
-          <option>Egyptian Art</option>
-          <option>European Paintings</option>
-          <option>European Sculpture and Decorative Arts</option>
-          <option>Greek and Roman Art</option>
-          <option>Islamic Art</option>
-          <option>The Robert Lehman Collection</option>
-          <option>The Libraries</option>
-          <option>Medieval Art</option>
-          <option>Musical Instruments</option>
-          <option>Photographs</option>
-          <option>Modern Art</option>
+          <option value="optional">{"(optional)"}</option>
+          <option value="American Decorative Arts">American Decorative Arts</option>
+          <option value="Ancient Near Eastern Art">Ancient Near Eastern Art</option>
+          <option value="Arms and Armor">Arms and Armor</option>
+          <option value="Arts of Africa, Oceania, and the Americas">Arts of Africa, Oceania, and the Americas</option>
+          <option value="Asian Art">Asian Art</option>
+          <option value="The Cloisters">The Cloisters</option>
+          <option value="The Costume Institute">The Costume Institute</option>
+          <option value="Drawings and Prints">Drawings and Prints</option>
+          <option value="Egyptian Art">Egyptian Art</option>
+          <option value="European Paintings">European Paintings</option>
+          <option value="European Sculpture and Decorative Arts">European Sculpture and Decorative Arts</option>
+          <option value="Greek and Roman Art">Greek and Roman Art</option>
+          <option value="Islamic Art">Islamic Art</option>
+          <option value="The Robert Lehman Collection">The Robert Lehman Collection</option>
+          <option value="The Libraries">The Libraries</option>
+          <option value="Medieval Art">Medieval Art</option>
+          <option value="Musical Instruments">Musical Instruments</option>
+          <option value="Photographs">Photographs</option>
+          <option value="Modern Art">Modern Art</option>
         </select>
       </div>
       <button

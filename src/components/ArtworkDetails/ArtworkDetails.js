@@ -5,6 +5,7 @@ import { addToCollection } from "../../actions"
 
 import "./_ArtworkDetails.scss"
 import fallbackIMG from "../../assets/fallback.png"
+import success from "../../assets/success.png"
 
 function ArtworkDetail() {
   const dispatch = useDispatch()
@@ -12,6 +13,7 @@ function ArtworkDetail() {
   const { objectID } = useParams()
 
   const [error, setError] = useState("")
+  const [successAlert, setSuccessAlert] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
   const [selectedCollection, setSelectedCollection] = useState("")
   const [currentImg, setCurrentImg] = useState("")
@@ -79,6 +81,10 @@ function ArtworkDetail() {
   }
 
   const handleSubmit = () => {
+    if (!selectedCollection) {
+      handleFormError()
+      return
+    }
     const targetCollection = collections.find(collection => collection.name === selectedCollection)
 
     dispatch(addToCollection({
@@ -93,7 +99,20 @@ function ArtworkDetail() {
     }))
     setSelectedCollection("")
     removeOption(targetCollection.id)
+    alertSuccess()
   }
+
+  const handleFormError = () => {
+    console.log("error")
+  }
+
+  const alertSuccess = () => {
+    console.log("success")
+    setSuccessAlert(true)
+    setTimeout(setSuccessAlert, 3000, false)
+  }
+
+  useEffect(() => console.log("did it"), [successAlert])
 
   const removeOption = targetCollectionID => {
     const targetIndex = relatedCollections.findIndex(collection => collection.id == targetCollectionID)
@@ -203,6 +222,10 @@ function ArtworkDetail() {
             view at <a href={metURL}>metmuseum.org</a>
           </p>
           <div className="artwork__left__collection">
+            {
+              successAlert &&
+              <img className="artwork__left__collection__alert" src={success} />
+            }
             <label
               className="artwork__left__collection__label"
               htmlFor="selected-collection"

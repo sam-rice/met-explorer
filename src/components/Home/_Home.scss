@@ -56,9 +56,9 @@ $home-y-margin: 105px;
   transform: translate(-50%, -50%);
   width: min(62vh, 56vw);
   height: min(43vh, 45vw);
-  background-image: url("../../assets/flw-room.png");
+  background-image: url("../../assets/morris.jpeg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom -50px right 0px;
 
   &__title {
     display: flex;

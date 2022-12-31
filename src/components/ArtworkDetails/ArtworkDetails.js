@@ -131,7 +131,7 @@ function ArtworkDetail() {
     `"${relatedCollections[0]?.name}" & others` :
     `"${relatedCollections[0]?.name}"`
   const prevSavedMessage =
-    <motion.p 
+    <motion.p
       className="artwork__left__saved-msg"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -172,11 +172,13 @@ function ArtworkDetail() {
         <span
           className="artwork-detail-link"
         >{department}</span>
-        {artistName &&
+        {
+          artistName &&
           <span
             className="artwork-detail-link"
           > / {artistName}
-          </span>}
+          </span>
+        }
       </span>
       <section className="artwork">
         <div className="artwork__left">
@@ -189,27 +191,38 @@ function ArtworkDetail() {
           </p>
           <table className="artwork__left__table">
             <tbody>
-              {description?.toLowerCase() !== objectName?.toLowerCase() &&
+              {
+                description?.toLowerCase() !== objectName?.toLowerCase() &&
                 <tr>
                   <td className="artwork__left__table__key">description:</td>
                   <td>{description}</td>
-                </tr>}
+                </tr>
+              }
               <tr>
                 <td>department:</td>
                 <td>{department}</td>
               </tr>
-              {region && <tr>
-                <td>geography:</td>
-                <td>{`${geographyType} ${region}, ${country}`}</td>
-              </tr>}
-              {period && <tr>
-                <td>period:</td>
-                <td>{period}</td>
-              </tr>}
-              {classification && <tr>
-                <td>classification:</td>
-                <td>{classification}</td>
-              </tr>}
+              {
+                region &&
+                <tr>
+                  <td>geography:</td>
+                  <td>{`${geographyType} ${region}, ${country}`}</td>
+                </tr>
+              }
+              {
+                period &&
+                <tr>
+                  <td>period:</td>
+                  <td>{period}</td>
+                </tr>
+              }
+              {
+                classification &&
+                <tr>
+                  <td>classification:</td>
+                  <td>{classification}</td>
+                </tr>
+              }
               <tr>
                 <td>medium:</td>
                 <td>{medium}</td>
@@ -228,7 +241,8 @@ function ArtworkDetail() {
               initial={false}
               mode="wait"
             >
-              {showSuccess &&
+              {
+                showSuccess &&
                 <div className="artwork__left__collection__alert">
                   <motion.span
                     className="artwork__left__collection__alert__label"
@@ -237,8 +251,8 @@ function ArtworkDetail() {
                   >
                     added
                   </motion.span>
-                  <motion.img 
-                    className="artwork__left__collection__alert__img" 
+                  <motion.img
+                    className="artwork__left__collection__alert__img"
                     src={success}
                     exit={{ opacity: 0 }}
                     key={"img"}

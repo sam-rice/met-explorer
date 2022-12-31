@@ -12,10 +12,10 @@ function Home() {
       </h1>
       <div className="home__featured">
         <div className="home__featured__title">
-          <h3>The Frank Lloyd Wright Collection</h3>
+          <h3>William Morris & Contemporaries</h3>
         </div>
         <br />
-        <Link to="/temp">
+        <Link to="/search?query=william+morris&type=keyword&dept=12&page=1">
           <button 
             className="home__featured__button"
           >view</button>

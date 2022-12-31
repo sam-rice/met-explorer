@@ -2,7 +2,6 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom"
 
-import './_App.scss'
 import MainLayout from "../MainLayout/MainLayout"
 import Home from "../Home/Home"
 import CollectionsListContainer from "../../containers/CollectionsListContainer"

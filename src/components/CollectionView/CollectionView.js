@@ -16,7 +16,7 @@ function CollectionView() {
     data={piece}
   />)
 
-  const listContent = pieces.length ? savedPieceTiles : <p>no pieces in this collection yet</p>
+  const listContent = pieces.length ? savedPieceTiles : <p>no pieces in "{name}" yet</p>
 
   return (
     <section className="pieces">

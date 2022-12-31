@@ -11,19 +11,36 @@ import CollectionTile from "../CollectionTile/CollectionTile"
 function CollectionsList() {
   const [modalOpen, setModalOpen] = useState(false)
   const [name, setName] = useState("")
+  const [nameExistsError, setNameExistsError] = useState(false)
+  const [formError, setFormError] = useState(false)
   const dispatch = useDispatch()
 
   const collections = useSelector(({ collections }) => collections)
 
   ReactModal.setAppElement("#root")
 
-  const handleModal = isOpen => setModalOpen(isOpen)
+  const handleModal = isOpen => {
+    setModalOpen(isOpen)
+    // setNameExistsError(false)
+    // setFormError(false)
+  }
 
   const handleKeyDown = e => {
     if (e.key === "Enter") handleSubmit()
   }
 
   const handleSubmit = () => {
+    const collectionNameExists = collections.some(collection => collection.name === name)
+    if (collectionNameExists) {
+      setNameExistsError(true)
+      setFormError(false)
+      return
+    }
+    if (name === "") {
+      setFormError(true)
+      setNameExistsError(false)
+      return
+    }
     dispatch(createCollection(name))
     setModalOpen(false)
     setName("")
@@ -93,6 +110,8 @@ function CollectionsList() {
             onClick={handleSubmit}
           >create
           </button>
+          {formError && <p className="modal__form__error">*required field</p>}
+          {nameExistsError && <p className="modal__form__error">*collection name already exists</p>}
         </div>
         <button
           className="modal__close-button"

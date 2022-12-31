@@ -63,6 +63,7 @@
   }
 
   &__form {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -80,6 +81,14 @@
       @include mixins.themeButton();
       height: 38px;
       width: 87px;
+    }
+
+    &__error {
+      position: absolute;
+      font-size: .9rem;
+      color: variables.$error-red;
+      top: 30px;
+      // right: 158px;
     }
   }
 

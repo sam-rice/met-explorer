@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { addToCollection } from "../../actions"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -44,7 +44,6 @@ function ArtworkDetail() {
           department: data.department,
           description: data.title,
           geographyType: data.geographyType,
-          // imageLarge: data.primaryImage,
           imageSmall: data.primaryImageSmall,
           medium: data.medium,
           objectDate: data.objectDate,

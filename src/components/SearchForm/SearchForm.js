@@ -8,6 +8,7 @@ function SearchForm() {
   const [query, setQuery] = useState("")
   const [searchType, setSearchType] = useState("keyword")
   const [selectedDepartment, setselectedDepartment] = useState("optional")
+  const [userError, setUserError] = useState(false)
   const searchInput = useRef(null)
   const navigate = useNavigate()
 
@@ -15,7 +16,7 @@ function SearchForm() {
 
   const submitSearch = () => {
     if (query === "") {
-      displayError()
+      setUserError(true)
       return
     }
     const submittedType = searchType === "artist name" ? "artist" : "keyword"
@@ -26,11 +27,6 @@ function SearchForm() {
 
   const handleKeyDown = e => {
     if (e.key === "Enter") submitSearch()
-  }
-
-  const displayError = () => {
-    console.log("form error")
-    //replace replace replace replace
   }
 
   return (
@@ -51,6 +47,7 @@ function SearchForm() {
           required={true}
           ref={searchInput}
         />
+        {userError && <p className={"search__input-container__error"}>*required field</p>}
       </div>
       <div className="search__type-container">
         <label

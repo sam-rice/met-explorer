@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { useSearchParams } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { fetchPage, fetchResults } from "../../actions"
@@ -8,6 +8,7 @@ import SearchResultTile from "../SearchResultTile/SearchResultTile"
 import { deptKey } from "../../utilities/global-static-data"
 
 function SearchResultsView() {
+  const [noResults, setNoResults] = useState(false)
   const dispatch = useDispatch()
   const { isLoadingResults = true, isLoadingPage = true, allResults, currentPageResults } = useSelector(({ results }) => results)
   const [searchParams, setSearchParams] = useSearchParams()
@@ -39,7 +40,7 @@ function SearchResultsView() {
       dispatch(fetchPage(targetObjectIDs))
       window.scrollTo({ top: 100 })
     } else if (!isLoadingResults) {
-      console.log("handle no results")
+      setNoResults(true)
     }
   }
 
@@ -56,7 +57,9 @@ function SearchResultsView() {
     currentPageResults.filter(result => !result.hasOwnProperty("message"))
       .map(result => <SearchResultTile key={result.objectID} data={result} />)
 
-  const totalResultsCount = !isLoadingResults && allResults.objectIDs.length.toLocaleString("en-US")
+  const totalResultsCount = !isLoadingResults && allResults?.objectIDs.length ? 
+    allResults.objectIDs.length.toLocaleString("en-US") :
+    0
 
   const headerSearchParams = !isLoadingResults &&
     <>
@@ -86,7 +89,8 @@ function SearchResultsView() {
         </p>
       </div>
       <ul className="results__list">
-        {resultsTiles}
+        {!isLoadingResults && resultsTiles}
+        {noResults && <p>no results matching your search</p>}
       </ul>
       <div className="results__results-controls">
         <p className="results__results-controls__details">

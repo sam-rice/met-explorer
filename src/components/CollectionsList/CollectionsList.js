@@ -19,6 +19,10 @@ function CollectionsList() {
 
   const handleModal = isOpen => setModalOpen(isOpen)
 
+  const handleKeyDown = e => {
+    if (e.key === "Enter") handleSubmit()
+  }
+
   const handleSubmit = () => {
     dispatch(createCollection(name))
     setModalOpen(false)
@@ -66,6 +70,7 @@ function CollectionsList() {
         isOpen={modalOpen}
         closeTimeoutMS={400}
         contentLabel="modal"
+        autoFocus={false}
       >
         <h3>create new collection:</h3>
         <div className="modal__form">
@@ -80,6 +85,8 @@ function CollectionsList() {
             name="collection name"
             value={name}
             onChange={e => setName(e.target.value)}
+            onKeyDown={e => handleKeyDown(e)}
+            autoFocus={true}
           />
           <button
             className="modal__form__button"

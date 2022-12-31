@@ -1,26 +1,51 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
+import { useDispatch } from "react-redux"
+import { deleteCollection } from "../../actions"
 
 import "./_CollectionTile.scss"
+import fallbackIMG from "../../assets/fallback.png"
 
-import chair from "../../assets/flw-chair.png"
+function CollectionTile({ name, id, count, deptList, thumbnail }) {
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
 
-function CollectionTile() {
+  const goToCollection = e => {
+    if (e.target.type === "submit") {
+      removeCollection()
+    } else {
+      navigate(`/collections/${id}`)
+    }
+  }
+
+  const removeCollection = () => {
+    dispatch(deleteCollection(id))
+  }
+
+  const pieceCount = `${count} piece${count === 1 ? "" : "s"}`
+
+  const displayedThumbnail = thumbnail ? thumbnail : fallbackIMG
+
+
   return (
-    <Link className="collection-link-wrapper" to="/collections/collectionID" >
-      <li className="collection">
+      <li 
+        className="collection"
+        onClick={e => goToCollection(e)}
+      >
         <div className="collection__left">
-          <div className="collection__left__img-container">
-            <img className="collection__left__img-container__img" src={chair} />
-          </div>
-          <h4 className="collection__left__title">Early FLW</h4>
+          {count !== 0 && <div className="collection__left__img-container">
+            <img className="collection__left__img-container__img" src={displayedThumbnail} />
+          </div>}
+          <h4 className="collection__left__title">{name}</h4>
         </div>
         <div className="collection__details">
-          <p className="collection__details__row">23 pieces</p>
-          <p className="collection__details__row">departments: American Decorative Arts, Asian Art, Islamic Art</p>
+          <p className="collection__details__row">{pieceCount}</p>
+          <button
+            className="collection__details__remove-button"
+          />
+          <p className="collection__details__row">{deptList[0] && `departments: ${deptList[0]}`}{deptList[1] && `, ${deptList[1]}`}{deptList[2] && `, ${deptList[2]}...`}</p>
         </div>
       </li>
-    </Link>
   )
 }
 

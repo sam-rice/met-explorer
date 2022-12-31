@@ -1,9 +1,13 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 import "./_Header.scss"
 
 function Header() {
+  const location = useLocation()
+
+  const headerTitleRight = location.pathname.includes("/collections") ? <>MY<br />COLLECTIONS</> : <>EXPLORE</>
+
   return (
     <header className="header">
       <div className="header__left">
@@ -22,14 +26,14 @@ function Header() {
             <li>
               <Link
                 className="nav__link"
-                to="/search"
+                to="/search-form"
               >SEARCH
               </Link>
             </li>
           </ul>
         </nav>
       </div>
-      <h2 className="header__title-right">MY<br />COLLECTIONS</h2>
+      <h2 className="header__title-right">{headerTitleRight}</h2>
     </header>
   )
 }

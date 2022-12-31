@@ -25,11 +25,14 @@
 }
 
 .artwork__left {
+  position: relative;
   width: 40%;
 
   &__saved-msg {
-    width: 85%;
+    position: absolute;
+    width: 80%;
     padding: 7px 7px 7px 10px;
+    margin-top: 10px;
     background-color: variables.$container-gray;
     color: variables.$gray;
     font-style: italic;
@@ -37,7 +40,7 @@
 
   &__title {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin: 60px 0px 30px;
   }
 
   &__date {
@@ -47,27 +50,62 @@
 
   &__artist {
     color: variables.$gray;
-    margin: 0px;
+    margin: 0px 0px 45px;
 
     &__link {
       color: black;
-      margin-right: 10px;
+      margin-right: 8px;
+      transition-duration: 400ms;
+
+      &:hover {
+        color: variables.$gray;
+      }
+    }
+
+    &__no-link {
+      color: black;
+      text-decoration: underline;
+      margin-right: 8px;
     }
   }
   
-  &__article {
-    margin-top: 30px;
+  &__table {
+    table-layout: auto;
+    width: 100%;
+    margin-bottom: 45px;
+
+    &__key {
+      padding-right: 35px;
+    }
   }
 
-  &__dept {
-    margin: 40px 0px;
-    color: variables.$gray;
+  &__met-link {
+    margin-bottom: 35px;
   }
 
   &__collection {
     @include mixins.formContainer();
+    position: relative;
     width: 100%;
     background-color: variables.$container-gray;
+
+    &__alert {
+      position: absolute;
+      left: 72px;
+      display: flex;
+      align-items: center;
+      pointer-events: none;
+
+      &__label {
+        color: #6BC839;
+        margin-right: 8px;
+      }
+
+      &__img {
+        height: 25px;
+      }
+
+    }
 
     &__label {
       display: none;
@@ -105,7 +143,8 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 65%;
+      max-width: 87%;
+      max-height: 87%;
       transform: translate(-50%, -50%);
     }
   }
@@ -114,22 +153,26 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 55%;
     margin-top: 25px;
 
     &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100px;
       height: 100px;
       padding: 0px;
+      margin: 0px 10px;
       border: none;
 
+      &:hover {
+        opacity: .5;
+      }
+      
       &__img {
-        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
         transition-duration: 400ms;
-
-        &:hover {
-          opacity: .5;
-        }
       }
     }
   }

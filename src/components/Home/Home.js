@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 import "./_Home.scss"
-import room from "../../assets/flw-room.png"
 
 function Home() {
   return (
@@ -30,7 +29,7 @@ function Home() {
             </Link>
           </li>
           <li>
-            <Link className="home__bottom__right" to="/search">
+            <Link className="home__bottom__right" to="/search-form">
               EXPLORE
             </Link>
           </li>

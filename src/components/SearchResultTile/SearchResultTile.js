@@ -2,32 +2,29 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 import "./_SearchResultTile.scss"
-import latrec from "../../assets/latrec.jpeg"
+import fallback from "../../assets/fallback.png"
 
-function SearchResultTile() {
+function SearchResultTile({ data }) {
+  const {artistDisplayName, objectName, objectDate, objectID, country, culture, department, primaryImageSmall} = data
 
   return (
     <Link
       className="result-link-wrapper"
-      to="/explore/artworkID"
+      to={`/explore/${objectID}`}
     >
       <li className="result">
         <div className="result__left">
           <img
             className="result__left__thumbnail"
-            src={latrec}
+            src={primaryImageSmall ? primaryImageSmall : fallback}
           />
         </div>
         <div className="result__right">
-          <h4>The Englishman (William Tom Warrener, 1861–1934) at the Moulin Rouge</h4>
-          <p className="result__right__details">1892</p>
-          <Link
-            className="result__right__artist"
-            to="/search/artistSearch"
-          >Henri de Tolouse-Latrec
-          </Link>
-          <p className="result__right__details">French</p>
-          <p className="result__right__dept">department: European Paintings</p>
+          <h4>{objectName}</h4>
+          <p className="result__right__details">{objectDate}</p>
+          <p className="result__right__artist">{artistDisplayName}</p>
+          <p className="result__right__details">{culture ? culture : country}</p>
+          <p className="result__right__dept">department: {department}</p>
         </div>
       </li>
     </Link>

@@ -37,9 +37,13 @@
   &__artist-link {
     color: black;
     margin-right: 10px;
+    transition-duration: 400ms;
+
+    &:hover {
+      color: variables.$gray;
+    }
   }
 }
-
 .piece__right__notes-container {
   display: flex;
   flex-direction: column;

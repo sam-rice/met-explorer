@@ -2,14 +2,13 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom"
 
-import './_App.scss'
 import MainLayout from "../MainLayout/MainLayout"
 import Home from "../Home/Home"
-import CollectionsList from "../CollectionsList/CollectionsList"
-import CollectionView from "../CollectionView/CollectionView"
+import CollectionsListContainer from "../../containers/CollectionsListContainer"
+import CollectionViewContainer from "../../containers/CollectionViewContainer"
 import SearchForm from "../SearchForm/SearchForm"
-import SearchResultsView from "../SearchResultsView/SearchResultsView"
-import ArtworkDetail from "../ArtworkDetail/ArtworkDetail"
+import SearchResultsViewContainer from "../../containers/SearchResultsViewContainer"
+import ArtworkDetailsContainer from "../../containers/ArtworkDetailsContainer"
 
 const App = () => {
   return (
@@ -18,16 +17,14 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/" element={<MainLayout />} >
           <Route path="/collections" >
-            <Route index element={<CollectionsList />} />
-            <Route path=":collectionID" element={<CollectionView />} />
+            <Route index element={<CollectionsListContainer />} />
+            <Route path=":collectionID" element={<CollectionViewContainer />} />
           </Route>
-          <Route path="/search" >
-            <Route index element={<SearchForm />} />
-            <Route path=":query" element={<SearchResultsView />} />
-          </Route>
+          <Route path="/search-form" element={<SearchForm />} />
+          <Route path="/search" element={<SearchResultsViewContainer />} />
           <Route path="/explore" >
             {/* index redirect to homepage here */}
-            <Route path=":arworkID" element={<ArtworkDetail />} />
+            <Route path=":objectID" element={<ArtworkDetailsContainer />} />
           </Route>
         </Route>
       </Routes>

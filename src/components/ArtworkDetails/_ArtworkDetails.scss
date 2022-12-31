@@ -25,11 +25,14 @@
 }
 
 .artwork__left {
+  position: relative;
   width: 40%;
 
   &__saved-msg {
+    position: absolute;
     width: 80%;
     padding: 7px 7px 7px 10px;
+    margin-top: 10px;
     background-color: variables.$container-gray;
     color: variables.$gray;
     font-style: italic;
@@ -37,7 +40,7 @@
 
   &__title {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin: 60px 0px 30px;
   }
 
   &__date {
@@ -47,7 +50,7 @@
 
   &__artist {
     color: variables.$gray;
-    margin: 0px;
+    margin: 0px 0px 45px;
 
     &__link {
       color: black;
@@ -69,7 +72,7 @@
   &__table {
     table-layout: auto;
     width: 100%;
-    margin-top: 35px;
+    margin-bottom: 45px;
 
     &__key {
       padding-right: 35px;
@@ -77,7 +80,7 @@
   }
 
   &__met-link {
-    margin-top: 35px;
+    margin-bottom: 35px;
   }
 
   &__collection {
@@ -88,9 +91,20 @@
 
     &__alert {
       position: absolute;
-      left: 125px;
-      height: 25px;
-      animation: fadeOut 4s;
+      left: 72px;
+      display: flex;
+      align-items: center;
+      pointer-events: none;
+
+      &__label {
+        color: #6BC839;
+        margin-right: 8px;
+      }
+
+      &__img {
+        height: 25px;
+      }
+
     }
 
     &__label {
@@ -162,10 +176,4 @@
       }
     }
   }
-}
-
-@keyframes fadeOut {
-  0% { opacity: 1; }
-  75% { opacity: 1; }
-  100% { opacity: 0; }
 }

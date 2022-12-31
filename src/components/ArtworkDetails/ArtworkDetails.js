@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link, useParams } from "react-router-dom"
 import { addToCollection } from "../../actions"
+import { motion, AnimatePresence } from "framer-motion"
 
 import "./_ArtworkDetails.scss"
 import fallbackIMG from "../../assets/fallback.png"
@@ -13,7 +14,7 @@ function ArtworkDetail() {
   const { objectID } = useParams()
 
   const [error, setError] = useState("")
-  const [successAlert, setSuccessAlert] = useState(false)
+  const [showSuccess, setShowSuccess] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
   const [selectedCollection, setSelectedCollection] = useState("")
   const [currentImg, setCurrentImg] = useState("")
@@ -108,11 +109,9 @@ function ArtworkDetail() {
 
   const alertSuccess = () => {
     console.log("success")
-    setSuccessAlert(true)
-    setTimeout(setSuccessAlert, 3000, false)
+    setShowSuccess(true)
+    setTimeout(setShowSuccess, 3000, false)
   }
-
-  useEffect(() => console.log("did it"), [successAlert])
 
   const removeOption = targetCollectionID => {
     const targetIndex = relatedCollections.findIndex(collection => collection.id == targetCollectionID)
@@ -133,9 +132,13 @@ function ArtworkDetail() {
     `"${relatedCollections[0]?.name}" & others` :
     `"${relatedCollections[0]?.name}"`
   const prevSavedMessage =
-    <p className="artwork__left__saved-msg">
+    <motion.p 
+      className="artwork__left__saved-msg"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       this piece is saved in your collection: {prevSavedString}
-    </p>
+    </motion.p>
 
   const formattedArtistName = artistURL ?
     <a
@@ -222,10 +225,28 @@ function ArtworkDetail() {
             view at <a href={metURL}>metmuseum.org</a>
           </p>
           <div className="artwork__left__collection">
-            {
-              successAlert &&
-              <img className="artwork__left__collection__alert" src={success} />
-            }
+            <AnimatePresence
+              initial={false}
+              mode="wait"
+            >
+              {showSuccess &&
+                <div className="artwork__left__collection__alert">
+                  <motion.span
+                    className="artwork__left__collection__alert__label"
+                    exit={{ opacity: 0 }}
+                    key={"p"}
+                  >
+                    added
+                  </motion.span>
+                  <motion.img 
+                    className="artwork__left__collection__alert__img" 
+                    src={success}
+                    exit={{ opacity: 0 }}
+                    key={"img"}
+                  />
+                </div>
+              }
+            </AnimatePresence>
             <label
               className="artwork__left__collection__label"
               htmlFor="selected-collection"

@@ -19,10 +19,11 @@ function CollectionsList() {
 
   ReactModal.setAppElement("#root")
 
-  const handleModal = isOpen => {
-    setModalOpen(isOpen)
-    // setNameExistsError(false)
-    // setFormError(false)
+  const showModal = () => {
+    setModalOpen(true)
+    setNameExistsError(false)
+    setFormError(false)
+    setName("")
   }
 
   const handleKeyDown = e => {
@@ -78,7 +79,7 @@ function CollectionsList() {
           <p className="add-button-label">new collection</p>
           <button
             className="add-button"
-            onClick={() => handleModal(true)}
+            onClick={showModal}
           />
         </div>
       </div>
@@ -115,7 +116,7 @@ function CollectionsList() {
         </div>
         <button
           className="modal__close-button"
-          onClick={() => handleModal(false)}
+          onClick={() => setModalOpen(false)}
         >cancel
         </button>
       </Modal>

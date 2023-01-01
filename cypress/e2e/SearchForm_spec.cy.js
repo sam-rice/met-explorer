@@ -1,5 +1,4 @@
-describe("Search Form Header", () => {
-
+describe("Search Form - Header", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000/search-form")
   })
@@ -24,8 +23,7 @@ describe("Search Form Header", () => {
   })
 })
 
-describe("Search Form Body", () => {
-
+describe("Search Form - Body", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000/search-form")
   })
@@ -140,5 +138,4 @@ describe("Search Form Body", () => {
     cy.getByData("submit-search").click()
     cy.url().should("eq", "http://localhost:3000/search?query=foo&type=keyword&dept=21&page=1")
   })
-
 })

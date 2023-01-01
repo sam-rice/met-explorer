@@ -1,0 +1,101 @@
+{
+  "objectID": 283229,
+  "isHighlight": false,
+  "accessionNumber": "2005.100.113",
+  "accessionYear": "1999",
+  "isPublicDomain": true,
+  "primaryImage": "https://images.metmuseum.org/CRDImages/ph/original/DP279257.jpg",
+  "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DP279257.jpg",
+  "additionalImages": [],
+  "constituents": [
+      {
+          "constituentID": 54801,
+          "role": "Artist",
+          "name": "William James Mullins",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500335417",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q54944467",
+          "gender": ""
+      }
+  ],
+  "department": "Photographs",
+  "objectName": "Photograph",
+  "title": "[Children Fishing]",
+  "culture": "",
+  "period": "",
+  "dynasty": "",
+  "reign": "",
+  "portfolio": "",
+  "artistRole": "Artist",
+  "artistPrefix": "",
+  "artistDisplayName": "William James Mullins",
+  "artistDisplayBio": "American, 1860–1917",
+  "artistSuffix": "",
+  "artistAlphaSort": "Mullins, William James",
+  "artistNationality": "American",
+  "artistBeginDate": "1860",
+  "artistEndDate": "1917",
+  "artistGender": "",
+  "artistWikidata_URL": "https://www.wikidata.org/wiki/Q54944467",
+  "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500335417",
+  "objectDate": "ca. 1900",
+  "objectBeginDate": 1899,
+  "objectEndDate": 1901,
+  "medium": "Platinum print",
+  "dimensions": "Image: 9.1 x 25.7cm (3 9/16 x 10 1/8in.)\r\nMount: 9.8 × 26.4 cm (3 7/8 in. × 10 3/8 in.)",
+  "measurements": [
+      {
+          "elementName": "Overall",
+          "elementDescription": null,
+          "elementMeasurements": {
+              "Height": 9.1,
+              "Width": 25.7
+          }
+      },
+      {
+          "elementName": "Mount",
+          "elementDescription": null,
+          "elementMeasurements": {
+              "Height": 9.8,
+              "Width": 26.4
+          }
+      }
+  ],
+  "creditLine": "Gilman Collection, Purchase, Jennifer and Joseph Duke Gift, 2005",
+  "geographyType": "",
+  "city": "",
+  "state": "",
+  "county": "",
+  "country": "",
+  "region": "",
+  "subregion": "",
+  "locale": "",
+  "locus": "",
+  "excavation": "",
+  "river": "",
+  "classification": "Photographs",
+  "rightsAndReproduction": "",
+  "linkResource": "",
+  "metadataDate": "2022-10-20T04:55:06.267Z",
+  "repository": "Metropolitan Museum of Art, New York, NY",
+  "objectURL": "https://www.metmuseum.org/art/collection/search/283229",
+  "tags": [
+      {
+          "term": "Boys",
+          "AAT_URL": "http://vocab.getty.edu/page/aat/300247598",
+          "Wikidata_URL": "https://www.wikidata.org/wiki/Q3010"
+      },
+      {
+          "term": "Girls",
+          "AAT_URL": "http://vocab.getty.edu/page/aat/300247581",
+          "Wikidata_URL": "https://www.wikidata.org/wiki/Q3031"
+      },
+      {
+          "term": "Fishing",
+          "AAT_URL": "http://vocab.getty.edu/page/aat/300239470",
+          "Wikidata_URL": "https://www.wikidata.org/wiki/Q14373"
+      }
+  ],
+  "objectWikidata_URL": "",
+  "isTimelineWork": false,
+  "GalleryNumber": ""
+}

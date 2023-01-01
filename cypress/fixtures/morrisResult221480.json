@@ -1,0 +1,99 @@
+{
+  "objectID": 221480,
+  "isHighlight": false,
+  "accessionNumber": "23.163.10",
+  "accessionYear": "1923",
+  "isPublicDomain": false,
+  "primaryImage": "",
+  "primaryImageSmall": "",
+  "additionalImages": [],
+  "constituents": [
+      {
+          "constituentID": 164917,
+          "role": "Designer",
+          "name": "Designed by William Morris",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+          "gender": ""
+      },
+      {
+          "constituentID": 164934,
+          "role": "Manufacturer",
+          "name": "Manufactured by Merton Abbey Tapestry Works",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500114241",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 162144,
+          "role": "Maker",
+          "name": "Workshop of Morris &amp; Company",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500206155",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      }
+  ],
+  "department": "European Sculpture and Decorative Arts",
+  "objectName": "Length",
+  "title": "Wandle",
+  "culture": "",
+  "period": "",
+  "dynasty": "",
+  "reign": "",
+  "portfolio": "",
+  "artistRole": "Designer",
+  "artistPrefix": "Designed by",
+  "artistDisplayName": "William Morris",
+  "artistDisplayBio": "British, Walthamstow, London 1834–1896 Hammersmith, London",
+  "artistSuffix": "",
+  "artistAlphaSort": "Morris, William",
+  "artistNationality": "British",
+  "artistBeginDate": "1834",
+  "artistEndDate": "1896",
+  "artistGender": "",
+  "artistWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+  "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+  "objectDate": "design registered 1884, printed 1917–23",
+  "objectBeginDate": 1884,
+  "objectEndDate": 1923,
+  "medium": "Cotton",
+  "dimensions": "Overall: 108 x 38 1/8 in. (274.3 x 96.8 cm);\r\nPattern width: 35 1/2 inches",
+  "measurements": [
+      {
+          "elementName": "Overall",
+          "elementDescription": null,
+          "elementMeasurements": {
+              "Height": 274.3205,
+              "Width": 96.8377
+          }
+      }
+  ],
+  "creditLine": "Purchase, Edward C. Moore Jr. Gift, 1923",
+  "geographyType": "",
+  "city": "",
+  "state": "",
+  "county": "",
+  "country": "",
+  "region": "",
+  "subregion": "",
+  "locale": "",
+  "locus": "",
+  "excavation": "",
+  "river": "",
+  "classification": "Textiles-Printed",
+  "rightsAndReproduction": "",
+  "linkResource": "",
+  "metadataDate": "2021-04-06T04:41:04.967Z",
+  "repository": "Metropolitan Museum of Art, New York, NY",
+  "objectURL": "https://www.metmuseum.org/art/collection/search/221480",
+  "tags": [
+      {
+          "term": "Flowers",
+          "AAT_URL": "http://vocab.getty.edu/page/aat/300132399",
+          "Wikidata_URL": "https://www.wikidata.org/wiki/Q506"
+      }
+  ],
+  "objectWikidata_URL": "",
+  "isTimelineWork": true,
+  "GalleryNumber": ""
+}

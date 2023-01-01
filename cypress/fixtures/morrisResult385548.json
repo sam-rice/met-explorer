@@ -1,0 +1,390 @@
+{
+  "objectID": 385548,
+  "isHighlight": false,
+  "accessionNumber": "1981.1202.1(1–5)",
+  "accessionYear": "1981",
+  "isPublicDomain": false,
+  "primaryImage": "",
+  "primaryImageSmall": "",
+  "additionalImages": [],
+  "constituents": [
+      {
+          "constituentID": 75504,
+          "role": "Author",
+          "name": "Horace Walpole, 4th Earl of Orford",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 72110,
+          "role": "Editor",
+          "name": "Robert G. Berry",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 81819,
+          "role": "Publisher",
+          "name": "G. G. J. &amp; J. Robinson",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 89715,
+          "role": "Publisher",
+          "name": "J. Edwards",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 77407,
+          "role": "Artist",
+          "name": "Alexander Bannerman",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011477",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q4718304",
+          "gender": ""
+      },
+      {
+          "constituentID": 74552,
+          "role": "Artist",
+          "name": "Francis Barlow",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030146",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3081300",
+          "gender": ""
+      },
+      {
+          "constituentID": 90956,
+          "role": "Artist",
+          "name": "Charles Bretherton",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500019318",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q30133190",
+          "gender": ""
+      },
+      {
+          "constituentID": 97980,
+          "role": "Artist",
+          "name": "James Bretherton",
+          "constituentULAN_URL": "(not assigned)",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18756792",
+          "gender": ""
+      },
+      {
+          "constituentID": 90957,
+          "role": "Artist",
+          "name": "Thomas Chambars",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500015246",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18508681",
+          "gender": ""
+      },
+      {
+          "constituentID": 90952,
+          "role": "Artist",
+          "name": "T. Evans",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 75113,
+          "role": "Artist",
+          "name": "Richard Bernard Godfrey",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500021902",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18674398",
+          "gender": ""
+      },
+      {
+          "constituentID": 73486,
+          "role": "Artist",
+          "name": "Charles Grignion, I",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500020329",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5078450",
+          "gender": ""
+      },
+      {
+          "constituentID": 102736,
+          "role": "Artist",
+          "name": "James Heath",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500001393",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q6135818",
+          "gender": ""
+      },
+      {
+          "constituentID": 90960,
+          "role": "Artist",
+          "name": "William Hibbart",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500032514",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18672813",
+          "gender": ""
+      },
+      {
+          "constituentID": 90961,
+          "role": "Artist",
+          "name": "John Miller",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 69124,
+          "role": "Artist",
+          "name": "Thomas Morris",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 73488,
+          "role": "Artist",
+          "name": "James Newton",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500056203",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q21595899",
+          "gender": ""
+      },
+      {
+          "constituentID": 69207,
+          "role": "Artist",
+          "name": "George Vertue",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500013594",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q930477",
+          "gender": ""
+      },
+      {
+          "constituentID": 73491,
+          "role": "Artist",
+          "name": "Anthony Walker",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500025334",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q8200777",
+          "gender": ""
+      },
+      {
+          "constituentID": 97975,
+          "role": "Artist",
+          "name": "After Mary Beale",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500026335",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q2347846",
+          "gender": "Female"
+      },
+      {
+          "constituentID": 97981,
+          "role": "Artist",
+          "name": "After Adrien Carpentiers",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500006270",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q2825139",
+          "gender": ""
+      },
+      {
+          "constituentID": 166175,
+          "role": "Artist",
+          "name": "After William Dobson",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500023117",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q58303",
+          "gender": ""
+      },
+      {
+          "constituentID": 161858,
+          "role": "Artist",
+          "name": "After Anthony van Dyck",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500115190",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q150679",
+          "gender": ""
+      },
+      {
+          "constituentID": 98103,
+          "role": "Artist",
+          "name": "After John Giles Eccardt",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500124350",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q820627",
+          "gender": ""
+      },
+      {
+          "constituentID": 90955,
+          "role": "Artist",
+          "name": "After Edward Edwards",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011262",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5342741",
+          "gender": ""
+      },
+      {
+          "constituentID": 97914,
+          "role": "Artist",
+          "name": "After James Essex",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500010627",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q15999824",
+          "gender": ""
+      },
+      {
+          "constituentID": 161951,
+          "role": "Artist",
+          "name": "After Jan Gossart (called Mabuse)",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500009353",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q346952",
+          "gender": ""
+      },
+      {
+          "constituentID": 97974,
+          "role": "Artist",
+          "name": "After John Hayls",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500024984",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1033596",
+          "gender": ""
+      },
+      {
+          "constituentID": 161995,
+          "role": "Artist",
+          "name": "After Wenceslaus Hollar",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500028368",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q448555",
+          "gender": ""
+      },
+      {
+          "constituentID": 166181,
+          "role": "Artist",
+          "name": "After Sir Godfrey Kneller",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500015875",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q65317",
+          "gender": ""
+      },
+      {
+          "constituentID": 162050,
+          "role": "Artist",
+          "name": "After Nicolas de Largillierre (or Largillière)",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011561",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q550302",
+          "gender": ""
+      },
+      {
+          "constituentID": 166225,
+          "role": "Artist",
+          "name": "After Sir Thomas Lawrence",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500022619",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q312096",
+          "gender": ""
+      },
+      {
+          "constituentID": 90971,
+          "role": "Artist",
+          "name": "After Edmund Lilly",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030124",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18546144",
+          "gender": ""
+      },
+      {
+          "constituentID": 69109,
+          "role": "Artist",
+          "name": "After William Marlow",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500015908",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3568811",
+          "gender": ""
+      },
+      {
+          "constituentID": 90970,
+          "role": "Artist",
+          "name": "After Antonis Mor",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500027909",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q176694",
+          "gender": ""
+      },
+      {
+          "constituentID": 73492,
+          "role": "Artist",
+          "name": "After William Pars",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500021450",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q8016608",
+          "gender": ""
+      },
+      {
+          "constituentID": 82126,
+          "role": "Artist",
+          "name": "After Thomas Ripley",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500056257",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q7793561",
+          "gender": ""
+      },
+      {
+          "constituentID": 97973,
+          "role": "Artist",
+          "name": "After Frans Wouters",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500029248",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1959143",
+          "gender": ""
+      },
+      {
+          "constituentID": 69673,
+          "role": "Artist",
+          "name": "After John Vanderbank, the younger",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500118832",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q2053900",
+          "gender": ""
+      },
+      {
+          "constituentID": 162780,
+          "role": "Artist",
+          "name": "After Christian Friedrich Zincke",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011388",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1028749",
+          "gender": ""
+      }
+  ],
+  "department": "Drawings and Prints",
+  "objectName": "Book",
+  "title": "The Works of Horatio Walpole, Earl of Orford. In Five Volumes.",
+  "culture": "",
+  "period": "",
+  "dynasty": "",
+  "reign": "",
+  "portfolio": "",
+  "artistRole": "Author",
+  "artistPrefix": "",
+  "artistDisplayName": "Horace Walpole, 4th Earl of Orford",
+  "artistDisplayBio": "British, London 1717–1797 London",
+  "artistSuffix": "",
+  "artistAlphaSort": "Walpole, Horace 4th Earl of Orford",
+  "artistNationality": "British",
+  "artistBeginDate": "1717",
+  "artistEndDate": "1797",
+  "artistGender": "",
+  "artistWikidata_URL": "",
+  "artistULAN_URL": "",
+  "objectDate": "1798",
+  "objectBeginDate": 1798,
+  "objectEndDate": 1798,
+  "medium": "Illustrations: stipple engraving, engraving and etching",
+  "dimensions": "Each volume: 12 1/2 x 9 1/2 x 2 in. (31.8 x 24.1 x 5.1 cm) (depth varies between 1 1/2 - 2 1/2 in.)",
+  "measurements": [
+      {
+          "elementName": "Other",
+          "elementDescription": null,
+          "elementMeasurements": {
+              "Depth": 5.08,
+              "Height": 31.7501,
+              "Width": 24.13
+          }
+      }
+  ],
+  "creditLine": "Gift of Harvey Smith, 1981",
+  "geographyType": "",
+  "city": "",
+  "state": "",
+  "county": "",
+  "country": "",
+  "region": "",
+  "subregion": "",
+  "locale": "",
+  "locus": "",
+  "excavation": "",
+  "river": "",
+  "classification": "Books",
+  "rightsAndReproduction": "",
+  "linkResource": "",
+  "metadataDate": "2021-06-25T04:41:25.99Z",
+  "repository": "Metropolitan Museum of Art, New York, NY",
+  "objectURL": "https://www.metmuseum.org/art/collection/search/385548",
+  "tags": null,
+  "objectWikidata_URL": "",
+  "isTimelineWork": false,
+  "GalleryNumber": ""
+}

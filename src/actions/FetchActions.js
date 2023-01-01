@@ -24,6 +24,7 @@ export const fetchPage = objectIDs => {
           // throw Error(response.statusText)
         // }
         const data = await response.json()
+        console.log(data)
         return data
       // } catch (error) {
       //   dispatch(fetchPageFailure(error))

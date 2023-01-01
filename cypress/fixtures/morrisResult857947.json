@@ -1,0 +1,1110 @@
+{
+  "objectID": 857947,
+  "isHighlight": false,
+  "accessionNumber": "1980.1118.2(1-120)",
+  "accessionYear": "1980",
+  "isPublicDomain": false,
+  "primaryImage": "",
+  "primaryImageSmall": "",
+  "additionalImages": [],
+  "constituents": [
+      {
+          "constituentID": 90822,
+          "role": "Publisher",
+          "name": "(1) Illman and Sons",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500524861",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q105270105",
+          "gender": ""
+      },
+      {
+          "constituentID": 103908,
+          "role": "Engraver",
+          "name": "(2,4,8,12,18,23, 30,38,48,52,62,72,87) John Rogers",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 218868,
+          "role": "Artist",
+          "name": "(2, 4) after A. M. Huffam",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 207582,
+          "role": "Publisher",
+          "name": "(4) Joseph Robins",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 192109,
+          "role": "Artist",
+          "name": "(5) after John Hayter",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500020762",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q6238424",
+          "gender": ""
+      },
+      {
+          "constituentID": 89247,
+          "role": "Publisher",
+          "name": "(5) Rawdon, Wright, Hatch &amp; Edson, New York",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 99483,
+          "role": "Engraver",
+          "name": "(6) William E. Tucker",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 69063,
+          "role": "Artist",
+          "name": "(6) after François Grenier",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 218869,
+          "role": "Publisher",
+          "name": "(6) Key &amp; Biddle, Philadelphia",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 79178,
+          "role": "Engraver",
+          "name": "(7, 47) Joseph Napoleon Gimbrede",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500025877",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q22944930",
+          "gender": ""
+      },
+      {
+          "constituentID": 166226,
+          "role": "Artist",
+          "name": "(8) after William Owen",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500013150",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q8016422",
+          "gender": ""
+      },
+      {
+          "constituentID": 99519,
+          "role": "Engraver",
+          "name": "(10,32,41,65,78, 111) Archibald L. Dick",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500078046",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q25998400",
+          "gender": ""
+      },
+      {
+          "constituentID": 218894,
+          "role": "Artist",
+          "name": "(10) after Fanny Jemima Corbould",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 75394,
+          "role": "Engraver",
+          "name": "(11,15,27,37,41) John Sartain",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500001830",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3182429",
+          "gender": ""
+      },
+      {
+          "constituentID": 162744,
+          "role": "Artist",
+          "name": "(11) after Franz Xaver Winterhalter",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500007953",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q168659",
+          "gender": ""
+      },
+      {
+          "constituentID": 128195,
+          "role": "Artist",
+          "name": "(12) after Arthur William Devis",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500017216",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q4800678",
+          "gender": ""
+      },
+      {
+          "constituentID": 218896,
+          "role": "Artist",
+          "name": "(13) Edward James Portbury",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 195965,
+          "role": "Artist",
+          "name": "(13, 97) after John Massey Wright",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500025618",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q6247039",
+          "gender": ""
+      },
+      {
+          "constituentID": 218898,
+          "role": "Artist",
+          "name": "(15, 65) after Robert Farrier",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 81965,
+          "role": "Engraver",
+          "name": "(16, 70, 77, 84, 89, 97) Charles Heath, the elder",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500008920",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5078875",
+          "gender": ""
+      },
+      {
+          "constituentID": 95803,
+          "role": "Artist",
+          "name": "(16, 29, 41, 77, 84) after Philip Francis Stephanoff",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500005018",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q16066131",
+          "gender": ""
+      },
+      {
+          "constituentID": 163339,
+          "role": "Engraver",
+          "name": "(17) John Cheney",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500026910",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q6225857",
+          "gender": ""
+      },
+      {
+          "constituentID": 162494,
+          "role": "Artist",
+          "name": "(17) after Thomas Sully",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500006873",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q786545",
+          "gender": ""
+      },
+      {
+          "constituentID": 218868,
+          "role": "Artist",
+          "name": "(18) after A. M. Huffam",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 81554,
+          "role": "Engraver",
+          "name": "(19) Robert William Wallis",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500329670",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q7350820",
+          "gender": ""
+      },
+      {
+          "constituentID": 162573,
+          "role": "Artist",
+          "name": "(19, 61) after Joseph Mallord William Turner",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500026846",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q159758",
+          "gender": ""
+      },
+      {
+          "constituentID": 218896,
+          "role": "Engraver",
+          "name": "(20) Edward James Portbury",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 91334,
+          "role": "Artist",
+          "name": "(20) after Henry Corbould",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500002129",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1476596",
+          "gender": ""
+      },
+      {
+          "constituentID": 94668,
+          "role": "Engraver",
+          "name": "(21) Frederick A. Heath",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 106895,
+          "role": "Artist",
+          "name": "(21) after Eliza Sharpe",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 71589,
+          "role": "Engraver",
+          "name": "(22) Henry Thomas Ryall",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500054352",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5729161",
+          "gender": ""
+      },
+      {
+          "constituentID": 81086,
+          "role": "Artist",
+          "name": "(22) after Edmund Thomas Parris",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500024573",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5339864",
+          "gender": ""
+      },
+      {
+          "constituentID": 219266,
+          "role": "Artist",
+          "name": "(23) after Paul Émile Destouches",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 90039,
+          "role": "Engraver",
+          "name": "(24) William Greatbach",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500043276",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q25915547",
+          "gender": ""
+      },
+      {
+          "constituentID": 164281,
+          "role": "Artist",
+          "name": "(24) after Thomas Stothard",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500028756",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q2427494",
+          "gender": ""
+      },
+      {
+          "constituentID": 88488,
+          "role": "Engraver",
+          "name": "(25) Cephas Grier Childs",
+          "constituentULAN_URL": "(not assigned)",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q53499233",
+          "gender": ""
+      },
+      {
+          "constituentID": 91334,
+          "role": "Artist",
+          "name": "(25) after Henry Corbould",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500002129",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1476596",
+          "gender": ""
+      },
+      {
+          "constituentID": 163795,
+          "role": "Engraver",
+          "name": "(26) Joseph Ives Pease",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500524331",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q52084513",
+          "gender": ""
+      },
+      {
+          "constituentID": 219267,
+          "role": "Artist",
+          "name": "(27) after Thomas Crane",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 166254,
+          "role": "Engraver",
+          "name": "(29) John B. Forrest",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500008965",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 95646,
+          "role": "Artist",
+          "name": "(30) after Henry William Pickersgill, R.A.",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500006697",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3133160",
+          "gender": ""
+      },
+      {
+          "constituentID": 95647,
+          "role": "Engraver",
+          "name": "(31) William John Cooke",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500020558",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18534962",
+          "gender": ""
+      },
+      {
+          "constituentID": 73522,
+          "role": "Artist",
+          "name": "(31) after William Daniell",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011732",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q708629",
+          "gender": ""
+      },
+      {
+          "constituentID": 74529,
+          "role": "Artist",
+          "name": "(32) after Frederick Catherwood",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500029939",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q33567",
+          "gender": ""
+      },
+      {
+          "constituentID": 89285,
+          "role": "Engraver",
+          "name": "(33, 99) Charles Rolls",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 219268,
+          "role": "Artist",
+          "name": "(33) after John Wood",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 98699,
+          "role": "Engraver",
+          "name": "(34) Thomas Hollis",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 89273,
+          "role": "Artist",
+          "name": "(34) after Richard Westall",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500012476",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3109174",
+          "gender": ""
+      },
+      {
+          "constituentID": 72566,
+          "role": "Artist",
+          "name": "(37) after Edouard-Alexandre Odier",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500023969",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3579977",
+          "gender": ""
+      },
+      {
+          "constituentID": 176173,
+          "role": "Engraver",
+          "name": "(39) Stephen Henry Gimber",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500096718",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q55902492",
+          "gender": ""
+      },
+      {
+          "constituentID": 219270,
+          "role": "Artist",
+          "name": "(39) after Octavius Oakley",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 164292,
+          "role": "Engraver",
+          "name": "(40) James Barton Longacre",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011409",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3806459",
+          "gender": ""
+      },
+      {
+          "constituentID": 75738,
+          "role": "Artist",
+          "name": "(40) after James Northcote",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500003564",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3161307",
+          "gender": ""
+      },
+      {
+          "constituentID": 176750,
+          "role": "Publisher",
+          "name": "(40) Eliakim Littell",
+          "constituentULAN_URL": "(not assigned)",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5360391",
+          "gender": ""
+      },
+      {
+          "constituentID": 95803,
+          "role": "Artist",
+          "name": "(41) after Philip Francis Stephanoff",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500005018",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q16066131",
+          "gender": ""
+      },
+      {
+          "constituentID": 219272,
+          "role": "Artist",
+          "name": "(43) after John Bostock",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 106327,
+          "role": "Engraver",
+          "name": "(44) John B. Neagle",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500005325",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1701195",
+          "gender": ""
+      },
+      {
+          "constituentID": 218898,
+          "role": "Artist",
+          "name": "(44) after Robert Farrier",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 100626,
+          "role": "Lithographer",
+          "name": "(46) Peter S. Duval",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 219273,
+          "role": "Artist",
+          "name": "(46) after Albert Newsam",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 85004,
+          "role": "Artist",
+          "name": "(52) after Ary Scheffer",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500001962",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q436726",
+          "gender": ""
+      },
+      {
+          "constituentID": 219276,
+          "role": "Engraver",
+          "name": "(53) George Parker",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 164227,
+          "role": "Artist",
+          "name": "(53) after Sir Martin Archer Shee",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500016737",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3850027",
+          "gender": ""
+      },
+      {
+          "constituentID": 219277,
+          "role": "Artist",
+          "name": "(54) after William Goodacre",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 100551,
+          "role": "Printer",
+          "name": "(54, 59, 64, 69) engraved and printed by Fenner, Sears &amp; Co.",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500098282",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 92825,
+          "role": "Engraver",
+          "name": "(56) engraved by Alexander Lawson",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500042470",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q2833155",
+          "gender": ""
+      },
+      {
+          "constituentID": 162149,
+          "role": "Artist",
+          "name": "(56) after William Sidney Mount",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500017404",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q45431",
+          "gender": ""
+      },
+      {
+          "constituentID": 81554,
+          "role": "Engraver",
+          "name": "(57) Robert William Wallis",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500329670",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q7350820",
+          "gender": ""
+      },
+      {
+          "constituentID": 166247,
+          "role": "Artist",
+          "name": "(57) after William Henry Bartlett",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500008601",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q328705",
+          "gender": ""
+      },
+      {
+          "constituentID": 210322,
+          "role": "Engraver",
+          "name": "(58) Samuel Sartain",
+          "constituentULAN_URL": "(not assigned)",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q51123420",
+          "gender": ""
+      },
+      {
+          "constituentID": 219278,
+          "role": "Artist",
+          "name": "(58) after John Philip Davis",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 163347,
+          "role": "Artist",
+          "name": "(59, 63, 69) after Charles W. Burton",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500524276",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 81885,
+          "role": "Publisher",
+          "name": "(59, 63, 69) Isaac Taylor Hinton",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 80980,
+          "role": "Engraver",
+          "name": "(61) engraved by William Finden",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500013762",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q8009038",
+          "gender": ""
+      },
+      {
+          "constituentID": 195965,
+          "role": "Artist",
+          "name": "(62) after John Massey Wright",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500025618",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q6247039",
+          "gender": ""
+      },
+      {
+          "constituentID": 89655,
+          "role": "Publisher",
+          "name": "(62, 66) George Virtue",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 76962,
+          "role": "Engraver",
+          "name": "(63) Joseph Andrews",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500007355",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q52224107",
+          "gender": ""
+      },
+      {
+          "constituentID": 95757,
+          "role": "Artist",
+          "name": "(63, 78) after Alfred Edward Chalon",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500454430",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q736316",
+          "gender": ""
+      },
+      {
+          "constituentID": 76473,
+          "role": "Publisher",
+          "name": "(64) Simpkin, Marshall &amp; Co.",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 81550,
+          "role": "Engraver",
+          "name": "(66) Samuel Lacey",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 166247,
+          "role": "Artist",
+          "name": "(66, 70) after William Henry Bartlett",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500008601",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q328705",
+          "gender": ""
+      },
+      {
+          "constituentID": 77124,
+          "role": "Engraver",
+          "name": "(68) Thomas Kelly",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 95805,
+          "role": "Artist",
+          "name": "(68) after Henry James Richter",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500008523",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q17423650",
+          "gender": ""
+      },
+      {
+          "constituentID": 85770,
+          "role": "Publisher",
+          "name": "(69) Jennings &amp; Chaplin, London",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 81965,
+          "role": "Engraver",
+          "name": "(70, 84) Charles Heath, the elder",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500008920",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5078875",
+          "gender": ""
+      },
+      {
+          "constituentID": 104314,
+          "role": "Engraver",
+          "name": "(71) Illman &amp; Pilbrow",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 195965,
+          "role": "Artist",
+          "name": "(72) after John Massey Wright",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500025618",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q6247039",
+          "gender": ""
+      },
+      {
+          "constituentID": 101305,
+          "role": "Engraver",
+          "name": "(73) A. W. Graham",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 219279,
+          "role": "Artist",
+          "name": "(73) after Alfred Vickers",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 219280,
+          "role": "Publisher",
+          "name": "(75) Doolittle and Munson, Cincinnati",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 219282,
+          "role": "Engraver",
+          "name": "(75) M. Lyons &amp; Co., Phildelphia",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 219284,
+          "role": "Engraver",
+          "name": "(76) G. E. Price",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 95691,
+          "role": "Artist",
+          "name": "(76) after Alexander Chisholm",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 161813,
+          "role": "Artist",
+          "name": "(79) after Alexander Jackson Davis",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500028389",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q433770",
+          "gender": ""
+      },
+      {
+          "constituentID": 100551,
+          "role": "Printer",
+          "name": "(79, 81) engraved and printed by Fenner, Sears &amp; Co.",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500098282",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 85770,
+          "role": "Publisher",
+          "name": "(79) Jennings &amp; Chaplin, London",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 81885,
+          "role": "Publisher",
+          "name": "(79, 81z0 I. T. Hinton, &amp; Simpkin &amp; Marshall",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 219277,
+          "role": "Artist",
+          "name": "(81) after William Goodacre",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 100041,
+          "role": "Engraver",
+          "name": "(82) William H. Ellis",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 82170,
+          "role": "Engraver",
+          "name": "(83) William Wallis",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 69149,
+          "role": "Artist",
+          "name": "(83) after Samuel Prout",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500018332",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q2542408",
+          "gender": ""
+      },
+      {
+          "constituentID": 69106,
+          "role": "Artist",
+          "name": "(85) after Daniel Maclise",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500014844",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1161631",
+          "gender": ""
+      },
+      {
+          "constituentID": 162152,
+          "role": "Artist",
+          "name": "(87) after Bartolomé Estebán Murillo",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500007425",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q192062",
+          "gender": ""
+      },
+      {
+          "constituentID": 219285,
+          "role": "Engraver",
+          "name": "(88) T. Flemming",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 71529,
+          "role": "Artist",
+          "name": "(89) after Sir Edwin Henry Landseer",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500004856",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q328369",
+          "gender": ""
+      },
+      {
+          "constituentID": 219286,
+          "role": "Engraver",
+          "name": "(93) F. Humphrys",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 127455,
+          "role": "Artist",
+          "name": "(93) after James Holmes",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030941",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18160600",
+          "gender": ""
+      },
+      {
+          "constituentID": 163742,
+          "role": "Artist",
+          "name": "(94, 114) after Carle (Charles André) Vanloo",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500017868",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q686597",
+          "gender": ""
+      },
+      {
+          "constituentID": 219287,
+          "role": "Engraver",
+          "name": "(95) Richard Sly",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 90469,
+          "role": "Publisher",
+          "name": "(95) William Darton &amp; Son, London",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 98878,
+          "role": "Engraver",
+          "name": "(96) Alfred Jones",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500029331",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q4722980",
+          "gender": ""
+      },
+      {
+          "constituentID": 207440,
+          "role": "Artist",
+          "name": "(96) after Joseph Beaume",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500018270",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1706588",
+          "gender": ""
+      },
+      {
+          "constituentID": 79316,
+          "role": "Artist",
+          "name": "(97) after Moritz Retzsch",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500015373",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1948044",
+          "gender": ""
+      },
+      {
+          "constituentID": 121252,
+          "role": "Publisher",
+          "name": "(97) Hurst, Robinson &amp; Co.",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 106327,
+          "role": "Engraver",
+          "name": "(98) John B. Neagle",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500005325",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1701195",
+          "gender": ""
+      },
+      {
+          "constituentID": 219290,
+          "role": "Artist",
+          "name": "(98, 110) after William Croome",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 97628,
+          "role": "Artist",
+          "name": "(99) after Thomas Uwins",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500005245",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q7794639",
+          "gender": ""
+      },
+      {
+          "constituentID": 90729,
+          "role": "Engraver",
+          "name": "(100) Francis Kearny",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 210325,
+          "role": "Artist",
+          "name": "(100) after William Frederick Witherington",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500006173",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q12073079",
+          "gender": ""
+      },
+      {
+          "constituentID": 162490,
+          "role": "Artist",
+          "name": "(102) after Gilbert Stuart",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500010392",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q41402",
+          "gender": ""
+      },
+      {
+          "constituentID": 90822,
+          "role": "Publisher",
+          "name": "(102) printed and published by Illman &amp; Company",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500524861",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q105270105",
+          "gender": ""
+      },
+      {
+          "constituentID": 210320,
+          "role": "Engraver",
+          "name": "(105) H. E. Tripler",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 175812,
+          "role": "Artist",
+          "name": "(105) after Frédéric Schopin",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011588",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q15970295",
+          "gender": ""
+      },
+      {
+          "constituentID": 161811,
+          "role": "Artist",
+          "name": "(107) after Jacques Louis David",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500115221",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q83155",
+          "gender": ""
+      },
+      {
+          "constituentID": 3401,
+          "role": "Engraver",
+          "name": "(108) William G. Armstrong",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500036776",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q51325709",
+          "gender": ""
+      },
+      {
+          "constituentID": 219293,
+          "role": "Artist",
+          "name": "(108) after William B. Chambers",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 99445,
+          "role": "Lithographer",
+          "name": "(110) Benjamin W. Thayer",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 166244,
+          "role": "Artist",
+          "name": "(111) after John Frederick Lewis",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500007820",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1391078",
+          "gender": ""
+      },
+      {
+          "constituentID": 219291,
+          "role": "Publisher",
+          "name": "(111) G. Dearborn, New York",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 219292,
+          "role": "Printer",
+          "name": "(118) John M. Butler",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      }
+  ],
+  "department": "Drawings and Prints",
+  "objectName": "Album",
+  "title": "Album containing prints clipped from British and American 19th century periodicals",
+  "culture": "",
+  "period": "",
+  "dynasty": "",
+  "reign": "",
+  "portfolio": "",
+  "artistRole": "Publisher",
+  "artistPrefix": "(1)",
+  "artistDisplayName": "Illman and Sons",
+  "artistDisplayBio": "American, Philadelphia, active 19th century",
+  "artistSuffix": "",
+  "artistAlphaSort": "Illman and Sons",
+  "artistNationality": "American",
+  "artistBeginDate": "1800",
+  "artistEndDate": "1900",
+  "artistGender": "",
+  "artistWikidata_URL": "https://www.wikidata.org/wiki/Q105270105",
+  "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500524861",
+  "objectDate": "1815–60",
+  "objectBeginDate": 1815,
+  "objectEndDate": 1860,
+  "medium": "Etching, engraving, lithography, mezzotint, watercolor",
+  "dimensions": "12 × 9 3/4 × 13/16 in. (30.5 × 24.7 × 2 cm)",
+  "measurements": [
+      {
+          "elementName": "Overall",
+          "elementDescription": null,
+          "elementMeasurements": {
+              "Depth": 2,
+              "Height": 30.5,
+              "Width": 24.7
+          }
+      }
+  ],
+  "creditLine": "Gift of Margaretta W. Salinger, 1980",
+  "geographyType": "",
+  "city": "",
+  "state": "",
+  "county": "",
+  "country": "",
+  "region": "",
+  "subregion": "",
+  "locale": "",
+  "locus": "",
+  "excavation": "",
+  "river": "",
+  "classification": "Albums",
+  "rightsAndReproduction": "",
+  "linkResource": "",
+  "metadataDate": "2022-12-12T04:46:56.943Z",
+  "repository": "Metropolitan Museum of Art, New York, NY",
+  "objectURL": "https://www.metmuseum.org/art/collection/search/857947",
+  "tags": null,
+  "objectWikidata_URL": "",
+  "isTimelineWork": false,
+  "GalleryNumber": ""
+}

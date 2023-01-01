@@ -1,3 +1,5 @@
+import resultIDs from "../fixtures/morrisAllSearchResults.json"
+
 describe("Search Results View - Header", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000/search-form")
@@ -27,9 +29,28 @@ describe("Search Results View - Header", () => {
 
 describe("Search Results View - Body", () => {
   beforeEach(() => {
+    cy.intercept({
+      method: "GET",
+      url: "https://collectionapi.metmuseum.org/public/collection/v1/search?artistOrCulture=true&q=william+morris",
+    }, {
+      fixture: "morrisAllSearchResults.json"
+    })
+
+    resultIDs.objectIDs.map(id => cy.intercept({
+      method: "GET",
+      url: `https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`,
+    }, {
+      fixture: `morrisResult${id}.json`
+    })
+    )
     cy.visit("http://localhost:3000/search-form")
     cy.getByData("search-input").type("william morris")
+    cy.getByData("type-select").select("artist name")
     cy.getByData("submit-search").click()
+  })
+
+  it("should have global state corresponding to user's search", () => {
+
   })
 
 })

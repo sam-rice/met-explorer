@@ -1,0 +1,153 @@
+{
+  "objectID": 283216,
+  "isHighlight": false,
+  "accessionNumber": "2005.100.585 (1–35)",
+  "accessionYear": "1999",
+  "isPublicDomain": true,
+  "primaryImage": "https://images.metmuseum.org/CRDImages/ph/original/DP324409.jpg",
+  "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DP324409.jpg",
+  "additionalImages": [
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324400.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324401.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324402.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324403.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324404.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324405.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324406.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324407.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324408.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324410.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324411.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324412.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324413.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324414.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324415.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324416.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324417.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324418.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324419.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324420.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324421.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324422.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324423.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324424.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324425.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324426.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324427.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324428.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324429.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324430.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324431.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324432.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324433.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324434.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324398.jpg",
+      "https://images.metmuseum.org/CRDImages/ph/original/DP324399.jpg"
+  ],
+  "constituents": [
+      {
+          "constituentID": 54839,
+          "role": "Artist",
+          "name": "William Bell",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500055414",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1755030",
+          "gender": ""
+      },
+      {
+          "constituentID": 60210,
+          "role": "Patron",
+          "name": "Commissioned by Lieutenant George Montague Wheeler",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500372938",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1507930",
+          "gender": ""
+      }
+  ],
+  "department": "Photographs",
+  "objectName": "Album",
+  "title": "Photographs Showing Landscapes, Geological and Other Features, of Portions of the Western Territory of the United States, Obtained in connection with Geographical and Geological Explorations and Surveys West of the 100th Meridian, Season of 1872",
+  "culture": "",
+  "period": "",
+  "dynasty": "",
+  "reign": "",
+  "portfolio": "",
+  "artistRole": "Artist",
+  "artistPrefix": "",
+  "artistDisplayName": "William Bell",
+  "artistDisplayBio": "American (born England), Liverpool 1831–1910 Philadelphia, Pennsylvania",
+  "artistSuffix": "",
+  "artistAlphaSort": "Bell, William",
+  "artistNationality": "American, born England",
+  "artistBeginDate": "1831",
+  "artistEndDate": "1910",
+  "artistGender": "",
+  "artistWikidata_URL": "https://www.wikidata.org/wiki/Q1755030",
+  "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500055414",
+  "objectDate": "1872",
+  "objectBeginDate": 1872,
+  "objectEndDate": 1872,
+  "medium": "Albumen silver prints from glass negatives",
+  "dimensions": "Image (each, approximately): 11 1/8 × 7 7/8 in. (28.2 × 20 cm)\r\nSheet (each, approximately): 11 1/8 × 7 7/8 in. (28.2 × 20 cm) \r\nPrinted Border (each): 14 × 11 in. (35.6 × 28 cm)\r\nMount (each): 19 3/4 × 15 3/4 in. (50.1 × 40 cm)\r\nOverall: 20 1/16 × 17 3/16 × 2 1/4 in. (51 × 43.6 × 5.7 cm)",
+  "measurements": [
+      {
+          "elementName": "Mount",
+          "elementDescription": "each",
+          "elementMeasurements": {
+              "Height": 50.1,
+              "Width": 40
+          }
+      },
+      {
+          "elementName": "Overall",
+          "elementDescription": null,
+          "elementMeasurements": {
+              "Depth": 5.7,
+              "Height": 51,
+              "Width": 43.6
+          }
+      },
+      {
+          "elementName": "Sheet",
+          "elementDescription": "each, approximately",
+          "elementMeasurements": {
+              "Height": 28.2,
+              "Width": 20
+          }
+      },
+      {
+          "elementName": "Image",
+          "elementDescription": "each, approximately",
+          "elementMeasurements": {
+              "Height": 28.2,
+              "Width": 20
+          }
+      }
+  ],
+  "creditLine": "Gilman Collection, Purchase, The Horace W. Goldsmith Foundation Gift, through Joyce and Robert Menschel, 2005",
+  "geographyType": "",
+  "city": "",
+  "state": "",
+  "county": "",
+  "country": "",
+  "region": "",
+  "subregion": "",
+  "locale": "",
+  "locus": "",
+  "excavation": "",
+  "river": "",
+  "classification": "Albums",
+  "rightsAndReproduction": "",
+  "linkResource": "",
+  "metadataDate": "2022-10-20T04:55:06.267Z",
+  "repository": "Metropolitan Museum of Art, New York, NY",
+  "objectURL": "https://www.metmuseum.org/art/collection/search/283216",
+  "tags": [
+      {
+          "term": "Landscapes",
+          "AAT_URL": "http://vocab.getty.edu/page/aat/300132294",
+          "Wikidata_URL": "https://www.wikidata.org/wiki/Q191163"
+      }
+  ],
+  "objectWikidata_URL": "https://www.wikidata.org/wiki/Q104213314",
+  "isTimelineWork": true,
+  "GalleryNumber": ""
+}

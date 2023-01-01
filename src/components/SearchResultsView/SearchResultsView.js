@@ -10,10 +10,10 @@ import { deptKey } from "../../utilities/global-static-data"
 function SearchResultsView() {
   const dispatch = useDispatch()
   const { isLoadingResults = true, allResults } = useSelector(({ results }) => results)
-  const [noResults, setNoResults] = useState(false)
   const [currentPageResults, setCurrentPageResults] = useState([])
-  const [pageLoading, setPageLoading] = useState(true)
   const [resultTiles, setResultTiles] = useState([])
+  const [noResults, setNoResults] = useState(false)
+  const [pageLoading, setPageLoading] = useState(true)
 
   const [searchParams, setSearchParams] = useSearchParams()
   const query = searchParams.get("query")
@@ -82,6 +82,8 @@ function SearchResultsView() {
       dept,
       page: bool ? pageNum + 1 : pageNum - 1
     })
+    setResultTiles([])
+    setPageLoading(true)
   }
 
   const totalResultsCount = allResults?.objectIDs.length ?
@@ -117,7 +119,7 @@ function SearchResultsView() {
       <ul className="results__list">
         {!noResults && !pageLoading && resultTiles}
         {noResults && <p>no results matching your search</p>}
-        {isLoadingResults && <p>Loading...</p>}
+        {(isLoadingResults || pageLoading) && <p>Loading...</p>}
       </ul>
       <div className="results__results-controls">
         <p className="results__results-controls__details">

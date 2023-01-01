@@ -97,3 +97,27 @@ describe("Search Results View - Body", () => {
 
 })
 
+describe("no results", () => {
+
+  beforeEach(() => {
+    cy.intercept({
+      method: "GET",
+      url: "https://collectionapi.metmuseum.org/public/collection/v1/search?q=foobar",
+    })
+    cy.visit("http://localhost:3000/search-form")
+    cy.getByData("search-input").type("foobar")
+    cy.getByData("submit-search").click()
+  })
+
+  it("should maintain usable state when there are no results", () => {
+    cy.assertState({
+      collections: [],
+      results: {
+        allResults: null,
+        currentPageResults: null,
+        isLoadingPage: false,
+        isLoadingResults: false
+      }
+    })
+  })
+})

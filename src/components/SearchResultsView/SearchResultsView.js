@@ -52,8 +52,9 @@ function SearchResultsView() {
       page: bool ? pageNum + 1 : pageNum - 1
     })
   }
+  console.log("HERE", "currentPageResults:", currentPageResults?.length, "noResults", noResults, "isLoadingResults", isLoadingResults)
 
-  const resultsTiles = !isLoadingPage &&
+  const resultsTiles = currentPageResults !== null && currentPageResults !== undefined &&
     currentPageResults.filter(result => !result.hasOwnProperty("message"))
       .map(result => <SearchResultTile key={result.objectID} data={result} />)
 
@@ -72,7 +73,7 @@ function SearchResultsView() {
     </>
 
   const displayedResultsCount = !isLoadingPage &&
-    `viewing ${resultsTiles.length} of ${totalResultsCount} results`
+    `viewing ${resultsTiles.length ? resultsTiles.length : 0} of ${totalResultsCount} results`
 
   const backButtonClassList = pageNum !== 1 ?
     "results__results-controls__nav__back" :

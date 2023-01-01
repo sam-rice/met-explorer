@@ -24,6 +24,13 @@ const resultsReducer = (state = {}, action) => {
           allResults: action.payload.results
         }
       }
+    
+    case "FETCH_RESULTS_NONE":
+      return {
+        ...state,
+        currentPageResults: null,
+        isLoadingPage: false,
+      }
 
     case "FETCH_PAGE_REQUEST":
       return { ...state,

@@ -7,7 +7,9 @@ export const fetchResults = (url) => {
         throw Error(response.statusText)
       }
       const data = await response.json()
+      console.log(data)
       dispatch(fetchResultsSuccess(data))
+      if (!data.total) dispatch(fetchResultsNone())
     } catch (error) {
       dispatch(fetchResultsFailure(error))
     }
@@ -24,7 +26,6 @@ export const fetchPage = objectIDs => {
           // throw Error(response.statusText)
         // }
         const data = await response.json()
-        console.log(data)
         return data
       // } catch (error) {
       //   dispatch(fetchPageFailure(error))
@@ -49,6 +50,10 @@ const fetchResultsSuccess = results => ({
 const fetchResultsFailure = errorMsg => ({
   type: "FETCH_RESULTS_FAILURE",
   payload: { errorMsg }
+})
+
+const fetchResultsNone = () => ({
+  type: "FETCH_RESULTS_NONE"
 })
 
 const fetchPageRequest = () => ({

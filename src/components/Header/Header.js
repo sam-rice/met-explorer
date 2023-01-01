@@ -11,7 +11,11 @@ function Header() {
   return (
     <header className="header">
       <div className="header__left">
-        <Link className="header__title-container" to="/">
+        <Link 
+          className="header__title-container" 
+          to="/"
+          data-cy="home-header"
+        >
           <h1 className="header__title-left">MET<br />EXPLORER</h1>
         </Link>
         <nav className="nav">
@@ -20,6 +24,7 @@ function Header() {
               <Link
                 className="nav__link"
                 to="/collections"
+                data-cy="collections-header"
               >MY COLLECTIONS
               </Link>
             </li>
@@ -27,13 +32,17 @@ function Header() {
               <Link
                 className="nav__link"
                 to="/search-form"
+                data-cy="search-header"
               >SEARCH
               </Link>
             </li>
           </ul>
         </nav>
       </div>
-      <h2 className="header__title-right">{headerTitleRight}</h2>
+      <h2 
+        className="header__title-right"
+        data-cy="sub-header"
+      >{headerTitleRight}</h2>
     </header>
   )
 }

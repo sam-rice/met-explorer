@@ -46,8 +46,15 @@ function SearchForm() {
           placeholder="search..."
           required={true}
           ref={searchInput}
+          data-cy="search-input"
         />
-        {userError && <p className={"search__input-container__error"}>*required field</p>}
+        {
+          userError && 
+          <p
+            className="search__input-container__error"
+            data-cy="input-error"
+          >*required field</p>
+        }
       </div>
       <div className="search__type-container">
         <label
@@ -59,6 +66,7 @@ function SearchForm() {
           value={searchType}
           onChange={e => setSearchType(e.target.value)}
           required={true}
+          data-cy="type-select"
         >
           <option value="keyword">keyword</option>
           <option value="artist name">artist name</option>
@@ -73,6 +81,7 @@ function SearchForm() {
           id="dept-select"
           value={selectedDepartment}
           onChange={e => setselectedDepartment(e.target.value)}
+          data-cy="dept-select"
         >
           <option value="optional">{"(optional)"}</option>
           <option value="American Decorative Arts">American Decorative Arts</option>
@@ -99,6 +108,7 @@ function SearchForm() {
       <button
         className="search__button"
         onClick={submitSearch}
+        data-cy="submit-search"
       >search
       </button>
     </section>

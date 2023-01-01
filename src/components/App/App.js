@@ -6,7 +6,7 @@ import MainLayout from "../MainLayout/MainLayout"
 import Home from "../Home/Home"
 import CollectionsListContainer from "../../containers/CollectionsListContainer"
 import CollectionViewContainer from "../../containers/CollectionViewContainer"
-import SearchForm from "../SearchForm/SearchForm"
+import SearchFormContainer from "../../containers/SearchFormContainer"
 import SearchResultsViewContainer from "../../containers/SearchResultsViewContainer"
 import ArtworkDetailsContainer from "../../containers/ArtworkDetailsContainer"
 
@@ -20,7 +20,7 @@ const App = () => {
             <Route index element={<CollectionsListContainer />} />
             <Route path=":collectionID" element={<CollectionViewContainer />} />
           </Route>
-          <Route path="/search-form" element={<SearchForm />} />
+          <Route path="/search-form" element={<SearchFormContainer />} />
           <Route path="/search" element={<SearchResultsViewContainer />} />
           <Route path="/explore" >
             {/* index redirect to homepage here */}

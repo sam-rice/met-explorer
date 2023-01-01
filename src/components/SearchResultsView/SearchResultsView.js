@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from "react"
 import { useSearchParams } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
-import { fetchPage, fetchResults } from "../../actions"
+import { fetchResults } from "../../actions"
 
 import "./_SearchResultsView.scss"
 import SearchResultTile from "../SearchResultTile/SearchResultTile"
 import { deptKey } from "../../utilities/global-static-data"
 
 function SearchResultsView() {
-  const [noResults, setNoResults] = useState(false)
   const dispatch = useDispatch()
-  const { isLoadingResults = true, isLoadingPage = true, allResults, currentPageResults } = useSelector(({ results }) => results)
-  const [searchParams, setSearchParams] = useSearchParams()
+  const { isLoadingResults = true, allResults } = useSelector(({ results }) => results)
+  const [noResults, setNoResults] = useState(false)
+  const [currentPageResults, setCurrentPageResults] = useState([])
+  const [pageLoading, setPageLoading] = useState(true)
+  const [resultTiles, setResultTiles] = useState([])
 
+  const [searchParams, setSearchParams] = useSearchParams()
   const query = searchParams.get("query")
   const type = searchParams.get("type")
   const dept = searchParams.get("dept")
@@ -30,6 +33,7 @@ function SearchResultsView() {
   }
 
   useEffect(() => {
+    console.log("noResults:", noResults, "pageLoading:", pageLoading)
     getNewPage()
   }, [isLoadingResults, pageNum])
 
@@ -37,11 +41,38 @@ function SearchResultsView() {
     if (!isLoadingResults && allResults) {
       const targetEndIndex = pageNum * 25
       const targetObjectIDs = allResults.objectIDs.slice(targetEndIndex - 25, targetEndIndex)
-      dispatch(fetchPage(targetObjectIDs))
+      fetchPage(targetObjectIDs)
       window.scrollTo({ top: 100 })
-    } else if (!isLoadingResults) {
+    } else if (!isLoadingResults && !allResults) {
       setNoResults(true)
     }
+  }
+
+  useEffect(() => {
+    setResultTiles(currentPageResults.filter(result => !result.hasOwnProperty("message"))
+      .map(result => <SearchResultTile key={result.objectID} data={result} />)
+    )
+    setPageLoading(false)
+  }, [currentPageResults])
+
+  const fetchPage = async objectIDs => {
+    const promises = await objectIDs.map(async objectID => {
+      // try {
+      const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`)
+      // if (!response.ok) {
+      // throw Error(response.statusText)
+      // }
+      const data = await response.json()
+      return data
+      // } catch (error) {
+      // setPageLoading(false)
+
+      //   console.log(error)
+      // }
+    })
+    const settledPromises = await Promise.allSettled(promises)
+    const pageData = settledPromises.map(promise => promise.value)
+    setCurrentPageResults(pageData)
   }
 
   const handlePageNav = (bool) => {
@@ -52,13 +83,8 @@ function SearchResultsView() {
       page: bool ? pageNum + 1 : pageNum - 1
     })
   }
-  console.log("HERE", "currentPageResults:", currentPageResults?.length, "noResults", noResults, "isLoadingResults", isLoadingResults)
 
-  const resultsTiles = currentPageResults !== null && currentPageResults !== undefined &&
-    currentPageResults.filter(result => !result.hasOwnProperty("message"))
-      .map(result => <SearchResultTile key={result.objectID} data={result} />)
-
-  const totalResultsCount = !isLoadingResults && allResults?.objectIDs.length ? 
+  const totalResultsCount = allResults?.objectIDs.length ?
     allResults.objectIDs.length.toLocaleString("en-US") :
     0
 
@@ -72,8 +98,7 @@ function SearchResultsView() {
       </p>
     </>
 
-  const displayedResultsCount = !isLoadingPage &&
-    `viewing ${resultsTiles.length ? resultsTiles.length : 0} of ${totalResultsCount} results`
+  const displayedResultsCount = `viewing ${resultTiles.length ? resultTiles.length : 0} of ${totalResultsCount} results`
 
   const backButtonClassList = pageNum !== 1 ?
     "results__results-controls__nav__back" :
@@ -90,8 +115,9 @@ function SearchResultsView() {
         </p>
       </div>
       <ul className="results__list">
-        {!isLoadingResults && resultsTiles}
+        {!noResults && !pageLoading && resultTiles}
         {noResults && <p>no results matching your search</p>}
+        {isLoadingResults && <p>Loading...</p>}
       </ul>
       <div className="results__results-controls">
         <p className="results__results-controls__details">

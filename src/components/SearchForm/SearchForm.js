@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
+import { useDispatch } from "react-redux"
+import { resetSearch } from "../../actions"
 
 import "./_SearchForm.scss"
 import { deptKey } from "../../utilities/global-static-data"
@@ -11,6 +13,7 @@ function SearchForm() {
   const [userError, setUserError] = useState(false)
   const searchInput = useRef(null)
   const navigate = useNavigate()
+  const dispatch = useDispatch()
 
   useEffect(() => searchInput.current.focus(), [])
 
@@ -19,6 +22,7 @@ function SearchForm() {
       setUserError(true)
       return
     }
+    dispatch(resetSearch())
     const submittedType = searchType === "artist name" ? "artist" : "keyword"
     const submittedQuery = query.replace(/ /g, "+")
     const submittedDept = selectedDepartment !== "optional" ? deptKey[selectedDepartment] : "all"

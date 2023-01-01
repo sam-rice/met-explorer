@@ -1,0 +1,3746 @@
+[
+  {
+      "objectID": 11178,
+      "isHighlight": false,
+      "accessionNumber": "80.12",
+      "accessionYear": "1880",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/ad/original/DT11604.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ad/web-large/DT11604.jpg",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 164585,
+              "role": "Artist",
+              "name": "William Morris Hunt",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500007307",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q527599",
+              "gender": ""
+          }
+      ],
+      "department": "The American Wing",
+      "objectName": "Sculpture",
+      "title": "The Horses of Anahita or The Flight of Night",
+      "culture": "American",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Artist",
+      "artistPrefix": "",
+      "artistDisplayName": "William Morris Hunt",
+      "artistDisplayBio": "American, Brattleboro, Vermont 1824–1879 Appledore, New Hampshire",
+      "artistSuffix": "",
+      "artistAlphaSort": "Hunt, William Morris",
+      "artistNationality": "American",
+      "artistBeginDate": "1824",
+      "artistEndDate": "1879",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q527599",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500007307",
+      "objectDate": "ca. 1848–50, cast by 1880",
+      "objectBeginDate": 1845,
+      "objectEndDate": 1880,
+      "medium": "Plaster, tinted",
+      "dimensions": "18 1/2 x 28 1/2 x 12 in. (47 x 72.4 x 30.5 cm)",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Depth": 30.5,
+                  "Height": 47,
+                  "Width": 72.4
+              }
+          }
+      ],
+      "creditLine": "Gift of Richard Morris Hunt, 1880",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2021-04-27T04:42:00.93Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/11178",
+      "tags": [
+          {
+              "term": "Horses",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300250148",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q726"
+          },
+          {
+              "term": "Male Nudes",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300189568",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q40446"
+          }
+      ],
+      "objectWikidata_URL": "https://www.wikidata.org/wiki/Q83560188",
+      "isTimelineWork": true,
+      "GalleryNumber": "774"
+  },
+  {
+      "objectID": 14944,
+      "isHighlight": false,
+      "accessionNumber": "62.236.1–.6",
+      "accessionYear": "1962",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/ad/original/RT560.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ad/web-large/RT560.jpg",
+      "additionalImages": [
+          "https://images.metmuseum.org/CRDImages/ad/original/RT559.jpg",
+          "https://images.metmuseum.org/CRDImages/ad/original/RT627.jpg",
+          "https://images.metmuseum.org/CRDImages/ad/original/176478.jpg",
+          "https://images.metmuseum.org/CRDImages/ad/original/176479.jpg"
+      ],
+      "constituents": [
+          {
+              "constituentID": 164917,
+              "role": "Designer",
+              "name": "William Morris",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+              "gender": ""
+          }
+      ],
+      "department": "The American Wing",
+      "objectName": "Curtain",
+      "title": "Curtain",
+      "culture": "American or British",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Designer",
+      "artistPrefix": "",
+      "artistDisplayName": "William Morris",
+      "artistDisplayBio": "British, Walthamstow, London 1834–1896 Hammersmith, London",
+      "artistSuffix": "",
+      "artistAlphaSort": "Morris, William",
+      "artistNationality": "British",
+      "artistBeginDate": "1834",
+      "artistEndDate": "1896",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+      "objectDate": "ca. 1882",
+      "objectBeginDate": 1879,
+      "objectEndDate": 1882,
+      "medium": "Cotton, woven",
+      "dimensions": "Curtain: 106 x 51 in. (269.2 x 129.5 cm)\r\nTieback: dimensions unrecorded",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 269.2,
+                  "Width": 129.5403
+              }
+          }
+      ],
+      "creditLine": "Gift of Mrs. Joseph M. Shapiro, 1962",
+      "geographyType": "Possibly made in",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "England",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2021-04-06T04:41:04.967Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/14944",
+      "tags": [
+          {
+              "term": "Rabbits",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300250218",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q9394"
+          },
+          {
+              "term": "Birds",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300266506",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q5113"
+          }
+      ],
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 486405,
+      "isHighlight": false,
+      "accessionNumber": "1994.386a-d",
+      "accessionYear": "1994",
+      "isPublicDomain": false,
+      "primaryImage": "",
+      "primaryImageSmall": "",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 145813,
+              "role": "Designer",
+              "name": "William Morris",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500331833",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q8015832",
+              "gender": ""
+          }
+      ],
+      "department": "Modern and Contemporary Art",
+      "objectName": "Sculpture",
+      "title": "Suspended Artifact",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Designer",
+      "artistPrefix": "",
+      "artistDisplayName": "William Morris",
+      "artistDisplayBio": "American, born Carmel, California, 1957",
+      "artistSuffix": "",
+      "artistAlphaSort": "Morris, William",
+      "artistNationality": "American",
+      "artistBeginDate": "1957",
+      "artistEndDate": "9999",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q8015832",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500331833",
+      "objectDate": "1993",
+      "objectBeginDate": 1993,
+      "objectEndDate": 1993,
+      "medium": "Glass, iron",
+      "dimensions": "H. 24, W. 26, D. 7 in. (61.0 x 66.0 x 17.8 cm.)",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Depth": 17.8,
+                  "Height": 61,
+                  "Width": 66
+              }
+          }
+      ],
+      "creditLine": "Gift of Dale and Doug Anderson, 1994",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Glass",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-06-25T05:05:19.19Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/486405",
+      "tags": null,
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 222094,
+      "isHighlight": false,
+      "accessionNumber": "27.139.3",
+      "accessionYear": "1927",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/es/original/DP245936.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/es/web-large/DP245936.jpg",
+      "additionalImages": [
+          "https://images.metmuseum.org/CRDImages/es/original/DP245946.jpg",
+          "https://images.metmuseum.org/CRDImages/es/original/DP245947.jpg",
+          "https://images.metmuseum.org/CRDImages/es/original/DP245948.jpg",
+          "https://images.metmuseum.org/CRDImages/es/original/DP245949.jpg"
+      ],
+      "constituents": [
+          {
+              "constituentID": 164917,
+              "role": "Designer",
+              "name": "Designed by William Morris",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+              "gender": ""
+          }
+      ],
+      "department": "European Sculpture and Decorative Arts",
+      "objectName": "Carpet",
+      "title": "Holland Park carpet",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Designer",
+      "artistPrefix": "Designed by",
+      "artistDisplayName": "William Morris",
+      "artistDisplayBio": "British, Walthamstow, London 1834–1896 Hammersmith, London",
+      "artistSuffix": "",
+      "artistAlphaSort": "Morris, William",
+      "artistNationality": "British",
+      "artistBeginDate": "1834",
+      "artistEndDate": "1896",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+      "objectDate": "late 19th century",
+      "objectBeginDate": 1885,
+      "objectEndDate": 1899,
+      "medium": "Wool\r\nTurkish (Ghiordes) knot, 25 to the square inch.",
+      "dimensions": "Overall: 203 x 156 1/4 in. (515.6 x 396.9 cm)",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 515.62103,
+                  "Width": 396.8758
+              }
+          }
+      ],
+      "creditLine": "Bequest of Frank A. Munsey, 1927",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Textiles-Rugs",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2020-09-16T18:35:19.457Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/222094",
+      "tags": [
+          {
+              "term": "Flowers",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300132399",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q506"
+          }
+      ],
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 221477,
+      "isHighlight": false,
+      "accessionNumber": "23.163.7",
+      "accessionYear": "1923",
+      "isPublicDomain": false,
+      "primaryImage": "",
+      "primaryImageSmall": "",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 164917,
+              "role": "Designer",
+              "name": "Designed by William Morris",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+              "gender": ""
+          },
+          {
+              "constituentID": 162144,
+              "role": "Manufactory",
+              "name": "Morris &amp; Company",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500206155",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          }
+      ],
+      "department": "European Sculpture and Decorative Arts",
+      "objectName": "Furnishing textile",
+      "title": "Kennet",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Designer",
+      "artistPrefix": "Designed by",
+      "artistDisplayName": "William Morris",
+      "artistDisplayBio": "British, Walthamstow, London 1834–1896 Hammersmith, London",
+      "artistSuffix": "",
+      "artistAlphaSort": "Morris, William",
+      "artistNationality": "British",
+      "artistBeginDate": "1834",
+      "artistEndDate": "1896",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+      "objectDate": "design registered October 18, 1883; printed 1917–23",
+      "objectBeginDate": 1883,
+      "objectEndDate": 1923,
+      "medium": "Cotton / indigo discharge and block-printed",
+      "dimensions": "8 ft. 7 1/2 in. × 38 1/4 in. (262.9 × 97.2 cm)",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 262.89053,
+                  "Width": 97.1552
+              }
+          }
+      ],
+      "creditLine": "Purchase, Edward C. Moore Jr. Gift, 1923",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Textiles-Printed",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-10-20T04:55:06.267Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/221477",
+      "tags": [
+          {
+              "term": "Flowers",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300132399",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q506"
+          }
+      ],
+      "objectWikidata_URL": "",
+      "isTimelineWork": true,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 365338,
+      "isHighlight": false,
+      "accessionNumber": "23.163.4g",
+      "accessionYear": "1923",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/dp/original/DP109416.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/dp/web-large/DP109416.jpg",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 164917,
+              "role": "Designer",
+              "name": "William Morris",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+              "gender": ""
+          },
+          {
+              "constituentID": 162144,
+              "role": "Manufacturer",
+              "name": "Morris &amp; Company",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500206155",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 83384,
+              "role": "Printer",
+              "name": "Jeffrey &amp; Co.",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          }
+      ],
+      "department": "Drawings and Prints",
+      "objectName": "Wallpaper",
+      "title": "Fruit (or Pomegranate)",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Designer",
+      "artistPrefix": "",
+      "artistDisplayName": "William Morris",
+      "artistDisplayBio": "British, Walthamstow, London 1834–1896 Hammersmith, London",
+      "artistSuffix": "",
+      "artistAlphaSort": "Morris, William",
+      "artistNationality": "British",
+      "artistBeginDate": "1834",
+      "artistEndDate": "1896",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+      "objectDate": "ca. 1866",
+      "objectBeginDate": 1861,
+      "objectEndDate": 1871,
+      "medium": "Block-printed in distemper colors",
+      "dimensions": "Sheet: 27 1/16 x 21 5/8 in. (68.7 x 54.9 cm)",
+      "measurements": [
+          {
+              "elementName": "Sheet",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 68.7389,
+                  "Width": 54.9276
+              }
+          }
+      ],
+      "creditLine": "Purchase, Edward C. Moore Jr. Gift, 1923",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Wallpaper",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-07-13T14:13:33.843Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/365338",
+      "tags": [
+          {
+              "term": "Pomegranates",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300379961",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q13222088"
+          },
+          {
+              "term": "Flowers",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300132399",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q506"
+          },
+          {
+              "term": "Leaves",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300011892",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q33971"
+          }
+      ],
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 375808,
+      "isHighlight": false,
+      "accessionNumber": "23.163.4f",
+      "accessionYear": "1923",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/dp/original/DP146520.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/dp/web-large/DP146520.jpg",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 164917,
+              "role": "Designer",
+              "name": "William Morris",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+              "gender": ""
+          },
+          {
+              "constituentID": 162144,
+              "role": "Manufacturer",
+              "name": "Morris &amp; Company",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500206155",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 83384,
+              "role": "Printer",
+              "name": "Jeffrey &amp; Co.",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          }
+      ],
+      "department": "Drawings and Prints",
+      "objectName": "Wallpaper",
+      "title": "Wild Tulip",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Designer",
+      "artistPrefix": "",
+      "artistDisplayName": "William Morris",
+      "artistDisplayBio": "British, Walthamstow, London 1834–1896 Hammersmith, London",
+      "artistSuffix": "",
+      "artistAlphaSort": "Morris, William",
+      "artistNationality": "British",
+      "artistBeginDate": "1834",
+      "artistEndDate": "1896",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+      "objectDate": "1884",
+      "objectBeginDate": 1884,
+      "objectEndDate": 1884,
+      "medium": "Block-printed in distemper colors",
+      "dimensions": "Sheet: 27 x 21 1/2 in. (68.6 x 54.6 cm)",
+      "measurements": [
+          {
+              "elementName": "Sheet",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 68.5801,
+                  "Width": 54.6101
+              }
+          }
+      ],
+      "creditLine": "Purchase, Edward C. Moore Jr. Gift, 1923",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Wallpaper",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-10-20T04:55:06.267Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/375808",
+      "tags": [
+          {
+              "term": "Tulips",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300379705",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q30345409"
+          },
+          {
+              "term": "Leaves",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300011892",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q33971"
+          }
+      ],
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 221480,
+      "isHighlight": false,
+      "accessionNumber": "23.163.10",
+      "accessionYear": "1923",
+      "isPublicDomain": false,
+      "primaryImage": "",
+      "primaryImageSmall": "",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 164917,
+              "role": "Designer",
+              "name": "Designed by William Morris",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+              "gender": ""
+          },
+          {
+              "constituentID": 164934,
+              "role": "Manufacturer",
+              "name": "Manufactured by Merton Abbey Tapestry Works",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500114241",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 162144,
+              "role": "Maker",
+              "name": "Workshop of Morris &amp; Company",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500206155",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          }
+      ],
+      "department": "European Sculpture and Decorative Arts",
+      "objectName": "Length",
+      "title": "Wandle",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Designer",
+      "artistPrefix": "Designed by",
+      "artistDisplayName": "William Morris",
+      "artistDisplayBio": "British, Walthamstow, London 1834–1896 Hammersmith, London",
+      "artistSuffix": "",
+      "artistAlphaSort": "Morris, William",
+      "artistNationality": "British",
+      "artistBeginDate": "1834",
+      "artistEndDate": "1896",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+      "objectDate": "design registered 1884, printed 1917–23",
+      "objectBeginDate": 1884,
+      "objectEndDate": 1923,
+      "medium": "Cotton",
+      "dimensions": "Overall: 108 x 38 1/8 in. (274.3 x 96.8 cm);\r\nPattern width: 35 1/2 inches",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 274.3205,
+                  "Width": 96.8377
+              }
+          }
+      ],
+      "creditLine": "Purchase, Edward C. Moore Jr. Gift, 1923",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Textiles-Printed",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2021-04-06T04:41:04.967Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/221480",
+      "tags": [
+          {
+              "term": "Flowers",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300132399",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q506"
+          }
+      ],
+      "objectWikidata_URL": "",
+      "isTimelineWork": true,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 10383,
+      "isHighlight": false,
+      "accessionNumber": "1978.499.1 recto",
+      "accessionYear": "1978",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/ad/original/ap1978.499.1 recto.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ad/web-large/ap1978.499.1 recto.jpg",
+      "additionalImages": [
+          "https://images.metmuseum.org/CRDImages/ad/original/224533.jpg"
+      ],
+      "constituents": [
+          {
+              "constituentID": 163341,
+              "role": "Artist",
+              "name": "John William Casilear",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500013823",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q2700128",
+              "gender": ""
+          }
+      ],
+      "department": "The American Wing",
+      "objectName": "Drawing",
+      "title": "Study of Rocks",
+      "culture": "American",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Artist",
+      "artistPrefix": "",
+      "artistDisplayName": "John William Casilear",
+      "artistDisplayBio": "American, New York 1811–1893 Saratoga Springs, New York",
+      "artistSuffix": "",
+      "artistAlphaSort": "Casilear, John William",
+      "artistNationality": "American",
+      "artistBeginDate": "1811",
+      "artistEndDate": "1893",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q2700128",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500013823",
+      "objectDate": "ca. 1850–60",
+      "objectBeginDate": 1850,
+      "objectEndDate": 1860,
+      "medium": "Graphite on off-white Bristol board",
+      "dimensions": "10 7/8 x 13 15/16 in. (27.6 x 35.4 cm)",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 27.6,
+                  "Width": 35.4013
+              }
+          }
+      ],
+      "creditLine": "Morris K. Jesup Fund, 1978",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2021-04-06T04:41:04.967Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/10383",
+      "tags": [
+          {
+              "term": "Landscapes",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300132294",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q191163"
+          }
+      ],
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 385548,
+      "isHighlight": false,
+      "accessionNumber": "1981.1202.1(1–5)",
+      "accessionYear": "1981",
+      "isPublicDomain": false,
+      "primaryImage": "",
+      "primaryImageSmall": "",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 75504,
+              "role": "Author",
+              "name": "Horace Walpole, 4th Earl of Orford",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 72110,
+              "role": "Editor",
+              "name": "Robert G. Berry",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 81819,
+              "role": "Publisher",
+              "name": "G. G. J. &amp; J. Robinson",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 89715,
+              "role": "Publisher",
+              "name": "J. Edwards",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 77407,
+              "role": "Artist",
+              "name": "Alexander Bannerman",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011477",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q4718304",
+              "gender": ""
+          },
+          {
+              "constituentID": 74552,
+              "role": "Artist",
+              "name": "Francis Barlow",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030146",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3081300",
+              "gender": ""
+          },
+          {
+              "constituentID": 90956,
+              "role": "Artist",
+              "name": "Charles Bretherton",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500019318",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q30133190",
+              "gender": ""
+          },
+          {
+              "constituentID": 97980,
+              "role": "Artist",
+              "name": "James Bretherton",
+              "constituentULAN_URL": "(not assigned)",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18756792",
+              "gender": ""
+          },
+          {
+              "constituentID": 90957,
+              "role": "Artist",
+              "name": "Thomas Chambars",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500015246",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18508681",
+              "gender": ""
+          },
+          {
+              "constituentID": 90952,
+              "role": "Artist",
+              "name": "T. Evans",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 75113,
+              "role": "Artist",
+              "name": "Richard Bernard Godfrey",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500021902",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18674398",
+              "gender": ""
+          },
+          {
+              "constituentID": 73486,
+              "role": "Artist",
+              "name": "Charles Grignion, I",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500020329",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5078450",
+              "gender": ""
+          },
+          {
+              "constituentID": 102736,
+              "role": "Artist",
+              "name": "James Heath",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500001393",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q6135818",
+              "gender": ""
+          },
+          {
+              "constituentID": 90960,
+              "role": "Artist",
+              "name": "William Hibbart",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500032514",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18672813",
+              "gender": ""
+          },
+          {
+              "constituentID": 90961,
+              "role": "Artist",
+              "name": "John Miller",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 69124,
+              "role": "Artist",
+              "name": "Thomas Morris",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 73488,
+              "role": "Artist",
+              "name": "James Newton",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500056203",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q21595899",
+              "gender": ""
+          },
+          {
+              "constituentID": 69207,
+              "role": "Artist",
+              "name": "George Vertue",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500013594",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q930477",
+              "gender": ""
+          },
+          {
+              "constituentID": 73491,
+              "role": "Artist",
+              "name": "Anthony Walker",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500025334",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q8200777",
+              "gender": ""
+          },
+          {
+              "constituentID": 97975,
+              "role": "Artist",
+              "name": "After Mary Beale",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500026335",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q2347846",
+              "gender": "Female"
+          },
+          {
+              "constituentID": 97981,
+              "role": "Artist",
+              "name": "After Adrien Carpentiers",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500006270",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q2825139",
+              "gender": ""
+          },
+          {
+              "constituentID": 166175,
+              "role": "Artist",
+              "name": "After William Dobson",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500023117",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q58303",
+              "gender": ""
+          },
+          {
+              "constituentID": 161858,
+              "role": "Artist",
+              "name": "After Anthony van Dyck",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500115190",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q150679",
+              "gender": ""
+          },
+          {
+              "constituentID": 98103,
+              "role": "Artist",
+              "name": "After John Giles Eccardt",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500124350",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q820627",
+              "gender": ""
+          },
+          {
+              "constituentID": 90955,
+              "role": "Artist",
+              "name": "After Edward Edwards",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011262",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5342741",
+              "gender": ""
+          },
+          {
+              "constituentID": 97914,
+              "role": "Artist",
+              "name": "After James Essex",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500010627",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q15999824",
+              "gender": ""
+          },
+          {
+              "constituentID": 161951,
+              "role": "Artist",
+              "name": "After Jan Gossart (called Mabuse)",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500009353",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q346952",
+              "gender": ""
+          },
+          {
+              "constituentID": 97974,
+              "role": "Artist",
+              "name": "After John Hayls",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500024984",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1033596",
+              "gender": ""
+          },
+          {
+              "constituentID": 161995,
+              "role": "Artist",
+              "name": "After Wenceslaus Hollar",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500028368",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q448555",
+              "gender": ""
+          },
+          {
+              "constituentID": 166181,
+              "role": "Artist",
+              "name": "After Sir Godfrey Kneller",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500015875",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q65317",
+              "gender": ""
+          },
+          {
+              "constituentID": 162050,
+              "role": "Artist",
+              "name": "After Nicolas de Largillierre (or Largillière)",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011561",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q550302",
+              "gender": ""
+          },
+          {
+              "constituentID": 166225,
+              "role": "Artist",
+              "name": "After Sir Thomas Lawrence",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500022619",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q312096",
+              "gender": ""
+          },
+          {
+              "constituentID": 90971,
+              "role": "Artist",
+              "name": "After Edmund Lilly",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030124",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18546144",
+              "gender": ""
+          },
+          {
+              "constituentID": 69109,
+              "role": "Artist",
+              "name": "After William Marlow",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500015908",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3568811",
+              "gender": ""
+          },
+          {
+              "constituentID": 90970,
+              "role": "Artist",
+              "name": "After Antonis Mor",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500027909",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q176694",
+              "gender": ""
+          },
+          {
+              "constituentID": 73492,
+              "role": "Artist",
+              "name": "After William Pars",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500021450",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q8016608",
+              "gender": ""
+          },
+          {
+              "constituentID": 82126,
+              "role": "Artist",
+              "name": "After Thomas Ripley",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500056257",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q7793561",
+              "gender": ""
+          },
+          {
+              "constituentID": 97973,
+              "role": "Artist",
+              "name": "After Frans Wouters",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500029248",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1959143",
+              "gender": ""
+          },
+          {
+              "constituentID": 69673,
+              "role": "Artist",
+              "name": "After John Vanderbank, the younger",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500118832",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q2053900",
+              "gender": ""
+          },
+          {
+              "constituentID": 162780,
+              "role": "Artist",
+              "name": "After Christian Friedrich Zincke",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011388",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1028749",
+              "gender": ""
+          }
+      ],
+      "department": "Drawings and Prints",
+      "objectName": "Book",
+      "title": "The Works of Horatio Walpole, Earl of Orford. In Five Volumes.",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Author",
+      "artistPrefix": "",
+      "artistDisplayName": "Horace Walpole, 4th Earl of Orford",
+      "artistDisplayBio": "British, London 1717–1797 London",
+      "artistSuffix": "",
+      "artistAlphaSort": "Walpole, Horace 4th Earl of Orford",
+      "artistNationality": "British",
+      "artistBeginDate": "1717",
+      "artistEndDate": "1797",
+      "artistGender": "",
+      "artistWikidata_URL": "",
+      "artistULAN_URL": "",
+      "objectDate": "1798",
+      "objectBeginDate": 1798,
+      "objectEndDate": 1798,
+      "medium": "Illustrations: stipple engraving, engraving and etching",
+      "dimensions": "Each volume: 12 1/2 x 9 1/2 x 2 in. (31.8 x 24.1 x 5.1 cm) (depth varies between 1 1/2 - 2 1/2 in.)",
+      "measurements": [
+          {
+              "elementName": "Other",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Depth": 5.08,
+                  "Height": 31.7501,
+                  "Width": 24.13
+              }
+          }
+      ],
+      "creditLine": "Gift of Harvey Smith, 1981",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Books",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2021-06-25T04:41:25.99Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/385548",
+      "tags": null,
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 351331,
+      "isHighlight": false,
+      "accessionNumber": "41.100.58",
+      "accessionYear": "1941",
+      "isPublicDomain": false,
+      "primaryImage": "",
+      "primaryImageSmall": "",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 79280,
+              "role": "Author",
+              "name": "William Halfpenny",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 82587,
+              "role": "Author",
+              "name": "John Halfpenny",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 82592,
+              "role": "Author",
+              "name": "Robert Morris",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500027833",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3938379",
+              "gender": ""
+          },
+          {
+              "constituentID": 82593,
+              "role": "Author",
+              "name": "Thomas Lightoler",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500017681",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 82591,
+              "role": "Publisher",
+              "name": "James Rivington and J. Fletcher",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 75860,
+              "role": "Publisher",
+              "name": "Robert Sayer",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          }
+      ],
+      "department": "Drawings and Prints",
+      "objectName": "Book ; Ornament and Architecture",
+      "title": "The Modern Builder's Assistant: or a Concise Epitome of the Whole System of Architecture",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Author",
+      "artistPrefix": "",
+      "artistDisplayName": "William Halfpenny",
+      "artistDisplayBio": "British, active from ca. 1722, died 1755",
+      "artistSuffix": "",
+      "artistAlphaSort": "Halfpenny, William",
+      "artistNationality": "British",
+      "artistBeginDate": "1720",
+      "artistEndDate": "1755",
+      "artistGender": "",
+      "artistWikidata_URL": "",
+      "artistULAN_URL": "",
+      "objectDate": "1742",
+      "objectBeginDate": 1742,
+      "objectEndDate": 1742,
+      "medium": "Illustrations: etching and engraving",
+      "dimensions": "12 13/16 × 8 3/16 × 1 in. (32.5 × 20.8 × 2.5 cm)",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Depth": 2.5,
+                  "Height": 32.5,
+                  "Width": 20.8
+              }
+          }
+      ],
+      "creditLine": "Bequest of W. Gedney Beatty, 1941",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Books",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-02-09T04:42:08.947Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/351331",
+      "tags": null,
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 351330,
+      "isHighlight": false,
+      "accessionNumber": "35.45.11",
+      "accessionYear": "1935",
+      "isPublicDomain": false,
+      "primaryImage": "",
+      "primaryImageSmall": "",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 79280,
+              "role": "Author",
+              "name": "William Halfpenny",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 82587,
+              "role": "Author",
+              "name": "John Halfpenny",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 82593,
+              "role": "Author",
+              "name": "Thomas Lightoler",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500017681",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 82592,
+              "role": "Author",
+              "name": "Robert Morris",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500027833",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3938379",
+              "gender": ""
+          },
+          {
+              "constituentID": 82591,
+              "role": "Publisher",
+              "name": "James Rivington and J. Fletcher",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 75860,
+              "role": "Publisher",
+              "name": "Robert Sayer",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          }
+      ],
+      "department": "Drawings and Prints",
+      "objectName": "Book ; Ornament and architecture",
+      "title": "The Modern Builder's Assistant: or, a Concise Epitome of the Whole System of Architecture",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Author",
+      "artistPrefix": "",
+      "artistDisplayName": "William Halfpenny",
+      "artistDisplayBio": "British, active from ca. 1722, died 1755",
+      "artistSuffix": "",
+      "artistAlphaSort": "Halfpenny, William",
+      "artistNationality": "British",
+      "artistBeginDate": "1720",
+      "artistEndDate": "1755",
+      "artistGender": "",
+      "artistWikidata_URL": "",
+      "artistULAN_URL": "",
+      "objectDate": "1742",
+      "objectBeginDate": 1742,
+      "objectEndDate": 1742,
+      "medium": "Illustrations: etching and engraving",
+      "dimensions": "13 1/4 × 8 1/4 × 11/16 in. (33.7 × 21 × 1.7 cm)",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Depth": 1.7,
+                  "Height": 33.7,
+                  "Width": 21
+              }
+          }
+      ],
+      "creditLine": "Harris Brisbane Dick Fund, 1935",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Books",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2020-11-14T04:40:04.457Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/351330",
+      "tags": null,
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 203842,
+      "isHighlight": false,
+      "accessionNumber": "64.101.1124",
+      "accessionYear": "1964",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/es/original/DP105780.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/es/web-large/DP105780.jpg",
+      "additionalImages": [
+          "https://images.metmuseum.org/CRDImages/es/original/DP105781.jpg",
+          "https://images.metmuseum.org/CRDImages/es/original/DP105782.jpg",
+          "https://images.metmuseum.org/CRDImages/es/original/DP105792.jpg"
+      ],
+      "constituents": [
+          {
+              "constituentID": 41131,
+              "role": "Maker",
+              "name": "William Linnell",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500104545",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q21289976",
+              "gender": ""
+          },
+          {
+              "constituentID": 41132,
+              "role": "Maker",
+              "name": "and John Linnell",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500009084",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q15434866",
+              "gender": ""
+          }
+      ],
+      "department": "European Sculpture and Decorative Arts",
+      "objectName": "Standing shelf",
+      "title": "Standing shelf (one of a pair)",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Maker",
+      "artistPrefix": "",
+      "artistDisplayName": "William Linnell",
+      "artistDisplayBio": "ca. 1703–1763",
+      "artistSuffix": "",
+      "artistAlphaSort": "Linnell, William",
+      "artistNationality": "",
+      "artistBeginDate": "1703",
+      "artistEndDate": "1763",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q21289976",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500104545",
+      "objectDate": "ca. 1753–54",
+      "objectBeginDate": 1748,
+      "objectEndDate": 1759,
+      "medium": "Lacquered and painted pine, mahogany and British walnut",
+      "dimensions": "Overall: 59 × 23 × 10 1/2 in. (149.9 × 58.4 × 26.7 cm)",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Depth": 26.670053,
+                  "Height": 149.8603,
+                  "Width": 58.420116
+              }
+          }
+      ],
+      "creditLine": "Gift of Irwin Untermyer, 1964",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Woodwork-Furniture",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-11-08T04:46:21.563Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/203842",
+      "tags": null,
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 360138,
+      "isHighlight": false,
+      "accessionNumber": "24.96",
+      "accessionYear": "1924",
+      "isPublicDomain": false,
+      "primaryImage": "",
+      "primaryImageSmall": "",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 161729,
+              "role": "Artist",
+              "name": "After Sir Edward Burne-Jones",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500001381",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q216406",
+              "gender": ""
+          },
+          {
+              "constituentID": 164917,
+              "role": "Engraver",
+              "name": "William Morris",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+              "gender": ""
+          }
+      ],
+      "department": "Drawings and Prints",
+      "objectName": "Book",
+      "title": "Cupid and Psyche",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Artist",
+      "artistPrefix": "After",
+      "artistDisplayName": "Sir Edward Burne-Jones",
+      "artistDisplayBio": "British, Birmingham 1833–1898 Fulham",
+      "artistSuffix": "",
+      "artistAlphaSort": "Burne-Jones, Edward, Sir",
+      "artistNationality": "British",
+      "artistBeginDate": "1833",
+      "artistEndDate": "1898",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q216406",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500001381",
+      "objectDate": "ca. 1866",
+      "objectBeginDate": 1861,
+      "objectEndDate": 1871,
+      "medium": "Illustrations: woodcuts",
+      "dimensions": "12 5/8 x 9 11/16 x 9/16 in. (32.1 x 24.6 x 1.4 cm)",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Depth": 1.4288,
+                  "Height": 32.0676,
+                  "Width": 24.6063
+              }
+          }
+      ],
+      "creditLine": "Harris Brisbane Dick Fund, 1924",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Books",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2021-08-20T04:36:13.79Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/360138",
+      "tags": null,
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 355628,
+      "isHighlight": false,
+      "accessionNumber": "47.66",
+      "accessionYear": "1947",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/dp/original/DP167145.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/dp/web-large/DP167145.jpg",
+      "additionalImages": [
+          "https://images.metmuseum.org/CRDImages/dp/original/SFRossetti1.jpg",
+          "https://images.metmuseum.org/CRDImages/dp/original/DP-14123-001.jpg",
+          "https://images.metmuseum.org/CRDImages/dp/original/ep47.66.bw.R.jpg",
+          "https://images.metmuseum.org/CRDImages/dp/original/DP109556.jpg"
+      ],
+      "constituents": [
+          {
+              "constituentID": 162340,
+              "role": "Artist",
+              "name": "Dante Gabriel Rossetti",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500022594",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q186748",
+              "gender": ""
+          },
+          {
+              "constituentID": 164876,
+              "role": "Subject",
+              "name": "William Shakespeare",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500272240",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q692",
+              "gender": ""
+          }
+      ],
+      "department": "Drawings and Prints",
+      "objectName": "Drawing",
+      "title": "Jane Morris: Study for \"Mariana\"",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Artist",
+      "artistPrefix": "",
+      "artistDisplayName": "Dante Gabriel Rossetti",
+      "artistDisplayBio": "British, London 1828–1882 Birchington-on-Sea",
+      "artistSuffix": "",
+      "artistAlphaSort": "Rossetti, Dante Gabriel",
+      "artistNationality": "British",
+      "artistBeginDate": "1828",
+      "artistEndDate": "1882",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q186748",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500022594",
+      "objectDate": "1868",
+      "objectBeginDate": 1868,
+      "objectEndDate": 1868,
+      "medium": "Red, brown, off-white and black chalk on tan paper; four sheets butt-joined (and slightly tented)",
+      "dimensions": "sheet: 35 3/4 x 30 3/4 in. (90.8 x 78.1 cm)",
+      "measurements": [
+          {
+              "elementName": "Sheet",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 90.8052,
+                  "Width": 78.1052
+              }
+          }
+      ],
+      "creditLine": "Gift of Jessie Lemont Trausil, 1947",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Drawings",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-06-02T12:28:57.13Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/355628",
+      "tags": [
+          {
+              "term": "Shakespeare",
+              "AAT_URL": "http://vocab.getty.edu/page/ulan/500272240",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q692"
+          },
+          {
+              "term": "Portraits",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300015637",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q134307"
+          },
+          {
+              "term": "Women",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300025943",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q467"
+          }
+      ],
+      "objectWikidata_URL": "https://www.wikidata.org/wiki/Q96318815",
+      "isTimelineWork": true,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 287291,
+      "isHighlight": false,
+      "accessionNumber": "2005.100.585 (10)",
+      "accessionYear": "1999",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/ph/original/DT244893.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DT244893.jpg",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 54839,
+              "role": "Artist",
+              "name": "William Bell",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500055414",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1755030",
+              "gender": ""
+          }
+      ],
+      "department": "Photographs",
+      "objectName": "Photograph",
+      "title": "Cañon of Kanab Wash, Looking South",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Artist",
+      "artistPrefix": "",
+      "artistDisplayName": "William Bell",
+      "artistDisplayBio": "American (born England), Liverpool 1831–1910 Philadelphia, Pennsylvania",
+      "artistSuffix": "",
+      "artistAlphaSort": "Bell, William",
+      "artistNationality": "American, born England",
+      "artistBeginDate": "1831",
+      "artistEndDate": "1910",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q1755030",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500055414",
+      "objectDate": "1872",
+      "objectBeginDate": 1872,
+      "objectEndDate": 1872,
+      "medium": "Albumen silver print from glass negative",
+      "dimensions": "Image: 28.2 x 20.2 cm (11 1/8 x 7 15/16 in.)",
+      "measurements": [
+          {
+              "elementName": "Image",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 28.2,
+                  "Width": 20.2
+              }
+          }
+      ],
+      "creditLine": "Gilman Collection, Purchase, The Horace W. Goldsmith Foundation Gift, through Joyce and Robert Menschel, 2005",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Photographs",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2021-09-17T04:35:35.247Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/287291",
+      "tags": [
+          {
+              "term": "Mountains",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300008795",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q8502"
+          },
+          {
+              "term": "Landscapes",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300132294",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q191163"
+          }
+      ],
+      "objectWikidata_URL": "https://www.wikidata.org/wiki/Q96998741",
+      "isTimelineWork": true,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 283259,
+      "isHighlight": false,
+      "accessionNumber": "2005.100.127",
+      "accessionYear": "1999",
+      "isPublicDomain": false,
+      "primaryImage": "",
+      "primaryImageSmall": "",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 56628,
+              "role": "Artist",
+              "name": "William Mayfield",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500463437",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q16066032",
+              "gender": ""
+          }
+      ],
+      "department": "Photographs",
+      "objectName": "Photograph",
+      "title": "[Orville Wright]",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Artist",
+      "artistPrefix": "",
+      "artistDisplayName": "William Mayfield",
+      "artistDisplayBio": "American, 1896–1974",
+      "artistSuffix": "",
+      "artistAlphaSort": "Mayfield, William",
+      "artistNationality": "American",
+      "artistBeginDate": "1896",
+      "artistEndDate": "1974",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q16066032",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500463437",
+      "objectDate": "1913 or later",
+      "objectBeginDate": 1913,
+      "objectEndDate": 1915,
+      "medium": "Gelatin silver print",
+      "dimensions": "Image: 19.6 x 24.1 cm (7 11/16 x 9 1/2 in.)",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 19.6,
+                  "Width": 24.1
+              }
+          }
+      ],
+      "creditLine": "Gilman Collection, Purchase, Denise and Andrew Saul Gift, 2005",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Photographs",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-10-20T04:55:06.267Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/283259",
+      "tags": null,
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 283071,
+      "isHighlight": false,
+      "accessionNumber": "2005.100.2",
+      "accessionYear": "1999",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/ph/original/DP148627.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DP148627.jpg",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 54947,
+              "role": "Artist",
+              "name": "William Henry Fox Talbot",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500021449",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q299565",
+              "gender": ""
+          }
+      ],
+      "department": "Photographs",
+      "objectName": "Photograph",
+      "title": "[Winter Trees, Reflected in a Pond]",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Artist",
+      "artistPrefix": "",
+      "artistDisplayName": "William Henry Fox Talbot",
+      "artistDisplayBio": "British, Dorset 1800–1877 Lacock",
+      "artistSuffix": "",
+      "artistAlphaSort": "Talbot, William Henry Fox",
+      "artistNationality": "British",
+      "artistBeginDate": "1800",
+      "artistEndDate": "1877",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q299565",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500021449",
+      "objectDate": "1841–42",
+      "objectBeginDate": 1841,
+      "objectEndDate": 1842,
+      "medium": "Salted paper print from paper negative",
+      "dimensions": "16.5 x 19.2 cm (6 1/2 x 7 9/16 in. )",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 16.5,
+                  "Width": 19.2
+              }
+          }
+      ],
+      "creditLine": "Gilman Collection, Gift of The Howard Gilman Foundation, 2005",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Photographs",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-10-20T04:55:06.267Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/283071",
+      "tags": [
+          {
+              "term": "Ponds",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300008688",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q3253281"
+          },
+          {
+              "term": "Landscapes",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300132294",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q191163"
+          },
+          {
+              "term": "Trees",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300132410",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q10884"
+          }
+      ],
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 283211,
+      "isHighlight": false,
+      "accessionNumber": "2005.100.101",
+      "accessionYear": "1999",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/ph/original/DP259468.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DP259468.jpg",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 56258,
+              "role": "Artist",
+              "name": "Charles William Carter",
+              "constituentULAN_URL": "(not assigned)",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q98772948",
+              "gender": ""
+          }
+      ],
+      "department": "Photographs",
+      "objectName": "Photograph",
+      "title": "Mormon Emigrant Train, Echo Canyon",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Artist",
+      "artistPrefix": "",
+      "artistDisplayName": "Charles William Carter",
+      "artistDisplayBio": "American (born England), London 1832–1918 Midvale, Utah",
+      "artistSuffix": "",
+      "artistAlphaSort": "Carter, Charles William",
+      "artistNationality": "American, born England",
+      "artistBeginDate": "1832",
+      "artistEndDate": "1918",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q98772948",
+      "artistULAN_URL": "(not assigned)",
+      "objectDate": "ca. 1870",
+      "objectBeginDate": 1868,
+      "objectEndDate": 1872,
+      "medium": "Albumen silver print from glass negative",
+      "dimensions": "Image: 6.1 × 10.3 cm (2 3/8 × 4 1/16 in.)",
+      "measurements": [
+          {
+              "elementName": "Image",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 6.1,
+                  "Width": 10.3
+              }
+          }
+      ],
+      "creditLine": "Gilman Collection, Purchase, Marlene Nathan Meyerson Family Foundation Gift, 2005",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Photographs",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-10-20T04:55:06.267Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/283211",
+      "tags": [
+          {
+              "term": "Men",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300025928",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q8441"
+          },
+          {
+              "term": "Horses",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300250148",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q726"
+          },
+          {
+              "term": "Landscapes",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300132294",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q191163"
+          },
+          {
+              "term": "Wagons",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300215710",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q859281"
+          }
+      ],
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 283229,
+      "isHighlight": false,
+      "accessionNumber": "2005.100.113",
+      "accessionYear": "1999",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/ph/original/DP279257.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DP279257.jpg",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 54801,
+              "role": "Artist",
+              "name": "William James Mullins",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500335417",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q54944467",
+              "gender": ""
+          }
+      ],
+      "department": "Photographs",
+      "objectName": "Photograph",
+      "title": "[Children Fishing]",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Artist",
+      "artistPrefix": "",
+      "artistDisplayName": "William James Mullins",
+      "artistDisplayBio": "American, 1860–1917",
+      "artistSuffix": "",
+      "artistAlphaSort": "Mullins, William James",
+      "artistNationality": "American",
+      "artistBeginDate": "1860",
+      "artistEndDate": "1917",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q54944467",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500335417",
+      "objectDate": "ca. 1900",
+      "objectBeginDate": 1899,
+      "objectEndDate": 1901,
+      "medium": "Platinum print",
+      "dimensions": "Image: 9.1 x 25.7cm (3 9/16 x 10 1/8in.)\r\nMount: 9.8 × 26.4 cm (3 7/8 in. × 10 3/8 in.)",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 9.1,
+                  "Width": 25.7
+              }
+          },
+          {
+              "elementName": "Mount",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 9.8,
+                  "Width": 26.4
+              }
+          }
+      ],
+      "creditLine": "Gilman Collection, Purchase, Jennifer and Joseph Duke Gift, 2005",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Photographs",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-10-20T04:55:06.267Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/283229",
+      "tags": [
+          {
+              "term": "Boys",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300247598",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q3010"
+          },
+          {
+              "term": "Girls",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300247581",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q3031"
+          },
+          {
+              "term": "Fishing",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300239470",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q14373"
+          }
+      ],
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 283216,
+      "isHighlight": false,
+      "accessionNumber": "2005.100.585 (1–35)",
+      "accessionYear": "1999",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/ph/original/DP324409.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DP324409.jpg",
+      "additionalImages": [
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324400.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324401.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324402.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324403.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324404.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324405.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324406.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324407.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324408.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324410.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324411.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324412.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324413.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324414.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324415.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324416.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324417.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324418.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324419.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324420.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324421.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324422.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324423.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324424.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324425.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324426.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324427.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324428.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324429.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324430.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324431.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324432.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324433.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324434.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324398.jpg",
+          "https://images.metmuseum.org/CRDImages/ph/original/DP324399.jpg"
+      ],
+      "constituents": [
+          {
+              "constituentID": 54839,
+              "role": "Artist",
+              "name": "William Bell",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500055414",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1755030",
+              "gender": ""
+          },
+          {
+              "constituentID": 60210,
+              "role": "Patron",
+              "name": "Commissioned by Lieutenant George Montague Wheeler",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500372938",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1507930",
+              "gender": ""
+          }
+      ],
+      "department": "Photographs",
+      "objectName": "Album",
+      "title": "Photographs Showing Landscapes, Geological and Other Features, of Portions of the Western Territory of the United States, Obtained in connection with Geographical and Geological Explorations and Surveys West of the 100th Meridian, Season of 1872",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Artist",
+      "artistPrefix": "",
+      "artistDisplayName": "William Bell",
+      "artistDisplayBio": "American (born England), Liverpool 1831–1910 Philadelphia, Pennsylvania",
+      "artistSuffix": "",
+      "artistAlphaSort": "Bell, William",
+      "artistNationality": "American, born England",
+      "artistBeginDate": "1831",
+      "artistEndDate": "1910",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q1755030",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500055414",
+      "objectDate": "1872",
+      "objectBeginDate": 1872,
+      "objectEndDate": 1872,
+      "medium": "Albumen silver prints from glass negatives",
+      "dimensions": "Image (each, approximately): 11 1/8 × 7 7/8 in. (28.2 × 20 cm)\r\nSheet (each, approximately): 11 1/8 × 7 7/8 in. (28.2 × 20 cm) \r\nPrinted Border (each): 14 × 11 in. (35.6 × 28 cm)\r\nMount (each): 19 3/4 × 15 3/4 in. (50.1 × 40 cm)\r\nOverall: 20 1/16 × 17 3/16 × 2 1/4 in. (51 × 43.6 × 5.7 cm)",
+      "measurements": [
+          {
+              "elementName": "Mount",
+              "elementDescription": "each",
+              "elementMeasurements": {
+                  "Height": 50.1,
+                  "Width": 40
+              }
+          },
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Depth": 5.7,
+                  "Height": 51,
+                  "Width": 43.6
+              }
+          },
+          {
+              "elementName": "Sheet",
+              "elementDescription": "each, approximately",
+              "elementMeasurements": {
+                  "Height": 28.2,
+                  "Width": 20
+              }
+          },
+          {
+              "elementName": "Image",
+              "elementDescription": "each, approximately",
+              "elementMeasurements": {
+                  "Height": 28.2,
+                  "Width": 20
+              }
+          }
+      ],
+      "creditLine": "Gilman Collection, Purchase, The Horace W. Goldsmith Foundation Gift, through Joyce and Robert Menschel, 2005",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Albums",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-10-20T04:55:06.267Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/283216",
+      "tags": [
+          {
+              "term": "Landscapes",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300132294",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q191163"
+          }
+      ],
+      "objectWikidata_URL": "https://www.wikidata.org/wiki/Q104213314",
+      "isTimelineWork": true,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 283069,
+      "isHighlight": false,
+      "accessionNumber": "2005.100.608",
+      "accessionYear": "1999",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/ph/original/DP148631.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DP148631.jpg",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 54947,
+              "role": "Artist",
+              "name": "William Henry Fox Talbot",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500021449",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q299565",
+              "gender": ""
+          }
+      ],
+      "department": "Photographs",
+      "objectName": "Photograph",
+      "title": "[Hungerford Suspension Bridge]",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Artist",
+      "artistPrefix": "",
+      "artistDisplayName": "William Henry Fox Talbot",
+      "artistDisplayBio": "British, Dorset 1800–1877 Lacock",
+      "artistSuffix": "",
+      "artistAlphaSort": "Talbot, William Henry Fox",
+      "artistNationality": "British",
+      "artistBeginDate": "1800",
+      "artistEndDate": "1877",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q299565",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500021449",
+      "objectDate": "ca. 1845",
+      "objectBeginDate": 1843,
+      "objectEndDate": 1847,
+      "medium": "Salted paper print from paper negative",
+      "dimensions": "16.9 x 21.3 cm (6 5/8 x 8 3/8 in. )",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 16.9,
+                  "Width": 21.3
+              }
+          }
+      ],
+      "creditLine": "Gilman Collection, Museum Purchase, 2005",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Photographs",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-10-20T04:55:06.267Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/283069",
+      "tags": [
+          {
+              "term": "Bridges",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300386855",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q12280"
+          },
+          {
+              "term": "Boats",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300178749",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q35872"
+          }
+      ],
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 285743,
+      "isHighlight": false,
+      "accessionNumber": "2005.100.728",
+      "accessionYear": "2005",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/ph/original/DP167359.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DP167359.jpg",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 54947,
+              "role": "Artist",
+              "name": "William Henry Fox Talbot",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500021449",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q299565",
+              "gender": ""
+          }
+      ],
+      "department": "Photographs",
+      "objectName": "Photograph",
+      "title": "Vase with Medusa's Head",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Artist",
+      "artistPrefix": "",
+      "artistDisplayName": "William Henry Fox Talbot",
+      "artistDisplayBio": "British, Dorset 1800–1877 Lacock",
+      "artistSuffix": "",
+      "artistAlphaSort": "Talbot, William Henry Fox",
+      "artistNationality": "British",
+      "artistBeginDate": "1800",
+      "artistEndDate": "1877",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q299565",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500021449",
+      "objectDate": "1840",
+      "objectBeginDate": 1840,
+      "objectEndDate": 1840,
+      "medium": "Salted paper print from paper negative",
+      "dimensions": "Sheet: 6 7/8 × 8 7/8 in. (17.5 × 22.5 cm)",
+      "measurements": [
+          {
+              "elementName": "Sheet",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 17.5,
+                  "Width": 22.5
+              }
+          }
+      ],
+      "creditLine": "Gilman Collection, Gift of The Howard Gilman Foundation, 2005",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Photographs",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-10-20T04:55:06.267Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/285743",
+      "tags": [
+          {
+              "term": "Medusa",
+              "AAT_URL": "http://vocab.getty.edu/page/ia/901000543",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q160730"
+          },
+          {
+              "term": "Vases",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300132254",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q191851"
+          }
+      ],
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 283179,
+      "isHighlight": false,
+      "accessionNumber": "2005.100.80",
+      "accessionYear": "1999",
+      "isPublicDomain": true,
+      "primaryImage": "https://images.metmuseum.org/CRDImages/ph/original/DT370485.jpg",
+      "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DT370485.jpg",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 200798,
+              "role": "Photography Studio",
+              "name": "W. &amp; F. Langenheim",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500033352",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q55527444",
+              "gender": ""
+          },
+          {
+              "constituentID": 56312,
+              "role": "Artist",
+              "name": "William Langenheim",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500115208",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q39790452",
+              "gender": ""
+          },
+          {
+              "constituentID": 58736,
+              "role": "Artist",
+              "name": "Frederick Langenheim",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030766",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q21292990",
+              "gender": ""
+          }
+      ],
+      "department": "Photographs",
+      "objectName": "Photograph",
+      "title": "Frederick Langenheim",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Photography Studio",
+      "artistPrefix": "",
+      "artistDisplayName": "W. & F. Langenheim",
+      "artistDisplayBio": "American, active 1843–1874",
+      "artistSuffix": "",
+      "artistAlphaSort": "W. & F. Langenheim",
+      "artistNationality": "American",
+      "artistBeginDate": "1843",
+      "artistEndDate": "1874",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q55527444",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500033352",
+      "objectDate": "ca. 1848–50",
+      "objectBeginDate": 1846,
+      "objectEndDate": 1852,
+      "medium": "Daguerreotype",
+      "dimensions": "Image: 9 5/9 x 7 5/8; Frame: 18 x 15 x 1 3/8",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Height": 25,
+                  "Width": 19.9
+              }
+          }
+      ],
+      "creditLine": "Gilman Collection, Gift of The Howard Gilman Foundation, 2005",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Photographs",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-10-20T04:55:06.267Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/283179",
+      "tags": [
+          {
+              "term": "Men",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300025928",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q8441"
+          },
+          {
+              "term": "Portraits",
+              "AAT_URL": "http://vocab.getty.edu/page/aat/300015637",
+              "Wikidata_URL": "https://www.wikidata.org/wiki/Q134307"
+          }
+      ],
+      "objectWikidata_URL": "https://www.wikidata.org/wiki/Q96803890",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  },
+  {
+      "objectID": 857947,
+      "isHighlight": false,
+      "accessionNumber": "1980.1118.2(1-120)",
+      "accessionYear": "1980",
+      "isPublicDomain": false,
+      "primaryImage": "",
+      "primaryImageSmall": "",
+      "additionalImages": [],
+      "constituents": [
+          {
+              "constituentID": 90822,
+              "role": "Publisher",
+              "name": "(1) Illman and Sons",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500524861",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q105270105",
+              "gender": ""
+          },
+          {
+              "constituentID": 103908,
+              "role": "Engraver",
+              "name": "(2,4,8,12,18,23, 30,38,48,52,62,72,87) John Rogers",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 218868,
+              "role": "Artist",
+              "name": "(2, 4) after A. M. Huffam",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 207582,
+              "role": "Publisher",
+              "name": "(4) Joseph Robins",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 192109,
+              "role": "Artist",
+              "name": "(5) after John Hayter",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500020762",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q6238424",
+              "gender": ""
+          },
+          {
+              "constituentID": 89247,
+              "role": "Publisher",
+              "name": "(5) Rawdon, Wright, Hatch &amp; Edson, New York",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 99483,
+              "role": "Engraver",
+              "name": "(6) William E. Tucker",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 69063,
+              "role": "Artist",
+              "name": "(6) after François Grenier",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 218869,
+              "role": "Publisher",
+              "name": "(6) Key &amp; Biddle, Philadelphia",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 79178,
+              "role": "Engraver",
+              "name": "(7, 47) Joseph Napoleon Gimbrede",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500025877",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q22944930",
+              "gender": ""
+          },
+          {
+              "constituentID": 166226,
+              "role": "Artist",
+              "name": "(8) after William Owen",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500013150",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q8016422",
+              "gender": ""
+          },
+          {
+              "constituentID": 99519,
+              "role": "Engraver",
+              "name": "(10,32,41,65,78, 111) Archibald L. Dick",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500078046",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q25998400",
+              "gender": ""
+          },
+          {
+              "constituentID": 218894,
+              "role": "Artist",
+              "name": "(10) after Fanny Jemima Corbould",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 75394,
+              "role": "Engraver",
+              "name": "(11,15,27,37,41) John Sartain",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500001830",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3182429",
+              "gender": ""
+          },
+          {
+              "constituentID": 162744,
+              "role": "Artist",
+              "name": "(11) after Franz Xaver Winterhalter",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500007953",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q168659",
+              "gender": ""
+          },
+          {
+              "constituentID": 128195,
+              "role": "Artist",
+              "name": "(12) after Arthur William Devis",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500017216",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q4800678",
+              "gender": ""
+          },
+          {
+              "constituentID": 218896,
+              "role": "Artist",
+              "name": "(13) Edward James Portbury",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 195965,
+              "role": "Artist",
+              "name": "(13, 97) after John Massey Wright",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500025618",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q6247039",
+              "gender": ""
+          },
+          {
+              "constituentID": 218898,
+              "role": "Artist",
+              "name": "(15, 65) after Robert Farrier",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 81965,
+              "role": "Engraver",
+              "name": "(16, 70, 77, 84, 89, 97) Charles Heath, the elder",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500008920",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5078875",
+              "gender": ""
+          },
+          {
+              "constituentID": 95803,
+              "role": "Artist",
+              "name": "(16, 29, 41, 77, 84) after Philip Francis Stephanoff",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500005018",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q16066131",
+              "gender": ""
+          },
+          {
+              "constituentID": 163339,
+              "role": "Engraver",
+              "name": "(17) John Cheney",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500026910",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q6225857",
+              "gender": ""
+          },
+          {
+              "constituentID": 162494,
+              "role": "Artist",
+              "name": "(17) after Thomas Sully",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500006873",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q786545",
+              "gender": ""
+          },
+          {
+              "constituentID": 218868,
+              "role": "Artist",
+              "name": "(18) after A. M. Huffam",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 81554,
+              "role": "Engraver",
+              "name": "(19) Robert William Wallis",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500329670",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q7350820",
+              "gender": ""
+          },
+          {
+              "constituentID": 162573,
+              "role": "Artist",
+              "name": "(19, 61) after Joseph Mallord William Turner",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500026846",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q159758",
+              "gender": ""
+          },
+          {
+              "constituentID": 218896,
+              "role": "Engraver",
+              "name": "(20) Edward James Portbury",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 91334,
+              "role": "Artist",
+              "name": "(20) after Henry Corbould",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500002129",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1476596",
+              "gender": ""
+          },
+          {
+              "constituentID": 94668,
+              "role": "Engraver",
+              "name": "(21) Frederick A. Heath",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 106895,
+              "role": "Artist",
+              "name": "(21) after Eliza Sharpe",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 71589,
+              "role": "Engraver",
+              "name": "(22) Henry Thomas Ryall",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500054352",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5729161",
+              "gender": ""
+          },
+          {
+              "constituentID": 81086,
+              "role": "Artist",
+              "name": "(22) after Edmund Thomas Parris",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500024573",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5339864",
+              "gender": ""
+          },
+          {
+              "constituentID": 219266,
+              "role": "Artist",
+              "name": "(23) after Paul Émile Destouches",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 90039,
+              "role": "Engraver",
+              "name": "(24) William Greatbach",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500043276",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q25915547",
+              "gender": ""
+          },
+          {
+              "constituentID": 164281,
+              "role": "Artist",
+              "name": "(24) after Thomas Stothard",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500028756",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q2427494",
+              "gender": ""
+          },
+          {
+              "constituentID": 88488,
+              "role": "Engraver",
+              "name": "(25) Cephas Grier Childs",
+              "constituentULAN_URL": "(not assigned)",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q53499233",
+              "gender": ""
+          },
+          {
+              "constituentID": 91334,
+              "role": "Artist",
+              "name": "(25) after Henry Corbould",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500002129",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1476596",
+              "gender": ""
+          },
+          {
+              "constituentID": 163795,
+              "role": "Engraver",
+              "name": "(26) Joseph Ives Pease",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500524331",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q52084513",
+              "gender": ""
+          },
+          {
+              "constituentID": 219267,
+              "role": "Artist",
+              "name": "(27) after Thomas Crane",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 166254,
+              "role": "Engraver",
+              "name": "(29) John B. Forrest",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500008965",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 95646,
+              "role": "Artist",
+              "name": "(30) after Henry William Pickersgill, R.A.",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500006697",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3133160",
+              "gender": ""
+          },
+          {
+              "constituentID": 95647,
+              "role": "Engraver",
+              "name": "(31) William John Cooke",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500020558",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18534962",
+              "gender": ""
+          },
+          {
+              "constituentID": 73522,
+              "role": "Artist",
+              "name": "(31) after William Daniell",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011732",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q708629",
+              "gender": ""
+          },
+          {
+              "constituentID": 74529,
+              "role": "Artist",
+              "name": "(32) after Frederick Catherwood",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500029939",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q33567",
+              "gender": ""
+          },
+          {
+              "constituentID": 89285,
+              "role": "Engraver",
+              "name": "(33, 99) Charles Rolls",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 219268,
+              "role": "Artist",
+              "name": "(33) after John Wood",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 98699,
+              "role": "Engraver",
+              "name": "(34) Thomas Hollis",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 89273,
+              "role": "Artist",
+              "name": "(34) after Richard Westall",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500012476",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3109174",
+              "gender": ""
+          },
+          {
+              "constituentID": 72566,
+              "role": "Artist",
+              "name": "(37) after Edouard-Alexandre Odier",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500023969",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3579977",
+              "gender": ""
+          },
+          {
+              "constituentID": 176173,
+              "role": "Engraver",
+              "name": "(39) Stephen Henry Gimber",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500096718",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q55902492",
+              "gender": ""
+          },
+          {
+              "constituentID": 219270,
+              "role": "Artist",
+              "name": "(39) after Octavius Oakley",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 164292,
+              "role": "Engraver",
+              "name": "(40) James Barton Longacre",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011409",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3806459",
+              "gender": ""
+          },
+          {
+              "constituentID": 75738,
+              "role": "Artist",
+              "name": "(40) after James Northcote",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500003564",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3161307",
+              "gender": ""
+          },
+          {
+              "constituentID": 176750,
+              "role": "Publisher",
+              "name": "(40) Eliakim Littell",
+              "constituentULAN_URL": "(not assigned)",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5360391",
+              "gender": ""
+          },
+          {
+              "constituentID": 95803,
+              "role": "Artist",
+              "name": "(41) after Philip Francis Stephanoff",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500005018",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q16066131",
+              "gender": ""
+          },
+          {
+              "constituentID": 219272,
+              "role": "Artist",
+              "name": "(43) after John Bostock",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 106327,
+              "role": "Engraver",
+              "name": "(44) John B. Neagle",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500005325",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1701195",
+              "gender": ""
+          },
+          {
+              "constituentID": 218898,
+              "role": "Artist",
+              "name": "(44) after Robert Farrier",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 100626,
+              "role": "Lithographer",
+              "name": "(46) Peter S. Duval",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 219273,
+              "role": "Artist",
+              "name": "(46) after Albert Newsam",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 85004,
+              "role": "Artist",
+              "name": "(52) after Ary Scheffer",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500001962",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q436726",
+              "gender": ""
+          },
+          {
+              "constituentID": 219276,
+              "role": "Engraver",
+              "name": "(53) George Parker",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 164227,
+              "role": "Artist",
+              "name": "(53) after Sir Martin Archer Shee",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500016737",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3850027",
+              "gender": ""
+          },
+          {
+              "constituentID": 219277,
+              "role": "Artist",
+              "name": "(54) after William Goodacre",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 100551,
+              "role": "Printer",
+              "name": "(54, 59, 64, 69) engraved and printed by Fenner, Sears &amp; Co.",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500098282",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 92825,
+              "role": "Engraver",
+              "name": "(56) engraved by Alexander Lawson",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500042470",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q2833155",
+              "gender": ""
+          },
+          {
+              "constituentID": 162149,
+              "role": "Artist",
+              "name": "(56) after William Sidney Mount",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500017404",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q45431",
+              "gender": ""
+          },
+          {
+              "constituentID": 81554,
+              "role": "Engraver",
+              "name": "(57) Robert William Wallis",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500329670",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q7350820",
+              "gender": ""
+          },
+          {
+              "constituentID": 166247,
+              "role": "Artist",
+              "name": "(57) after William Henry Bartlett",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500008601",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q328705",
+              "gender": ""
+          },
+          {
+              "constituentID": 210322,
+              "role": "Engraver",
+              "name": "(58) Samuel Sartain",
+              "constituentULAN_URL": "(not assigned)",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q51123420",
+              "gender": ""
+          },
+          {
+              "constituentID": 219278,
+              "role": "Artist",
+              "name": "(58) after John Philip Davis",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 163347,
+              "role": "Artist",
+              "name": "(59, 63, 69) after Charles W. Burton",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500524276",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 81885,
+              "role": "Publisher",
+              "name": "(59, 63, 69) Isaac Taylor Hinton",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 80980,
+              "role": "Engraver",
+              "name": "(61) engraved by William Finden",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500013762",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q8009038",
+              "gender": ""
+          },
+          {
+              "constituentID": 195965,
+              "role": "Artist",
+              "name": "(62) after John Massey Wright",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500025618",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q6247039",
+              "gender": ""
+          },
+          {
+              "constituentID": 89655,
+              "role": "Publisher",
+              "name": "(62, 66) George Virtue",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 76962,
+              "role": "Engraver",
+              "name": "(63) Joseph Andrews",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500007355",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q52224107",
+              "gender": ""
+          },
+          {
+              "constituentID": 95757,
+              "role": "Artist",
+              "name": "(63, 78) after Alfred Edward Chalon",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500454430",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q736316",
+              "gender": ""
+          },
+          {
+              "constituentID": 76473,
+              "role": "Publisher",
+              "name": "(64) Simpkin, Marshall &amp; Co.",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 81550,
+              "role": "Engraver",
+              "name": "(66) Samuel Lacey",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 166247,
+              "role": "Artist",
+              "name": "(66, 70) after William Henry Bartlett",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500008601",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q328705",
+              "gender": ""
+          },
+          {
+              "constituentID": 77124,
+              "role": "Engraver",
+              "name": "(68) Thomas Kelly",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 95805,
+              "role": "Artist",
+              "name": "(68) after Henry James Richter",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500008523",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q17423650",
+              "gender": ""
+          },
+          {
+              "constituentID": 85770,
+              "role": "Publisher",
+              "name": "(69) Jennings &amp; Chaplin, London",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 81965,
+              "role": "Engraver",
+              "name": "(70, 84) Charles Heath, the elder",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500008920",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5078875",
+              "gender": ""
+          },
+          {
+              "constituentID": 104314,
+              "role": "Engraver",
+              "name": "(71) Illman &amp; Pilbrow",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 195965,
+              "role": "Artist",
+              "name": "(72) after John Massey Wright",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500025618",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q6247039",
+              "gender": ""
+          },
+          {
+              "constituentID": 101305,
+              "role": "Engraver",
+              "name": "(73) A. W. Graham",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 219279,
+              "role": "Artist",
+              "name": "(73) after Alfred Vickers",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 219280,
+              "role": "Publisher",
+              "name": "(75) Doolittle and Munson, Cincinnati",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 219282,
+              "role": "Engraver",
+              "name": "(75) M. Lyons &amp; Co., Phildelphia",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 219284,
+              "role": "Engraver",
+              "name": "(76) G. E. Price",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 95691,
+              "role": "Artist",
+              "name": "(76) after Alexander Chisholm",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 161813,
+              "role": "Artist",
+              "name": "(79) after Alexander Jackson Davis",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500028389",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q433770",
+              "gender": ""
+          },
+          {
+              "constituentID": 100551,
+              "role": "Printer",
+              "name": "(79, 81) engraved and printed by Fenner, Sears &amp; Co.",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500098282",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 85770,
+              "role": "Publisher",
+              "name": "(79) Jennings &amp; Chaplin, London",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 81885,
+              "role": "Publisher",
+              "name": "(79, 81z0 I. T. Hinton, &amp; Simpkin &amp; Marshall",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 219277,
+              "role": "Artist",
+              "name": "(81) after William Goodacre",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 100041,
+              "role": "Engraver",
+              "name": "(82) William H. Ellis",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 82170,
+              "role": "Engraver",
+              "name": "(83) William Wallis",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 69149,
+              "role": "Artist",
+              "name": "(83) after Samuel Prout",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500018332",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q2542408",
+              "gender": ""
+          },
+          {
+              "constituentID": 69106,
+              "role": "Artist",
+              "name": "(85) after Daniel Maclise",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500014844",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1161631",
+              "gender": ""
+          },
+          {
+              "constituentID": 162152,
+              "role": "Artist",
+              "name": "(87) after Bartolomé Estebán Murillo",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500007425",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q192062",
+              "gender": ""
+          },
+          {
+              "constituentID": 219285,
+              "role": "Engraver",
+              "name": "(88) T. Flemming",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 71529,
+              "role": "Artist",
+              "name": "(89) after Sir Edwin Henry Landseer",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500004856",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q328369",
+              "gender": ""
+          },
+          {
+              "constituentID": 219286,
+              "role": "Engraver",
+              "name": "(93) F. Humphrys",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 127455,
+              "role": "Artist",
+              "name": "(93) after James Holmes",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030941",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q18160600",
+              "gender": ""
+          },
+          {
+              "constituentID": 163742,
+              "role": "Artist",
+              "name": "(94, 114) after Carle (Charles André) Vanloo",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500017868",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q686597",
+              "gender": ""
+          },
+          {
+              "constituentID": 219287,
+              "role": "Engraver",
+              "name": "(95) Richard Sly",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 90469,
+              "role": "Publisher",
+              "name": "(95) William Darton &amp; Son, London",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 98878,
+              "role": "Engraver",
+              "name": "(96) Alfred Jones",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500029331",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q4722980",
+              "gender": ""
+          },
+          {
+              "constituentID": 207440,
+              "role": "Artist",
+              "name": "(96) after Joseph Beaume",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500018270",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1706588",
+              "gender": ""
+          },
+          {
+              "constituentID": 79316,
+              "role": "Artist",
+              "name": "(97) after Moritz Retzsch",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500015373",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1948044",
+              "gender": ""
+          },
+          {
+              "constituentID": 121252,
+              "role": "Publisher",
+              "name": "(97) Hurst, Robinson &amp; Co.",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 106327,
+              "role": "Engraver",
+              "name": "(98) John B. Neagle",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500005325",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1701195",
+              "gender": ""
+          },
+          {
+              "constituentID": 219290,
+              "role": "Artist",
+              "name": "(98, 110) after William Croome",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 97628,
+              "role": "Artist",
+              "name": "(99) after Thomas Uwins",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500005245",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q7794639",
+              "gender": ""
+          },
+          {
+              "constituentID": 90729,
+              "role": "Engraver",
+              "name": "(100) Francis Kearny",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 210325,
+              "role": "Artist",
+              "name": "(100) after William Frederick Witherington",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500006173",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q12073079",
+              "gender": ""
+          },
+          {
+              "constituentID": 162490,
+              "role": "Artist",
+              "name": "(102) after Gilbert Stuart",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500010392",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q41402",
+              "gender": ""
+          },
+          {
+              "constituentID": 90822,
+              "role": "Publisher",
+              "name": "(102) printed and published by Illman &amp; Company",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500524861",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q105270105",
+              "gender": ""
+          },
+          {
+              "constituentID": 210320,
+              "role": "Engraver",
+              "name": "(105) H. E. Tripler",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 175812,
+              "role": "Artist",
+              "name": "(105) after Frédéric Schopin",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500011588",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q15970295",
+              "gender": ""
+          },
+          {
+              "constituentID": 161811,
+              "role": "Artist",
+              "name": "(107) after Jacques Louis David",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500115221",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q83155",
+              "gender": ""
+          },
+          {
+              "constituentID": 3401,
+              "role": "Engraver",
+              "name": "(108) William G. Armstrong",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500036776",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q51325709",
+              "gender": ""
+          },
+          {
+              "constituentID": 219293,
+              "role": "Artist",
+              "name": "(108) after William B. Chambers",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 99445,
+              "role": "Lithographer",
+              "name": "(110) Benjamin W. Thayer",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 166244,
+              "role": "Artist",
+              "name": "(111) after John Frederick Lewis",
+              "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500007820",
+              "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q1391078",
+              "gender": ""
+          },
+          {
+              "constituentID": 219291,
+              "role": "Publisher",
+              "name": "(111) G. Dearborn, New York",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          },
+          {
+              "constituentID": 219292,
+              "role": "Printer",
+              "name": "(118) John M. Butler",
+              "constituentULAN_URL": "",
+              "constituentWikidata_URL": "",
+              "gender": ""
+          }
+      ],
+      "department": "Drawings and Prints",
+      "objectName": "Album",
+      "title": "Album containing prints clipped from British and American 19th century periodicals",
+      "culture": "",
+      "period": "",
+      "dynasty": "",
+      "reign": "",
+      "portfolio": "",
+      "artistRole": "Publisher",
+      "artistPrefix": "(1)",
+      "artistDisplayName": "Illman and Sons",
+      "artistDisplayBio": "American, Philadelphia, active 19th century",
+      "artistSuffix": "",
+      "artistAlphaSort": "Illman and Sons",
+      "artistNationality": "American",
+      "artistBeginDate": "1800",
+      "artistEndDate": "1900",
+      "artistGender": "",
+      "artistWikidata_URL": "https://www.wikidata.org/wiki/Q105270105",
+      "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500524861",
+      "objectDate": "1815–60",
+      "objectBeginDate": 1815,
+      "objectEndDate": 1860,
+      "medium": "Etching, engraving, lithography, mezzotint, watercolor",
+      "dimensions": "12 × 9 3/4 × 13/16 in. (30.5 × 24.7 × 2 cm)",
+      "measurements": [
+          {
+              "elementName": "Overall",
+              "elementDescription": null,
+              "elementMeasurements": {
+                  "Depth": 2,
+                  "Height": 30.5,
+                  "Width": 24.7
+              }
+          }
+      ],
+      "creditLine": "Gift of Margaretta W. Salinger, 1980",
+      "geographyType": "",
+      "city": "",
+      "state": "",
+      "county": "",
+      "country": "",
+      "region": "",
+      "subregion": "",
+      "locale": "",
+      "locus": "",
+      "excavation": "",
+      "river": "",
+      "classification": "Albums",
+      "rightsAndReproduction": "",
+      "linkResource": "",
+      "metadataDate": "2022-12-12T04:46:56.943Z",
+      "repository": "Metropolitan Museum of Art, New York, NY",
+      "objectURL": "https://www.metmuseum.org/art/collection/search/857947",
+      "tags": null,
+      "objectWikidata_URL": "",
+      "isTimelineWork": false,
+      "GalleryNumber": ""
+  }
+]

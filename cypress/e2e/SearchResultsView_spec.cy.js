@@ -1,4 +1,6 @@
-import resultIDs from "../fixtures/morrisAllSearchResults.json"
+import allResultsObject from "../fixtures/morrisAllSearchResults.json"
+import morrisPage1Results from "../addlData/morrisPage1Results.json"
+import morrisPage2Results from "../addlData/morrisPage2Results.json"
 
 describe("Search Results View - Header", () => {
   beforeEach(() => {
@@ -35,8 +37,7 @@ describe("Search Results View - Body", () => {
     }, {
       fixture: "morrisAllSearchResults.json"
     })
-
-    resultIDs.objectIDs.map(id => cy.intercept({
+    allResultsObject.objectIDs.map(id => cy.intercept({
       method: "GET",
       url: `https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`,
     }, {
@@ -49,8 +50,50 @@ describe("Search Results View - Body", () => {
     cy.getByData("submit-search").click()
   })
 
-  it("should have global state corresponding to user's search", () => {
-
+  it("should have global state corresponding to user's search and first page of results", () => {
+    cy.assertState({
+      collections: [],
+      results: {
+        allResults: {
+          "total": 27,
+          "objectIDs": allResultsObject.objectIDs
+        },
+        currentPageResults: morrisPage1Results,
+        isLoadingPage: false,
+        isLoadingResults: false
+      }
+    })
   })
 
+  it("should have global state corresponding to the next page of results", () => {
+    cy.getByData("next-button").click()
+    cy.assertState({
+      collections: [],
+      results: {
+        allResults: {
+          "total": 27,
+          "objectIDs": allResultsObject.objectIDs
+        },
+        currentPageResults: morrisPage2Results,
+        isLoadingPage: false,
+        isLoadingResults: false
+      }
+    })
+    cy.getByData("back-button").click()
+    cy.assertState({
+      collections: [],
+      results: {
+        allResults: {
+          "total": 27,
+          "objectIDs": allResultsObject.objectIDs
+        },
+        currentPageResults: morrisPage1Results,
+        isLoadingPage: false,
+        isLoadingResults: false
+      }
+    })
+  })
+
+
 })
+

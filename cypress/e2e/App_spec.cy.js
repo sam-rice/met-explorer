@@ -4,7 +4,7 @@ describe("App - Redux Initialization", () => {
   })
 
   it("has expected state on load", () => {
-    cy.window().its("store").invoke("getState").should("eql", {
+    cy.assertState({
       collections: [],
       results: {}
     })

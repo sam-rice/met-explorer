@@ -101,11 +101,13 @@ function SearchResultsView() {
             className={backButtonClassList}
             onClick={() => handlePageNav(false)}
             disabled={pageNum === 1}
+            data-cy="back-button"
           >back</button>
           <p className="results__results-controls__nav__page-num">{pageNum}</p>
           <button
             className="results__results-controls__nav__next"
             onClick={() => handlePageNav(true)}
+            data-cy="next-button"
           >next</button>
         </nav>
       </div>

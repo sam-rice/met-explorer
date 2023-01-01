@@ -1,7 +1,11 @@
-Cypress.Commands.add("getByData", (selector) => {
+Cypress.Commands.add("getByData", selector => {
   return cy.get(`[data-cy=${selector}]`)
 })
 
 Cypress.Commands.add("getChildByData", (selector, childType) => {
   return cy.get(`[data-cy=${selector}] ${childType}`)
+})
+
+Cypress.Commands.add("assertState", state => {
+  return cy.window().its("store").invoke("getState").should("eql", state)
 })

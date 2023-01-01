@@ -1,0 +1,196 @@
+[
+  {
+    "objectID": 283072,
+    "isHighlight": false,
+    "accessionNumber": "2005.100.610",
+    "accessionYear": "1999",
+    "isPublicDomain": true,
+    "primaryImage": "https://images.metmuseum.org/CRDImages/ph/original/DP148633.jpg",
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DP148633.jpg",
+    "additionalImages": [],
+    "constituents": [
+        {
+            "constituentID": 54947,
+            "role": "Artist",
+            "name": "Attributed to William Henry Fox Talbot",
+            "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500021449",
+            "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q299565",
+            "gender": ""
+        }
+    ],
+    "department": "Photographs",
+    "objectName": "Photograph",
+    "title": "[Carpenter and Apprentice]",
+    "culture": "",
+    "period": "",
+    "dynasty": "",
+    "reign": "",
+    "portfolio": "",
+    "artistRole": "Artist",
+    "artistPrefix": "Attributed to",
+    "artistDisplayName": "William Henry Fox Talbot",
+    "artistDisplayBio": "British, Dorset 1800–1877 Lacock",
+    "artistSuffix": "",
+    "artistAlphaSort": "Talbot, William Henry Fox",
+    "artistNationality": "British",
+    "artistBeginDate": "1800",
+    "artistEndDate": "1877",
+    "artistGender": "",
+    "artistWikidata_URL": "https://www.wikidata.org/wiki/Q299565",
+    "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500021449",
+    "objectDate": "ca. 1844",
+    "objectBeginDate": 1842,
+    "objectEndDate": 1846,
+    "medium": "Salted paper print from paper negative",
+    "dimensions": "15.5 x 14.9 cm (6 1/8 x 5 7/8 in. )",
+    "measurements": [
+        {
+            "elementName": "Overall",
+            "elementDescription": null,
+            "elementMeasurements": {
+                "Height": 15.5,
+                "Width": 14.9
+            }
+        }
+    ],
+    "creditLine": "Gilman Collection, Purchase, The Horace W. Goldsmith Foundation Gift, through Joyce and Robert Menschel, 2005",
+    "geographyType": "",
+    "city": "",
+    "state": "",
+    "county": "",
+    "country": "",
+    "region": "",
+    "subregion": "",
+    "locale": "",
+    "locus": "",
+    "excavation": "",
+    "river": "",
+    "classification": "Photographs",
+    "rightsAndReproduction": "",
+    "linkResource": "",
+    "metadataDate": "2022-10-20T04:55:06.267Z",
+    "repository": "Metropolitan Museum of Art, New York, NY",
+    "objectURL": "https://www.metmuseum.org/art/collection/search/283072",
+    "tags": [
+        {
+            "term": "Men",
+            "AAT_URL": "http://vocab.getty.edu/page/aat/300025928",
+            "Wikidata_URL": "https://www.wikidata.org/wiki/Q8441"
+        },
+        {
+            "term": "Working",
+            "AAT_URL": "http://vocab.getty.edu/page/aat/300412186",
+            "Wikidata_URL": "https://www.wikidata.org/wiki/Q6958747"
+        },
+        {
+            "term": "Tools",
+            "AAT_URL": "http://vocab.getty.edu/page/aat/300024841",
+            "Wikidata_URL": "https://www.wikidata.org/wiki/Q39546"
+        }
+    ],
+    "objectWikidata_URL": "",
+    "isTimelineWork": false,
+    "GalleryNumber": ""
+  },
+  {
+    "objectID": 283067,
+    "isHighlight": false,
+    "accessionNumber": "2005.100.607",
+    "accessionYear": "1999",
+    "isPublicDomain": true,
+    "primaryImage": "https://images.metmuseum.org/CRDImages/ph/original/DP148630.jpg",
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DP148630.jpg",
+    "additionalImages": [],
+    "constituents": [
+        {
+            "constituentID": 54947,
+            "role": "Artist",
+            "name": "Possibly by William Henry Fox Talbot",
+            "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500021449",
+            "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q299565",
+            "gender": ""
+        },
+        {
+            "constituentID": 55831,
+            "role": "Artist",
+            "name": "Possibly by Calvert Richard Jones",
+            "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500118848",
+            "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q5024269",
+            "gender": ""
+        }
+    ],
+    "department": "Photographs",
+    "objectName": "Photograph",
+    "title": "The Fruit Sellers",
+    "culture": "",
+    "period": "",
+    "dynasty": "",
+    "reign": "",
+    "portfolio": "",
+    "artistRole": "Artist",
+    "artistPrefix": "Possibly by",
+    "artistDisplayName": "William Henry Fox Talbot",
+    "artistDisplayBio": "British, Dorset 1800–1877 Lacock",
+    "artistSuffix": "",
+    "artistAlphaSort": "Talbot, William Henry Fox",
+    "artistNationality": "British",
+    "artistBeginDate": "1800",
+    "artistEndDate": "1877",
+    "artistGender": "",
+    "artistWikidata_URL": "https://www.wikidata.org/wiki/Q299565",
+    "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500021449",
+    "objectDate": "ca. 1845",
+    "objectBeginDate": 1843,
+    "objectEndDate": 1847,
+    "medium": "Salted paper print from paper negative",
+    "dimensions": "17.1 x 21.1 cm (6 3/4 x 8 5/16 in. )",
+    "measurements": [
+        {
+            "elementName": "Overall",
+            "elementDescription": null,
+            "elementMeasurements": {
+                "Height": 17.1,
+                "Width": 21.1
+            }
+        }
+    ],
+    "creditLine": "Gilman Collection, Purchase, Harriette and Noel Levine Gift, 2005",
+    "geographyType": "",
+    "city": "",
+    "state": "",
+    "county": "",
+    "country": "",
+    "region": "",
+    "subregion": "",
+    "locale": "",
+    "locus": "",
+    "excavation": "",
+    "river": "",
+    "classification": "Photographs",
+    "rightsAndReproduction": "",
+    "linkResource": "",
+    "metadataDate": "2022-10-20T04:55:06.267Z",
+    "repository": "Metropolitan Museum of Art, New York, NY",
+    "objectURL": "https://www.metmuseum.org/art/collection/search/283067",
+    "tags": [
+        {
+            "term": "Fruit",
+            "AAT_URL": "http://vocab.getty.edu/page/aat/300011868",
+            "Wikidata_URL": "https://www.wikidata.org/wiki/Q1364"
+        },
+        {
+            "term": "Men",
+            "AAT_URL": "http://vocab.getty.edu/page/aat/300025928",
+            "Wikidata_URL": "https://www.wikidata.org/wiki/Q8441"
+        },
+        {
+            "term": "Women",
+            "AAT_URL": "http://vocab.getty.edu/page/aat/300025943",
+            "Wikidata_URL": "https://www.wikidata.org/wiki/Q467"
+        }
+    ],
+    "objectWikidata_URL": "",
+    "isTimelineWork": false,
+    "GalleryNumber": ""
+  }
+]

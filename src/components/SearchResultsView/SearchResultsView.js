@@ -33,7 +33,6 @@ function SearchResultsView() {
   }
 
   useEffect(() => {
-    console.log("noResults:", noResults, "pageLoading:", pageLoading)
     getNewPage()
   }, [isLoadingResults, pageNum])
 
@@ -50,7 +49,11 @@ function SearchResultsView() {
 
   useEffect(() => {
     setResultTiles(currentPageResults.filter(result => !result.hasOwnProperty("message"))
-      .map(result => <SearchResultTile key={result.objectID} data={result} />)
+      .map(result => (
+        <SearchResultTile
+          data={result}
+          key={result.objectID}
+        />))
     )
     setPageLoading(false)
   }, [currentPageResults])
@@ -116,7 +119,10 @@ function SearchResultsView() {
           {displayedResultsCount}
         </p>
       </div>
-      <ul className="results__list">
+      <ul
+        className="results__list"
+        data-cy="results-list"
+      >
         {!noResults && !pageLoading && resultTiles}
         {noResults && <p>no results matching your search</p>}
         {(isLoadingResults || pageLoading) && <p>Loading...</p>}

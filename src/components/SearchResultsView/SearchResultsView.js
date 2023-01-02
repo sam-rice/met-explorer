@@ -95,27 +95,41 @@ function SearchResultsView() {
 
   const headerSearchParams = !isLoadingResults &&
     <>
-      <h3 className="results__header__left__search-params">
+      <h3 
+        className="results__header__left__search-params"
+        data-cy="params-main"
+      >
         {totalResultsCount} results for "{query}"
       </h3>
-      <p className="results__header__left__dept">
+      <p 
+        className="results__header__left__dept"
+        data-cy="params-dept"
+      >
         in {dept === "all" ? "all departments" : Object.keys(deptKey)[dept - 1]}
       </p>
     </>
 
   const displayedResultsCount = `viewing ${resultTiles.length ? resultTiles.length : 0} of ${totalResultsCount} results`
 
-  const backButtonClassList = pageNum !== 1 ?
-    "results__results-controls__nav__back" :
-    "results__results-controls__nav__back back--disabled"
+  const backButtonClassList = pageNum === 1 ?
+  "results__results-controls__nav__back nav--disabled" :
+    "results__results-controls__nav__back"
 
+  const nextButtonClassList = pageNum === Math.ceil(allResults?.objectIDs.length / 25) || noResults ?
+  "results__results-controls__nav__next nav--disabled" :
+    "results__results-controls__nav__next"
+
+console.log(Math.ceil(allResults?.objectIDs.length / 25))
   return (
     <section className="results">
       <div className="results__header">
         <div className="results__header__left">
           {headerSearchParams}
         </div>
-        <p className="gray--text">
+        <p 
+          className="gray--text"
+          data-cy="results-count-upper"
+        >
           {displayedResultsCount}
         </p>
       </div>
@@ -124,11 +138,14 @@ function SearchResultsView() {
         data-cy="results-list"
       >
         {!noResults && !pageLoading && resultTiles}
-        {noResults && <p>no results matching your search</p>}
+        {noResults && <p data-cy="no-results">no results matching your search</p>}
         {(isLoadingResults || pageLoading) && <p>Loading...</p>}
       </ul>
       <div className="results__results-controls">
-        <p className="results__results-controls__details">
+        <p 
+          className="results__results-controls__details"
+          data-cy="results-count-lower"
+        >
           {displayedResultsCount}
         </p>
         <nav className="results__results-controls__nav">
@@ -140,8 +157,9 @@ function SearchResultsView() {
           >back</button>
           <p className="results__results-controls__nav__page-num">{pageNum}</p>
           <button
-            className="results__results-controls__nav__next"
+            className={nextButtonClassList}
             onClick={() => handlePageNav(true)}
+            disabled={pageNum === Math.ceil(allResults?.objectIDs.length / 25) || noResults}
             data-cy="next-button"
           >next</button>
         </nav>

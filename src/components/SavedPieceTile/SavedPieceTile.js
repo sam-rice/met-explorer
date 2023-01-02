@@ -26,7 +26,11 @@ function SavedPieceTile({ collectionID, data }) {
   const artistSearchPath = `/search?query=${artistName.replace(/ /g, "+")}&type=artist&dept=all&page=1`
 
   return (
-    <li className="piece" onClick={e => goToArtwork(e)}>
+    <li 
+      className="piece" 
+      onClick={e => goToArtwork(e)}
+      data-cy={`saved-piece-${objectID}`}
+    >
       <div className="piece__left">
         <div className="img-container">
           <img className="img-container__img" src={imageSmall ? imageSmall : fallbackImg} />
@@ -60,6 +64,7 @@ function SavedPieceTile({ collectionID, data }) {
         <button 
           className="piece__right__button"
           onClick={removeFromCollection}
+          data-cy="delete-button"
         />
       </div>
     </li>

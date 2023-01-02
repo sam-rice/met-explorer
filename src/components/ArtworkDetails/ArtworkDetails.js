@@ -270,6 +270,7 @@ function ArtworkDetail() {
               value={selectedCollection}
               onChange={e => setSelectedCollection(e.target.value)}
               required={true}
+              data-cy="add-collection-select"
             >
               <option value="add to collection">add to collection</option>
               {collectionOptions}
@@ -277,6 +278,7 @@ function ArtworkDetail() {
             <button
               className="artwork__left__collection__button"
               onClick={handleSubmit}
+              data-cy="add-collection-submit"
             >add</button>
           </div>
         </div>

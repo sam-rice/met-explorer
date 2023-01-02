@@ -52,7 +52,7 @@
     color: variables.$gray;
     margin: 0px 0px 45px;
 
-    &__link {
+    &__wiki-link {
       color: black;
       margin-right: 8px;
       transition-duration: 400ms;
@@ -62,7 +62,7 @@
       }
     }
 
-    &__no-link {
+    &__no-wiki-link {
       color: black;
       text-decoration: underline;
       margin-right: 8px;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import { addToCollection } from "../../actions"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -141,11 +141,14 @@ function ArtworkDetail() {
 
   const formattedArtistName = artistURL ?
     <a
-      className="artwork__left__artist__link"
+      className="artwork__left__artist__wiki-link"
       href={artistURL}
+      data-cy="object-artist-wiki"
     >{artistName}
     </a> :
-    <span className="artwork__left__artist__no-link">{artistName}</span>
+    <span className="artwork__left__artist__no-wiki-link">{artistName}</span>
+
+  const artistSearchPath = `/search?query=${artistName?.replace(/ /g, "+")}&type=artist&dept=all&page=1`
 
   const addlPhotoButtons = !isLoading &&
     additionalImages.reduce((acc, url, i) => {
@@ -171,11 +174,13 @@ function ArtworkDetail() {
       <span className="artwork-directory">
         <span
           className="artwork-detail-link"
+          data-cy="directory-department"
         >{department}</span>
         {
           artistName &&
           <span
             className="artwork-detail-link"
+            data-cy="directory-artist"
           > / {artistName}
           </span>
         }
@@ -183,58 +188,79 @@ function ArtworkDetail() {
       <section className="artwork">
         <div className="artwork__left">
           {relatedCollections[0] && prevSavedMessage}
-          <h3 className="artwork__left__title">{objectName}</h3>
-          <p className="artwork__left__date">{objectDate}</p>
-          <p className="artwork__left__artist">
+          <h3
+            className="artwork__left__title"
+            data-cy="object-title"
+          >{objectName}</h3>
+          <p
+            className="artwork__left__date"
+            data-cy="object-date"
+          >{objectDate}</p>
+          <p
+            className="artwork__left__artist"
+          >
             {artistName && formattedArtistName}
             {culture}
           </p>
-          <table className="artwork__left__table">
+          <table
+            className="artwork__left__table"
+          >
             <tbody>
               {
                 description?.toLowerCase() !== objectName?.toLowerCase() &&
                 <tr>
                   <td className="artwork__left__table__key">description:</td>
-                  <td>{description}</td>
+                  <td data-cy="table-value-1">{description}</td>
                 </tr>
               }
               <tr>
                 <td>department:</td>
-                <td>{department}</td>
+                <td data-cy="table-value-2">{department}</td>
               </tr>
               {
                 region &&
                 <tr>
                   <td>geography:</td>
-                  <td>{`${geographyType} ${region}, ${country}`}</td>
+                  <td data-cy="table-value-3">{`${geographyType} ${region}, ${country}`}</td>
                 </tr>
               }
               {
                 period &&
                 <tr>
                   <td>period:</td>
-                  <td>{period}</td>
+                  <td data-cy="table-value-4">{period}</td>
                 </tr>
               }
               {
                 classification &&
                 <tr>
                   <td>classification:</td>
-                  <td>{classification}</td>
+                  <td data-cy="table-value-5">{classification}</td>
                 </tr>
               }
               <tr>
                 <td>medium:</td>
-                <td>{medium}</td>
+                <td data-cy="table-value-6">{medium}</td>
               </tr>
               <tr>
                 <td>credit line:</td>
-                <td>{creditLine}</td>
+                <td data-cy="table-value-7">{creditLine}</td>
               </tr>
             </tbody>
           </table>
+          {
+            artistName &&
+            <p>view more pieces from <Link
+                to={artistSearchPath}
+                data-cy="artist-search-link"
+              >{artistName}</Link>
+            </p>
+          }
           <p className="artwork__left__met-link">
-            view at <a href={metURL}>metmuseum.org</a>
+            view at <a
+              href={metURL}
+              data-cy="object-met-link"
+            >metmuseum.org</a>
           </p>
           <div className="artwork__left__collection">
             <AnimatePresence
@@ -287,6 +313,8 @@ function ArtworkDetail() {
             <img
               className="artwork__right__mat__img"
               src={currentImg}
+              alt={`${objectName}${artistName && ` by ${artistName}`}`}
+              data-cy="object-image"
             />
           </div>
           <div className="artwork__right__img-controls">

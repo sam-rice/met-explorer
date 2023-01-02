@@ -31,6 +31,7 @@ function CollectionTile({ name, id, count, deptList, thumbnail }) {
       <li 
         className="collection"
         onClick={e => goToCollection(e)}
+        data-cy={`collection-${name.replace(/ /g, "-")}`}
       >
         <div className="collection__left">
           {count !== 0 && <div className="collection__left__img-container">

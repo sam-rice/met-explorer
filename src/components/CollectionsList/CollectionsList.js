@@ -68,18 +68,24 @@ function CollectionsList() {
     />
   })
 
-  const collectionsList = collectionTiles.length ? collectionTiles : <h3>no collections yet</h3>
+  const collectionsList = collectionTiles.length ?
+    collectionTiles :
+    <h3 data-cy="no-collections">no collections yet</h3>
   const collectionsCount = `${collections.length} collection${collections.length === 1 ? "" : "s"}`
 
   return (
     <section className="collections">
       <div className="collections__header">
-        <h3 className="collections__header__count">{collectionsCount}</h3>
+        <h3 
+          className="collections__header__count"
+          data-cy="collections-count"
+        >{collectionsCount}</h3>
         <div className="collections__header__add">
           <p className="add-button-label">new collection</p>
           <button
             className="add-button"
             onClick={showModal}
+            data-cy="modal-open"
           />
         </div>
       </div>
@@ -105,10 +111,12 @@ function CollectionsList() {
             onChange={e => setName(e.target.value)}
             onKeyDown={e => handleKeyDown(e)}
             autoFocus={true}
+            data-cy="modal-input"
           />
           <button
             className="modal__form__button"
             onClick={handleSubmit}
+            data-cy="modal-submit"
           >create
           </button>
           {formError && <p className="modal__form__error">*required field</p>}
@@ -117,6 +125,7 @@ function CollectionsList() {
         <button
           className="modal__close-button"
           onClick={() => setModalOpen(false)}
+          data-cy="modal-close"
         >cancel
         </button>
       </Modal>

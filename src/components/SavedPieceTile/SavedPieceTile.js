@@ -37,14 +37,31 @@ function SavedPieceTile({ collectionID, data }) {
         </div>
         <div className="piece__left__details">
           <div className="details-top">
-            <h4 className="details-top__title">{objectName}</h4>
-            <p className="detail-rows">ca. {objectDate}</p>
+            <h4 
+              className="details-top__title"
+              data-cy="object-name"
+            >{objectName}</h4>
+            <p 
+              className="detail-rows"
+              data-cy="object-date"
+            >ca. {objectDate}</p>
             <p className="detail-rows">
-              {artistName && <Link className="details-top__artist-link" to={artistSearchPath}>{artistName}</Link>}
-              {culture}
+              {
+                artistName && 
+                <Link 
+                  className="details-top__artist-link" 
+                  to={artistSearchPath}
+                  data-cy="artist-link"
+                >{artistName}</Link>
+              }
+              <span data-cy="object-culture">
+              {culture}</span>
             </p>
           </div>
-          <p className="detail-rows">department: {department}</p>
+          <p 
+            className="detail-rows"
+            data-cy="object-department"
+          >department: {department}</p>
         </div>
       </div>
       <div className="piece__right">
@@ -58,7 +75,8 @@ function SavedPieceTile({ collectionID, data }) {
             maxLength={400}
             rows="6" 
             cols="40" 
-            placeholder="notes..." 
+            placeholder="notes..."
+            data-cy="user-notes"
           />
         </div>
         <button 

@@ -89,7 +89,7 @@ describe("Collections List - Managing Collections", () => {
     cy.dispatchCollectionToStore("Collection 2", 200)
   })
 
-  it("should display a collection \"tile\" for each collection", () => {
+  it("should display a collection \"tile\" for each previously-saved collection", () => {
     cy.getByData("collection-100").should("exist")
     cy.getByData("collection-200")
       .should("exist")
@@ -97,7 +97,7 @@ describe("Collections List - Managing Collections", () => {
       .should("have.text", "Collection 2")
   })
 
-  it("should have global state that contains the newly-created collections", () => {
+  it("should have global state that contains the current collections", () => {
     cy.assertState({
       collections: [
         {
@@ -129,6 +129,11 @@ describe("Collections List - Managing Collections", () => {
     cy.getByData("collection-200").find("img").should("not.exist")
   })
 
+  it("should navigate to the \"Collection View\" when a collection tile is clicked", () => {
+    cy.getByData("collection-100").click()
+    cy.url().should("eq", "http://localhost:3000/collections/100")
+  })
+
   it("should update the thumbnail if the first saved piece of a collection is deleted", () => {
     cy.getByData("collection-100").click()
     cy.getByData("saved-piece-14944").find('[data-cy="delete-button"]').click()
@@ -155,7 +160,7 @@ describe("Collections List - Managing Collections", () => {
     cy.getByData("collection-100").find('[data-cy="department-list"]').should("have.text", "departments: The American Wing, European Sculpture and Decorative Arts, Photographs...")
   })
 
-  it("should display the collections total number of saved pieces", () => {
+  it("should display the collection's total number of saved pieces", () => {
     cy.getByData("collection-200").find('[data-cy="saved-count"]').should("have.text", "0 pieces")
     cy.getByData("collection-100").find('[data-cy="saved-count"]').should("have.text", "1 piece")
 
@@ -163,7 +168,7 @@ describe("Collections List - Managing Collections", () => {
     cy.getByData("collection-100").find('[data-cy="saved-count"]').should("have.text", "2 pieces")
   })
 
-  it("should allow user to delete collections", () => {
+  it("should allow the user to delete collections", () => {
     cy.getByData("collection-100").find('[data-cy="delete-button"]').click()
     cy.getByData("collection-100").should("not.exist")
     cy.getByData("collection-200").should("be.visible")

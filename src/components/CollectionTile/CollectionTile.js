@@ -38,13 +38,16 @@ function CollectionTile({ name, id, count, deptList, thumbnail }) {
       data-cy={`collection-${id}`}
     >
       <div className="collection__left">
-        {count !== 0 && <div className="collection__left__img-container">
-          <img className="collection__left__img-container__img" src={displayedThumbnail} />
-        </div>}
+        {
+          count !== 0 &&
+          <div className="collection__left__img-container">
+            <img className="collection__left__img-container__img" src={displayedThumbnail} />
+          </div>
+        }
         <h4 className="collection__left__title">{name}</h4>
       </div>
       <div className="collection__details">
-        <p 
+        <p
           className="collection__details__row"
           data-cy="saved-count"
         >{pieceCount}</p>
@@ -52,7 +55,7 @@ function CollectionTile({ name, id, count, deptList, thumbnail }) {
           className="collection__details__remove-button"
           data-cy="delete-button"
         />
-        <p 
+        <p
           className="collection__details__row"
           data-cy="department-list"
         >{displayedDeptList}</p>

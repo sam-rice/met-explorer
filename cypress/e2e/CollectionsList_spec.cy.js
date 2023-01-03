@@ -104,13 +104,7 @@ describe("Collections List - Managing Collections", () => {
           name: "Collection 1",
           id: 100,
           pieces: [{
-            "artistName": "William Morris",
-            "culture": "American or British",
-            "department": "The American Wing",
-            "objectDate": "ca. 1882",
-            "objectID": "14944",
-            "objectName": "Curtain",
-            "imageSmall": "https://images.metmuseum.org/CRDImages/ad/web-large/RT560.jpg",
+            ...savedPieces[0],
             "userNotes": ""
           }]
         },

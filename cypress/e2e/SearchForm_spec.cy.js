@@ -44,6 +44,8 @@ describe("Search Form - Body", () => {
 
   it("should have a select for search-type", () => {
     cy.getByData("type-select").should("be.visible")
+    cy.getByData("type-select").select("artist name")
+      .find(":selected").should("have.value", "artist name")
   })
 
   it("should have the correct options for search types", () => {
@@ -58,7 +60,9 @@ describe("Search Form - Body", () => {
   })
 
   it("should have a select for searching by department", () => {
-    cy.getByData("type-select").should("be.visible")
+    cy.getByData("dept-select").should("be.visible")
+    cy.getByData("dept-select").select("The Cloisters")
+      .find(":selected").should("have.value", "The Cloisters")
   })
 
   it("should have the correct options for search types", () => {

@@ -135,6 +135,7 @@ function ArtworkDetail() {
       className="artwork__left__saved-msg"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      data-cy="previously-saved-message"
     >
       this piece is saved in your collection: {prevSavedString}
     </motion.p>

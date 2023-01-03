@@ -1,36 +1,35 @@
-import { getByAltText } from "@testing-library/react"
 import savedPieces from "../fixtures/savedPieces.json"
 
-// describe("Artwork Details - Header", () => {
-//   beforeEach(() => {
-//     cy.intercept({
-//       method: "GET",
-//       url: "https://collectionapi.metmuseum.org/public/collection/v1/objects/222094",
-//     }, {
-//       fixture: "morrisResult222094.json"
-//     })
-//     cy.visit("http://localhost:3000/explore/222094")
-//   })
+describe("Artwork Details - Header", () => {
+  beforeEach(() => {
+    cy.intercept({
+      method: "GET",
+      url: "https://collectionapi.metmuseum.org/public/collection/v1/objects/222094",
+    }, {
+      fixture: "morrisResult222094.json"
+    })
+    cy.visit("http://localhost:3000/explore/222094")
+  })
 
-//   it("should navigate to the homepage", () => {
-//     cy.getByData("home-header").click()
-//     cy.url().should("eq", "http://localhost:3000/")
-//   })
+  it("should navigate to the homepage", () => {
+    cy.getByData("home-header").click()
+    cy.url().should("eq", "http://localhost:3000/")
+  })
 
-//   it("should navigate to the collections view", () => {
-//     cy.getByData("collections-header").click()
-//     cy.url().should("eq", "http://localhost:3000/collections")
-//   })
+  it("should navigate to the collections view", () => {
+    cy.getByData("collections-header").click()
+    cy.url().should("eq", "http://localhost:3000/collections")
+  })
 
-//   it("should navigate to the search form", () => {
-//     cy.getByData("search-header").click()
-//     cy.url().should("eq", "http://localhost:3000/search-form")
-//   })
+  it("should navigate to the search form", () => {
+    cy.getByData("search-header").click()
+    cy.url().should("eq", "http://localhost:3000/search-form")
+  })
 
-//   it("displays the correct sub-header", () => {
-//     cy.getByData("sub-header").should("have.text", "EXPLORE")
-//   })
-// })
+  it("displays the correct sub-header", () => {
+    cy.getByData("sub-header").should("have.text", "EXPLORE")
+  })
+})
 
 describe("Artwork Details - Body", () => {
   beforeEach(() => {
@@ -73,4 +72,47 @@ describe("Artwork Details - Body", () => {
     cy.url().should("eq", "http://localhost:3000/search?query=William+Morris&type=artist&dept=all&page=1")
   })
 
+  it("should have a form for adding the viewed piece to a collection", () => {
+    cy.dispatchCollectionToStore("Collection 1", 100)
+    cy.getByData("add-collection-select").should("be.visible")
+    cy.getByData("add-collection-select").select("Collection 1")
+      .find(":selected").should("have.value", "Collection 1")
+    cy.getByData("add-collection-submit").should("be.visible")
+  })
+
+  it("should allow a user to add the viewed piece to a collection", () => {
+    cy.dispatchCollectionToStore("Collection 1", 100)
+    cy.getByData("add-collection-select").select("Collection 1")
+    cy.getByData("add-collection-submit").click()
+    cy.assertState({
+      collections: [
+        {
+          name: "Collection 1",
+          id: 100,
+          pieces: [{
+            ...savedPieces[4],
+            "userNotes": ""
+          }]
+        }
+      ],
+      results: {}
+    })
+  })
+
+  it("should tell the user that the piece is now saved in their collection", () => {
+    cy.dispatchCollectionToStore("Collection 1", 100)
+    cy.getByData("add-collection-select").select("Collection 1")
+    cy.getByData("add-collection-submit").click()
+    cy.getByData("previously-saved-message").should("have.text", "this piece is saved in your collection: \"Collection 1\"")
+  })
+
+  it("should have a persisting saved message when a piece has been previously saved", () => {
+    cy.dispatchCollectionToStore("Collection 1", 100)
+    cy.getByData("add-collection-select").select("Collection 1")
+    cy.getByData("add-collection-submit").click()
+    cy.getByData("collections-header").click()
+    cy.getByData("collection-100").click()
+    cy.getByData("saved-piece-222094").click()
+    cy.getByData("previously-saved-message").should("have.text", "this piece is saved in your collection: \"Collection 1\"")
+  })
 })

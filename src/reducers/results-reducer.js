@@ -1,9 +1,7 @@
 const resultsReducer = (state = {}, action) => {
   switch (action.type) {
     case "FETCH_RESULTS_REQUEST":
-      return { ...state,
-        isLoadingResults: true 
-      }
+      return { isLoadingResults: true }
 
     case "FETCH_RESULTS_FAILURE":
       return {
@@ -25,10 +23,20 @@ const resultsReducer = (state = {}, action) => {
         }
       }
 
-    case "FETCH_PAGE_REQUEST":
-      return { ...state,
-        isLoadingPage: true 
-      }
+    case "RESET_SEARCH":
+      return { isLoadingResults: true }
+    
+    // case "FETCH_RESULTS_NONE":
+    //   return {
+    //     ...state,
+    //     currentPageResults: null,
+    //     isLoadingPage: false,
+    //   }
+
+    // case "FETCH_PAGE_REQUEST":
+    //   return { ...state,
+    //     isLoadingPage: true 
+    //   }
 
     // case "FETCH_PAGE_FAILURE":
     //   return {
@@ -36,12 +44,12 @@ const resultsReducer = (state = {}, action) => {
     //     errorMsg: action.payload.errorMsg
     //   }
 
-    case "FETCH_PAGE_SUCCESS":
-      return {
-        ...state,
-        isLoadingPage: false,
-        currentPageResults: action.payload.objectsData
-      }
+    // case "FETCH_PAGE_SUCCESS":
+    //   return {
+    //     ...state,
+    //     isLoadingPage: false,
+    //     currentPageResults: action.payload.objectsData
+    //   }
 
     default:
       return state

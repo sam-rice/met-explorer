@@ -92,10 +92,14 @@
   }
 }
 
-.back--disabled {
+.nav--disabled {
   pointer-events: none;
 
   &:before {
-    color: rgb(179, 179, 179);
+    color: variables.$disabled-gray;
+  }
+
+  &:after {
+    color: variables.$disabled-gray;
   }
 }

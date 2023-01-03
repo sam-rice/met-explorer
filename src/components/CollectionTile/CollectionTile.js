@@ -26,26 +26,41 @@ function CollectionTile({ name, id, count, deptList, thumbnail }) {
 
   const displayedThumbnail = thumbnail ? thumbnail : fallbackIMG
 
+  const dept1 = deptList[0] ? `departments: ${deptList[0]}` : ""
+  const dept2 = deptList[1] ? `, ${deptList[1]}` : ""
+  const dept3 = deptList[2] ? `, ${deptList[2]}...` : ""
+  const displayedDeptList = `${dept1}${dept2}${dept3}`
 
   return (
-      <li 
-        className="collection"
-        onClick={e => goToCollection(e)}
-      >
-        <div className="collection__left">
-          {count !== 0 && <div className="collection__left__img-container">
+    <li
+      className="collection"
+      onClick={e => goToCollection(e)}
+      data-cy={`collection-${id}`}
+    >
+      <div className="collection__left">
+        {
+          count !== 0 &&
+          <div className="collection__left__img-container">
             <img className="collection__left__img-container__img" src={displayedThumbnail} />
-          </div>}
-          <h4 className="collection__left__title">{name}</h4>
-        </div>
-        <div className="collection__details">
-          <p className="collection__details__row">{pieceCount}</p>
-          <button
-            className="collection__details__remove-button"
-          />
-          <p className="collection__details__row">{deptList[0] && `departments: ${deptList[0]}`}{deptList[1] && `, ${deptList[1]}`}{deptList[2] && `, ${deptList[2]}...`}</p>
-        </div>
-      </li>
+          </div>
+        }
+        <h4 className="collection__left__title">{name}</h4>
+      </div>
+      <div className="collection__details">
+        <p
+          className="collection__details__row"
+          data-cy="saved-count"
+        >{pieceCount}</p>
+        <button
+          className="collection__details__remove-button"
+          data-cy="delete-button"
+        />
+        <p
+          className="collection__details__row"
+          data-cy="department-list"
+        >{displayedDeptList}</p>
+      </div>
+    </li>
   )
 }
 

@@ -1,0 +1,88 @@
+{
+    "objectID": 222094,
+    "isHighlight": false,
+    "accessionNumber": "27.139.3",
+    "accessionYear": "1927",
+    "isPublicDomain": true,
+    "primaryImage": "https://images.metmuseum.org/CRDImages/es/original/DP245936.jpg",
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/es/web-large/DP245936.jpg",
+    "additionalImages": [
+        "https://images.metmuseum.org/CRDImages/es/original/DP245946.jpg",
+        "https://images.metmuseum.org/CRDImages/es/original/DP245947.jpg",
+        "https://images.metmuseum.org/CRDImages/es/original/DP245948.jpg",
+        "https://images.metmuseum.org/CRDImages/es/original/DP245949.jpg"
+    ],
+    "constituents": [
+        {
+            "constituentID": 164917,
+            "role": "Designer",
+            "name": "Designed by William Morris",
+            "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+            "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+            "gender": ""
+        }
+    ],
+    "department": "European Sculpture and Decorative Arts",
+    "objectName": "Carpet",
+    "title": "Holland Park carpet",
+    "culture": "",
+    "period": "",
+    "dynasty": "",
+    "reign": "",
+    "portfolio": "",
+    "artistRole": "Designer",
+    "artistPrefix": "Designed by",
+    "artistDisplayName": "William Morris",
+    "artistDisplayBio": "British, Walthamstow, London 1834–1896 Hammersmith, London",
+    "artistSuffix": "",
+    "artistAlphaSort": "Morris, William",
+    "artistNationality": "British",
+    "artistBeginDate": "1834",
+    "artistEndDate": "1896",
+    "artistGender": "",
+    "artistWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+    "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+    "objectDate": "late 19th century",
+    "objectBeginDate": 1885,
+    "objectEndDate": 1899,
+    "medium": "Wool\r\nTurkish (Ghiordes) knot, 25 to the square inch.",
+    "dimensions": "Overall: 203 x 156 1/4 in. (515.6 x 396.9 cm)",
+    "measurements": [
+        {
+            "elementName": "Overall",
+            "elementDescription": null,
+            "elementMeasurements": {
+                "Height": 515.62103,
+                "Width": 396.8758
+            }
+        }
+    ],
+    "creditLine": "Bequest of Frank A. Munsey, 1927",
+    "geographyType": "",
+    "city": "",
+    "state": "",
+    "county": "",
+    "country": "",
+    "region": "",
+    "subregion": "",
+    "locale": "",
+    "locus": "",
+    "excavation": "",
+    "river": "",
+    "classification": "Textiles-Rugs",
+    "rightsAndReproduction": "",
+    "linkResource": "",
+    "metadataDate": "2020-09-16T18:35:19.457Z",
+    "repository": "Metropolitan Museum of Art, New York, NY",
+    "objectURL": "https://www.metmuseum.org/art/collection/search/222094",
+    "tags": [
+        {
+            "term": "Flowers",
+            "AAT_URL": "http://vocab.getty.edu/page/aat/300132399",
+            "Wikidata_URL": "https://www.wikidata.org/wiki/Q506"
+        }
+    ],
+    "objectWikidata_URL": "",
+    "isTimelineWork": false,
+    "GalleryNumber": ""
+}

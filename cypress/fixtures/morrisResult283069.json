@@ -1,0 +1,88 @@
+{
+  "objectID": 283069,
+  "isHighlight": false,
+  "accessionNumber": "2005.100.608",
+  "accessionYear": "1999",
+  "isPublicDomain": true,
+  "primaryImage": "https://images.metmuseum.org/CRDImages/ph/original/DP148631.jpg",
+  "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DP148631.jpg",
+  "additionalImages": [],
+  "constituents": [
+      {
+          "constituentID": 54947,
+          "role": "Artist",
+          "name": "William Henry Fox Talbot",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500021449",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q299565",
+          "gender": ""
+      }
+  ],
+  "department": "Photographs",
+  "objectName": "Photograph",
+  "title": "[Hungerford Suspension Bridge]",
+  "culture": "",
+  "period": "",
+  "dynasty": "",
+  "reign": "",
+  "portfolio": "",
+  "artistRole": "Artist",
+  "artistPrefix": "",
+  "artistDisplayName": "William Henry Fox Talbot",
+  "artistDisplayBio": "British, Dorset 1800–1877 Lacock",
+  "artistSuffix": "",
+  "artistAlphaSort": "Talbot, William Henry Fox",
+  "artistNationality": "British",
+  "artistBeginDate": "1800",
+  "artistEndDate": "1877",
+  "artistGender": "",
+  "artistWikidata_URL": "https://www.wikidata.org/wiki/Q299565",
+  "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500021449",
+  "objectDate": "ca. 1845",
+  "objectBeginDate": 1843,
+  "objectEndDate": 1847,
+  "medium": "Salted paper print from paper negative",
+  "dimensions": "16.9 x 21.3 cm (6 5/8 x 8 3/8 in. )",
+  "measurements": [
+      {
+          "elementName": "Overall",
+          "elementDescription": null,
+          "elementMeasurements": {
+              "Height": 16.9,
+              "Width": 21.3
+          }
+      }
+  ],
+  "creditLine": "Gilman Collection, Museum Purchase, 2005",
+  "geographyType": "",
+  "city": "",
+  "state": "",
+  "county": "",
+  "country": "",
+  "region": "",
+  "subregion": "",
+  "locale": "",
+  "locus": "",
+  "excavation": "",
+  "river": "",
+  "classification": "Photographs",
+  "rightsAndReproduction": "",
+  "linkResource": "",
+  "metadataDate": "2022-10-20T04:55:06.267Z",
+  "repository": "Metropolitan Museum of Art, New York, NY",
+  "objectURL": "https://www.metmuseum.org/art/collection/search/283069",
+  "tags": [
+      {
+          "term": "Bridges",
+          "AAT_URL": "http://vocab.getty.edu/page/aat/300386855",
+          "Wikidata_URL": "https://www.wikidata.org/wiki/Q12280"
+      },
+      {
+          "term": "Boats",
+          "AAT_URL": "http://vocab.getty.edu/page/aat/300178749",
+          "Wikidata_URL": "https://www.wikidata.org/wiki/Q35872"
+      }
+  ],
+  "objectWikidata_URL": "",
+  "isTimelineWork": false,
+  "GalleryNumber": ""
+}

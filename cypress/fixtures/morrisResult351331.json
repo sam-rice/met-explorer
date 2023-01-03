@@ -1,0 +1,118 @@
+{
+  "objectID": 351331,
+  "isHighlight": false,
+  "accessionNumber": "41.100.58",
+  "accessionYear": "1941",
+  "isPublicDomain": false,
+  "primaryImage": "",
+  "primaryImageSmall": "",
+  "additionalImages": [],
+  "constituents": [
+      {
+          "constituentID": 79280,
+          "role": "Author",
+          "name": "William Halfpenny",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 82587,
+          "role": "Author",
+          "name": "John Halfpenny",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 82592,
+          "role": "Author",
+          "name": "Robert Morris",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500027833",
+          "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q3938379",
+          "gender": ""
+      },
+      {
+          "constituentID": 82593,
+          "role": "Author",
+          "name": "Thomas Lightoler",
+          "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500017681",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 82591,
+          "role": "Publisher",
+          "name": "James Rivington and J. Fletcher",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      },
+      {
+          "constituentID": 75860,
+          "role": "Publisher",
+          "name": "Robert Sayer",
+          "constituentULAN_URL": "",
+          "constituentWikidata_URL": "",
+          "gender": ""
+      }
+  ],
+  "department": "Drawings and Prints",
+  "objectName": "Book ; Ornament and Architecture",
+  "title": "The Modern Builder's Assistant: or a Concise Epitome of the Whole System of Architecture",
+  "culture": "",
+  "period": "",
+  "dynasty": "",
+  "reign": "",
+  "portfolio": "",
+  "artistRole": "Author",
+  "artistPrefix": "",
+  "artistDisplayName": "William Halfpenny",
+  "artistDisplayBio": "British, active from ca. 1722, died 1755",
+  "artistSuffix": "",
+  "artistAlphaSort": "Halfpenny, William",
+  "artistNationality": "British",
+  "artistBeginDate": "1720",
+  "artistEndDate": "1755",
+  "artistGender": "",
+  "artistWikidata_URL": "",
+  "artistULAN_URL": "",
+  "objectDate": "1742",
+  "objectBeginDate": 1742,
+  "objectEndDate": 1742,
+  "medium": "Illustrations: etching and engraving",
+  "dimensions": "12 13/16 × 8 3/16 × 1 in. (32.5 × 20.8 × 2.5 cm)",
+  "measurements": [
+      {
+          "elementName": "Overall",
+          "elementDescription": null,
+          "elementMeasurements": {
+              "Depth": 2.5,
+              "Height": 32.5,
+              "Width": 20.8
+          }
+      }
+  ],
+  "creditLine": "Bequest of W. Gedney Beatty, 1941",
+  "geographyType": "",
+  "city": "",
+  "state": "",
+  "county": "",
+  "country": "",
+  "region": "",
+  "subregion": "",
+  "locale": "",
+  "locus": "",
+  "excavation": "",
+  "river": "",
+  "classification": "Books",
+  "rightsAndReproduction": "",
+  "linkResource": "",
+  "metadataDate": "2022-02-09T04:42:08.947Z",
+  "repository": "Metropolitan Museum of Art, New York, NY",
+  "objectURL": "https://www.metmuseum.org/art/collection/search/351331",
+  "tags": null,
+  "objectWikidata_URL": "",
+  "isTimelineWork": false,
+  "GalleryNumber": ""
+}

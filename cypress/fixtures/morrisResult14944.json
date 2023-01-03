@@ -1,0 +1,93 @@
+{
+    "objectID": 14944,
+    "isHighlight": false,
+    "accessionNumber": "62.236.1–.6",
+    "accessionYear": "1962",
+    "isPublicDomain": true,
+    "primaryImage": "https://images.metmuseum.org/CRDImages/ad/original/RT560.jpg",
+    "primaryImageSmall": "https://images.metmuseum.org/CRDImages/ad/web-large/RT560.jpg",
+    "additionalImages": [
+        "https://images.metmuseum.org/CRDImages/ad/original/RT559.jpg",
+        "https://images.metmuseum.org/CRDImages/ad/original/RT627.jpg",
+        "https://images.metmuseum.org/CRDImages/ad/original/176478.jpg",
+        "https://images.metmuseum.org/CRDImages/ad/original/176479.jpg"
+    ],
+    "constituents": [
+        {
+            "constituentID": 164917,
+            "role": "Designer",
+            "name": "William Morris",
+            "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+            "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+            "gender": ""
+        }
+    ],
+    "department": "The American Wing",
+    "objectName": "Curtain",
+    "title": "Curtain",
+    "culture": "American or British",
+    "period": "",
+    "dynasty": "",
+    "reign": "",
+    "portfolio": "",
+    "artistRole": "Designer",
+    "artistPrefix": "",
+    "artistDisplayName": "William Morris",
+    "artistDisplayBio": "British, Walthamstow, London 1834–1896 Hammersmith, London",
+    "artistSuffix": "",
+    "artistAlphaSort": "Morris, William",
+    "artistNationality": "British",
+    "artistBeginDate": "1834",
+    "artistEndDate": "1896",
+    "artistGender": "",
+    "artistWikidata_URL": "https://www.wikidata.org/wiki/Q182589",
+    "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500030629",
+    "objectDate": "ca. 1882",
+    "objectBeginDate": 1879,
+    "objectEndDate": 1882,
+    "medium": "Cotton, woven",
+    "dimensions": "Curtain: 106 x 51 in. (269.2 x 129.5 cm)\r\nTieback: dimensions unrecorded",
+    "measurements": [
+        {
+            "elementName": "Overall",
+            "elementDescription": null,
+            "elementMeasurements": {
+                "Height": 269.2,
+                "Width": 129.5403
+            }
+        }
+    ],
+    "creditLine": "Gift of Mrs. Joseph M. Shapiro, 1962",
+    "geographyType": "Possibly made in",
+    "city": "",
+    "state": "",
+    "county": "",
+    "country": "England",
+    "region": "",
+    "subregion": "",
+    "locale": "",
+    "locus": "",
+    "excavation": "",
+    "river": "",
+    "classification": "",
+    "rightsAndReproduction": "",
+    "linkResource": "",
+    "metadataDate": "2021-04-06T04:41:04.967Z",
+    "repository": "Metropolitan Museum of Art, New York, NY",
+    "objectURL": "https://www.metmuseum.org/art/collection/search/14944",
+    "tags": [
+        {
+            "term": "Rabbits",
+            "AAT_URL": "http://vocab.getty.edu/page/aat/300250218",
+            "Wikidata_URL": "https://www.wikidata.org/wiki/Q9394"
+        },
+        {
+            "term": "Birds",
+            "AAT_URL": "http://vocab.getty.edu/page/aat/300266506",
+            "Wikidata_URL": "https://www.wikidata.org/wiki/Q5113"
+        }
+    ],
+    "objectWikidata_URL": "",
+    "isTimelineWork": false,
+    "GalleryNumber": ""
+}

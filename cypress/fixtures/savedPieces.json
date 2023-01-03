@@ -1,0 +1,47 @@
+[
+  {
+      "artistName": "William Morris",
+      "culture": "American or British",
+      "department": "The American Wing",
+      "objectDate": "ca. 1882",
+      "objectID": "14944",
+      "objectName": "Curtain",
+      "imageSmall": "https://images.metmuseum.org/CRDImages/ad/web-large/RT560.jpg"
+  },
+  {
+      "artistName": "William Linnell",
+      "culture": "",
+      "department": "European Sculpture and Decorative Arts",
+      "objectDate": "ca. 1753–54",
+      "objectID": "203842",
+      "objectName": "Standing shelf",
+      "imageSmall": "https://images.metmuseum.org/CRDImages/es/web-large/DP105780.jpg"
+  },
+  {
+      "artistName": "William Bell",
+      "culture": "",
+      "department": "Photographs",
+      "objectDate": "1872",
+      "objectID": "287291",
+      "objectName": "Photograph",
+      "imageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DT244893.jpg"
+  },
+  {
+      "artistName": "",
+      "culture": "",
+      "department": "New Era Fine Art",
+      "objectDate": "1841–42",
+      "objectID": "283071",
+      "objectName": "Photograph",
+      "imageSmall": "https://images.metmuseum.org/CRDImages/ph/web-large/DP148627.jpg"
+  },
+  {
+    "artistName": "William Morris",
+    "culture": "",
+    "department": "European Sculpture and Decorative Arts",
+    "objectDate": "late 19th century",
+    "objectID": "222094",
+    "objectName": "Carpet",
+    "imageSmall": "https://images.metmuseum.org/CRDImages/es/web-large/DP245936.jpg"
+}
+]

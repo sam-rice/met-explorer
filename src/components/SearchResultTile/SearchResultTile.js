@@ -5,12 +5,13 @@ import "./_SearchResultTile.scss"
 import fallback from "../../assets/fallback.png"
 
 function SearchResultTile({ data }) {
-  const {artistDisplayName, objectName, objectDate, objectID, country, culture, department, primaryImageSmall} = data
+  const { artistDisplayName, objectName, objectDate, objectID, country, culture, department, primaryImageSmall } = data
 
   return (
     <Link
       className="result-link-wrapper"
       to={`/explore/${objectID}`}
+      data-cy={objectID}
     >
       <li className="result">
         <div className="result__left">
@@ -20,11 +21,23 @@ function SearchResultTile({ data }) {
           />
         </div>
         <div className="result__right">
-          <h4>{objectName}</h4>
-          <p className="result__right__details">{objectDate}</p>
-          <p className="result__right__artist">{artistDisplayName}</p>
-          <p className="result__right__details">{culture ? culture : country}</p>
-          <p className="result__right__dept">department: {department}</p>
+          <h4 data-cy="title">{objectName}</h4>
+          <p
+            className="result__right__details"
+            data-cy="date"
+          >{objectDate}</p>
+          <p
+            className="result__right__artist"
+            data-cy="artist"
+          >{artistDisplayName}</p>
+          <p
+            className="result__right__details"
+            data-cy="culture"
+          >{culture ? culture : country}</p>
+          <p
+            className="result__right__dept"
+            data-cy="department"
+          >department: {department}</p>
         </div>
       </li>
     </Link>

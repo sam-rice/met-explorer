@@ -65,11 +65,16 @@ $home-y-margin: 105px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 55px;
     width: 80%;
     background-color: variables.$button-full-gray;
     color: white;
     font-size: 1.3rem;
+
+    & h3 {
+      font-size: min(1.17em, 2.8vw);
+    }
   }
 
   &__button {
@@ -105,6 +110,63 @@ $home-y-margin: 105px;
       &:hover {
         color: gray;
       }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  $home-x-margin-mobile: 8%;
+  $home-y-margin-mobile: 8%;
+
+  @mixin bigTopTextMobile() {
+    font-size: 2.2rem;
+  }
+
+  .home__top {
+    flex-direction: column;
+    align-items: center;
+
+    &__left {
+      @include bigTopTextMobile();
+      margin-top: $home-x-margin-mobile;
+      margin-left: 0px;
+    }
+
+    &__right {
+      @include bigTopTextMobile();
+      margin-top: 8px;
+      margin-right: 0px;
+    }
+  }
+
+  .home__featured {
+    width: 83vw;
+    height: 35vh;
+  
+    &__title {
+      height: 10vh;
+      font-size: 1.3rem;
+  
+      & h3 {
+        font-size: 1.5rem;
+      }
+    }
+  
+    &__button {
+      height: 45px;
+    }
+  }
+
+  .home__bottom ul {
+    margin-bottom: $home-x-margin-mobile;
+
+    .home__bottom__left {
+      margin-left: $home-y-margin-mobile;
+      color: red;
+    }
+
+    .home__bottom__right {
+      margin-right: $home-y-margin-mobile;
     }
   }
 }

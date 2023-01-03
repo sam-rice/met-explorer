@@ -54,3 +54,9 @@ button {
 .gray--text {
   color: variables.$gray;
 }
+
+@media (max-width: 570px) {
+  body {
+    outline-offset: -15px;
+  }
+}

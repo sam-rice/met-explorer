@@ -33,18 +33,16 @@ function Home() {
       </div>
       <nav className="home__bottom">
         <ul>
-          <li>
+          <li className="home__bottom__left">
             <Link 
-              className="home__bottom__left" 
               to="/collections"
               data-cy="collections-link"
             >
               MY COLLECTIONS
             </Link>
           </li>
-          <li>
+          <li className="home__bottom__right">
             <Link 
-              className="home__bottom__right" 
               to="/search-form"
               data-cy="explore-link"
             >

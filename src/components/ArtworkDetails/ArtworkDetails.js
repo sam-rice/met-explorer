@@ -192,7 +192,31 @@ function ArtworkDetail() {
           <h3
             className="artwork__left__title"
             data-cy="object-title"
-          >{objectName}</h3>
+          >{objectName}
+            <AnimatePresence
+              initial={false}
+              mode="wait"
+            >
+              {
+                showSuccess &&
+                <div className="added-alert">
+                  <motion.span
+                    className="added-alert__label"
+                    exit={{ opacity: 0 }}
+                    key={"p"}
+                  >
+                    added
+                  </motion.span>
+                  <motion.img
+                    className="added-alert__img"
+                    src={success}
+                    exit={{ opacity: 0 }}
+                    key={"img"}
+                  />
+                </div>
+              }
+            </AnimatePresence>
+          </h3>
           <p
             className="artwork__left__date"
             data-cy="object-date"
@@ -252,9 +276,9 @@ function ArtworkDetail() {
           {
             artistName &&
             <p>view more pieces from <Link
-                to={artistSearchPath}
-                data-cy="artist-search-link"
-              >{artistName}</Link>
+              to={artistSearchPath}
+              data-cy="artist-search-link"
+            >{artistName}</Link>
             </p>
           }
           <p className="artwork__left__met-link">
@@ -264,7 +288,7 @@ function ArtworkDetail() {
             >metmuseum.org</a>
           </p>
           <div className="artwork__left__collection">
-            <AnimatePresence
+            {/* <AnimatePresence
               initial={false}
               mode="wait"
             >
@@ -286,7 +310,7 @@ function ArtworkDetail() {
                   />
                 </div>
               }
-            </AnimatePresence>
+            </AnimatePresence> */}
             <label
               className="artwork__left__collection__label"
               htmlFor="selected-collection"

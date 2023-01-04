@@ -14,7 +14,7 @@ $home-y-margin: 105px;
 
 @mixin bigBottomText() {
   font-family: variables.$accent-font;
-  font-size: min(4vw, 2.5rem);
+  font-size: min(5vw, 2.5rem);
   cursor: pointer;
   text-decoration: none;
   transition-duration: 400ms;
@@ -27,6 +27,7 @@ $home-y-margin: 105px;
   justify-content: space-between;
   position: relative;
   height: 100vh;
+  width: 100%;
 }
 
 .home__top {
@@ -93,30 +94,30 @@ $home-y-margin: 105px;
     list-style: none;
     padding-left: 0px;
     width: 100%;
+  }
+}
 
-    .home__bottom__left {
-      margin-left: $home-y-margin;
+.home__bottom__left {
+  margin-left: $home-y-margin;
 
-      & a {
-        @include bigBottomText();
+  & a {
+    @include bigBottomText();
 
-        &:hover {
-          color: gray;
-        }
-      }
-
+    &:hover {
+      color: gray;
     }
+  }
 
-    .home__bottom__right {
-      margin-right: $home-y-margin;
-      
-      & a {
-        @include bigBottomText();
+}
 
-        &:hover {
-          color: gray;
-        }
-      }
+.home__bottom__right {
+  margin-right: $home-y-margin;
+  
+  & a {
+    @include bigBottomText();
+
+    &:hover {
+      color: gray;
     }
   }
 }
@@ -151,9 +152,9 @@ $home-y-margin: 105px;
   }
 
   .home__featured {
-    width: 83vw;
-    height: 35vh;
-    top: 70%;
+    width: 62vw;
+    height: 39vh;
+    top: 74%;
   
     &__title {
       height: 10vh;
@@ -176,11 +177,40 @@ $home-y-margin: 105px;
 
     .home__bottom__left {
       margin-left: 0px;
-      font-size: 1.5rem;
     }
 
     .home__bottom__right {
       margin-right: 0px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+  .home__featured {
+    top: 74%;
+    width: 74vw;
+  }
+  
+  .home__bottom {
+
+    & ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .home__bottom__left {
+    margin-bottom: 9px;
+
+    & a {
+      font-size: 1.5rem;
+    }
+  }
+
+  .home__bottom__right {
+
+    & a {
       font-size: 1.5rem;
     }
   }

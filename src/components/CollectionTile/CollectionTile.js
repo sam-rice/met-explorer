@@ -51,10 +51,11 @@ function CollectionTile({ name, id, count, deptList, thumbnail }) {
           className="collection__details__row"
           data-cy="saved-count"
         >{pieceCount}</p>
-        <button
-          className="collection__details__remove-button"
-          data-cy="delete-button"
-        />
+        <div className="collection__details__button-container">
+          <button
+            data-cy="delete-button"
+          />
+        </div>
         <p
           className="collection__details__row"
           data-cy="department-list"

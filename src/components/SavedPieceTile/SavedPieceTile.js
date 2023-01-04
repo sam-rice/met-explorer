@@ -73,17 +73,16 @@ function SavedPieceTile({ collectionID, data }) {
             value={userNotes}
             onChange={e => handleTextInput(e.target.value)}
             maxLength={400}
-            rows="6" 
-            cols="40" 
             placeholder="notes..."
             data-cy="user-notes"
           />
         </div>
-        <button 
-          className="piece__right__button"
-          onClick={removeFromCollection}
-          data-cy="delete-button"
-        />
+        <div className="piece__right__button-container">
+          <button 
+            onClick={removeFromCollection}
+            data-cy="delete-button"
+          />
+        </div>
       </div>
     </li>
   )

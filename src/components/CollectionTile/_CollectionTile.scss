@@ -6,6 +6,8 @@
 
   &__left {
     display: flex;
+    align-items: center;
+    height: 100%;
     
     &__img-container {
       @include mixins.tileThumbnail();
@@ -22,20 +24,45 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    position: relative;
     height: 100%;
-
-    &__remove-button {
-      @include mixins.addSubtractButton();
-  
-      &:after {
-        content: "\2212";
-        left: 5px;
-      }
-    }
 
     &__row {
       color: variables.$gray;
       margin: 0px;
     }
+  }
+}
+
+.collection__details__button-container {
+  & button {
+    @include mixins.addSubtractButton();
+  
+    &:after {
+      content: "\2212";
+      left: 5px;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .collection {
+    height: 340px;
+
+    &__left {
+      width: 100%;
+    }
+
+    &__details {
+      height: 16%;
+      width: 100%;
+      align-items: flex-start;
+    }
+  }
+
+  .collection__details__button-container {
+    position: absolute;
+    top: -248px;
+    right: 14px;
   }
 }

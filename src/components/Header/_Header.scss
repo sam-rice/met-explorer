@@ -1,7 +1,5 @@
 @use "/src/utilities/variables";
 
-$margins-x: 75px;
-
 @mixin header-text() {
   font-family: variables.$accent-font;
   font-size: 1.8rem;
@@ -14,6 +12,7 @@ $margins-x: 75px;
   align-items: flex-end;
   height: 145px;
   margin-bottom: 40px;
+  width: 88%;
 }
 
 .header__left {
@@ -27,7 +26,6 @@ $margins-x: 75px;
   &__title {
     @include header-text();
     color: #FF0000;
-    margin-left: $margins-x;
   }
 }
 
@@ -60,7 +58,6 @@ $margins-x: 75px;
 .header__title-right {
   @include header-text();
   cursor: default;
-  margin-right: $margins-x;
   text-align: right;
 }
 
@@ -73,7 +70,6 @@ $margins-x: 75px;
   .header__left {
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 50px;
   }
 
   .header__left__title-container {

@@ -1,6 +1,6 @@
 # Met Explorer
 
-### [Deployed Site]()
+### [Deployed Site](https://met-explorer.netlify.app/)
 
 ##
 
@@ -24,7 +24,7 @@ A Cypress acceptance test suite is also included with the project. See installat
 
 ### Demo
 
-![rt-demo-gif](https://user-images.githubusercontent.com/108169988/207665482-a6211b89-6cbe-4803-941f-3085ce364ea2.gif)
+![met-explorer-demo](https://user-images.githubusercontent.com/108169988/210706252-c2912246-bcf7-4272-835f-f8d1eeeb5b56.gif)
 
 ### Project Context
 
@@ -53,6 +53,7 @@ Met Explorer is an extracurricular personal project I made in order to teach mys
 
 1. Fork this repository.
 2. Clone your forked repository to your machine.
-3. `cd` into the top level of the project repository from the command line and run `npm i`, then `npm start` to launch the application's server.
-4. Navigate to [http://localhost:3000](http://localhost:3000) in your browser to view the live page.
-5. To run the Cypress test suite, run `npm run cypress` from the command line while in the top level of the project directory.
+3. `cd` into the top level of the project repository from the command line and run `npm i`.
+4. Run `npm start` to launch the application's server.
+5. Navigate to [http://localhost:3000](http://localhost:3000) in your browser to view the live page.
+6. To run the Cypress test suite, run `npm run cypress` from the command line while in the top level of the project directory.

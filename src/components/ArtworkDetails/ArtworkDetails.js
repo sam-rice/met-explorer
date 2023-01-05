@@ -24,6 +24,7 @@ function ArtworkDetail() {
 
   useEffect(() => {
     getArtworkData()
+    window.scrollTo({ top: 0 })
   }, [])
 
   const getArtworkData = async () => {

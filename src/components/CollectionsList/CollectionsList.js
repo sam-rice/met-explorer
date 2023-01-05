@@ -2,56 +2,63 @@ import React, { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { createCollection } from "../../actions"
 
-import ReactModal from "react-modal"
-import Modal from "react-modal"
+// import ReactModal from "react-modal"
+// import Modal from "react-modal"
 
 import "./_CollectionsList.scss"
 import CollectionTile from "../CollectionTile/CollectionTile"
+import NewCollectionModal from "../NewCollectionModal/NewCollectionModal"
 
 function CollectionsList() {
   const [modalOpen, setModalOpen] = useState(false)
-  const [name, setName] = useState("")
-  const [nameExistsError, setNameExistsError] = useState(false)
-  const [formError, setFormError] = useState(false)
+  // const [name, setName] = useState("")
+  // const [nameExistsError, setNameExistsError] = useState(false)
+  // const [formError, setFormError] = useState(false)
   const dispatch = useDispatch()
 
   const collections = useSelector(({ collections }) => collections)
 
-  ReactModal.setAppElement("#root")
+  // ReactModal.setAppElement("#root")
 
   const showModal = () => {
     setModalOpen(true)
-    setNameExistsError(false)
-    setFormError(false)
-    setName("")
+    // setNameExistsError(false)
+    // setFormError(false)
+    // setName("")
   }
 
-  const handleKeyDown = e => {
-    if (e.key === "Enter") handleSubmit()
-  }
+  const closeModal = () => setModalOpen(false)
 
-  const handleSubmit = () => {
-    const collectionNameExists = collections.some(collection => collection.name === name)
-    if (collectionNameExists) {
-      setNameExistsError(true)
-      setFormError(false)
-      return
-    }
-    if (name === "") {
-      setFormError(true)
-      setNameExistsError(false)
-      return
-    }
+  const submitCollection = name => {
     dispatch(createCollection(name))
     setModalOpen(false)
-    setName("")
   }
+
+  // const handleKeyDown = e => {
+  //   if (e.key === "Enter") handleSubmit()
+  // }
+
+  // const handleSubmit = () => {
+  //   const collectionNameExists = collections.some(collection => collection.name === name)
+  //   if (collectionNameExists) {
+  //     setNameExistsError(true)
+  //     setFormError(false)
+  //     return
+  //   }
+  //   if (name === "") {
+  //     setFormError(true)
+  //     setNameExistsError(false)
+  //     return
+  //   }
+  //   dispatch(createCollection(name))
+  //   setModalOpen(false)
+  //   setName("")
+  // }
 
   const collectionTiles = collections.map((collection) => {
     const thumbnailURL = collection.pieces[0]?.imageSmall
 
     const deptList = collection.pieces.reduce((acc, piece) => {
-      console.log(piece)
       if (acc.length < 3 && !acc.includes(piece.department)) {
         acc.push(piece.department)
       }
@@ -84,12 +91,18 @@ function CollectionsList() {
           <p className="add-button-label">new collection</p>
           <button
             className="add-button"
-            onClick={showModal}
+            onClick={() => setModalOpen(true)}
             data-cy="modal-open"
           />
         </div>
       </div>
-      <Modal
+      <NewCollectionModal 
+        isOpen={modalOpen} 
+        submitCollection={submitCollection}
+        closeModal={closeModal}
+        collections={collections}
+      />
+      {/* <Modal
         className="modal"
         isOpen={modalOpen}
         closeTimeoutMS={400}
@@ -128,7 +141,7 @@ function CollectionsList() {
           data-cy="modal-close"
         >cancel
         </button>
-      </Modal>
+      </Modal> */}
       <ul className="collections__list">
         {collectionsList}
       </ul>

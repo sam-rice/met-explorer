@@ -158,11 +158,12 @@ function ArtworkDetail() {
           <button
             className="artwork__right__img-controls__button"
             onClick={() => togglePhoto(url)}
-            key={i}
+            key={i + 1}
           >
             <img
               className="artwork__right__img-controls__button__img"
               src={url}
+              data-cy={`image-tile-${i + 1}`}
             />
           </button>
         )
@@ -288,29 +289,6 @@ function ArtworkDetail() {
             >metmuseum.org</a>
           </p>
           <div className="artwork__left__collection">
-            {/* <AnimatePresence
-              initial={false}
-              mode="wait"
-            >
-              {
-                showSuccess &&
-                <div className="artwork__left__collection__alert">
-                  <motion.span
-                    className="artwork__left__collection__alert__label"
-                    exit={{ opacity: 0 }}
-                    key={"p"}
-                  >
-                    added
-                  </motion.span>
-                  <motion.img
-                    className="artwork__left__collection__alert__img"
-                    src={success}
-                    exit={{ opacity: 0 }}
-                    key={"img"}
-                  />
-                </div>
-              }
-            </AnimatePresence> */}
             <label
               className="artwork__left__collection__label"
               htmlFor="selected-collection"

@@ -63,6 +63,18 @@ describe("Artwork Details - Body", () => {
     cy.getByData("object-image").invoke("attr", "alt").should("eq", "Carpet by William Morris")
   })
 
+  it("should have buttons/tiles for switching between images", () => {
+    cy.getByData("image-tile-2").invoke("attr", "src").should("eq", "https://images.metmuseum.org/CRDImages/es/original/DP245947.jpg")
+    cy.getByData("image-tile-2").click()
+    cy.getByData("object-image").invoke("attr", "src").should("eq", "https://images.metmuseum.org/CRDImages/es/original/DP245947.jpg")
+    cy.getByData("image-tile-2").invoke("attr", "src").should("eq", "https://images.metmuseum.org/CRDImages/es/original/DP245936.jpg")
+    
+    cy.getByData("image-tile-3").invoke("attr", "src").should("eq", "https://images.metmuseum.org/CRDImages/es/original/DP245948.jpg")
+    cy.getByData("image-tile-3").click()
+    cy.getByData("object-image").invoke("attr", "src").should("eq", "https://images.metmuseum.org/CRDImages/es/original/DP245948.jpg")
+    cy.getByData("image-tile-3").invoke("attr", "src").should("eq", "https://images.metmuseum.org/CRDImages/es/original/DP245947.jpg")
+  })
+
   it("should have an artist link that navigates to the artist's Wikidata page", () => {
     cy.getByData("object-artist-wiki").invoke("attr", "href").should("eq", "https://www.wikidata.org/wiki/Q182589")
   })

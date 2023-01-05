@@ -24,9 +24,8 @@ function SearchForm() {
     }
     dispatch(resetSearch())
     const submittedType = searchType === "artist name" ? "artist" : "keyword"
-    const submittedQuery = query.replace(/ /g, "+")
     const submittedDept = selectedDepartment !== "optional" ? deptKey[selectedDepartment] : "all"
-    navigate(`/search?query=${submittedQuery}&type=${submittedType}&dept=${submittedDept}&page=1`)
+    navigate(`/search?query=${query}&type=${submittedType}&dept=${submittedDept}&page=1`)
   }
 
   const handleKeyDown = e => {

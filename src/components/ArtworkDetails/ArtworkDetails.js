@@ -24,6 +24,7 @@ function ArtworkDetail() {
 
   useEffect(() => {
     getArtworkData()
+    window.scrollTo({ top: 0 })
   }, [])
 
   const getArtworkData = async () => {
@@ -313,12 +314,15 @@ function ArtworkDetail() {
         </div>
         <div className="artwork__right">
           <div className="artwork__right__mat">
-            <img
-              className="artwork__right__mat__img"
-              src={currentImg}
-              alt={`${objectName}${artistName && ` by ${artistName}`}`}
-              data-cy="object-image"
-            />
+            {
+              currentImg &&
+              <img
+                className="artwork__right__mat__img"
+                src={currentImg}
+                alt={`${objectName}${artistName && ` by ${artistName}`}`}
+                data-cy="object-image"
+              />
+            }
           </div>
           <div className="artwork__right__img-controls">
             {addlPhotoButtons}

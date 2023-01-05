@@ -1,6 +1,8 @@
 @use "/src/utilities/variables";
+@use "/src/utilities/mixins";
 
 .pieces {
+  @include mixins.globalFadeIn();
   width: 100%;
   
   &__header {

@@ -1,4 +1,5 @@
 @use "/src/utilities/variables";
+@use "/src/utilities/mixins";
 
 @mixin header-text() {
   font-family: variables.$accent-font;
@@ -7,6 +8,7 @@
 }
 
 .header {
+  @include mixins.globalFadeIn();
   display: flex;
   justify-content: space-between;
   align-items: flex-end;

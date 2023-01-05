@@ -20,7 +20,7 @@ function Header() {
         </Link>
         <nav className="nav">
           <ul>
-            <li>
+            <li className="first-li">
               <Link
                 className="nav__link"
                 to="/collections"

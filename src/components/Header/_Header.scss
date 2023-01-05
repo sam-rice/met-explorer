@@ -64,7 +64,7 @@
 @media (max-width: 820px) {
 
   .header {
-    height: 155px;
+    height: 185px;
   }
   
   .header__left {
@@ -73,10 +73,10 @@
   }
 
   .header__left__title-container {
+    margin-bottom: 20px;
 
     &__title {
-      margin-left: 0px;
-      margin-bottom: 10px;
+      font-size: 2.1rem;
     }
   }
 
@@ -92,11 +92,37 @@
       margin-right: 25px;
     }
   }
+
+  .header__title-right {
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 570px) {
 
+  .nav {
+    font-size: 1.4rem;
+  }
+
   .header__title-right {
     display: none;
+  }
+}
+
+@media (max-width: 440px) {
+
+  .header {
+    height: 215px;
+  }
+
+  .nav {
+
+    & ul {
+      flex-direction: column;
+    }
+  }
+
+  .first-li {
+    margin-bottom: 10px;
   }
 }

@@ -1,6 +1,7 @@
 @use "/src/utilities/variables";
 
 @mixin tile() {
+  @include globalFadeIn();
   background-color: variables.$container-gray;
   transition-duration: 400ms;
   cursor: pointer;
@@ -13,6 +14,7 @@
 
 @mixin userTile() {
   @include tile();
+  @include globalFadeIn();
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,4 +95,13 @@
   border: 1px solid variables.$border-gray;
   font-size: 1rem;
   color: variables.$gray;
+}
+
+@mixin globalFadeIn() {
+  animation: fadeIn 500ms;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

@@ -19,9 +19,10 @@
 }
 
 .artwork {
+  @include mixins.globalFadeIn();
   display: flex;
   justify-content: space-between;
-  width: min(100%, 1500px)
+  width: min(100%, 1500px);
 }
 
 .artwork__left {
@@ -143,6 +144,7 @@
     height: 520px;
 
     &__img {
+      @include mixins.globalFadeIn();
       position: absolute;
       top: 50%;
       left: 50%;

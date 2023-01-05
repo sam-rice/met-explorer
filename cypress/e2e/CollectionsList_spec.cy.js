@@ -50,6 +50,63 @@ describe("Collections List - Initial", () => {
     cy.get(".ReactModal__Content").should("not.be.visible")
   })
 
+  it("should have a text input for a new collection name", () => {
+    cy.getByData("modal-open").click()
+    cy.getByData("modal-input").type("Collection 1")
+    cy.getByData("modal-input").should("have.value", "Collection 1")
+  })
+
+  it("should should alert the user when a form error has been made", () => {
+    cy.getByData("modal-open").click()
+    cy.getByData("modal-submit").click()
+    cy.getByData("required-error").should("be.visible")
+    cy.assertState({
+      collections: [],
+      results: {}
+    })
+  })
+
+  it("should not allow the user to submit a collection name of an existing collection", () => {
+    cy.dispatchCollectionToStore("Collection 1", 100)
+    cy.getByData("modal-open").click()
+    cy.getByData("modal-input").type("Collection 1")
+    cy.getByData("modal-submit").click()
+    cy.getByData("existing-name-error").should("be.visible")
+    cy.assertState({
+      collections: [{
+        name: "Collection 1",
+        id: 100,
+        pieces: []
+      }],
+      results: {}
+    })
+  })
+
+  it("should not have form errors that persist when the modal has been closed/reopened", () => {
+    cy.dispatchCollectionToStore("Collection 1", 100)
+    cy.getByData("modal-open").click()
+    cy.getByData("modal-submit").click()
+    cy.getByData("modal-close").click()
+    cy.getByData("modal-open").click()
+    cy.getByData("required-error").should("not.exist")
+
+    cy.getByData("modal-close").click()
+    cy.getByData("modal-open").click()
+    cy.getByData("modal-input").type("Collection 1")
+    cy.getByData("modal-submit").click()
+    cy.getByData("modal-close").click()
+    cy.getByData("modal-open").click()
+    cy.getByData("existing-name-error").should("not.exist")
+  })
+
+  it("should not have input text that persists when the modal has been closed/reopened", () => {
+    cy.getByData("modal-open").click()
+    cy.getByData("modal-input").type("Collection 1")
+    cy.getByData("modal-close").click()
+    cy.getByData("modal-open").click()
+    cy.getByData("modal-input").should("have.value", "")
+  })
+
   it("should allow the user to add their first collection", () => {
     cy.clock()
     cy.getByData("modal-open").click()

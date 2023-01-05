@@ -108,7 +108,6 @@ function ArtworkDetail() {
   }
 
   const alertSuccess = () => {
-    console.log("success")
     setShowSuccess(true)
     setTimeout(setShowSuccess, 3000, false)
   }

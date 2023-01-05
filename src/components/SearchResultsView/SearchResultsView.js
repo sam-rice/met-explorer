@@ -119,7 +119,6 @@ function SearchResultsView() {
   "results__results-controls__nav__next nav--disabled" :
     "results__results-controls__nav__next"
 
-console.log(Math.ceil(allResults?.objectIDs.length / 25))
   return (
     <section className="results">
       <div className="results__header">

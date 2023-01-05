@@ -76,7 +76,7 @@
 @media (max-width: 520px) {
 
   .modal {
-    height: 32%;
+    height: 40%;
 
     & h3 {
       margin-bottom: 0px;
@@ -101,13 +101,28 @@
       }
 
       &__error {
-        top: 90px;
+        top: 79px;
       }
     }
 
     &__close-button {
       height: 35px;
       width: 76px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+
+  .modal {
+    height: 45%;
+    width: 335px;
+
+    &__form {
+
+      &__error {
+        top: 91px;
+      }
     }
   }
 }

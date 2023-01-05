@@ -62,3 +62,20 @@
     }
   }
 }
+
+@media (max-width: 570px) {
+  
+  .result-link-wrapper {
+    width: 75%;
+  } 
+  
+  .result {
+    width: 90%;
+    padding: 5%;
+  }
+
+  .results__list {
+    grid-template-columns: auto;
+    gap: 8vw;
+  }
+}

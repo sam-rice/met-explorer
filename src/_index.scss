@@ -21,6 +21,12 @@ body {
   font-weight: 400;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 ::-webkit-scrollbar {
   width: .8rem;
 }
@@ -53,4 +59,10 @@ button {
 
 .gray--text {
   color: variables.$gray;
+}
+
+@media (max-width: 570px) {
+  body {
+    outline-offset: -15px;
+  }
 }

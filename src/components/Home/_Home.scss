@@ -14,7 +14,7 @@ $home-y-margin: 105px;
 
 @mixin bigBottomText() {
   font-family: variables.$accent-font;
-  font-size: min(4vw, 2.5rem);
+  font-size: min(5vw, 2.5rem);
   cursor: pointer;
   text-decoration: none;
   transition-duration: 400ms;
@@ -27,6 +27,7 @@ $home-y-margin: 105px;
   justify-content: space-between;
   position: relative;
   height: 100vh;
+  width: 100%;
 }
 
 .home__top {
@@ -65,11 +66,16 @@ $home-y-margin: 105px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 55px;
     width: 80%;
     background-color: variables.$button-full-gray;
     color: white;
     font-size: 1.3rem;
+
+    & h3 {
+      font-size: min(1.17em, 2.8vw);
+    }
   }
 
   &__button {
@@ -88,23 +94,124 @@ $home-y-margin: 105px;
     list-style: none;
     padding-left: 0px;
     width: 100%;
+  }
+}
+
+.home__bottom__left {
+  margin-left: $home-y-margin;
+
+  & a {
+    @include bigBottomText();
+
+    &:hover {
+      color: gray;
+    }
+  }
+
+}
+
+.home__bottom__right {
+  margin-right: $home-y-margin;
+  
+  & a {
+    @include bigBottomText();
+
+    &:hover {
+      color: gray;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  $home-x-margin-mobile: 8%;
+
+  @mixin bigTopTextMobile() {
+    font-size: 3rem;
+  }
+
+  .home {
+    justify-content: flex-start;
+  }
+
+  .home__top {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 65px;
+
+    &__left {
+      @include bigTopTextMobile();
+      margin-top: $home-x-margin-mobile;
+      margin-left: 0px;
+    }
+
+    &__right {
+      @include bigTopTextMobile();
+      margin-top: 8px;
+      margin-right: 0px;
+    }
+  }
+
+  .home__featured {
+    width: 62vw;
+    height: 39vh;
+    top: 74%;
+  
+    &__title {
+      height: 10vh;
+      font-size: 1.3rem;
+  
+      & h3 {
+        font-size: 1.5rem;
+      }
+    }
+  
+    &__button {
+      height: 45px;
+    }
+  }
+
+  .home__bottom ul {
+    margin-bottom: $home-x-margin-mobile;
+    justify-content: space-evenly;
+    align-items: flex-end;
 
     .home__bottom__left {
-      @include bigBottomText();
-      margin-left: $home-y-margin;
-
-      &:hover {
-        color: gray;
-      }
+      margin-left: 0px;
     }
 
     .home__bottom__right {
-      @include bigBottomText();
-      margin-right: $home-y-margin;
-      
-      &:hover {
-        color: gray;
-      }
+      margin-right: 0px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+  .home__featured {
+    top: 74%;
+    width: 74vw;
+  }
+  
+  .home__bottom {
+
+    & ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .home__bottom__left {
+    margin-bottom: 9px;
+
+    & a {
+      font-size: 1.5rem;
+    }
+  }
+
+  .home__bottom__right {
+
+    & a {
+      font-size: 1.5rem;
     }
   }
 }

@@ -18,14 +18,25 @@
   align-items: center;
   color: black;
   height: 224px;
-  width: 100%;
+  width: min(100%, 1300px);
   box-sizing: border-box;
   padding: 30px;
   margin: 15px 0px;
+
+  @media (max-width: 820px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 570px) {
+    flex-direction: column;
+    height: 510px;
+  }
 }
 
 @mixin tileThumbnail() {
-  height: 160px;
+  display: flex;
+  align-items: center;
+  height: 100%;
   width: 160px;
   overflow: hidden;
   
@@ -38,6 +49,7 @@
   position: relative;
   height: 34px;
   width: 34px;
+  margin-left: 10px;
   border-radius: 50%;
   background-color: variables.$button-small-gray;
   border: none;

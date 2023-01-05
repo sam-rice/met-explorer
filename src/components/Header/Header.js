@@ -12,15 +12,15 @@ function Header() {
     <header className="header">
       <div className="header__left">
         <Link 
-          className="header__title-container" 
+          className="header__left__title-container" 
           to="/"
           data-cy="home-header"
         >
-          <h1 className="header__title-left">MET<br />EXPLORER</h1>
+          <h1 className="header__left__title-container__title">MET<br />EXPLORER</h1>
         </Link>
         <nav className="nav">
           <ul>
-            <li>
+            <li className="first-li">
               <Link
                 className="nav__link"
                 to="/collections"

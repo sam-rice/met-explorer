@@ -1,7 +1,5 @@
 @use "/src/utilities/variables";
 
-$margins-x: 75px;
-
 @mixin header-text() {
   font-family: variables.$accent-font;
   font-size: 1.8rem;
@@ -14,45 +12,45 @@ $margins-x: 75px;
   align-items: flex-end;
   height: 145px;
   margin-bottom: 40px;
+  width: 88%;
 }
 
 .header__left {
   display: flex;
   align-items: flex-end;
-
-  .header__title-container {
-    text-decoration: none;
-  }
   
-  .header__title-left {
+}
+.header__left__title-container {
+  text-decoration: none;
+
+  &__title {
     @include header-text();
     color: #FF0000;
-    margin-left: $margins-x;
+  }
+}
+
+.nav {
+  margin-left: 15px;
+  margin-bottom: 5px;
+
+  & ul {
+    display: flex;
+    margin: 0px;
   }
 
-  .nav {
-    margin-left: 15px;
-    margin-bottom: 5px;
+  & li {
+    list-style: none;
+  }
 
-    & ul {
-      display: flex;
-      margin: 0px;
-    }
+  .nav__link {
+    font-family: variables.$accent-font;
+    color: black;
+    text-decoration: none;
+    margin: 0px 10px;
 
-    & li {
-      list-style: none;
-    }
-
-    .nav__link {
-      font-family: variables.$accent-font;
-      color: black;
-      text-decoration: none;
-      margin: 0px 10px;
-
-      &:hover {
-        cursor: pointer;
-        text-decoration: underline;
-      }
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
   }
 }
@@ -60,6 +58,71 @@ $margins-x: 75px;
 .header__title-right {
   @include header-text();
   cursor: default;
-  margin-right: $margins-x;
   text-align: right;
+}
+
+@media (max-width: 820px) {
+
+  .header {
+    height: 185px;
+  }
+  
+  .header__left {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .header__left__title-container {
+    margin-bottom: 20px;
+
+    &__title {
+      font-size: 2.1rem;
+    }
+  }
+
+  .nav {
+    margin-left: 0px;
+
+    & ul {
+      padding: 0px;
+    }
+
+    .nav__link {
+      margin-left: 0px;
+      margin-right: 25px;
+    }
+  }
+
+  .header__title-right {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 570px) {
+
+  .nav {
+    font-size: 1.4rem;
+  }
+
+  .header__title-right {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+
+  .header {
+    height: 215px;
+  }
+
+  .nav {
+
+    & ul {
+      flex-direction: column;
+    }
+  }
+
+  .first-li {
+    margin-bottom: 10px;
+  }
 }

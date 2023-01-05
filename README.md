@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Met Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### [Deployed Site]()
 
-## Available Scripts
+##
 
-In the project directory, you can run:
+<p align="left">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
+  <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cypress.io-6e3596?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" />
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
+</p>
 
-### `npm start`
+### Abstract
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Met Explorer is a React/Redux web application that allows users to browse The Metropolitan Museum of Art's nearly half-million pieces of artwork and historical artifacts. Users can create create their own "collections," add artwork to each collection, and add personal annotations to each piece. Designed with accessibility and device-responsiveness in mind, the UI/UX strives for simplicity and ease-of-use, with an on-brand, minimalistic design.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A Cypress acceptance test suite is also included with the project. See installation instructions below for running the application and/or tests locally.
 
-### `npm test`
+### Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![rt-demo-gif](https://user-images.githubusercontent.com/108169988/207665482-a6211b89-6cbe-4803-941f-3085ce364ea2.gif)
 
-### `npm run build`
+### Project Context
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Met Explorer is an extracurricular personal project I made in order to teach myself Redux and SCSS. Being a frequent visitor of the MET during my years living in New York, I was excited to find their [Art Collection API](https://metmuseum.github.io/), and felt that the dataset would also present an oppurtunity to work with larger datasets than I had worked with in the past. Figuring out a way to present the user with multiple pages of potentially tens-of-thousands of results was an interesting challenge, and is a process I'm looking forward to learning how to optimize for future projects. As always, thoughts and constructive feedback are welcome!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Tech
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- JavaScript ES6
+- React.js
+- Redux
+- Sass/SCSS
+- Cypress.io
+- HTML5
+- Figma
+- Webpack
+- Netlify
 
-### `npm run eject`
+### Figma Wireframe
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![met-explorer-figma1](https://user-images.githubusercontent.com/108169988/210702234-74965794-cd15-4115-a722-212a3f62af97.png)
+![met-explorer-figma2](https://user-images.githubusercontent.com/108169988/210702237-9a357b49-ae46-474a-afcf-616b9ecbc777.png)
+![met-explorer-figma3](https://user-images.githubusercontent.com/108169988/210702238-67dc0236-2adf-412f-933b-85762ebfddd2.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork this repository.
+2. Clone your forked repository to your machine.
+3. `cd` into the top level of the project repository from the command line and run `npm i`, then `npm start` to launch the application's server.
+4. Navigate to [http://localhost:3000](http://localhost:3000) in your browser to view the live page.
+5. To run the Cypress test suite, run `npm run cypress` from the command line while in the top level of the project directory.

@@ -25,31 +25,6 @@ const resultsReducer = (state = {}, action) => {
 
     case "RESET_SEARCH":
       return { isLoadingResults: true }
-    
-    // case "FETCH_RESULTS_NONE":
-    //   return {
-    //     ...state,
-    //     currentPageResults: null,
-    //     isLoadingPage: false,
-    //   }
-
-    // case "FETCH_PAGE_REQUEST":
-    //   return { ...state,
-    //     isLoadingPage: true 
-    //   }
-
-    // case "FETCH_PAGE_FAILURE":
-    //   return {
-    //     ...state,
-    //     errorMsg: action.payload.errorMsg
-    //   }
-
-    // case "FETCH_PAGE_SUCCESS":
-    //   return {
-    //     ...state,
-    //     isLoadingPage: false,
-    //     currentPageResults: action.payload.objectsData
-    //   }
 
     default:
       return state

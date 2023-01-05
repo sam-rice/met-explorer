@@ -28,7 +28,7 @@ A Cypress acceptance test suite is also included with the project. See installat
 
 ### Project Context
 
-Met Explorer is an extracurricular personal project I made in order to teach myself Redux and SCSS. Being a frequent visitor of the MET during my years living in New York, I was excited to find their [Art Collection API](https://metmuseum.github.io/), and felt that the dataset would also present an oppurtunity to work with larger datasets than I had worked with in the past. Figuring out a way to present the user with multiple pages of potentially tens-of-thousands of results was an interesting challenge, and is a process I'm looking forward to learning how to optimize for future projects. As always, thoughts and constructive feedback are welcome!
+Met Explorer is an extracurricular personal project I made in order to teach myself Redux and SCSS. Being a frequent visitor of the MET during my years living in New York, I was excited to find their [Art Collection API](https://metmuseum.github.io/), and felt that the dataset would also present an opportunity to work with larger datasets than I had worked with in the past. Figuring out a way to present the user with multiple pages of potentially tens-of-thousands of results was an interesting challenge, and is a process I'm looking forward to learning how to optimize for future projects. As always, thoughts and constructive feedback are welcome!
 
 ### Tech
 

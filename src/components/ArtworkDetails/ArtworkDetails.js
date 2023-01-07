@@ -140,7 +140,7 @@ function ArtworkDetail() {
       this piece is saved in your collection: {prevSavedString}
     </motion.p>
 
-  const formattedArtistName = artistURL ?
+  const formattedArtistName = !!artistURL ?
     <a
       className="artwork__left__artist__wiki-link"
       href={artistURL}
@@ -179,7 +179,7 @@ function ArtworkDetail() {
           data-cy="directory-department"
         >{department}</span>
         {
-          artistName &&
+          !!artistName &&
           <span
             className="artwork-detail-link"
             data-cy="directory-artist"
@@ -189,7 +189,7 @@ function ArtworkDetail() {
       </span>
       <section className="artwork">
         <div className="artwork__left">
-          {relatedCollections[0] && prevSavedMessage}
+          {!!relatedCollections[0] && prevSavedMessage}
           <h3
             className="artwork__left__title"
             data-cy="object-title"
@@ -225,7 +225,7 @@ function ArtworkDetail() {
           <p
             className="artwork__left__artist"
           >
-            {artistName && formattedArtistName}
+            {!!artistName && formattedArtistName}
             {culture}
           </p>
           <table
@@ -244,21 +244,21 @@ function ArtworkDetail() {
                 <td data-cy="table-value-2">{department}</td>
               </tr>
               {
-                region &&
+                !!region &&
                 <tr>
                   <td>geography:</td>
                   <td data-cy="table-value-3">{`${geographyType} ${region}, ${country}`}</td>
                 </tr>
               }
               {
-                period &&
+                !!period &&
                 <tr>
                   <td>period:</td>
                   <td data-cy="table-value-4">{period}</td>
                 </tr>
               }
               {
-                classification &&
+                !!classification &&
                 <tr>
                   <td>classification:</td>
                   <td data-cy="table-value-5">{classification}</td>
@@ -275,7 +275,7 @@ function ArtworkDetail() {
             </tbody>
           </table>
           {
-            artistName &&
+            !!artistName &&
             <p>view more pieces from <Link
               to={artistSearchPath}
               data-cy="artist-search-link"
@@ -314,7 +314,7 @@ function ArtworkDetail() {
         <div className="artwork__right">
           <div className="artwork__right__mat">
             {
-              currentImg &&
+              !!currentImg &&
               <img
                 className="artwork__right__mat__img"
                 src={currentImg}

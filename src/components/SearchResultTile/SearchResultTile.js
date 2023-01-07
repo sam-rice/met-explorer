@@ -17,7 +17,7 @@ function SearchResultTile({ data }) {
         <div className="result__left">
           <img
             className="result__left__thumbnail"
-            src={primaryImageSmall ? primaryImageSmall : fallback}
+            src={!!primaryImageSmall ? primaryImageSmall : fallback}
           />
         </div>
         <div className="result__right">
@@ -33,7 +33,7 @@ function SearchResultTile({ data }) {
           <p
             className="result__right__details"
             data-cy="culture"
-          >{culture ? culture : country}</p>
+          >{!!culture ? culture : country}</p>
           <p
             className="result__right__dept"
             data-cy="department"

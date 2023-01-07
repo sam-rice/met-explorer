@@ -26,9 +26,9 @@ function CollectionTile({ name, id, count, deptList, thumbnail }) {
 
   const displayedThumbnail = thumbnail ? thumbnail : fallbackIMG
 
-  const dept1 = deptList[0] ? `departments: ${deptList[0]}` : ""
-  const dept2 = deptList[1] ? `, ${deptList[1]}` : ""
-  const dept3 = deptList[2] ? `, ${deptList[2]}...` : ""
+  const dept1 = !!deptList[0] ? `departments: ${deptList[0]}` : ""
+  const dept2 = !!deptList[1] ? `, ${deptList[1]}` : ""
+  const dept3 = !!deptList[2] ? `, ${deptList[2]}...` : ""
   const displayedDeptList = `${dept1}${dept2}${dept3}`
 
   return (

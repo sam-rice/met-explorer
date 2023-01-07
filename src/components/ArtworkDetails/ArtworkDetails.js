@@ -124,6 +124,7 @@ function ArtworkDetail() {
       <option
         value={collection.name}
         key={collection.id}
+        data-cy={`option-${collection.id}`}
       >{collection.name}</option>
     ))
 
@@ -140,14 +141,14 @@ function ArtworkDetail() {
       this piece is saved in your collection: {prevSavedString}
     </motion.p>
 
-  const formattedArtistName = !!artistURL ?
+  const artistElement = !!artistURL ?
     <a
       className="artwork__left__artist__wiki-link"
       href={artistURL}
       data-cy="object-artist-wiki"
     >{artistName}
     </a> :
-    <span className="artwork__left__artist__no-wiki-link">{artistName}</span>
+    <span className="artwork__left__artist__no-wiki-link" data-cy="object-artist-no-wiki">{artistName}</span>
 
   const artistSearchPath = `/search?query=${artistName?.replace(/ /g, "+")}&type=artist&dept=all&page=1`
 
@@ -159,6 +160,7 @@ function ArtworkDetail() {
             className="artwork__right__img-controls__button"
             onClick={() => togglePhoto(url)}
             key={i + 1}
+            data-cy="image-button"
           >
             <img
               className="artwork__right__img-controls__button__img"
@@ -225,7 +227,7 @@ function ArtworkDetail() {
           <p
             className="artwork__left__artist"
           >
-            {!!artistName && formattedArtistName}
+            {!!artistName && artistElement}
             {culture}
           </p>
           <table

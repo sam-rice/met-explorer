@@ -41,9 +41,9 @@ describe("Artwork Details - Body", () => {
     })
     cy.intercept({
       method: "GET",
-      url: "https://collectionapi.metmuseum.org/public/collection/v1/objects/221477",
+      url: "https://collectionapi.metmuseum.org/public/collection/v1/objects/14944",
     }, {
-      fixture: "morrisResult221477.json"
+      fixture: "morrisResult14944.json"
     })
     cy.visit("http://localhost:3000/explore/222094")
   })
@@ -54,6 +54,7 @@ describe("Artwork Details - Body", () => {
     cy.getByData("object-title").should("have.text", "Carpet")
     cy.getByData("object-date").should("have.text", "late 19th century")
     cy.getByData("object-artist-wiki").should("have.text", "William Morris")
+      .invoke("attr", "href").should("eq", "https://www.wikidata.org/wiki/Q182589")
     cy.getByData("table-value-1").contains("Holland Park carpet")
     cy.getByData("table-value-2").contains("European Sculpture and Decorative Arts")
     cy.getByData("table-value-5").contains("Textiles-Rugs")
@@ -61,6 +62,12 @@ describe("Artwork Details - Body", () => {
     cy.getByData("table-value-7").contains("Bequest of Frank A. Munsey, 1927")
     cy.getByData("object-image").invoke("attr", "src").should("eq", "https://images.metmuseum.org/CRDImages/es/original/DP245936.jpg")
     cy.getByData("object-image").invoke("attr", "alt").should("eq", "Carpet by William Morris")
+  })
+
+  it("should only have an artist wiki link if the data is available", () => {
+    cy.visit("http://localhost:3000/explore/14944")
+    cy.getByData("object-artist-no-wiki").should("be.visible")
+    cy.getByData("object-artist-wiki").should("not.exist")
   })
 
   it("should have buttons/tiles for switching between images", () => {
@@ -86,7 +93,6 @@ describe("Artwork Details - Body", () => {
 
   it("should have a form for adding the viewed piece to a collection", () => {
     cy.dispatchCollectionToStore("Collection 1", 100)
-    cy.getByData("add-collection-select").should("be.visible")
     cy.getByData("add-collection-select").select("Collection 1")
       .find(":selected").should("have.value", "Collection 1")
     cy.getByData("add-collection-submit").should("be.visible")
@@ -118,6 +124,14 @@ describe("Artwork Details - Body", () => {
     cy.getByData("previously-saved-message").should("have.text", "this piece is saved in your collection: \"Collection 1\"")
   })
 
+  it("should not give the user the option to add a previously saved piece to the same collection", () => {
+    cy.dispatchCollectionToStore("Collection 1", 100)
+    cy.getByData("add-collection-select").find("option").should("have.length", 2)
+    cy.getByData("add-collection-select").select("Collection 1")
+    cy.getByData("add-collection-submit").click()
+    cy.getByData("add-collection-select").find("option").should("have.length", 1)
+  })
+
   it("should have a persisting saved message when a piece has been previously saved", () => {
     cy.dispatchCollectionToStore("Collection 1", 100)
     cy.getByData("add-collection-select").select("Collection 1")
@@ -126,5 +140,38 @@ describe("Artwork Details - Body", () => {
     cy.getByData("collection-100").click()
     cy.getByData("saved-piece-222094").click()
     cy.getByData("previously-saved-message").should("have.text", "this piece is saved in your collection: \"Collection 1\"")
+  })
+})
+
+describe("Artwork Details (missing data)", () => {
+  beforeEach(() => {
+    cy.intercept({
+      method: "GET",
+      url: "https://collectionapi.metmuseum.org/public/collection/v1/objects/221477",
+    }, {
+      fixture: "morrisResult221477.json"
+    })
+    cy.visit("http://localhost:3000/explore/221477")
+  })
+
+  it("should only show an artist name if the data is available", () => {
+    cy.getByData("object-artist-no-wiki").should("not.exist")
+    cy.getByData("object-artist-wiki").should("not.exist")
+    cy.getByData("directory-artist").should("not.exist")
+    cy.getByData("artist-search-link").should("not.exist")
+  })
+
+  it("should only show table rows for available data", () => {
+    cy.get("main").should("not.contain", "geography")
+    cy.get("main").should("not.contain", "period")
+    cy.get("main").should("not.contain", "classification")
+  })
+
+  it("should display a fallback image if there are no images available", () => {
+    cy.getByData("object-image").invoke("attr", "src").should("eq", "/static/media/fallback.36cccec721043b9b96a4.png")
+  })
+
+  it("should should not display additional image buttons if there are no images available", () => {
+    cy.getByData("image-button").should("not.exist")
   })
 })

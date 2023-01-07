@@ -13,7 +13,7 @@ export const fetchResults = (url) => {
       console.log(error)
       dispatch(fetchResultsFailure(error))
     }
-  }
+  } 
 }
 
 // export const fetchResults = (url) => {

@@ -33,7 +33,7 @@ function SavedPieceTile({ collectionID, data }) {
     >
       <div className="piece__left">
         <div className="img-container">
-          <img className="img-container__img" src={imageSmall ? imageSmall : fallbackImg} />
+          <img className="img-container__img" src={!!imageSmall ? imageSmall : fallbackImg} />
         </div>
         <div className="piece__left__details">
           <div className="details-top">
@@ -47,7 +47,7 @@ function SavedPieceTile({ collectionID, data }) {
             >ca. {objectDate}</p>
             <p className="detail-rows">
               {
-                artistName && 
+                !!artistName && 
                 <Link 
                   className="details-top__artist-link" 
                   to={artistSearchPath}

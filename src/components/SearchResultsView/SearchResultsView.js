@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
-import { useSearchParams } from "react-router-dom"
+import { useSearchParams, useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
-import { fetchResults } from "../../actions"
+import { fetchResults, fetchResultsSuccess, fetchResultsFailure } from "../../actions"
 
 import "./_SearchResultsView.scss"
 import SearchResultTile from "../SearchResultTile/SearchResultTile"
@@ -9,6 +9,7 @@ import { deptKey } from "../../utilities/global-static-data"
 
 function SearchResultsView() {
   const dispatch = useDispatch()
+  const navigate = useNavigate()
   const { isLoadingResults = true, allResults } = useSelector(({ results }) => results)
   const [currentPageResults, setCurrentPageResults] = useState([])
   const [resultTiles, setResultTiles] = useState([])
@@ -25,11 +26,23 @@ function SearchResultsView() {
     initSearch()
   }, [])
 
-  const initSearch = () => {
+  const initSearch = async () => {
     const departmentParam = dept !== "all" ? `departmentId=${dept}&` : ""
     const typeParam = type === "artist" ? "artistOrCulture=true&" : ""
     const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?${departmentParam}${typeParam}q=${query.replace(/ /g, "+")}`
-    dispatch(fetchResults(url, pageNum))
+    
+   dispatch(fetchResults(url, pageNum))
+    // .then(response => {
+    //   if (!response.ok) {
+    //     dispatch(fetchResultsFailure(response.statusText))
+    //     navigate("/error")
+    //   } else {
+    //     return response.json()
+    //   }
+    // })
+    // .then(data => dispatch(fetchResultsSuccess(data)))
+    
+
   }
 
   useEffect(() => {
@@ -40,8 +53,8 @@ function SearchResultsView() {
     if (!isLoadingResults && allResults) {
       const targetEndIndex = pageNum * 25
       const targetObjectIDs = allResults.objectIDs.slice(targetEndIndex - 25, targetEndIndex)
-      fetchPage(targetObjectIDs)
       window.scrollTo({ top: 100 })
+      fetchPage(targetObjectIDs)
     } else if (!isLoadingResults && !allResults) {
       setNoResults(true)
     }

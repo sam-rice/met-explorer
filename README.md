@@ -34,10 +34,10 @@ Met Explorer is an extracurricular personal project I made in order to teach mys
 
 - JavaScript ES6
 - React.js
+- React Router
 - Redux
 - Redux Thunk
 - Sass/SCSS
-- React Router
 - Cypress.io
 - HTML5
 - Figma

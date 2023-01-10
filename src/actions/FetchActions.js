@@ -4,27 +4,27 @@ export const fetchResults = (url) => {
     try {
       const response = await fetch(url)
       if (!response.ok) {
-        throw Error(response.statusText)
+        throw Error(response)
       }
       const data = await response.json()
       dispatch(fetchResultsSuccess(data))
-      // if (!data.total) dispatch(fetchResultsNone())
     } catch (error) {
+      console.log(error)
       dispatch(fetchResultsFailure(error))
     }
-  }
+  } 
 }
 
 const fetchResultsRequest = () => ({
   type: "FETCH_RESULTS_REQUEST"
 })
 
-const fetchResultsSuccess = results => ({
+export const fetchResultsSuccess = results => ({
   type: "FETCH_RESULTS_SUCCESS",
   payload: { results }
 })
 
-const fetchResultsFailure = errorMsg => ({
+export const fetchResultsFailure = errorMsg => ({
   type: "FETCH_RESULTS_FAILURE",
   payload: { errorMsg }
 })

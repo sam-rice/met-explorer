@@ -1,4 +1,3 @@
-
 import React from "react"
 import { Route, Routes } from "react-router-dom"
 
@@ -9,6 +8,7 @@ import CollectionViewContainer from "../../containers/CollectionViewContainer"
 import SearchFormContainer from "../../containers/SearchFormContainer"
 import SearchResultsViewContainer from "../../containers/SearchResultsViewContainer"
 import ArtworkDetailsContainer from "../../containers/ArtworkDetailsContainer"
+import ErrorPage from "../ErrorPage/ErrorPage"
 
 const App = () => {
   return (
@@ -25,6 +25,7 @@ const App = () => {
           <Route path="/explore" >
             <Route path=":objectID" element={<ArtworkDetailsContainer />} />
           </Route>
+          <Route path="/error" element={<ErrorPage />} />
         </Route>
       </Routes>
     </>

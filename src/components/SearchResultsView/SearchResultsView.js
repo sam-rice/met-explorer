@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { useSearchParams } from "react-router-dom"
+import { useSearchParams, useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { fetchResults } from "../../actions"
 
@@ -9,7 +9,8 @@ import { deptKey } from "../../utilities/global-static-data"
 
 function SearchResultsView() {
   const dispatch = useDispatch()
-  const { isLoadingResults = true, allResults } = useSelector(({ results }) => results)
+  const navigate = useNavigate()
+  const { isLoadingResults = true, allResults, errorMsg } = useSelector(({ results }) => results)
   const [currentPageResults, setCurrentPageResults] = useState([])
   const [resultTiles, setResultTiles] = useState([])
   const [noResults, setNoResults] = useState(false)
@@ -25,12 +26,18 @@ function SearchResultsView() {
     initSearch()
   }, [])
 
-  const initSearch = () => {
+  const initSearch = async () => {
     const departmentParam = dept !== "all" ? `departmentId=${dept}&` : ""
     const typeParam = type === "artist" ? "artistOrCulture=true&" : ""
     const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?${departmentParam}${typeParam}q=${query.replace(/ /g, "+")}`
+
     dispatch(fetchResults(url, pageNum))
   }
+
+  useEffect(() => {
+    if (!errorMsg) return
+    navigate("/error")
+  }, [errorMsg])
 
   useEffect(() => {
     getNewPage()
@@ -40,8 +47,8 @@ function SearchResultsView() {
     if (!isLoadingResults && allResults) {
       const targetEndIndex = pageNum * 25
       const targetObjectIDs = allResults.objectIDs.slice(targetEndIndex - 25, targetEndIndex)
-      fetchPage(targetObjectIDs)
       window.scrollTo({ top: 100 })
+      fetchPage(targetObjectIDs)
     } else if (!isLoadingResults && !allResults) {
       setNoResults(true)
     }
@@ -60,18 +67,9 @@ function SearchResultsView() {
 
   const fetchPage = async objectIDs => {
     const promises = await objectIDs.map(async objectID => {
-      // try {
       const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`)
-      // if (!response.ok) {
-      // throw Error(response.statusText)
-      // }
       const data = await response.json()
       return data
-      // } catch (error) {
-      // setPageLoading(false)
-
-      //   console.log(error)
-      // }
     })
     const settledPromises = await Promise.allSettled(promises)
     const pageData = settledPromises.map(promise => promise.value)
@@ -95,13 +93,13 @@ function SearchResultsView() {
 
   const headerSearchParams = !isLoadingResults &&
     <>
-      <h3 
+      <h3
         className="results__header__left__search-params"
         data-cy="params-main"
       >
         {totalResultsCount} results for "{query}"
       </h3>
-      <p 
+      <p
         className="results__header__left__dept"
         data-cy="params-dept"
       >
@@ -112,11 +110,11 @@ function SearchResultsView() {
   const displayedResultsCount = `viewing ${resultTiles.length ? resultTiles.length : 0} of ${totalResultsCount} results`
 
   const backButtonClassList = pageNum === 1 ?
-  "results__results-controls__nav__back nav--disabled" :
+    "results__results-controls__nav__back nav--disabled" :
     "results__results-controls__nav__back"
 
   const nextButtonClassList = pageNum === Math.ceil(allResults?.objectIDs.length / 25) || noResults ?
-  "results__results-controls__nav__next nav--disabled" :
+    "results__results-controls__nav__next nav--disabled" :
     "results__results-controls__nav__next"
 
   return (
@@ -125,7 +123,7 @@ function SearchResultsView() {
         <div className="results__header__left">
           {headerSearchParams}
         </div>
-        <p 
+        <p
           className="gray--text"
           data-cy="results-count-upper"
         >
@@ -141,7 +139,7 @@ function SearchResultsView() {
         {(isLoadingResults || pageLoading) && <p>Loading...</p>}
       </ul>
       <div className="results__results-controls">
-        <p 
+        <p
           className="results__results-controls__details"
           data-cy="results-count-lower"
         >

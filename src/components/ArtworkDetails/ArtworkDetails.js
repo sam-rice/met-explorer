@@ -130,6 +130,7 @@ function ArtworkDetail() {
       <option
         value={collection.name}
         key={collection.id}
+        data-cy={`option-${collection.id}`}
       >{collection.name}</option>
     ))
 
@@ -146,14 +147,14 @@ function ArtworkDetail() {
       this piece is saved in your collection: {prevSavedString}
     </motion.p>
 
-  const formattedArtistName = artistURL ?
+  const artistElement = !!artistURL ?
     <a
       className="artwork__left__artist__wiki-link"
       href={artistURL}
       data-cy="object-artist-wiki"
     >{artistName}
     </a> :
-    <span className="artwork__left__artist__no-wiki-link">{artistName}</span>
+    <span className="artwork__left__artist__no-wiki-link" data-cy="object-artist-no-wiki">{artistName}</span>
 
   const artistSearchPath = `/search?query=${artistName?.replace(/ /g, "+")}&type=artist&dept=all&page=1`
 
@@ -165,6 +166,7 @@ function ArtworkDetail() {
             className="artwork__right__img-controls__button"
             onClick={() => togglePhoto(url)}
             key={i + 1}
+            data-cy="image-button"
           >
             <img
               className="artwork__right__img-controls__button__img"
@@ -185,7 +187,7 @@ function ArtworkDetail() {
           data-cy="directory-department"
         >{department}</span>
         {
-          artistName &&
+          !!artistName &&
           <span
             className="artwork-detail-link"
             data-cy="directory-artist"
@@ -195,7 +197,7 @@ function ArtworkDetail() {
       </span>
       <section className="artwork">
         <div className="artwork__left">
-          {relatedCollections[0] && prevSavedMessage}
+          {!!relatedCollections[0] && prevSavedMessage}
           <h3
             className="artwork__left__title"
             data-cy="object-title"
@@ -231,7 +233,7 @@ function ArtworkDetail() {
           <p
             className="artwork__left__artist"
           >
-            {artistName && formattedArtistName}
+            {!!artistName && artistElement}
             {culture}
           </p>
           <table
@@ -250,21 +252,21 @@ function ArtworkDetail() {
                 <td data-cy="table-value-2">{department}</td>
               </tr>
               {
-                region &&
+                !!region &&
                 <tr>
                   <td>geography:</td>
                   <td data-cy="table-value-3">{`${geographyType} ${region}, ${country}`}</td>
                 </tr>
               }
               {
-                period &&
+                !!period &&
                 <tr>
                   <td>period:</td>
                   <td data-cy="table-value-4">{period}</td>
                 </tr>
               }
               {
-                classification &&
+                !!classification &&
                 <tr>
                   <td>classification:</td>
                   <td data-cy="table-value-5">{classification}</td>
@@ -281,7 +283,7 @@ function ArtworkDetail() {
             </tbody>
           </table>
           {
-            artistName &&
+            !!artistName &&
             <p>view more pieces from <Link
               to={artistSearchPath}
               data-cy="artist-search-link"
@@ -320,7 +322,7 @@ function ArtworkDetail() {
         <div className="artwork__right">
           <div className="artwork__right__mat">
             {
-              currentImg &&
+              !!currentImg &&
               <img
                 className="artwork__right__mat__img"
                 src={currentImg}

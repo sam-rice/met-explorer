@@ -87,7 +87,7 @@ function SearchResultsView() {
     setPageLoading(true)
   }
 
-  const totalResultsCount = allResults?.objectIDs.length ?
+  const totalResultsCount = !!allResults?.objectIDs ?
     allResults.objectIDs.length.toLocaleString("en-US") :
     0
 

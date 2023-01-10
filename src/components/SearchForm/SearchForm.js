@@ -53,7 +53,7 @@ function SearchForm() {
           data-cy="search-input"
         />
         {
-          userError && 
+          !!userError && 
           <p
             className="search__input-container__error"
             data-cy="input-error"

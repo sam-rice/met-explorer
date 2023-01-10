@@ -29,7 +29,7 @@ function SearchResultsView() {
   const initSearch = async () => {
     const departmentParam = dept !== "all" ? `departmentId=${dept}&` : ""
     const typeParam = type === "artist" ? "artistOrCulture=true&" : ""
-    const url = `https://colleconapi.metmuseum.org/public/collection/v1/search?${departmentParam}${typeParam}q=${query.replace(/ /g, "+")}`
+    const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?${departmentParam}${typeParam}q=${query.replace(/ /g, "+")}`
 
     dispatch(fetchResults(url, pageNum))
   }

@@ -112,7 +112,7 @@ describe("Search Results View - Body", () => {
     cy.getByData("14944").find('[data-cy="culture"]').should("have.text", "American or British")
     cy.getByData("14944").find('[data-cy="department"]').should("have.text", "department: The American Wing")
     cy.getByData("14944").find("img").invoke("attr", "src").should("eq", "https://images.metmuseum.org/CRDImages/ad/web-large/RT560.jpg")
-    
+
     cy.getByData("10383").find('[data-cy="title"]').should("have.text", "Drawing")
     cy.getByData("10383").find('[data-cy="date"]').should("have.text", "ca. 1850–60")
     cy.getByData("10383").find('[data-cy="artist"]').should("have.text", "John William Casilear")
@@ -173,7 +173,6 @@ describe("Search Results View - Body", () => {
 })
 
 describe("Search Results View - Body (no results)", () => {
-
   beforeEach(() => {
     cy.intercept({
       method: "GET",
@@ -210,5 +209,17 @@ describe("Search Results View - Body (no results)", () => {
 
   it("should alert the user when there are no results", () => {
     cy.getByData("no-results").should("be.visible")
+  })
+})
+
+describe("Search Results View (bad request)", () => {
+  it("should redirect to the \"bad request\" page when there is an error fetching data", () => {
+    cy.intercept("GET", "https://collectionapi.metmuseum.org/public/collection/v1/search?artistOrCulture=true&q=william+morris", (req) => {
+      req.reply({ statusCode: 404 })
+    })
+    cy.visit("http://localhost:3000/search?query=william+morris&type=artist&dept=all&page=1")
+
+    cy.url().should("eq", "http://localhost:3000/error")
+    cy.getByData("error-page").should("be.visible")
   })
 })

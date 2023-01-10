@@ -3,7 +3,6 @@ import React from "react"
 import "./_ErrorPage.scss"
 
 function ErrorPage() {
-
   return (
     <h1 
       className="error-page" 

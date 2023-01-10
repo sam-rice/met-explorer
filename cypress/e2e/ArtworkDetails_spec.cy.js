@@ -1,6 +1,6 @@
 import savedPieces from "../fixtures/savedPieces.json"
 
-describe("Artwork Details - Header", () => {
+describe("Artwork Details View - Header", () => {
   beforeEach(() => {
     cy.intercept({
       method: "GET",
@@ -31,7 +31,7 @@ describe("Artwork Details - Header", () => {
   })
 })
 
-describe("Artwork Details - Body", () => {
+describe("Artwork Details View - Body", () => {
   beforeEach(() => {
     cy.intercept({
       method: "GET",
@@ -126,5 +126,17 @@ describe("Artwork Details - Body", () => {
     cy.getByData("collection-100").click()
     cy.getByData("saved-piece-222094").click()
     cy.getByData("previously-saved-message").should("have.text", "this piece is saved in your collection: \"Collection 1\"")
+  })
+})
+
+describe("Artwork Details View (bad request)", () => {
+  it("should redirect to the \"bad request\" page when there is an error fetching the page", () => {
+    cy.intercept("GET", "https://collectionapi.metmuseum.org/public/collection/v1/objects/222094", (req) => {
+      req.reply({ statusCode: 404 })
+    })
+    cy.visit("http://localhost:3000/explore/222094")
+
+    cy.url().should("eq", "http://localhost:3000/error")
+    cy.getByData("error-page").should("be.visible")
   })
 })

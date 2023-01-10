@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { useSearchParams, useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
-import { fetchResults, fetchResultsSuccess, fetchResultsFailure } from "../../actions"
+import { fetchResults } from "../../actions"
 
 import "./_SearchResultsView.scss"
 import SearchResultTile from "../SearchResultTile/SearchResultTile"
@@ -67,18 +67,9 @@ function SearchResultsView() {
 
   const fetchPage = async objectIDs => {
     const promises = await objectIDs.map(async objectID => {
-      // try {
       const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`)
-      // if (!response.ok) {
-      // throw Error(response.statusText)
-      // }
       const data = await response.json()
       return data
-      // } catch (error) {
-      // setPageLoading(false)
-
-      //   console.log(error)
-      // }
     })
     const settledPromises = await Promise.allSettled(promises)
     const pageData = settledPromises.map(promise => promise.value)

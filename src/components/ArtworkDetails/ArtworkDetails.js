@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link, useNavigate } from "react-router-dom"
 import { addToCollection } from "../../actions"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -10,10 +10,11 @@ import success from "../../assets/success.png"
 
 function ArtworkDetail() {
   const dispatch = useDispatch()
+  const navigate = useNavigate()
   const collections = useSelector(({ collections }) => collections)
   const { objectID } = useParams()
 
-  const [error, setError] = useState("")
+  const [error, setError] = useState(null)
   const [showSuccess, setShowSuccess] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
   const [selectedCollection, setSelectedCollection] = useState("")
@@ -27,9 +28,14 @@ function ArtworkDetail() {
     window.scrollTo({ top: 0 })
   }, [])
 
+  useEffect(() => {
+    if (!error) return
+    navigate("/error")
+  }, [error])
+
   const getArtworkData = async () => {
-    const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`)
     try {
+      const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`)
       if (!response.ok) {
         throw Error(response.statusText)
       } else {

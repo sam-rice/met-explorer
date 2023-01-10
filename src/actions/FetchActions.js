@@ -8,20 +8,12 @@ export const fetchResults = (url) => {
       }
       const data = await response.json()
       dispatch(fetchResultsSuccess(data))
-      // if (!data.total) dispatch(fetchResultsNone())
     } catch (error) {
       console.log(error)
       dispatch(fetchResultsFailure(error))
     }
   } 
 }
-
-// export const fetchResults = (url) => {
-//   return async dispatch => {
-//     dispatch(fetchResultsRequest())
-//     return fetch(url)
-//   }
-// }
 
 const fetchResultsRequest = () => ({
   type: "FETCH_RESULTS_REQUEST"

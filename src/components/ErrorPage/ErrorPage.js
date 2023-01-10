@@ -5,7 +5,12 @@ import "./_ErrorPage.scss"
 function ErrorPage() {
 
   return (
-    <h1>Error Page</h1>
+    <h1 
+      className="error-page" 
+      data-cy="error-page"
+    >
+      Sorry, something broke on our end. Please try again later.
+    </h1>
   )
 }
 

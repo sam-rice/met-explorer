@@ -7,7 +7,7 @@ const resultsReducer = (state = {}, action) => {
       return {
         ...state,
         isLoadingResults: false,
-        errorMsg: action.payload.errorMsg
+        errorMsg: action.payload.errorMsg.message
       }
 
     case "FETCH_RESULTS_SUCCESS":

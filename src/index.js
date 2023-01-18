@@ -15,6 +15,10 @@ const store = createStore(
   composeWithDevTools(applyMiddleware(thunk))
 )
 
+store.subscribe(() => {
+  localStorage.setItem("collections", JSON.stringify(store.getState().collections))
+})
+
 const root = createRoot(document.getElementById('root'))
 
 root.render(

@@ -1,9 +1,7 @@
-let INITIAL_STATE = {
-  collections: []
-}
+let INITIAL_STATE = []
 
 if (localStorage.getItem("collections")) {
-  INITIAL_STATE.collections = JSON.parse(localStorage.getItem("collections"))
+  INITIAL_STATE = JSON.parse(localStorage.getItem("collections"))
 }
 
 const collectionReducer = (state = INITIAL_STATE, action) => {

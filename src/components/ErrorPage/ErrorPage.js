@@ -1,5 +1,3 @@
-import React from "react"
-
 import "./_ErrorPage.scss"
 
 function ErrorPage() {

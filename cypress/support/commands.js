@@ -10,7 +10,6 @@ Cypress.Commands.add("assertState", state => {
   return cy.window().its("store").invoke("getState").should("eql", state)
 })
 
-
 Cypress.Commands.add("dispatchCollectionToStore", (name, id) => {
   return cy.window().its("store").invoke("dispatch", {
     type: "ADD_COLLECTION",
@@ -38,4 +37,3 @@ Cypress.Commands.add("dispatchPieceToCollection", (collectionID, { artistName, c
     }
   })
 })
-

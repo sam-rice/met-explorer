@@ -42,8 +42,11 @@ const NewCollectionModal = ({ isOpen, collections, submitCollection, closeModal 
       className="modal"
       isOpen={isOpen}
       closeTimeoutMS={400}
+      onRequestClose={handleClose}
       contentLabel="modal"
-      autoFocus={false}
+      shouldCloseOnEsc={true}
+      shouldCloseOnOverlayClick={true}
+      shouldReturnFocusAfterClose={true}
     >
       <h3>create new collection:</h3>
       <div className="modal__form">

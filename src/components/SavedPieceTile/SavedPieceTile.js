@@ -1,4 +1,4 @@
-import React, { useCallback } from "react"
+import { useCallback } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { updateNote, deletePiece } from "../../actions"

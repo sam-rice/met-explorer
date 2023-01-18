@@ -1,4 +1,10 @@
-const collectionReducer = (state = [], action) => {
+let INITIAL_STATE = []
+
+if (localStorage.getItem("collections")) {
+  INITIAL_STATE = JSON.parse(localStorage.getItem("collections"))
+}
+
+const collectionReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case "ADD_COLLECTION":
       return [...state, {

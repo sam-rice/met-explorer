@@ -52,15 +52,16 @@ function ArtworkDetail() {
   }
 
   const relatedCollections = useMemo(() => collections.reduce((acc, collection) => {
-    console.log("relatedCollections")
-    if (collection.pieces.some(piece => piece.objectID == objectID)) {
+    const objectIsSaved = collection.pieces.some(piece => piece.objectID == objectID)
+    if (objectIsSaved) {
       acc.push({
         id: collection.id,
         name: collection.name
       })
     }
     return acc
-  }, []), [collections])
+  }, []),
+    [collections])
 
   const togglePhoto = newURL => {
     const targetIndex = additionalImages.indexOf(newURL)
@@ -69,12 +70,8 @@ function ArtworkDetail() {
   }
 
   const handleSubmit = () => {
-    if (!selectedCollection) {
-      handleFormError()
-      return
-    }
+    if (!selectedCollection) return
     const targetCollection = collections.find(collection => collection.name === selectedCollection)
-
     dispatch(addToCollection({
       collectionID: targetCollection.id,
       artistName,
@@ -90,10 +87,6 @@ function ArtworkDetail() {
     alertSuccess()
   }
 
-  const handleFormError = () => {
-    console.log("error")
-  }
-
   const alertSuccess = () => {
     setShowSuccess(true)
     setTimeout(setShowSuccess, 3000, false)
@@ -105,7 +98,7 @@ function ArtworkDetail() {
   }
 
   const collectionOptions = collections.filter(collection => {
-    return relatedCollections.every(related => related.id != collection.id)
+    return relatedCollections.every(related => related.id !== collection.id)
   })
     .map(collection => (
       <option

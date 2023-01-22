@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useParams, Link, useNavigate } from "react-router-dom"
 import { motion, AnimatePresence } from "framer-motion"
@@ -51,7 +51,7 @@ function ArtworkDetail() {
     }
   }
 
-  const relatedCollections = collections.reduce((acc, collection) => {
+  const relatedCollections = useMemo(() => collections.reduce((acc, collection) => {
     console.log("relatedCollections")
     if (collection.pieces.some(piece => piece.objectID == objectID)) {
       acc.push({
@@ -60,7 +60,7 @@ function ArtworkDetail() {
       })
     }
     return acc
-  }, [])
+  }, []), [collections])
 
   const togglePhoto = newURL => {
     const targetIndex = additionalImages.indexOf(newURL)

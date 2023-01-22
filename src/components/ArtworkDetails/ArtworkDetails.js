@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useParams, Link, useNavigate } from "react-router-dom"
-import { addToCollection } from "../../actions"
 import { motion, AnimatePresence } from "framer-motion"
+
+import { addToCollection } from "../../actions"
+import { cleanDetails } from "../../utilities/cleaners"
+import { getArtworkDetails } from "../../utilities/apiCalls"
 
 import "./_ArtworkDetails.scss"
 import fallbackIMG from "../../assets/fallback.png"
@@ -33,45 +36,23 @@ function ArtworkDetail() {
     navigate("/error")
   }, [error])
 
+
+
   const getArtworkData = async () => {
     try {
-      const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`)
-      if (!response.ok) {
-        throw Error(response.statusText)
-      } else {
-        const data = await response.json()
-        setArtworkData({
-          additionalImages: data.additionalImages,
-          artistName: data.artistDisplayName,
-          artistURL: data.artistWikidata_URL,
-          classification: data.classification,
-          country: data.country,
-          culture: data.culture,
-          creditLine: data.creditLine,
-          department: data.department,
-          description: data.title,
-          geographyType: data.geographyType,
-          imageSmall: data.primaryImageSmall,
-          medium: data.medium,
-          objectDate: data.objectDate,
-          objectName: data.objectName,
-          metURL: data.objectURL,
-          period: data.period,
-          region: data.region
-        })
-        if (data.primaryImage) {
-          setCurrentImg(data.primaryImage)
-        } else {
-          setCurrentImg(fallbackIMG)
-        }
-        setIsLoading(false)
-      }
+      const response = await getArtworkDetails(objectID)
+      if (!response.ok) throw Error(response.statusText)
+      const details = await response.json()
+      setArtworkData(cleanDetails(details))
+      setCurrentImg(details.primaryImage ? details.primaryImage : fallbackIMG)
+      setIsLoading(false)
     } catch (error) {
       setError(error)
     }
   }
 
-  const relatedCollections = (collections.reduce((acc, collection) => {
+  const relatedCollections = collections.reduce((acc, collection) => {
+    console.log("relatedCollections")
     if (collection.pieces.some(piece => piece.objectID == objectID)) {
       acc.push({
         id: collection.id,
@@ -79,7 +60,7 @@ function ArtworkDetail() {
       })
     }
     return acc
-  }, []))
+  }, [])
 
   const togglePhoto = newURL => {
     const targetIndex = additionalImages.indexOf(newURL)

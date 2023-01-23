@@ -36,8 +36,6 @@ function ArtworkDetail() {
     navigate("/error")
   }, [error])
 
-
-
   const getArtworkData = async () => {
     try {
       const response = await getArtworkDetails(objectID)

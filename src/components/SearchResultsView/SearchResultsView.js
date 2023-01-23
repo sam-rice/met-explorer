@@ -5,6 +5,7 @@ import { fetchResults } from "../../actions"
 
 import "./_SearchResultsView.scss"
 import SearchResultTile from "../SearchResultTile/SearchResultTile"
+import SearchPageNav from "../SearchPageNav/SearchPageNav"
 import { deptKey } from "../../utilities/global-static-data"
 
 function SearchResultsView() {
@@ -20,28 +21,42 @@ function SearchResultsView() {
   const query = searchParams.get("query")
   const type = searchParams.get("type")
   const dept = searchParams.get("dept")
-  const pageNum = Number(searchParams.get("page"))
+  const pageNum = parseInt(searchParams.get("page"))
 
   useEffect(() => {
     initSearch()
   }, [])
 
-  const initSearch = async () => {
-    const departmentParam = dept !== "all" ? `departmentId=${dept}&` : ""
-    const typeParam = type === "artist" ? "artistOrCulture=true&" : ""
-    const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?${departmentParam}${typeParam}q=${query.replace(/ /g, "+")}`
+  useEffect(() => {
+    renderTiles()
+  }, [currentPageResults])
 
-    dispatch(fetchResults(url, pageNum))
-  }
+  useEffect(() => {
+    getNewPage()
+  }, [isLoadingResults, pageNum])
 
   useEffect(() => {
     if (!errorMsg) return
     navigate("/error")
   }, [errorMsg])
 
-  useEffect(() => {
-    getNewPage()
-  }, [isLoadingResults, pageNum])
+  const initSearch = async () => {
+    const departmentParam = dept !== "all" ? `departmentId=${dept}&` : ""
+    const typeParam = type === "artist" ? "artistOrCulture=true&" : ""
+    const url = `https://collectionapi.metmuseum.org/public/collection/v1/search?${departmentParam}${typeParam}q=${query.replace(/ /g, "+")}`
+    dispatch(fetchResults(url, pageNum))
+  }
+
+  const renderTiles = () => {
+    setResultTiles(currentPageResults.filter(result => !result.hasOwnProperty("message"))
+      .map(result => (
+        <SearchResultTile
+          data={result}
+          key={result.objectID}
+        />))
+    )
+    setPageLoading(false)
+  }
 
   const getNewPage = () => {
     if (!isLoadingResults && allResults) {
@@ -53,17 +68,6 @@ function SearchResultsView() {
       setNoResults(true)
     }
   }
-
-  useEffect(() => {
-    setResultTiles(currentPageResults.filter(result => !result.hasOwnProperty("message"))
-      .map(result => (
-        <SearchResultTile
-          data={result}
-          key={result.objectID}
-        />))
-    )
-    setPageLoading(false)
-  }, [currentPageResults])
 
   const fetchPage = async objectIDs => {
     const promises = await objectIDs.map(async objectID => {
@@ -109,13 +113,13 @@ function SearchResultsView() {
 
   const displayedResultsCount = `viewing ${resultTiles.length ? resultTiles.length : 0} of ${totalResultsCount} results`
 
-  const backButtonClassList = pageNum === 1 ?
-    "results__results-controls__nav__back nav--disabled" :
-    "results__results-controls__nav__back"
+  // const backButtonClassList = pageNum === 1 ?
+  //   "results__results-controls__nav__back nav--disabled" :
+  //   "results__results-controls__nav__back"
 
-  const nextButtonClassList = pageNum === Math.ceil(allResults?.objectIDs.length / 25) || noResults ?
-    "results__results-controls__nav__next nav--disabled" :
-    "results__results-controls__nav__next"
+  // const nextButtonClassList = pageNum === Math.ceil(allResults?.objectIDs.length / 25) || noResults ?
+  //   "results__results-controls__nav__next nav--disabled" :
+  //   "results__results-controls__nav__next"
 
   return (
     <section className="results">
@@ -145,7 +149,13 @@ function SearchResultsView() {
         >
           {displayedResultsCount}
         </p>
-        <nav className="results__results-controls__nav">
+        <SearchPageNav 
+          pageNum={pageNum}
+          handlePageNav={handlePageNav}
+          backDisabled={pageNum === 1}
+          nextDisabled={pageNum === Math.ceil(allResults?.objectIDs.length / 25) || noResults}
+        />
+        {/* <nav className="results__results-controls__nav">
           <button
             className={backButtonClassList}
             onClick={() => handlePageNav(false)}
@@ -159,7 +169,7 @@ function SearchResultsView() {
             disabled={pageNum === Math.ceil(allResults?.objectIDs.length / 25) || noResults}
             data-cy="next-button"
           >next</button>
-        </nav>
+        </nav> */}
       </div>
     </section>
   )

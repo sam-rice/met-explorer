@@ -1,20 +1,6 @@
 @use "/src/utilities/variables";
 @use "/src/utilities/mixins";
 
-@mixin resultsNavButton() {
-  position: relative;
-  border: 0px;
-  background-color: #00000000;
-  color: variables.$gray;
-
-  &:before, &:after {
-    position: absolute;
-    color: black;
-    top: -14px;
-    font-size: 3.2rem;
-  }
-}
-
 .results {
   @include mixins.globalFadeIn();
   width: 100%;
@@ -49,60 +35,6 @@
     padding-left: 0px;
     width: 100%;
     margin-bottom: 190px;
-  }
-}
-
-.results__results-controls {
-  width: 89%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 15px;
-  position: absolute;
-  bottom: 27px;
-
-  &__details {
-    color: variables.$gray;
-  }
-
-  &__nav {
-    display: flex;
-    flex-direction: row;
-
-    &__back {
-      @include resultsNavButton();
-
-      &:before {
-        content: "\2039";
-        left: -18px;
-      }
-    }
-
-    &__next {
-      @include resultsNavButton();
-
-      &:after {
-        content: "\203A";
-        right: -18px;
-      }
-    }
-
-    &__page-num {
-      margin: 0px 35px;
-      font-size: 2.5rem;
-    }
-  }
-}
-
-.nav--disabled {
-  pointer-events: none;
-
-  &:before {
-    color: variables.$disabled-gray;
-  }
-
-  &:after {
-    color: variables.$disabled-gray;
   }
 }
 

@@ -112,24 +112,6 @@
   }
 }
 
-.added-alert {
-  position: absolute;
-  top: 48px;
-  display: flex;
-  align-items: center;
-  pointer-events: none;
-
-  &__label {
-    color: #6BC839;
-    margin-right: 8px;
-    font-size: 1rem;
-  }
-
-  &__img {
-    height: 25px;
-  }
-}
-
 .artwork__right {
   display: flex;
   flex-direction: column;

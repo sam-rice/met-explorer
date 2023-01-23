@@ -9,7 +9,8 @@ import { getArtworkDetails } from "../../utilities/apiCalls"
 
 import "./_ArtworkDetails.scss"
 import fallbackIMG from "../../assets/fallback.png"
-import success from "../../assets/success.png"
+import SuccessAnimation from "../SuccessAnimation/SuccessAnimation"
+// import success from "../../assets/success.png"
 
 function ArtworkDetail() {
   const dispatch = useDispatch()
@@ -109,6 +110,7 @@ function ArtworkDetail() {
   const prevSavedString = relatedCollections.length > 1 ?
     `"${relatedCollections[0]?.name}" & others` :
     `"${relatedCollections[0]?.name}"`
+
   const prevSavedMessage =
     <motion.p
       className="artwork__left__saved-msg"
@@ -174,7 +176,8 @@ function ArtworkDetail() {
             className="artwork__left__title"
             data-cy="object-title"
           >{objectName}
-            <AnimatePresence
+          <SuccessAnimation showSuccess={showSuccess} />
+            {/* <AnimatePresence
               initial={false}
               mode="wait"
             >
@@ -196,7 +199,7 @@ function ArtworkDetail() {
                   />
                 </div>
               }
-            </AnimatePresence>
+            </AnimatePresence> */}
           </h3>
           <p
             className="artwork__left__date"

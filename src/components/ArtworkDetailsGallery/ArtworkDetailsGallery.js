@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react"
+import { useState } from "react"
 
 import "./_ArtworkDetailsGallery.scss"
 import fallbackIMG from "../../assets/fallback.png"

@@ -125,20 +125,13 @@ function SearchResultsView() {
         {noResults && <p data-cy="no-results">no results matching your search</p>}
         {(isLoadingResults || pageLoading) && <p>Loading...</p>}
       </ul>
-      <div className="results__results-controls">
-        <p
-          className="results__results-controls__details"
-          data-cy="results-count-lower"
-        >
-          {displayedResultsCount}
-        </p>
-        <SearchPageNav 
-          pageNum={pageNum}
-          handlePageNav={handlePageNav}
-          backDisabled={pageNum === 1}
-          nextDisabled={pageNum === Math.ceil(allResults?.objectIDs.length / 25) || noResults}
-        />
-      </div>
+      <SearchPageNav 
+        pageNum={pageNum}
+        handlePageNav={handlePageNav}
+        backDisabled={pageNum === 1}
+        nextDisabled={pageNum === Math.ceil(allResults?.objectIDs.length / 25) || noResults}
+        displayedResultsCount={displayedResultsCount}
+      />
     </section>
   )
 }

@@ -1,7 +1,7 @@
 export const cleanDetails = ({
   additionalImages,
   artistDisplayName,
-  artistWikidetails_URL,
+  artistWikidata_URL,
   classification,
   country,
   culture,
@@ -20,7 +20,7 @@ export const cleanDetails = ({
 return {
   additionalImages,
   artistName: artistDisplayName,
-  artistURL: artistWikidetails_URL,
+  artistURL: artistWikidata_URL,
   classification,
   country,
   culture,

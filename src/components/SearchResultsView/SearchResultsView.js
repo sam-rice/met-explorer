@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useSearchParams, useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { fetchResults } from "../../actions"
+import { fetchPage } from "../../utilities/apiCalls"
 
 import "./_SearchResultsView.scss"
 import SearchResultTile from "../SearchResultTile/SearchResultTile"
@@ -58,26 +59,16 @@ function SearchResultsView() {
     setPageLoading(false)
   }
 
-  const getNewPage = () => {
+  const getNewPage = async () => {
     if (!isLoadingResults && allResults) {
       const targetEndIndex = pageNum * 25
       const targetObjectIDs = allResults.objectIDs.slice(targetEndIndex - 25, targetEndIndex)
       window.scrollTo({ top: 100 })
-      fetchPage(targetObjectIDs)
+      const pageData = await fetchPage(targetObjectIDs)
+      setCurrentPageResults(pageData)
     } else if (!isLoadingResults && !allResults) {
       setNoResults(true)
     }
-  }
-
-  const fetchPage = async objectIDs => {
-    const promises = await objectIDs.map(async objectID => {
-      const response = await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`)
-      const data = await response.json()
-      return data
-    })
-    const settledPromises = await Promise.allSettled(promises)
-    const pageData = settledPromises.map(promise => promise.value)
-    setCurrentPageResults(pageData)
   }
 
   const handlePageNav = (bool) => {
@@ -113,14 +104,6 @@ function SearchResultsView() {
 
   const displayedResultsCount = `viewing ${resultTiles.length ? resultTiles.length : 0} of ${totalResultsCount} results`
 
-  // const backButtonClassList = pageNum === 1 ?
-  //   "results__results-controls__nav__back nav--disabled" :
-  //   "results__results-controls__nav__back"
-
-  // const nextButtonClassList = pageNum === Math.ceil(allResults?.objectIDs.length / 25) || noResults ?
-  //   "results__results-controls__nav__next nav--disabled" :
-  //   "results__results-controls__nav__next"
-
   return (
     <section className="results">
       <div className="results__header">
@@ -155,21 +138,6 @@ function SearchResultsView() {
           backDisabled={pageNum === 1}
           nextDisabled={pageNum === Math.ceil(allResults?.objectIDs.length / 25) || noResults}
         />
-        {/* <nav className="results__results-controls__nav">
-          <button
-            className={backButtonClassList}
-            onClick={() => handlePageNav(false)}
-            disabled={pageNum === 1}
-            data-cy="back-button"
-          >back</button>
-          <p className="results__results-controls__nav__page-num">{pageNum}</p>
-          <button
-            className={nextButtonClassList}
-            onClick={() => handlePageNav(true)}
-            disabled={pageNum === Math.ceil(allResults?.objectIDs.length / 25) || noResults}
-            data-cy="next-button"
-          >next</button>
-        </nav> */}
       </div>
     </section>
   )

@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useParams, Link, useNavigate } from "react-router-dom"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 import { addToCollection } from "../../actions"
 import { cleanDetails } from "../../utilities/cleaners"
@@ -10,7 +10,7 @@ import { getArtworkDetails } from "../../utilities/apiCalls"
 import "./_ArtworkDetails.scss"
 import fallbackIMG from "../../assets/fallback.png"
 import SuccessAnimation from "../SuccessAnimation/SuccessAnimation"
-// import success from "../../assets/success.png"
+import ArtworkDetailsGallery from "../ArtworkDetailsGallery/ArtworkDetailsGallery"
 
 function ArtworkDetail() {
   const dispatch = useDispatch()
@@ -22,10 +22,10 @@ function ArtworkDetail() {
   const [showSuccess, setShowSuccess] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
   const [selectedCollection, setSelectedCollection] = useState("")
-  const [currentImg, setCurrentImg] = useState("")
+  // const [currentImg, setCurrentImg] = useState("")
   const [artworkData, setArtworkData] = useState({})
 
-  const { additionalImages, artistName, artistURL, classification, country, culture, creditLine, department, description, geographyType, imageSmall, medium, objectDate, objectName, metURL, period, region } = artworkData
+  const { additionalImages, artistName, artistURL, classification, country, culture, creditLine, department, description, geographyType, primaryImage, imageSmall, medium, objectDate, objectName, metURL, period, region } = artworkData
 
   useEffect(() => {
     getArtworkData()
@@ -43,7 +43,7 @@ function ArtworkDetail() {
       if (!response.ok) throw Error(response.statusText)
       const details = await response.json()
       setArtworkData(cleanDetails(details))
-      setCurrentImg(details.primaryImage ? details.primaryImage : fallbackIMG)
+      // setCurrentImg(details.primaryImage ? details.primaryImage : fallbackIMG)
       setIsLoading(false)
     } catch (error) {
       setError(error)
@@ -62,11 +62,11 @@ function ArtworkDetail() {
   }, []),
     [collections])
 
-  const togglePhoto = newURL => {
-    const targetIndex = additionalImages.indexOf(newURL)
-    additionalImages.splice(targetIndex, 1, currentImg)
-    setCurrentImg(newURL)
-  }
+  // const togglePhoto = newURL => {
+    // const targetIndex = additionalImages.indexOf(newURL)
+    // additionalImages.splice(targetIndex, 1, currentImg)
+  //   setCurrentImg(newURL)
+  // }
 
   const handleSubmit = () => {
     if (!selectedCollection) return
@@ -132,26 +132,26 @@ function ArtworkDetail() {
 
   const artistSearchPath = `/search?query=${artistName?.replace(/ /g, "+")}&type=artist&dept=all&page=1`
 
-  const addlPhotoButtons = !isLoading &&
-    additionalImages.reduce((acc, url, i) => {
-      if (i < 5) {
-        acc.push(
-          <button
-            className="artwork__right__img-controls__button"
-            onClick={() => togglePhoto(url)}
-            key={i + 1}
-            data-cy="image-button"
-          >
-            <img
-              className="artwork__right__img-controls__button__img"
-              src={url}
-              data-cy={`image-tile-${i + 1}`}
-            />
-          </button>
-        )
-      }
-      return acc
-    }, [])
+  // const addlPhotoButtons = !isLoading &&
+  //   additionalImages.reduce((acc, url, i) => {
+  //     if (i < 5) {
+  //       acc.push(
+  //         <button
+  //           className="artwork__right__img-controls__button"
+  //           onClick={() => togglePhoto(url)}
+  //           key={i + 1}
+  //           data-cy="image-button"
+  //         >
+  //           <img
+  //             className="artwork__right__img-controls__button__img"
+  //             src={url}
+  //             data-cy={`image-tile-${i + 1}`}
+  //           />
+  //         </button>
+  //       )
+  //     }
+  //     return acc
+  //   }, [])
 
   return (
     <div className="artwork-view-parent">
@@ -177,29 +177,6 @@ function ArtworkDetail() {
             data-cy="object-title"
           >{objectName}
           <SuccessAnimation showSuccess={showSuccess} />
-            {/* <AnimatePresence
-              initial={false}
-              mode="wait"
-            >
-              {
-                showSuccess &&
-                <div className="added-alert">
-                  <motion.span
-                    className="added-alert__label"
-                    exit={{ opacity: 0 }}
-                    key={"p"}
-                  >
-                    added
-                  </motion.span>
-                  <motion.img
-                    className="added-alert__img"
-                    src={success}
-                    exit={{ opacity: 0 }}
-                    key={"img"}
-                  />
-                </div>
-              }
-            </AnimatePresence> */}
           </h3>
           <p
             className="artwork__left__date"
@@ -295,7 +272,7 @@ function ArtworkDetail() {
           </div>
         </div>
         <div className="artwork__right">
-          <div className="artwork__right__mat">
+          {/* <div className="artwork__right__mat">
             {
               !!currentImg &&
               <img
@@ -305,10 +282,19 @@ function ArtworkDetail() {
                 data-cy="object-image"
               />
             }
-          </div>
-          <div className="artwork__right__img-controls">
+          </div> */}
+          { 
+            !isLoading && 
+            <ArtworkDetailsGallery
+              primaryImage={primaryImage}
+              additionalImages={additionalImages}
+              objectName={objectName}
+              artistName={artistName}
+            />
+          }
+          {/* <div className="artwork__right__img-controls">
             {addlPhotoButtons}
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

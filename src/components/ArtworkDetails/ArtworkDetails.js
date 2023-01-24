@@ -69,8 +69,7 @@ function ArtworkDetail() {
       })
     }
     return acc
-  }, []),
-    [collections])
+  }, []), [collections])
 
   const alertSuccess = () => {
     setShowSuccess(true)

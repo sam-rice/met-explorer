@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useMemo, memo } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { createCollection } from "../../actions"
 
@@ -18,7 +18,7 @@ function CollectionsList() {
     setModalOpen(false)
   }
 
-  const collectionTiles = collections.map((collection) => {
+  const collectionTiles = useMemo(() => collections.map((collection) => {
     const thumbnailURL = collection.pieces[0]?.imageSmall
 
     const deptList = collection.pieces.reduce((acc, piece) => {
@@ -36,7 +36,7 @@ function CollectionsList() {
       deptList={deptList}
       thumbnail={thumbnailURL}
     />
-  })
+  }), [collections])
 
   const collectionsList = collectionTiles.length ?
     collectionTiles :

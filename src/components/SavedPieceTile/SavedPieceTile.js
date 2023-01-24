@@ -1,4 +1,4 @@
-import { useCallback } from "react"
+import { memo } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { updateNote, deletePiece } from "../../actions"
@@ -12,12 +12,12 @@ function SavedPieceTile({ collectionID, data }) {
 
   const { artistName, department, objectName, culture, objectDate, imageSmall, userNotes, objectID } = data
 
-  const goToArtwork = useCallback(e => {
+  const goToArtwork = e => {
     const targetIsTile = !["TEXTAREA", "BUTTON", "A"].includes(e.target.nodeName)
     if (targetIsTile) {
       navigate(`/explore/${objectID}`)
     }
-  }, [navigate])
+  }
 
   const handleTextInput = text => dispatch(updateNote(text, collectionID, objectID))
 
@@ -88,4 +88,4 @@ function SavedPieceTile({ collectionID, data }) {
   )
 }
 
-export default SavedPieceTile
+export default memo(SavedPieceTile)
